@@ -72,6 +72,25 @@ Git push to GitHub was refused on 2026-10-03 (the Claude GitHub App lacks write 
 
 Working assumptions updated accordingly: zero cost, CPU only, public data via GitHub/PyPI now and via widened network access later; studies must be designed so that the main claim does not depend on paid APIs.
 
+
+### Network policy widened (2026-10-03, re-verified)
+
+| Capability | Status now | Evidence |
+|---|---|---|
+| arXiv (abstracts, HTML/PDF full text, export API) | Reachable | HTTP 200; API returned metadata for 2005.11401 |
+| Crossref API, DOI resolver | Reachable | API returned the ACM Computing Surveys record for 10.1145/3571730 |
+| OpenAlex API | Reachable but rate-limited | HTTP 429 on first calls |
+| Semantic Scholar API and site, DBLP, OpenReview, ACL Anthology, NeurIPS/PMLR proceedings, Springer, AIS eLibrary | Reachable | HTTP 200/301/303 |
+| Hugging Face models and datasets | Reachable, downloads work | 91 MB model file downloaded in 2.7 s via huggingface_hub; dataset metadata readable |
+| Zenodo API, 4TU.ResearchData, UCI, OpenML, data.gov, EUR-Lex, archive.org, Wikimedia dumps, OSF, Figshare, PhysioNet, FRED | Reachable | HTTP 200 (Zenodo API query returned hit counts) |
+| ACM DL, ScienceDirect, IEEE Xplore, Wiley, INFORMS, Taylor & Francis, MISQ site, SSRN, SEC EDGAR | Refuse automated fetches (HTTP 403/418 from the site itself) | Metadata for these venues comes from Crossref, Semantic Scholar and search snippets |
+| Kaggle | Pages load; downloads need an account token | Not available |
+| Paid LLM APIs, GPU | Still unavailable | Unchanged |
+
+Consequences: literature records can now reach abstract depth broadly and full-text depth for open-access papers; DOIs and venues can be verified with `research/tools/verify_refs.py` (self-test passed against Crossref and arXiv); embedding models and small open LLMs can be run on CPU, so model-based pilots are possible at small scale. The first sweep was stopped after one area because its instructions still assumed the closed network; it was relaunched with updated instructions and the completed area is being redone at abstract depth.
+
+GitHub push remains refused (Claude GitHub App not connected to the repository).
+
 ### Decision
 
 **Proceed** to the preliminary literature landscape using web search, with every record marked as snippet-level evidence, and in parallel generate and adversarially challenge candidate ideas. No project selection yet.
