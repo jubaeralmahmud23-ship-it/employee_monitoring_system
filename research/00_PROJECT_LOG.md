@@ -101,6 +101,16 @@ The author briefly considered broadening the landscape to software tools and pac
 
 The Stage 1-4 sweep completed all eight landscape scouts, eight citation audits, four ideation lenses and the merge (21 agent results). The first pair of challenge agents (novelty and feasibility for idea 1) was then stopped by an interrupt from the client at 11:19:50 UTC before writing any file; the run ended. The run was resumed from its journal cache at about 11:26 UTC: cached results are reused unchanged and only the challenge, synthesis and critique stages execute. No records from the completed stages were altered by the interruption.
 
+
+### Hand-off snapshot (2026-10-03, ~12:40 UTC)
+
+Author's usage allowance was about to end. Actions taken so that nothing is lost:
+
+- All records committed on `claude/peaceful-cori-ny59q5` (15 commits at snapshot time). GitHub push refused both via git and via the GitHub connector (403 "Resource not accessible by integration"): the Claude GitHub App is not installed on the repository.
+- A git bundle of the branch, a tarball of `research/`, and `RESUME.md` were sent to the author in the chat as the off-container backup.
+- A background loop in the container commits any new files under `research/` every three minutes and will push automatically if GitHub access is granted while the session is alive.
+- Stage 3-4 continuation workflow still running: novelty and feasibility checks complete for ideas 1-3 (six files in `03_challenge/`); ideas 4-8 and the synthesis and critique stages pending. `RESUME.md` says how to finish them.
+
 ### Decision
 
 **Proceed** to the preliminary literature landscape using web search, with every record marked as snippet-level evidence, and in parallel generate and adversarially challenge candidate ideas. No project selection yet.
