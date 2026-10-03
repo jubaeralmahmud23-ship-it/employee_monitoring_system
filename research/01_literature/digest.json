@@ -1,0 +1,1665 @@
+[
+ {
+  "area": "Generative AI and LLM adoption, use, value and risk in organizations (IS perspective)",
+  "file": "/home/user/employee_monitoring_system/research/01_literature/genai-organizations.md",
+  "gaps": [
+   "Micro-to-macro translation: task-level gains of 12-40% (QJE, Management Science, Organization Science) coexist with precise nulls on hours and earnings in Denmark, 1.4% aggregate time savings in US surveys, individual-only email savings in the Copilot experiment and a perceived-versus-measured paradox among executives; no paper read reconciles them with data. Disproved by organization-level studies linking telemetry-measured use to throughput or cycle time over a year or more.",
+   "Expert-worker downside and verification labor: top performers show quality declines (Brynjolfsson et al., Alibaba) and experienced developers slow down (METR); the IS review calls for verification skills research. Disproved by field studies showing no expert quality loss under adjusted workflows or newer tools.",
+   "Behavioral measurement of shadow and undisclosed GenAI use: DART, the BYOAI maturity model, Schneider et al. and the ICIS field study are conceptual or interview-based; no public trace dataset of sanctioned versus personal-account use was found. Disproved by a published study or open dataset with such trace data.",
+   "Causal evaluation of governance-of-use mechanisms: one single-firm quasi-experiment (Leon) against many frameworks; the IS review names adaptive governance and regulatory translation as open. Disproved by multi-firm field or quasi-experiments showing which controls change behavior without large circumvention.",
+   "Artifact under-specification in IS GenAI studies: the ISJ editorial exists because of it; surveys measure generic 'GenAI use' while the same tool is used in 21%-75% of weeks across firms. Disproved by IS studies that specify model, integration mode and configuration and show results differ by them.",
+   "Trust, delegation and legitimacy of controls: trust is the strongest predictor of use in one survey and non-significant in another (Kim and Kim); perceived legitimacy is a boundary condition for guardrails. Disproved by convergent evidence that trust constructs predict use and compliance uniformly across tasks and control regimes."
+  ],
+  "contradictions": [
+   "Task-level productivity gains (15-26% in field experiments) versus organization-level nulls (earnings and hours effects bounded under 2% in Denmark; 1.4% reported time savings in US surveys; no reallocation of work in the Copilot experiment).",
+   "Skill-leveling narrative versus expert harm: the same studies that show novices gaining most report small significant quality declines for top performers (QJE, Alibaba) and METR finds experienced developers 19% slower.",
+   "Perceived versus measured effects: METR developers believed they were 20% faster while 19% slower; executives' perceived gains exceed measured gains (NBER w34984); IS surveys rely on perceived usefulness.",
+   "Version and reporting inconsistencies: Dillon et al. 56 firms/over 6,000 workers (arXiv v1) versus 66 firms/7,137 workers (later abstract); Bick et al. 40%/23%/9% (NBER) versus 45%/27%/10% (Management Science); Brynjolfsson et al. 5,179 agents and 14% (SSRN) versus 5,172 and 15% (QJE); Humlum and Vestergaard's NBER paper retitled; press claims of '6,000 executives, 89% no change' do not match the w34984 abstract.",
+   "Trust as the strongest predictor of GenAI use (IJHCI snippet) versus trust not significant once habit and perceived risk are modeled (Kim and Kim, Sage Open 2026).",
+   "Semantic Scholar labels the ICIS 2025 venue 'International Conference on Interaction Sciences' and returned a mismatched abstract for Feuerriegel et al.; Crossref matched the METR paper to an unrelated ICSE 2026 article at score 0.474."
+  ],
+  "key_papers": [
+   {
+    "title": "Generative AI at Work",
+    "authors": "Brynjolfsson, Li and Raymond",
+    "year": "2025",
+    "venue": "Quarterly Journal of Economics 140(2):889-942 (earlier NBER w31161, arXiv 2304.11771)",
+    "status": "peer-reviewed",
+    "finding": "Staggered rollout of a GenAI assistant to 5,172 customer-support agents raised resolutions per hour by 15.2% (agent and tenure fixed effects), with +36% for the lowest skill quintile, no gain for the top quintile and small significant declines in resolution ra",
+    "url": "https://arxiv.org/abs/2304.11771"
+   },
+   {
+    "title": "Experimental evidence on the productivity effects of generative artificial intelligence",
+    "authors": "Noy and Zhang",
+    "year": "2023",
+    "venue": "Science 381(6654):187-192",
+    "status": "peer-reviewed",
+    "finding": "Preregistered online experiment with 453 professionals: ChatGPT cut time on mid-level writing tasks by 40% and raised graded quality by 18%, reduced between-worker inequality, and doubled reported real-job use two weeks later.",
+    "url": "https://doi.org/10.1126/science.adh2586"
+   },
+   {
+    "title": "Navigating the Jagged Technological Frontier: Field Experimental Evidence of the Effects of Artificial Intelligence on Knowledge Worker Productivity and Quality",
+    "authors": "Dell'Acqua et al.",
+    "year": "2023/2026",
+    "venue": "SSRN 4573321 (2023); Organization Science 37(2):403-423 (2026)",
+    "status": "peer-reviewed",
+    "finding": "758 BCG consultants with GPT-4 completed 12.2% more tasks 25.1% faster with higher quality on 18 tasks inside the capability frontier, but were 19% less likely to be correct on a task outside it.",
+    "url": "https://mitsloan.mit.edu/sites/default/files/2023-10/SSRN-id4573321.pdf"
+   },
+   {
+    "title": "Shifting Work Patterns with Generative AI",
+    "authors": "Dillon, Jaffe, Immorlica and Stanton",
+    "year": "2025",
+    "venue": "arXiv 2504.11436 (v1 read; v4 exists); NBER w33795; SSRN 5250761",
+    "status": "preprint",
+    "finding": "Microsoft-run randomized field experiment in 56 firms (66 and 7,137 workers in a later version) with telemetry outcomes: regular Copilot users spent about 3 fewer hours per week on email (25%, ITT 1.4 h) and completed documents 6-20% faster, but meeting time, ",
+    "url": "https://arxiv.org/abs/2504.11436"
+   },
+   {
+    "title": "The Rapid Adoption of Generative AI",
+    "authors": "Bick, Blandin and Deming",
+    "year": "2024/2026",
+    "venue": "NBER w32966 (2024); St. Louis Fed WP 2024-027; Management Science (2026)",
+    "status": "peer-reviewed",
+    "finding": "Nationally representative US surveys: nearly 40% of adults 18-64 use GenAI and 23% of workers used it at work in the prior week (45% and 27% in the later version); work adoption as fast as or faster than the PC; reported time savings equal 1.4% of work hours; ",
+    "url": "https://www.nber.org/papers/w32966"
+   },
+   {
+    "title": "Large Language Models, Small Labor Market Effects",
+    "authors": "Humlum and Vestergaard",
+    "year": "2025",
+    "venue": "NBER w33777 (now titled 'Still Waters, Rapid Currents: Early Labor Market Transformation under Generative AI'); BFI WP 2025-56; SSRN",
+    "status": "preprint",
+    "finding": "Adoption surveys linked to Danish registers give precise null effects on earnings and hours at worker and workplace level, ruling out effects above 2% two years after ChatGPT, while employers reorganize tasks and adopters move to higher-paying occupations.",
+    "url": "https://www.nber.org/papers/w33777"
+   },
+   {
+    "title": "Artificial Intelligence, Productivity, and the Workforce: Evidence from Corporate Executives",
+    "authors": "Baslandze et al.",
+    "year": "2026",
+    "venue": "NBER w34984; SSRN 6456970",
+    "status": "preprint",
+    "finding": "Survey of nearly 750 executives: productivity gains positive, sector-dependent and expected to strengthen in 2026, concentrated in high-skill services and finance; a productivity paradox in which perceived gains exceed measured gains; little near-term aggregat",
+    "url": "https://www.nber.org/papers/w34984"
+   },
+   {
+    "title": "Generative AI in Action: Field Experimental Evidence from Alibaba's Customer Service Operations",
+    "authors": "Ni, Wang, Feng, Lu, Wang and Zhou",
+    "year": "2026",
+    "venue": "arXiv 2603.29888 (v2)",
+    "status": "preprint",
+    "finding": "Randomized access to a drafting assistant improved service speed and customer ratings but not objective quality (retrials); lower performers gained most while top performers declined on both subjective and objective quality, consistent with workflow disruption",
+    "url": "https://arxiv.org/abs/2603.29888"
+   },
+   {
+    "title": "Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity",
+    "authors": "Becker, Rush, Barnes and Rein (METR)",
+    "year": "2025",
+    "venue": "arXiv 2507.09089 (v2); Crossref match to an ICSE 2026 article scored 0.474 and was not adopted",
+    "status": "preprint",
+    "finding": "Task-level RCT with 16 experienced developers and 246 tasks: allowing AI tools increased completion time by 19%, while developers forecast a 24% speedup and still believed in a 20% speedup afterwards.",
+    "url": "https://arxiv.org/abs/2507.09089"
+   }
+  ],
+  "datasets": [
+   {
+    "name": "Anthropic Economic Index (Anthropic/EconomicIndex)",
+    "what": "Task-level Claude.ai and API usage shares mapped to O*NET tasks and SOC codes, automation-versus-augmentation shares, job-exposure and task-penetration CSVs; last modified 2026-09-30",
+    "host": "Hugging Face",
+    "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex",
+    "reachable_now": true,
+    "license_note": "Repository license tag 'mit' per the Hugging Face API on 2026-10-03"
+   },
+   {
+    "name": "Supplemental data files for Cui et al. (three developer RCTs)",
+    "what": "Online appendices and data files referenced in the Management Science abstract",
+    "host": "INFORMS pubsonline",
+    "url": "https://doi.org/10.1287/mnsc.2025.00535",
+    "reachable_now": false,
+    "license_note": "not shown; INFORMS refuses automated fetches"
+   },
+   {
+    "name": "Supplemental data for Bick, Blandin and Deming (Management Science)",
+    "what": "Online appendix and survey data files referenced in the abstract",
+    "host": "INFORMS pubsonline",
+    "url": "https://doi.org/10.1287/mnsc.2025.02523",
+    "reachable_now": false,
+    "license_note": "not shown; INFORMS refuses automated fetches"
+   },
+   {
+    "name": "GenAI4IS review materials",
+    "what": "Screening and extraction materials of the IS review of reviews",
+    "host": "GitHub (przybylek/GenAI4IS)",
+    "url": "https://github.com/przybylek/GenAI4IS",
+    "reachable_now": true,
+    "license_note": "not shown; repository must be added to the session before reading"
+   },
+   {
+    "name": "NBER working papers w32966, w33777, w34984, w33795",
+    "what": "Paper PDFs only, no micro data",
+    "host": "nber.org",
+    "url": "https://www.nber.org/papers/w32966",
+    "reachable_now": true,
+    "license_note": "NBER working-paper terms; not shown"
+   },
+   {
+    "name": "AEA RCT Registry entry 10.1257/rct.14530",
+    "what": "Trial registration for the three developer experiments (seen in Crossref)",
+    "host": "AEA RCT Registry",
+    "url": "https://doi.org/10.1257/rct.14530",
+    "reachable_now": false,
+    "license_note": "not probed; not shown"
+   }
+  ],
+  "audit": {
+   "checked": 5,
+   "confirmed": 4,
+   "issues": [
+    {
+     "title": "Digital shadow AI risk theory (DART): A framework for managing data disclosure and privacy risks of AI tools at work (Sebastian, 2026, Technological Forecasting and Social Change 229:124697)",
+     "issue": "Metadata confirmed (Crossref: TFSC 229:124697, 2026-08, Glorin Sebastian, journal-article; Semantic Scholar: JournalArticle; earlier SSRN 10.2139/ssrn.5038258 titled 'Digital Shadow Risk Theory (DSRT): Assessing Organizational Risks of AI in the Workplace'), but the row's content was wrong: it described the paper as purely conceptual with no data, whereas search snippets of the research.google and ScienceDirect pages describe a mixed-methods paper with two cross-sectional surveys of industry professionals (416 and 203 responses), CB-SEM tests supporting seven of eight hypotheses, six named constructs and empirical findings on policy awareness, AI opacity, knowledge dilution and perceived efficiency. Row cells (Method, Data, Measures, Findings, Limitations) were rewritten, the dependent sentences in 'Methodological weaknesses' and the shadow-use candidate gap were adjusted, and the SSRN title was written out. Access depth stays metadata/snippet because neither API returns an abstract and the research.google and ScienceDirect pages cannot be fetched from this session."
+    }
+   ]
+  }
+ },
+ {
+  "area": "Retrieval-augmented generation and enterprise knowledge management",
+  "file": "/home/user/employee_monitoring_system/research/01_literature/rag-knowledge-management.md",
+  "gaps": [
+   "Evaluation-validity gap: enterprise RAG benchmarks (HERB, EnterpriseRAG, EnterpriseRAG-Bench, Dell judge) rely on LLM judges without chance-corrected human validation; Norman et al. and Zeng et al. show such scores can mislead, and Barnett et al. found automated and human verdicts diverge. Disproved by an enterprise benchmark reporting kappa-level human-judge agreement, position-bias audits and judge-swap sensitivity.",
+   "Cost-matched comparison gap: graph, fusion, multi-stage and agentic components are evaluated at one corpus size with unbounded budgets, while the cost-matched studies (Laitenberger, Wang, Medrano, Abdallah, Li) each find the simple option competitive or better. Disproved by cost-matched comparisons on real enterprise corpora across scales showing consistent gains.",
+   "Lab-to-practice gap in evaluation and data quality: 11 of 13 practitioners evaluate manually or not at all (Brehme), IBM reports benchmark techniques useless for novel questions (Packowski), DQ frameworks do not cover RAG (Mueller), and the Applied Sciences SLR names a lab-to-market gap. Disproved by field studies showing automated RAG evaluation adopted in organizations with measured agreement to expert judgment.",
+   "Operational/temporal gap: every benchmark found is a static snapshot although Barnett et al. say validation is only feasible in operation and practitioners re-evaluate by hand after each data change; CRUD-RAG is the only benchmark with update/delete scenarios. Disproved by published longitudinal evaluations of RAG over changing corpora with regression detection.",
+   "Abstention and consequence gap: unanswerable-query detection ranges from 6% to 64% across models on HERB, RGB's negative-rejection weakness persists, and commercial tools hallucinate 17-33% (Magesh). Disproved by studies linking calibrated abstention to measured organizational outcomes rather than benchmark accuracy.",
+   "IS/KM theory gap: the only IS-venue empirical item is an interview-based data-quality paper (ICIS 2025); KM-venue work is a UTAUT2 adoption survey and conceptual pieces (BISE catchword). Disproved by IS-journal or ICIS/ECIS empirical studies of RAG-enabled KM outcomes, which may exist because the AISeL and INFORMS domain filters failed in this scan."
+  ],
+  "contradictions": [
+   "Graph RAG: Edge et al. claim substantial gains for global sensemaking; Han et al. find complementary strengths only on multi-hop; GraphRAG-Bench's abstract says GraphRAG frequently underperforms vanilla RAG; in HERB GraphRAG is the worst standard method on average (10.31) yet best at detecting unanswerable queries (63.41%); Zeng et al. attribute part of reported gains to evaluation bias.",
+   "Lexical vs dense vs hybrid: HERB's best standard pipeline is a dense+BM25 hybrid; Wang et al. report BM25 alone leading at scale with dense retrieval less accurate; Medrano et al. find multi-query fusion no better than a single query once re-ranking and context budgets are fixed.",
+   "Long context vs RAG: Li et al. find LC beats RAG by 3.6-13.1 points when the corpus fits the window; HERB shows even product-scoped long context 23 points below oracle and open models collapsing (Llama-3.1-405B at 18.20); Lost in the Middle shows mid-context degradation; Barnett et al. found 8K beat 4K 'contrary to prior work'.",
+   "Fine-tuning vs RAG: Ovadia et al. and Lakatos et al. find RAG beats unsupervised/domain fine-tuning, Lakatos et al. report combining them can degrade performance, while Barnett et al. cite end-to-end training as a remedy for bespoke pipelines; blog claims of a combination advantage were excluded.",
+   "Cost priorities: practitioners rate cost and scalability low while prototyping (Brehme), whereas the architecture-relevant research results (Li, Wang, Abdallah, Medrano) are all cost-accuracy trade-offs.",
+   "Judge reliability vs judge usage: HERB generates data with GPT-4o and judges with GPT-4o, the Dell judge paper argues generic judge metrics give ambiguous signals, and Norman et al. show production judges can be both highly consistent and position-biased, yet nearly every enterprise benchmark reports LLM-judge scores as the headline metric."
+  ],
+  "key_papers": [
+   {
+    "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+    "authors": "Lewis et al.",
+    "year": "2020",
+    "venue": "NeurIPS 33",
+    "status": "peer-reviewed",
+    "finding": "A jointly fine-tuned seq2seq generator plus dense Wikipedia retriever set state of the art on three open-domain QA tasks and produced more specific, diverse and factual text than parametric-only baselines.",
+    "url": "https://arxiv.org/abs/2005.11401"
+   },
+   {
+    "title": "Seven Failure Points When Engineering a Retrieval Augmented Generation System",
+    "authors": "Barnett et al.",
+    "year": "2024",
+    "venue": "CAIN 2024 (IEEE/ACM)",
+    "status": "peer-reviewed",
+    "finding": "Three case studies yield seven failure points (missing content, missed top-ranked documents, consolidation loss, extraction failure, wrong format, wrong specificity, incomplete answers); lessons include that validation is only feasible in operation, systems ne",
+    "url": "https://arxiv.org/abs/2401.05856"
+   },
+   {
+    "title": "Benchmarking Large Language Models in Retrieval-Augmented Generation",
+    "authors": "Chen, Lin, Han & Sun",
+    "year": "2024",
+    "venue": "AAAI 2024",
+    "status": "peer-reviewed",
+    "finding": "On the RGB benchmark six LLMs show some noise robustness but struggle significantly with negative rejection, information integration and counterfactual information.",
+    "url": "https://arxiv.org/abs/2309.01431"
+   },
+   {
+    "title": "The Power of Noise: Redefining Retrieval for RAG Systems",
+    "authors": "Cuconasu et al.",
+    "year": "2024",
+    "venue": "SIGIR 2024",
+    "status": "peer-reviewed",
+    "finding": "Top-scoring but not directly relevant passages reduce LLM accuracy, while adding random documents to the prompt raises accuracy by up to 35%.",
+    "url": "https://arxiv.org/abs/2401.14887"
+   },
+   {
+    "title": "Retrieval Augmented Generation or Long-Context LLMs? A Comprehensive Study and Hybrid Approach",
+    "authors": "Li, Li, Zhang, Mei & Bendersky",
+    "year": "2024",
+    "venue": "EMNLP 2024 Industry Track",
+    "status": "peer-reviewed",
+    "finding": "Long context beats RAG by 7.6 (Gemini-1.5-Pro), 13.1 (GPT-4o) and 3.6 (GPT-3.5) points on nine LongBench/InfiniteBench sets, yet predictions coincide on 63% of queries, so Self-Route keeps near-LC accuracy at 39-61% of the tokens; a one-word change to a synthe",
+    "url": "https://arxiv.org/abs/2407.16833"
+   },
+   {
+    "title": "Stronger Baselines for Retrieval-Augmented Generation with Long-Context Language Models",
+    "authors": "Laitenberger, Manning & Liu",
+    "year": "2025",
+    "venue": "EMNLP 2025 (main)",
+    "status": "peer-reviewed",
+    "finding": "Under matched token budgets a simple retrieve-then-read that preserves document order (DOS RAG) consistently matches or outperforms the multi-stage pipelines ReadAgent and RAPTOR on long-context QA.",
+    "url": "https://arxiv.org/abs/2506.03989"
+   },
+   {
+    "title": "RAG vs. GraphRAG: A Systematic Evaluation and Key Insights",
+    "authors": "Han et al.",
+    "year": "2026",
+    "venue": "KDD 2026 (Proceedings of the 32nd ACM SIGKDD Conference, V.2)",
+    "status": "peer-reviewed",
+    "finding": "Under a unified protocol RAG and GraphRAG are complementary rather than ordered: RAG wins on single-hop, detail-oriented questions and GraphRAG on multi-hop, reasoning-intensive ones.",
+    "url": "https://arxiv.org/abs/2502.11371"
+   },
+   {
+    "title": "How Significant Are the Real Performance Gains? An Unbiased Evaluation Framework for GraphRAG",
+    "authors": "Zeng et al.",
+    "year": "2025",
+    "venue": "arXiv 2506.06331",
+    "status": "preprint",
+    "finding": "Existing GraphRAG evaluation suffers from unrelated questions and LLM-assessment biases; under a debiased framework the gains of three representative GraphRAG methods are much more moderate than reported.",
+    "url": "https://arxiv.org/abs/2506.06331"
+   },
+   {
+    "title": "UDA: A Benchmark Suite for Retrieval Augmented Generation in Real-world Document Analysis",
+    "authors": "Hui, Lu & Zhang",
+    "year": "2024",
+    "venue": "NeurIPS 2024 Datasets and Benchmarks",
+    "status": "peer-reviewed",
+    "finding": "On 2,965 real PDF/HTML documents with 29,590 expert-annotated QA pairs, evaluation of LLM and RAG pipelines highlights data parsing and retrieval as the decisive design choices.",
+    "url": "https://arxiv.org/abs/2406.15187"
+   }
+  ],
+  "datasets": [
+   {
+    "name": "HERB (Heterogeneous Enterprise RAG Benchmark)",
+    "what": "39,190 synthetic enterprise artifacts (Slack, meetings, docs, PRs, URLs, customer profiles), 815 answerable and 699 unanswerable queries, evaluation code",
+    "host": "GitHub + Hugging Face",
+    "url": "https://huggingface.co/datasets/Salesforce/HERB",
+    "reachable_now": true,
+    "license_note": "cc-by-nc-4.0 (Hugging Face API); GitHub repo SalesforceAIResearch/HERB confirmed via search only"
+   },
+   {
+    "name": "UDA / UDA-QA",
+    "what": "2,965 real finance, academic and Wikipedia documents with 29,590 expert-annotated QA pairs",
+    "host": "GitHub + Hugging Face",
+    "url": "https://huggingface.co/datasets/qinchuanhui/UDA-QA",
+    "reachable_now": true,
+    "license_note": "cc-by-sa-4.0 (Hugging Face API)"
+   },
+   {
+    "name": "WixQA",
+    "what": "200 expert-written, 200 simulated and 6,222 synthetic QA pairs with the Wix Help Center KB snapshot",
+    "host": "Hugging Face",
+    "url": "https://huggingface.co/datasets/Wix/WixQA",
+    "reachable_now": true,
+    "license_note": "MIT (Hugging Face API and paper abstract)"
+   },
+   {
+    "name": "EnterpriseRAG-Bench",
+    "what": "About 500k synthetic company documents across nine source types, 500 questions in ten categories, leaderboard",
+    "host": "Hugging Face",
+    "url": "https://huggingface.co/datasets/onyx-dot-app/EnterpriseRAG-Bench",
+    "reachable_now": true,
+    "license_note": "MIT (Hugging Face API)"
+   },
+   {
+    "name": "RAGBench",
+    "what": "100k examples across five industry domains with TRACe labels",
+    "host": "Hugging Face (rungalileo/ragbench redirects to galileo-ai/ragbench) + GitHub",
+    "url": "https://huggingface.co/datasets/galileo-ai/ragbench",
+    "reachable_now": true,
+    "license_note": "cc-by-4.0 (Hugging Face API and search snippet)"
+   },
+   {
+    "name": "RGB",
+    "what": "Four RAG-ability testbeds (noise robustness, negative rejection, integration, counterfactual), English and Chinese",
+    "host": "GitHub",
+    "url": "https://github.com/chen700564/RGB",
+    "reachable_now": true,
+    "license_note": "not shown; repository named in search summary, not fetched"
+   },
+   {
+    "name": "CRUD-RAG",
+    "what": "Chinese RAG benchmark organized by Create/Read/Update/Delete scenarios with scripts",
+    "host": "GitHub",
+    "url": "https://github.com/IAAR-Shanghai/CRUD_RAG",
+    "reachable_now": true,
+    "license_note": "Apache per search snippet; not fetched"
+   },
+   {
+    "name": "MTRAG",
+    "what": "110 human-generated multi-turn conversations, 842 tasks, four domains",
+    "host": "GitHub",
+    "url": "https://github.com/ibm/mt-rag-benchmark",
+    "reachable_now": true,
+    "license_note": "not shown; not fetched"
+   },
+   {
+    "name": "GraphRAG-Bench",
+    "what": "Tasks over fact retrieval, reasoning, summarization and creative generation with pipeline-level GraphRAG evaluation",
+    "host": "GitHub",
+    "url": "https://github.com/GraphRAG-Bench/GraphRAG-Benchmark",
+    "reachable_now": true,
+    "license_note": "not shown; not fetched"
+   },
+   {
+    "name": "RAGTruth",
+    "what": "About 18,000 RAG responses with word-level hallucination labels",
+    "host": "GitHub (ParticleMedia, per aggregator listing)",
+    "url": "not shown",
+    "reachable_now": false,
+    "license_note": "exact repository URL and license not shown in this run"
+   },
+   {
+    "name": "Brehme et al. replication package",
+    "what": "Interview guide and coded material for the KDIR 2025 interview study",
+    "host": "Zenodo",
+    "url": "https://doi.org/10.5281/zenodo.16778599",
+    "reachable_now": true,
+    "license_note": "cc-by-4.0 (Zenodo API)"
+   },
+   {
+    "name": "Barnett et al. BioASQ scripts and failure examples",
+    "what": "Scripts, data and failure-point examples for the BioASQ case study",
+    "host": "figshare",
+    "url": "https://figshare.com/s/fbf7805b5f20d7f7e356",
+    "reachable_now": true,
+    "license_note": "not shown; figshare reachable per environment facts, not probed"
+   },
+   {
+    "name": "EKRAG",
+    "what": "Expert-curated enterprise knowledge QA dataset (ACL 2025 KnowledgeNLP workshop)",
+    "host": "not shown",
+    "url": "https://aclanthology.org/2025.knowledgenlp-1.13/",
+    "reachable_now": false,
+    "license_note": "data hosting and license not shown; paper page reachable"
+   },
+   {
+    "name": "EnterpriseRAG (Miao et al.)",
+    "what": "983 expert-validated samples across six domains with simulated retrieval noise, knowledge gaps and factual conflicts",
+    "host": "not released (upon publication per abstract)",
+    "url": "https://arxiv.org/abs/2608.11584",
+    "reachable_now": false,
+    "license_note": "not shown"
+   }
+  ],
+  "audit": {
+   "checked": 6,
+   "confirmed": 5,
+   "issues": [
+    {
+     "title": "Retrieval-Augmented Generation in Industry: An Interview Study on Use Cases, Requirements, Challenges, and Evaluation (Brehme et al., KDIR 2025)",
+     "issue": "Partially confirmed with a correction: paper, venue (KDIR 2025, SciTePress, DOI 10.5220/0013739500004000), year and arXiv 2508.14066 all confirmed via Crossref, arXiv API, Zenodo and the PDF text, but the third author is 'Str\u00f6hle' in Crossref, arXiv and Zenodo while the evidence row wrote 'Stroehle'; corrected in place and noted in the audit section."
+    }
+   ]
+  }
+ },
+ {
+  "area": "LLM agents for enterprise workflows, business process management, intelligent automation and process mining",
+  "file": "/home/user/employee_monitoring_system/research/01_literature/agents-bpm-process-mining.md",
+  "gaps": [
+   "Process-aware evaluation of enterprise agents: the 2026 manifesto names benchmarking APM as open; TheAgentCompany, WorkArena and CRMArena-Pro evaluate outcomes or UI states without any process model, frame or conformance measure, and PM-LLM-Benchmark evaluates LLM answers rather than agent behaviour. Disproved by a published benchmark scoring agent traces by conformance to a normative/operational process model with act/defer/ask/refuse outcomes.",
+   "When LLM semantics help predictive process monitoring: Weytjens and Weber find argmax matches LLMs on most of seven logs, Padella et al. find LLM gains only with about 100 traces, Rebmann et al. find fine-tuning necessary. Disproved by a study reporting trivial, classical and LLM baselines on the same public logs across training-set sizes with a consistent result.",
+   "Evidence fidelity of LLMs on log-grounded tasks: knowledge-driven hallucination is shown for text-to-model generation but no controlled study with atypical or shuffled event logs was found. Disproved by a paper measuring how often LLM-based discovery or analysis contradicts the log in favour of a standard schema.",
+   "Field evidence on governing agents in business processes: the 22 interviewees in Vu et al. had no practical experience, IS-venue hits are a typology and a research-in-progress paper, and Kaltenpoth et al.'s process-rule result was only readable as a snippet. Disproved by case or field studies of deployed LLM agents with measured compliance, failure or rework outcomes.",
+   "Mapping agent failure modes to process deviations: Cemri et al.'s taxonomy and agent-observability preprints exist separately from conformance-checking deviation types. Disproved by a method paper classifying agent-trace deviations with process-mining constructs and relating them to reliability outcomes.",
+   "Small open-weight models for process mining under CPU constraints: PM-LLM-Benchmark finds tiny models inadequate and instruction tuning helps only on some tasks. Disproved by a benchmark showing 1-4B instruction-tuned models reach larger-model performance on semantics-aware tasks."
+  ],
+  "contradictions": [
+   "Early optimism (Grohs et al. 2023; Berti and Qafari 2023 technical report) versus later controlled results: out-of-the-box LLMs struggle on semantics-aware tasks (Rebmann et al. 2025), revert to standard process schemas against evidence (Kourani, Antonov et al. 2025), and are matched by a counting argmax baseline on next-activity prediction (Weytjens and Weber 2026), while Padella et al. report LLM wins only in data-scarce settings.",
+   "Manifestos frame agents as first-class, norm-governed process participants, but the benchmarks that actually measure agents contain no process model or conformance notion, and the process-mining benchmarks evaluate LLM answers rather than agents acting in processes.",
+   "Practitioners expect compliance benefits from agents (Vu et al. 2025) while CRMArena-Pro measures near-zero inherent confidentiality awareness and a trade-off between prompting for it and task performance.",
+   "Venue metadata disagree: Semantic Scholar/DBLP and Crossref list TheAgentCompany and Cemri et al. as NeurIPS 2025 while the arXiv records say Preprint; Crossref gives 2025 issued and 2026 print years for BPM 2025 chapters; Crossref's best matches for WorkArena and CRMArena-Pro were wrong items and were rejected."
+  ],
+  "key_papers": [
+   {
+    "title": "AI-augmented Business Process Management Systems: A Research Manifesto",
+    "authors": "Dumas, Fournier, Limonad, Marrella, Montali et al.",
+    "year": "2023",
+    "venue": "ACM Transactions on Management Information Systems 14(1)",
+    "status": "peer-reviewed",
+    "finding": "Defines ABPMSs as process-aware information systems empowered by trustworthy AI that make processes more adaptable, proactive, explainable and context-sensitive, and derives research challenges; conceptual, no evaluation.",
+    "url": "https://doi.org/10.1145/3576047"
+   },
+   {
+    "title": "Large Language Models for Business Process Management: Opportunities and Challenges",
+    "authors": "Vidgof, Bachhofner and Mendling",
+    "year": "2023",
+    "venue": "BPM Forum 2023 (LNBIP 490)",
+    "status": "peer-reviewed",
+    "finding": "States that LLM opportunities for BPM had not been systematically investigated and proposes six research directions across the BPM lifecycle plus usage guidelines.",
+    "url": "https://doi.org/10.1007/978-3-031-41623-1_7"
+   },
+   {
+    "title": "Large Language Models can accomplish Business Process Management Tasks",
+    "authors": "Grohs, Abb, Elsayed and Rehse",
+    "year": "2023",
+    "venue": "BPM 2023 Workshops (NLP4BPM), LNBIP (Crossref year 2024)",
+    "status": "peer-reviewed",
+    "finding": "One LLM applied to imperative model mining, declarative model mining and RPA-suitability assessment from text performed comparably to or better than existing task-specific solutions without extensive prompt engineering.",
+    "url": "https://doi.org/10.1007/978-3-031-50974-2_34"
+   },
+   {
+    "title": "PM-LLM-Benchmark: Evaluating Large Language Models on Process Mining Tasks",
+    "authors": "Berti, Kourani and van der Aalst",
+    "year": "2025",
+    "venue": "Process Mining Workshops (ICPM 2024), LNBIP",
+    "status": "peer-reviewed",
+    "finding": "Most LLMs tested perform some process mining tasks at a satisfactory level but tiny edge-device models are inadequate; the authors flag evaluation biases of LLM-as-judge grading as unresolved.",
+    "url": "https://doi.org/10.1007/978-3-031-82225-4_45"
+   },
+   {
+    "title": "Evaluating large language models on business process modeling: framework, benchmark, and self-improvement analysis",
+    "authors": "Kourani, Berti, Schuster and van der Aalst",
+    "year": "2025",
+    "venue": "Software and Systems Modeling (online 2025, print 2026)",
+    "status": "peer-reviewed",
+    "finding": "Across 16 LLMs on a 20-process benchmark, performance varied widely, error handling correlated with model quality, and output optimization helped weaker models most.",
+    "url": "https://doi.org/10.1007/s10270-025-01318-w"
+   },
+   {
+    "title": "On the potential of large language models to solve semantics-aware process mining tasks",
+    "authors": "Rebmann, Schmidt, Glava\u0161 and van der Aa",
+    "year": "2025",
+    "venue": "Process Science",
+    "status": "peer-reviewed",
+    "finding": "On five semantics-aware tasks with released benchmark datasets, LLMs struggle out of the box or with minimal in-context examples but perform strongly when fine-tuned.",
+    "url": "https://doi.org/10.1007/s44311-025-00019-3"
+   },
+   {
+    "title": "Knowledge-Driven Hallucination in Large Language Models: An Empirical Study on Process Modeling",
+    "authors": "Kourani, Antonov, Berti and van der Aalst",
+    "year": "2025",
+    "venue": "arXiv 2509.15336 (version of record to appear in GenAI4PM 2025 workshop proceedings per arXiv comment; Crossref matched a TechRxiv record)",
+    "status": "preprint",
+    "finding": "In a controlled experiment with standard versus deliberately atypical process descriptions, models frequently reverted to a standard process flow even when the input described a reversed or shuffled structure.",
+    "url": "https://arxiv.org/abs/2509.15336"
+   },
+   {
+    "title": "Assessing the Business Process Modeling Competences of Large Language Models",
+    "authors": "Lauer, Pfeiffer, Rombach and Mehdiyev",
+    "year": "2026",
+    "venue": "Information Systems 142, art. 102761",
+    "status": "peer-reviewed",
+    "finding": "Using the BEF4LLM framework, open-source LLMs excel in syntactic and pragmatic quality while human experts outperform them on semantic quality, with relatively modest score differences and remaining validity problems.",
+    "url": "https://doi.org/10.1016/j.is.2026.102761"
+   },
+   {
+    "title": "Agentic Business Process Management: A research manifesto",
+    "authors": "Calvanese, Casciani, De Giacomo, Dumas, Fournier, Kampik et al. (18 authors)",
+    "year": "2026",
+    "venue": "Information Systems",
+    "status": "peer-reviewed",
+    "finding": "Defines Agentic BPM around four agent capabilities (framed autonomy, explainability, conversational actionability, self-modification), distinguishes normative from operational frames, states that LLMs alone are insufficient for intelligent BPM systems, and lis",
+    "url": "https://arxiv.org/abs/2603.18916"
+   }
+  ],
+  "datasets": [
+   {
+    "name": "BPI Challenge 2017 event log (and the 4TU IEEE Task Force collection: BPI Challenge 2011-2020, Road Traffic Fines, Sepsis)",
+    "what": "Real-life XES event logs used as standard predictive-monitoring and discovery benchmarks; BPIC 2017 file is 29,658,747 bytes gzipped",
+    "host": "4TU.ResearchData",
+    "url": "https://doi.org/10.4121/uuid:5f3067df-f10b-45da-b98b-86ae4c7a310b",
+    "reachable_now": true,
+    "license_note": "Page links 4TU terms of use (https://doi.org/10.4121/resource:terms_of_use); per-dataset license not shown. Landing page, v2 file API and a HEAD on the download URL all returned HTTP 200 in this session."
+   },
+   {
+    "name": "BPI Challenge 2017 - Offer log",
+    "what": "Offer-level sub-log of BPIC 2017",
+    "host": "4TU.ResearchData",
+    "url": "https://data.4tu.nl/datasets/cc497753-1175-41f6-a107-425787c54266",
+    "reachable_now": true,
+    "license_note": "4TU terms of use; dataset-specific license not shown"
+   },
+   {
+    "name": "Process Discovery Contest 2017 and 2022 logs; data underlying arXiv 1705.02288 discovery benchmark",
+    "what": "Synthetic training/test/ground-truth XES logs and discovery benchmark data",
+    "host": "4TU.ResearchData",
+    "url": "https://data.4tu.nl/datasets/f34c219d-4aef-42c2-b44d-6a5a338c48ba",
+    "reachable_now": true,
+    "license_note": "not shown; host reachable, individual records not probed"
+   },
+   {
+    "name": "CRMArena and CRMArena-Pro",
+    "what": "CRM agent benchmark data: 16 object types and professional CRM tasks (CRMArena); 19 expert-validated multi-turn tasks with confidentiality tests (Pro)",
+    "host": "Hugging Face (Salesforce/CRMArena, Salesforce/CRMArenaPro)",
+    "url": "https://huggingface.co/datasets/Salesforce/CRMArenaPro",
+    "reachable_now": true,
+    "license_note": "CRMArena is cc-by-nc-4.0 (API tags); CRMArena-Pro license not shown in truncated output"
+   },
+   {
+    "name": "llm4pm/process_mining_questions",
+    "what": "Fewer than 1K process-mining questions in JSONL",
+    "host": "Hugging Face",
+    "url": "https://huggingface.co/datasets/llm4pm/process_mining_questions",
+    "reachable_now": true,
+    "license_note": "GPL-2.0 (card data)"
+   },
+   {
+    "name": "TheAgentCompany",
+    "what": "175 tasks, self-hosted environment (GitLab, ownCloud, RocketChat, Plane), checkpoint evaluators",
+    "host": "GitHub (theagentcompany/theagentcompany per search snippet)",
+    "url": "https://github.com/TheAgentCompany/TheAgentCompany",
+    "reachable_now": false,
+    "license_note": "MIT per search snippet; GitHub REST refused without add_repo, and running needs Docker services plus paid LLM APIs"
+   },
+   {
+    "name": "WorkArena / BrowserGym",
+    "what": "ServiceNow UI knowledge-work tasks and the BrowserGym environment",
+    "host": "PyPI (browsergym-workarena); GitHub ServiceNow/WorkArena",
+    "url": "https://pypi.org/project/browsergym-workarena/",
+    "reachable_now": true,
+    "license_note": "Apache Software License (PyPI classifier); running requires a ServiceNow developer instance, not available here"
+   },
+   {
+    "name": "PM-LLM-Benchmark (v1, v2.0) and PMLRM-Bench extension",
+    "what": "Prompt sets for process-mining tasks with LLM-as-judge grading; LRM reasoning analysis extension",
+    "host": "GitHub (fit-alessandro-berti/pmllmbench-lrms-reasoning-analysis shown; main repository URL not literally shown)",
+    "url": "https://github.com/fit-alessandro-berti/pmllmbench-lrms-reasoning-analysis",
+    "reachable_now": false,
+    "license_note": "not shown; GitHub needs add_repo. The Zenodo OCEL record 21508158 for PMLRM-Bench returns HTTP 410 Record deleted (retracted 2026-08-10)"
+   },
+   {
+    "name": "pm4py sample logs (running-example.xes and test logs)",
+    "what": "Small synthetic logs bundled with the pm4py library; mirrored in a Hugging Face Space",
+    "host": "PyPI; Hugging Face Space linpershey/process_mining",
+    "url": "https://pypi.org/project/pm4py/",
+    "reachable_now": true,
+    "license_note": "open source; license not shown in results"
+   },
+   {
+    "name": "Semantics-aware PM benchmark datasets (Rebmann et al. 2025), MAST-Data (Cemri et al.), Thinkingbox-bench, Agent-Diff, EntCollabBench, World of Workflows",
+    "what": "Task datasets and traces described in the papers",
+    "host": "not shown in results received",
+    "url": "https://arxiv.org/abs/2504.21074",
+    "reachable_now": false,
+    "license_note": "host and license not shown; only arXiv abstracts seen"
+   }
+  ],
+  "audit": {
+   "checked": 5,
+   "confirmed": 3,
+   "issues": [
+    {
+     "title": "David vs. Goliath in Next Activity Prediction: Argmax vs. LSTM, Transformer, and LLM (Weytjens and Weber)",
+     "issue": "Paper, authors, LNBIP/BPM Forum chapter and DOI 10.1007/978-3-032-37877-4_19 all confirmed via Crossref, arXiv abs page and Semantic Scholar, but the row's 'book-chapter 2026' was imprecise: Crossref gives published-online 2026-09-21 and published-print 2027 (pp. 324-341). Row corrected in place; peer-reviewed chapter supersedes arXiv 2606.15868."
+    },
+    {
+     "title": "CRMArena-Pro: Holistic Assessment of LLM Agents Across Diverse Business Scenarios and Interactions (Huang et al.)",
+     "issue": "Paper and 9 authors confirmed on the arXiv abs page and via exact-title WebSearch; TMLR acceptance confirmed via the OpenReview API (note EPlpe3Fx1x, venue 'Accepted by TMLR'), but its OpenReview publication date is 2026-01-30, whereas the row (and the verify_refs.py Semantic Scholar column) said TMLR 2025. Semantic Scholar answered HTTP 429 on both retries so its venue/year could not be re-read. Row corrected to 2025 for the arXiv version and 30 Jan 2026 for the TMLR version."
+    }
+   ]
+  }
+ },
+ {
+  "area": "LLM-based decision support and business analytics",
+  "file": "/home/user/employee_monitoring_system/research/01_literature/decision-support-analytics.md",
+  "gaps": [
+   "Gap 1: benchmark validity to deployment validity. Enterprise accuracies of 5.7-23% (Spider 2.0), 10.8% (BEAVER) and annotation error rates above 50% (Jin et al.) coexist with production-readiness claims (NL2SQL360); no paper seen links benchmark error to downstream decision error. Disproved by a study mapping NL2SQL errors onto business decisions or by corrected benchmarks with stable rankings.",
+   "Gap 2: overreliance on analytic (not classificatory) LLM output. Reliance experiments use labels, search answers or diagrams (Cecil, Spatharioti, Anthis); none presents SQL-derived tables or charts with injected errors; forward citations of Spider 2.0 and BIRD are almost entirely model-side. Disproved by finding experiments in which participants audit LLM-generated query results or dashboards with known errors.",
+   "Gap 3: direction of the LLM-advice effect in business forecasting. Positive (Schoenegger), null-to-negative (Abolghasemi; HBR press item) results on different task types; Tan et al. undermine the model-side claim. Disproved by an IJF/EJOR experiment giving forecasters LLM advice on demand series with promotions against no-aid and statistical-aid controls.",
+   "Gap 4: ambiguity, calibration and abstention as a human factor in NL-to-data interfaces. SQUAB, the EMNLP calibration paper, Lee (2026 preprint) and Wu (2026 preprint) are model- or architecture-side; no study tests whether confidence display, clarification or abstention changes user decisions. Disproved by a user study manipulating these and measuring reliance and accuracy.",
+   "Gap 5: a validated measure of decision quality for analytics agents. InsightBench uses planted insights and an LLM judge; AoR exists only for advice-taking; Lee's Business Truth Rate and Argo-Bench's consequence grading (both 2026 preprints) score agents on synthetic warehouses, not human decisions. Disproved by a validated instrument scoring analytics output by the decision a person makes with it.",
+   "Gap 6: small open models under enterprise schema scale and the cost-value trade-off. Spider 2.0 tests 72B-405B open models only; Tan et al. show LLM components cost orders of magnitude more compute for no forecasting gain; Lee's 7B rule-gated agent narrows but does not close the gap (synthetic data, no ablation). Nothing seen evaluates 1-4B quantised models on Spider 2.0-lite, corrected BIRD Mini-Dev or BEAVER. Disproved by a paper or leaderboard entry reporting such models on these sets. Most testable from this CPU-only session via BIRD Mini-Dev and the corrected BIRD subset."
+  ],
+  "contradictions": [
+   "Gruver et al. (NeurIPS 2023) report zero-shot LLMs matching or exceeding purpose-built forecasters, whereas Tan et al. (NeurIPS 2024) find the LLM component adds nothing in three adapter-based methods; regimes differ (frozen zero-shot prompting vs fine-tuned backbones, different datasets) and neither evaluates business series with promotions.",
+   "Schoenegger et al. find LLM assistants raise human forecasting accuracy by 24-28% (even a noisy assistant helps), while the HBR executive study (press-level evidence) reports ChatGPT made managers more optimistic and less accurate and Abolghasemi et al. find LLMs alone not consistently better than humans; task type and comparison condition differ.",
+   "Schemmer et al. report explanations shift appropriateness of reliance; Cecil et al. find heatmaps and charts do not reduce overreliance; Spatharioti et al. find colour-coded highlighting does help; a Behaviour & Information Technology 2025 snippet says verbal explanations increase overreliance; format and error localisation matter more than explanation per se.",
+   "BIRD's 92.96% human reference and all leaderboard scores were computed against gold queries that Jin et al. find erroneous in about half of audited cases; Spider 2.0's claim that the lite setting is not easier, and BEAVER's changing dataset sizes across arXiv versions, mean headline accuracies are not stable quantities."
+  ],
+  "key_papers": [
+   {
+    "title": "Are Language Models Actually Useful for Time Series Forecasting?",
+    "authors": "Tan, Merrill, Gupta, Althoff, Hartvigsen",
+    "year": "2024",
+    "venue": "NeurIPS 2024 (Spotlight)",
+    "status": "peer-reviewed",
+    "finding": "Removing the LLM or replacing it with one attention layer in OneFitsAll, Time-LLM and CALF matched or improved MAE/MSE on 13 datasets (ablations win 26/26, 22/26, 19/26 dataset-metric cases) while cutting compute by up to three orders of magnitude; re-initiali",
+    "url": "https://arxiv.org/abs/2406.16964"
+   },
+   {
+    "title": "Spider 2.0: Evaluating Language Models on Real-World Enterprise Text-to-SQL Workflows",
+    "authors": "Lei et al. (16 authors)",
+    "year": "2025",
+    "venue": "ICLR 2025 (Oral)",
+    "status": "peer-reviewed",
+    "finding": "On 632 enterprise-style workflow tasks (databases averaging 812 columns, gold SQL averaging 144 tokens) the best o1-preview agent solved 21.3% versus 91.2% on Spider 1.0 and 73.0% on BIRD; the best classic parser reached 5.7% on Spider 2.0-lite; errors were do",
+    "url": "https://arxiv.org/abs/2411.07763"
+   },
+   {
+    "title": "Pervasive Annotation Errors Break Text-to-SQL Benchmarks and Leaderboards",
+    "authors": "Jin, Choi, Zhu, Kang",
+    "year": "2026",
+    "venue": "Proceedings of the VLDB Endowment vol. 19",
+    "status": "peer-reviewed",
+    "finding": "Expert-adjudicated audit found annotation errors in 52.8% of BIRD Mini-Dev and 62.8% of the 121 public Spider 2.0-snow examples; correcting 100 BIRD Dev examples changed 16 agents' execution accuracy by -7% to +31% and ranks by -9 to +9 positions, with ranking",
+    "url": "https://arxiv.org/abs/2601.08778"
+   },
+   {
+    "title": "Can LLM Already Serve as A Database Interface? A Big Bench for Large-Scale Database Grounded Text-to-SQLs",
+    "authors": "Li et al. (18 authors)",
+    "year": "2023",
+    "venue": "NeurIPS 2023",
+    "status": "peer-reviewed",
+    "finding": "BIRD (12,751 question-SQL pairs, 95 databases, 33.4 GB, 37 domains) emphasises dirty values, external knowledge and SQL efficiency; ChatGPT reached 40.08% execution accuracy versus 92.96% for humans.",
+    "url": "https://arxiv.org/abs/2305.03111"
+   },
+   {
+    "title": "A Survey of Text-to-SQL in the Era of LLMs: Where are we, and where are we going?",
+    "authors": "Liu et al. (10 authors)",
+    "year": "2025",
+    "venue": "IEEE Transactions on Knowledge and Data Engineering",
+    "status": "peer-reviewed",
+    "finding": "Lifecycle survey covering model (ambiguity, under-specification, schema mapping), data (synthesis, benchmarks), multi-angle evaluation and error analysis, with a rule of thumb for building solutions and a list of open problems.",
+    "url": "https://arxiv.org/abs/2408.05109"
+   },
+   {
+    "title": "The Dawn of Natural Language to SQL: Are We Fully Ready?",
+    "authors": "Li, Luo, Chai, Li, Tang",
+    "year": "2024",
+    "venue": "Proceedings of the VLDB Endowment",
+    "status": "peer-reviewed",
+    "finding": "NL2SQL360 multi-angle evaluation framework; automated design-space search yields SuperSQL with 87% execution accuracy on Spider and 62.66% on BIRD test; production readiness argued from benchmark accuracy alone.",
+    "url": "https://arxiv.org/abs/2406.01265"
+   },
+   {
+    "title": "BEAVER: An Enterprise Benchmark for Text-to-SQL",
+    "authors": "Chen et al. (9 authors)",
+    "year": "2024 (v3 2026)",
+    "venue": "arXiv preprint",
+    "status": "preprint",
+    "finding": "Benchmark from private warehouse query logs (9,128 pairs, 812 tables, 19 domains in v3); SOTA agentic frameworks with GPT-5.2 reach 10.8% accuracy, rising to 30.1% with oracle subtask hints, so subtask resolution (domain knowledge, query complexity) is the bot",
+    "url": "https://arxiv.org/abs/2409.02038"
+   },
+   {
+    "title": "Large Language Models Are Zero-Shot Time Series Forecasters",
+    "authors": "Gruver, Finzi, Qiu, Wilson",
+    "year": "2023",
+    "venue": "NeurIPS 2023",
+    "status": "peer-reviewed",
+    "finding": "Encoding series as digit strings lets GPT-3 and LLaMA-2 zero-shot extrapolate at a level comparable to or exceeding purpose-built models; GPT-4 can do worse than GPT-3 because of number tokenisation and poor calibration attributed to RLHF.",
+    "url": "https://arxiv.org/abs/2310.07820"
+   },
+   {
+    "title": "Humans vs. large language models: Judgmental forecasting in an era of advanced AI",
+    "authors": "Abolghasemi, Ganbold, Rotaru",
+    "year": "2025",
+    "venue": "International Journal of Forecasting",
+    "status": "peer-reviewed",
+    "finding": "Controlled experiment with 123 human forecasters and five LLMs on retail sales (MAPE): LLMs did not consistently outperform humans, advanced statistical support did not uniformly help either, and both erred more in promotional periods and under positive extern",
+    "url": "https://arxiv.org/abs/2312.06941"
+   }
+  ],
+  "datasets": [
+   {
+    "name": "Spider 1.0",
+    "what": "Cross-domain text-to-SQL benchmark (EMNLP 2018); counts not shown in results",
+    "host": "Hugging Face (xlangai/spider)",
+    "url": "https://huggingface.co/datasets/xlangai/spider",
+    "reachable_now": true,
+    "license_note": "cc-by-sa-4.0 (dataset card fetched; 13,105 downloads; not gated)"
+   },
+   {
+    "name": "BIRD (dev, Mini-Dev)",
+    "what": "12,751 question-SQL pairs, 95 databases, 33.4 GB, 37 domains; Mini-Dev is a 500-example SELECT-only subset",
+    "host": "bird-bench.github.io; Hugging Face birdsql/bird_mini_dev; GitHub bird-bench/mini_dev",
+    "url": "https://huggingface.co/datasets/birdsql/bird_mini_dev",
+    "reachable_now": true,
+    "license_note": "cc-by-sa-4.0 (HF card); project page answered 200; GitHub repo not opened"
+   },
+   {
+    "name": "Corrected BIRD Dev subset, Arcwise-Plat variants, SAR-Agent and SAPAR",
+    "what": "100 corrected BIRD Dev examples, corrected Mini-Dev variants, agent prompts",
+    "host": "GitHub uiuc-kang-lab/text_to_sql_benchmarks",
+    "url": "https://github.com/uiuc-kang-lab/text_to_sql_benchmarks",
+    "reachable_now": true,
+    "license_note": "not shown; GitHub reachable per environment facts, repository not opened (403 to curl HEAD)"
+   },
+   {
+    "name": "Spider 2.0 / Spider 2.0-lite / Spider 2.0-snow",
+    "what": "632 agentic workflow tasks plus text-to-SQL variants; databases on BigQuery, Snowflake, SQLite, DuckDB; 121 of 547 snow gold queries public",
+    "host": "spider2-sql.github.io; GitHub xlang-ai/Spider2; Hugging Face xlangai/spider2-lite and xlangai/spider2-localdb",
+    "url": "https://huggingface.co/datasets/xlangai/spider2-lite",
+    "reachable_now": true,
+    "license_note": "not shown; cloud-hosted databases need BigQuery or Snowflake accounts (paper text)"
+   },
+   {
+    "name": "BEAVER",
+    "what": "Enterprise warehouse text-to-SQL: 9,128 pairs, 812 tables, 19 domains (v3)",
+    "host": "beaverbench.github.io; Hugging Face beaverbench/beaver-query and beaverbench/beaver-table",
+    "url": "https://huggingface.co/datasets/beaverbench/beaver-query",
+    "reachable_now": true,
+    "license_note": "not shown"
+   },
+   {
+    "name": "SQL-Schema-Retrieval",
+    "what": "Repackaging of five text-to-SQL datasets (Spider, BIRD, BEAVER and others) as schema-retrieval tasks",
+    "host": "Hugging Face Snowflake/SQL-Schema-Retrieval",
+    "url": "https://huggingface.co/datasets/Snowflake/SQL-Schema-Retrieval",
+    "reachable_now": true,
+    "license_note": "'other' (card)"
+   },
+   {
+    "name": "InsightBench",
+    "what": "100 business datasets with planted insights and evaluation code",
+    "host": "Hugging Face ServiceNow/insight_bench; GitHub ServiceNow/insight-bench",
+    "url": "https://huggingface.co/datasets/ServiceNow/insight_bench",
+    "reachable_now": true,
+    "license_note": "cc-by-4.0 (card fetched; 630 downloads)"
+   },
+   {
+    "name": "Argo-Bench",
+    "what": "210 enterprise analytics and action tasks over a simulated ERP warehouse (235 tables, 7.5 billion rows); 2026-10-01 preprint",
+    "host": "Hugging Face textql/Argo-Bench; GitHub TextQLLabs/Argo-Bench",
+    "url": "https://huggingface.co/datasets/textql/Argo-Bench",
+    "reachable_now": true,
+    "license_note": "not shown; card not fetched in this run"
+   },
+   {
+    "name": "Standard long-horizon forecasting sets (ETT, Weather, Traffic, Electricity, Illness, Exchange)",
+    "what": "Multivariate series with fixed splits used by Tan et al. and the LLM forecasters they ablate",
+    "host": "GitHub (thuml/Time-Series-Library; zhouhaoyi/ETDataset)",
+    "url": "https://github.com/thuml/Time-Series-Library",
+    "reachable_now": true,
+    "license_note": "not shown; GitHub reachable per environment facts, repositories not opened"
+   },
+   {
+    "name": "Monash Time Series Forecasting Archive",
+    "what": "Collection of forecasting datasets (five used as extra sets by Tan et al.)",
+    "host": "Hugging Face Monash-University/monash_tsf",
+    "url": "https://huggingface.co/datasets/Monash-University/monash_tsf",
+    "reachable_now": true,
+    "license_note": "cc-by-4.0 (card fetched); Zenodo copy unconfirmed (query returned an unrelated record)"
+   },
+   {
+    "name": "Chronos datasets",
+    "what": "Time-series corpus used by foundation-model work",
+    "host": "Hugging Face autogluon/chronos_datasets",
+    "url": "https://huggingface.co/datasets/autogluon/chronos_datasets",
+    "reachable_now": true,
+    "license_note": "'other' (card fetched; 31,435 downloads)"
+   },
+   {
+    "name": "LLMTime code",
+    "what": "Zero-shot forecasting code of Gruver et al.",
+    "host": "GitHub ngruver/llmtime",
+    "url": "https://github.com/ngruver/llmtime",
+    "reachable_now": true,
+    "license_note": "not shown; repository not opened"
+   },
+   {
+    "name": "Human-subject data (Cecil et al.; Schoenegger et al.; Spatharioti et al.)",
+    "what": "Pre-registered experiments; data availability not visible from abstracts; Cecil et al. have an OSF preprint",
+    "host": "OSF (osf.io/349xe) for the Cecil et al. preprint; others not shown",
+    "url": "https://osf.io/349xe",
+    "reachable_now": true,
+    "license_note": "not shown; data files not located"
+   }
+  ],
+  "audit": {
+   "checked": 5,
+   "confirmed": 4,
+   "issues": [
+    {
+     "title": "BEAVER: An Enterprise Benchmark for Text-to-SQL (Chen et al., arXiv 2409.02038, row 7)",
+     "issue": "Title, 9 authors, 2024 posting and v3 date 2026-05-13 confirmed by the arXiv API; Semantic Scholar venue is arXiv.org and Crossref has no record (its 0.521 match is the unrelated 'Agentic-SQL Revisited' LNCS chapter). However, the row's plain 'preprint' status was incomplete: the OpenReview API lists an accepted version at the Table Representation Learning workshop at ACL 2025 (note OgP25r2pBZ, venue 'TRL@ACL2025'), which does not appear in the ACL Anthology TRL 2025 volume page. The row now records the workshop version and keeps 'preprint' because the audited arXiv v3 post-dates it. Separately, the dataset table said the Hugging Face cards were reachable ('yes'); the HF API shows beaverbench/beaver-query and beaverbench/beaver-table are both gated (gated: auto), so downloads need an account token this session lacks; corrected to 'partly' and license 'mit' added from the card tags."
+    }
+   ]
+  }
+ },
+ {
+  "area": "Human-AI collaboration, algorithmic management and AI-enabled workplace/employee monitoring",
+  "file": "/home/user/employee_monitoring_system/research/01_literature/human-ai-algorithmic-management.md",
+  "gaps": [
+   "AI-specific monitoring (productivity scoring, emotion AI, LLM-based evaluation) is absent from pooled evidence: the Ravid et al. corpus ends February 2021, Vaccaro et al. cover lab decision and creation tasks, and the only AI-manager experiment (Dong et al., AIES 2025) is a single simulated-workplace study. Disproved by a 2024-2026 meta-analysis or multi-site field study of AI-based EPM showing effects indistinguishable from classic EPM.",
+   "Human oversight of monitoring systems is mandated (EU AI Act framing in Schauer et al., Heimbach et al.) but under-tested: one preliminary lab experiment supports it, one interview study finds it nominal, the largest meta-analysis finds human-final-decision designs lose in decision tasks, and the only regulation-in-practice study covers US scheduling. Disproved by field experiments or audits showing oversight configurations robustly change fairness or worker outcomes.",
+   "Monitoring exposure is measured by self-report perception, not system telemetry: the quantitative worker-side studies use scales (COMAMA is the first validated one found) and none links logged monitoring intensity to outcomes; Kala and Lyons have objective output only for short online tasks. Disproved by a body of studies pairing monitoring-system logs with worker outcomes.",
+   "Transparency is treated as a single construct although studies reach different conclusions: Ravid et al. (positive attitudes), Cram et al. (no mitigation of threat technostress), Arunkumar et al. (non-monotonic 'murky middle'), Kala and Lyons (justification matters). Disproved by an experiment or measurement paper that separates purpose justification, mechanism explanation and contestability and shows they behave alike.",
+   "Evidence is concentrated in gig and warehouse work while the OECD employer survey shows common AM use in standard firms; remote-employee evidence is one Reddit-based CSCW paper and one NBER working paper. Disproved by a set of peer-reviewed studies of AI monitoring in standard employment with comparable designs (NTWE 2025 items by Reimann and Dupuis, seen only as titles, should be read first)."
+  ],
+  "contradictions": [
+   "Transparency as remedy: Ravid et al. find transparent monitoring improves attitudes; Cram et al. find perceived transparency does not mitigate threat technostress; Arunkumar et al. (preprint) find partial interpretability is worst; Sum et al. report managers withholding details to reduce anxiety while workers say opacity worsens it.",
+   "Human oversight: Schauer et al. (preliminary) find oversight improves decision performance and trust; Oezdemir et al. find supervisors' oversight becomes nominal; Vaccaro et al. find human-AI combinations underperform the better party in decision tasks with humans making the final call in over 95% of designs.",
+   "Algorithm appreciation versus aversion: Logg et al. show lay people prefer algorithmic advice, but Moritz and Schmidt and Kl\u00f6pper and Messer (ECIS 2024) show being managed or rewarded by an algorithm lowers justice and trust and raises retaliation, while Dong et al. show harsher AI evaluation being accepted without demotivation.",
+   "Field versus laboratory: the two field experiments (Chan et al.; Kala and Lyons) find configuration- and framing-dependent effects, whereas vignette studies in Ravid's corpus show the most negative attitude effects (vignette rho = -.32 vs non-experiment rho = .00 for broad attitudes).",
+   "Platform versus employment: IS-journal anchors (M\u00f6hlmann et al.; Cram et al.) study Uber, while recent CSCW and economics evidence (Sum et al.; Kala and Lyons) studies remote employees; transfer of gig findings to employer-employee monitoring is asserted by reviews more than tested."
+  ],
+  "key_papers": [
+   {
+    "title": "Algorithms at Work: The New Contested Terrain of Control",
+    "authors": "Kellogg, Valentine and Christin",
+    "year": "2020",
+    "venue": "Academy of Management Annals 14(1):366-410",
+    "status": "peer-reviewed",
+    "finding": "Review of more than 1,100 empirical articles organized by labor process theory; algorithmic control works through six mechanisms (restricting, recommending, recording, rating, replacing, rewarding), is more comprehensive, instantaneous, interactive and opaque ",
+    "url": "https://doi.org/10.5465/annals.2018.0174"
+   },
+   {
+    "title": "Working with Machines: The Impact of Algorithmic and Data-Driven Management on Human Workers",
+    "authors": "Lee, Kusbit, Metsky and Dabbish",
+    "year": "2015",
+    "venue": "CHI 2015, pp. 1603-1612",
+    "status": "peer-reviewed",
+    "finding": "Qualitative study of Uber and Lyft drivers that coined 'algorithmic management'; drivers responded differently to algorithmic assignment, informational support and evaluation, and used online forums to make sense of algorithm features.",
+    "url": "https://doi.org/10.1145/2702123.2702548"
+   },
+   {
+    "title": "A meta-analysis of the effects of electronic performance monitoring on work outcomes",
+    "authors": "Ravid, White, Tomczak, Miles and Behrend",
+    "year": "2022 online / 2023 vol. 76(1)",
+    "venue": "Personnel Psychology 76(1):5-40",
+    "status": "peer-reviewed",
+    "finding": "K = 94 samples, N = 23,461: EPM presence and performance corrected rho = -.01 (CI -.05 to .04), stress/strain rho = .16, privacy invasion rho = .28, broad attitudes rho = -.11; more transparent and less invasive monitoring associated with better attitudes; cor",
+    "url": "https://doi.org/10.1111/peps.12514"
+   },
+   {
+    "title": "Algorithmic Management of Work on Online Labor Platforms: When Matching Meets Control",
+    "authors": "M\u00f6hlmann, Zalmanson, Henfridsson and Gregory",
+    "year": "2021",
+    "venue": "MIS Quarterly 45(4):1999-2022",
+    "status": "peer-reviewed",
+    "finding": "Grounded theory from Uber drivers, executives and engineers: algorithms operate along matching and control dimensions; workers experience tensions about execution, compensation and belonging that trigger market-like and organization-like responses.",
+    "url": "https://doi.org/10.25300/MISQ/2021/15333"
+   },
+   {
+    "title": "Examining the Impact of Algorithmic Control on Uber Drivers' Technostress",
+    "authors": "Cram, Wiener, Tarafdar and Benlian",
+    "year": "2022",
+    "venue": "Journal of Management Information Systems 39(2):426-453",
+    "status": "peer-reviewed",
+    "finding": "Survey of 621 US Uber drivers: gatekeeping and guiding algorithmic control relate positively to both challenge and threat technostressors, which predict continuance intentions and workaround use; evidence disputes the assumption that transparency mitigates thr",
+    "url": "https://doi.org/10.1080/07421222.2022.2063556"
+   },
+   {
+    "title": "When combinations of humans and AI are useful: A systematic review and meta-analysis",
+    "authors": "Vaccaro, Almaatouq and Malone",
+    "year": "2024",
+    "venue": "Nature Human Behaviour 8(12):2293-2303 (arXiv 2405.06087)",
+    "status": "peer-reviewed",
+    "finding": "Preregistered meta-analysis of 106 experiments (370 effect sizes, 2020-2023): human-AI combinations underperform the better of human or AI alone (g = -0.23) but beat humans alone (g = 0.64); losses in decision tasks (g = -0.27), gains in creation tasks; gains ",
+    "url": "https://doi.org/10.1038/s41562-024-02024-1"
+   },
+   {
+    "title": "Algorithm appreciation: People prefer algorithmic to human judgment",
+    "authors": "Logg, Minson and Moore",
+    "year": "2019",
+    "venue": "Organizational Behavior and Human Decision Processes 151:90-103",
+    "status": "peer-reviewed",
+    "finding": "Six experiments: lay people weight algorithmic advice more than human advice; the effect wanes when choosing between the algorithm's estimate and their own and among experts, and professional forecasters relied less on algorithmic advice, which hurt their accu",
+    "url": "https://doi.org/10.1016/j.obhdp.2018.12.005"
+   },
+   {
+    "title": "\"It's Always a Losing Game\": How Workers Understand and Resist Surveillance Technologies on the Job",
+    "authors": "Sum, Shi and Fox",
+    "year": "2025",
+    "venue": "Proceedings of the ACM on Human-Computer Interaction 9(2) CSCW (arXiv 2412.06945)",
+    "status": "peer-reviewed",
+    "finding": "9,362 filtered Reddit posts (200 coded) and 10 interviews: continuous, opaque surveillance including emotion AI produced compounding anxiety, punitive discipline and distrust; workers resisted through commiseration, research, obfuscation, soldiering, legal or ",
+    "url": "https://doi.org/10.1145/3710902"
+   },
+   {
+    "title": "Regulating Algorithmic Management: A Multi-Stakeholder Study of Challenges in Aligning Software and the Law for Workplace Scheduling",
+    "authors": "Lynn, Kim, Gao, Schneider, Pandya and Lee",
+    "year": "2025",
+    "venue": "FAccT 2025, pp. 547-572 (arXiv 2505.02329)",
+    "status": "peer-reviewed",
+    "finding": "38 interviews with regulators, attorneys, worker advocates, managers and workers in US scheduling: regulatory efficacy depends on institutional constraints on encoding law into software, on-the-ground software use, software-context mismatches, and new concerns",
+    "url": "https://doi.org/10.1145/3715275.3732037"
+   }
+  ],
+  "datasets": [
+   {
+    "name": "Vaccaro, Almaatouq and Malone meta-analysis data and code",
+    "what": "Coded effect sizes and moderators for 106 human-AI experiments (370 effect sizes) plus R code",
+    "host": "OSF",
+    "url": "https://osf.io/wrq7c/?view_only=b9e1e86079c048b4bfb03bee6966e560",
+    "reachable_now": true,
+    "license_note": "not shown on the fetched page; view-only link returned HTTP 200, OSF API needs credentials; files not downloaded"
+   },
+   {
+    "name": "JRC AMPWork (Spain, Germany 2021-2022) and AIM-WORK (EU-27 2024-2025) surveys",
+    "what": "Worker surveys on digital monitoring, algorithmic management and platform work with reports JRC133016, JRC133407, JRC WP 2026/05",
+    "host": "European Commission Joint Research Centre",
+    "url": "https://joint-research-centre.ec.europa.eu/scientific-activities/employment/algorithmic-management-and-digital-monitoring-work_en",
+    "reachable_now": true,
+    "license_note": "not shown; page and report PDFs reachable, microdata access route not shown on the page"
+   },
+   {
+    "name": "Eurofound EWCS 2024 and data-catalogue item on algorithmic management regimes",
+    "what": "Worker-reported exposure to programs that monitor performance, allocate tasks and schedule work, linked to job-quality indicators",
+    "host": "Eurofound",
+    "url": "https://www.eurofound.europa.eu/surveys-and-data/data-catalogue/algorithmic-management-regimes-by-main-task-",
+    "reachable_now": false,
+    "license_note": "not shown; page answered HTTP 429 at fetch time; microdata route not verified"
+   },
+   {
+    "name": "OECD employer survey on algorithmic management (Milanez, Lemmens and Ruggiu 2025)",
+    "what": "Survey of over 6,000 firms in six countries on AM prevalence, perceived impacts and governance (report)",
+    "host": "OECD",
+    "url": "https://doi.org/10.1787/287c13c4-en",
+    "reachable_now": false,
+    "license_note": "not tested from this session; OpenAlex marks the report open access (bronze); microdata not shown"
+   },
+   {
+    "name": "COMAMA scale (R\u00f6ttgen et al. 2025)",
+    "what": "11-item questionnaire on completeness of algorithmic management, German and English",
+    "host": "BMC Psychology",
+    "url": "https://doi.org/10.1186/s40359-025-03680-2",
+    "reachable_now": false,
+    "license_note": "open-access journal but the article page refused the fetch (Client Challenge); items not retrieved"
+   },
+   {
+    "name": "Hugging Face employee_productivity_dataset (SecchiAlessandro)",
+    "what": "Unknown content surfaced by the datasets API search; not inspected, likely synthetic",
+    "host": "Hugging Face",
+    "url": "https://huggingface.co/datasets/SecchiAlessandro/employee_productivity_dataset",
+    "reachable_now": true,
+    "license_note": "no license tag shown"
+   },
+   {
+    "name": "Zenodo records for algorithmic management / employee monitoring / workplace surveillance",
+    "what": "233, 31 and 26 hits, all reports, articles or lessons; no survey microdata among top hits",
+    "host": "Zenodo",
+    "url": "https://zenodo.org/api/records?q=%22algorithmic%20management%22",
+    "reachable_now": true,
+    "license_note": "mostly CC-BY-4.0 on the records seen"
+   },
+   {
+    "name": "4TU.ResearchData BPI Challenge event logs",
+    "what": "Process event logs with timestamps and resource identifiers; only a proxy for what a monitoring system records, not monitoring data",
+    "host": "4TU",
+    "url": "https://data.4tu.nl",
+    "reachable_now": true,
+    "license_note": "varies per log; check each record"
+   }
+  ],
+  "audit": {
+   "checked": 5,
+   "confirmed": 5,
+   "issues": []
+  }
+ },
+ {
+  "area": "Explainability, fairness, reliability, AI governance, auditing and regulatory compliance in enterprise AI",
+  "file": "/home/user/employee_monitoring_system/research/01_literature/governance-xai-fairness-compliance.md",
+  "gaps": [
+   "Outcome evidence for audit mandates is missing: LL 144 studies (Wright, Groves, Gerchick, Hilliard) show low observable compliance and incomplete, probably publication-biased audits, and no published causal study links an audit mandate to hiring, lending or incident outcomes; a peer-reviewed difference-in-differences or regulator-data study would disprove it.",
+   "No validated instrument measures organizational AI governance effectiveness: tools are rarely validated (Kuehnert), evaluations measure usability not effectiveness (Berman), reviews find few complete frameworks (Batool), and IS case and maturity studies (Papagiannidis, Heger, M\u00e4ntym\u00e4ki) stop at dimensions; an IS scale with predictive validity against audit findings or incidents would disprove it.",
+   "Deployer-side and SME operationalization of the EU AI Act is studied only at single-organization or perception level (Jarvers, Wagner, Lai, Schrader) and automated compliance checkers give false assurance (Tao); a multi-organization longitudinal study of deployer compliance workflows after August 2026 would disprove it.",
+   "Regulatory explanation duties lack field evidence that explanations improve decision-makers' objective understanding or contestability in HR and credit (Bhatt, Kalff and Simbeck, Ioannou, Van den Berg); in-firm field experiments showing objective-understanding or contestation gains would disprove it.",
+   "Documentation and audit reports are used as assurance evidence without evidence of their reliability (Lam's indirect verification and Raji's design history file versus shallow model cards in Liang and Bhat and incomplete LL 144 audits in Gerchick); studies showing documentation quality predicts audit findings or incidents, or audit protocols that detect misstatement at known rates, would disprove it.",
+   "Comparative institutional design of accountability regimes is under-studied: supervision-driven fair lending (Black) versus transparency-driven LL 144 versus EU conformity assessment (Lacmanovic and Skare, public reports only; Burnat and Davidson, untested model); cross-regime empirical comparisons of firm behavior would disprove it."
+  ],
+  "contradictions": [
+   "Internal audits (Raji 2020) are justified by insider access but share organizational interests; external criterion audits (Lam 2024, Raji 2022) promise independence but depend on auditee documentation and face opinion shopping; Schiff et al.'s auditors describe audits that skip external reporting, so neither model operates as described.",
+   "LL 144 requires an audit but no outcome threshold; Wright et al. and Hilliard et al. argue for floors or process coverage, while Black et al. find that supervision rather than any published threshold drove fair-lending practice, so the field disagrees on what the audited quantity should be.",
+   "Regulation demands explanations sufficient to understand and contest decisions, yet Kalff and Simbeck find XAI can reduce HR managers' objective understanding while raising trust, Bhatt et al. find explanations built for engineers, and Ioannou et al. find positive adoption effects conditional on advisor type and risk.",
+   "Kozodoi et al. show credit-scoring discrimination can be reduced at low profit cost, but Black et al. find institutional testing practice varies widely and is driven by business incentives and legal uncertainty, locating the constraint in organizations rather than algorithms.",
+   "Paul and Nandy claim governance-as-code reproduces a manual audit and cuts labor by about 75% on two deployments, whereas Tao et al. find twelve compliance checkers foster a false sense of compliance and Langer et al. argue human-oversight compliance resists checklists.",
+   "Audit frameworks rely on auditee documentation as evidence, while Liang et al. and Bhat et al. show limitation and evaluation sections are the least complete and Liang et al.'s intervention suggests documentation is incentivized by download visibility rather than accountability."
+  ],
+  "key_papers": [
+   {
+    "title": "Closing the AI Accountability Gap: Defining an End-to-End Framework for Internal Algorithmic Auditing",
+    "authors": "Raji, Smart, White, Mitchell, Gebru et al.",
+    "year": "2020",
+    "venue": "FAT* '20 (ACM Conference on Fairness, Accountability, and Transparency)",
+    "status": "peer-reviewed",
+    "finding": "Proposes the SMACTR internal-audit framework (scoping, mapping, artifact collection, testing, reflection) with documentation artifacts drawn from aerospace, medical-device and financial auditing, illustrated only on two hypothetical cases; acknowledges that in",
+    "url": "https://arxiv.org/abs/2001.00973"
+   },
+   {
+    "title": "A Framework for Assurance Audits of Algorithmic Systems",
+    "authors": "Lam, Lange, Blili-Hamelin, Davidovic, Brown and Hasan",
+    "year": "2024",
+    "venue": "FAccT '24 (ACM)",
+    "status": "peer-reviewed",
+    "finding": "Defines the 'criterion audit' (public criteria, compliance objective, accredited auditors, public disclosure) modeled on financial auditing, derives LL 144 criteria for disparate impact, governance and risk assessment, and from the authors' own audit practice ",
+    "url": "https://arxiv.org/abs/2401.14908"
+   },
+   {
+    "title": "Null Compliance: NYC Local Law 144 and the Challenges of Algorithm Accountability",
+    "authors": "Wright, Muenster, Vecchione, Qu, Cai, Smith, Metcalf and Matias",
+    "year": "2024",
+    "venue": "FAccT '24 (ACM)",
+    "status": "peer-reviewed",
+    "finding": "155 investigators checking 391 employers found 18 audit reports (5%) and 13 transparency notices (3%); 96% of 386 published impact ratios were above 0.8 and 20% were omitted under the <2% rule; because employers decide whether a tool is in scope, absence of ev",
+    "url": "https://arxiv.org/abs/2406.01399"
+   },
+   {
+    "title": "Who Audits the Auditors? Recommendations from a field scan of the algorithmic auditing ecosystem",
+    "authors": "Costanza-Chock, Harvey, Raji, Czernuszenko and Buolamwini",
+    "year": "2022",
+    "venue": "FAccT '22 (ACM)",
+    "status": "peer-reviewed",
+    "finding": "Catalog of 438 individuals and 189 organizations, survey N=152 and 10 interviews show audits are poorly defined and unverifiable without standards; six recommendations including mandatory independent audits, disclosure for peer review, harm-incident reporting ",
+    "url": "https://arxiv.org/abs/2310.02521"
+   },
+   {
+    "title": "The emergence of artificial intelligence ethics auditing",
+    "authors": "Schiff, Kelley and Camacho Ib\u00e1\u00f1ez",
+    "year": "2024",
+    "venue": "Big Data & Society 11(4)",
+    "status": "peer-reviewed",
+    "finding": "34 auditors across seven countries report that AI ethics audits follow financial-audit stages but lack stakeholder involvement, success measurement and external reporting, focus narrowly on bias, privacy and explainability, and are hampered by resources, missi",
+    "url": "https://doi.org/10.1177/20539517241299732"
+   },
+   {
+    "title": "Toward AI Governance: Identifying Best Practices and Potential Barriers and Outcomes",
+    "authors": "Papagiannidis, Enholm, Dremel, Mikalef and Krogstie",
+    "year": "2023",
+    "venue": "Information Systems Frontiers 25(1) (Crossref issued 2022)",
+    "status": "peer-reviewed",
+    "finding": "Comparative case analysis of three energy-sector firms identifies AI governance practices, barriers and recommended actions that produce knowledge for decision making; outcomes are qualitative and self-reported.",
+    "url": "https://doi.org/10.1007/s10796-022-10251-y"
+   },
+   {
+    "title": "A sociotechnical view of algorithmic fairness",
+    "authors": "Dolata, Feuerriegel and Schwabe",
+    "year": "2022",
+    "venue": "Information Systems Journal 32(4) (Crossref issued 2021)",
+    "status": "peer-reviewed",
+    "finding": "From a systematic analysis of 310 articles, argues fairness is inherently social and theorizes algorithmic fairness as a sociotechnical construct whose outcomes depend on mutual influences between technical and social structures.",
+    "url": "https://doi.org/10.1111/isj.12370"
+   },
+   {
+    "title": "Explainable Machine Learning in Deployment",
+    "authors": "Bhatt, Xiang, Sharma, Weller, Taly et al.",
+    "year": "2020",
+    "venue": "FAT* '20 (ACM)",
+    "status": "peer-reviewed",
+    "finding": "Interviews across organizations show most explainability deployments serve machine-learning engineers for debugging rather than affected end users, leaving a gap between explainability in practice and the goal of transparency.",
+    "url": "https://arxiv.org/abs/1909.06342"
+   },
+   {
+    "title": "What's documented in AI? Systematic Analysis of 32K AI Model Cards",
+    "authors": "Liang, Rajani, Yang, Ozoani, Wu, Chen et al.",
+    "year": "2024",
+    "venue": "Nature Machine Intelligence 6(7) (published title: Systematic analysis of 32,111 AI model cards characterizes documentation practice in AI)",
+    "status": "peer-reviewed",
+    "finding": "Across 32,111 Hugging Face model cards, environmental impact, limitations and evaluation sections are least filled while training is most; adding cards to 42 popular models correlated moderately with higher weekly downloads.",
+    "url": "https://arxiv.org/abs/2402.05160"
+   }
+  ],
+  "datasets": [
+   {
+    "name": "Hugging Face Hub model cards (live) and davanstrien/model_cards_with_readmes",
+    "host": "huggingface.co",
+    "url": "https://huggingface.co/datasets/davanstrien/model_cards_with_readmes",
+    "reachable_now": true,
+    "license_note": "per-repository licenses; dataset-card license field empty",
+    "what": "Model-card text and metadata for public models (corpus behind Liang et al.); a 2023 parquet snapshot with READMEs"
+   },
+   {
+    "name": "Hugging Face Model Cards Metadata Dataset (August 2026)",
+    "host": "zenodo.org",
+    "url": "https://zenodo.org/records/22918529",
+    "reachable_now": true,
+    "license_note": "CC-BY-4.0 per Zenodo record",
+    "what": "CSV of model-card metadata for models with non-zero downloads plus a ReadMe"
+   },
+   {
+    "name": "AI Incident Database (site and Zenodo snapshot)",
+    "host": "incidentdatabase.ai; zenodo.org",
+    "url": "https://zenodo.org/records/15547685",
+    "reachable_now": true,
+    "license_note": "Zenodo record states MIT; site terms not read; Zenodo file list returned empty",
+    "what": "Reported AI incidents (over 5,000 per search snippet); snapshot dated 2025-05-29"
+   },
+   {
+    "name": "OECD AI Incidents and Hazards Monitor",
+    "host": "oecd.ai",
+    "url": "https://oecd.ai/incidents",
+    "reachable_now": true,
+    "license_note": "not shown; bulk download not verified (host answered 302)",
+    "what": "News-derived AI incident and hazard entries (over 14,000 per snippet)"
+   },
+   {
+    "name": "Adult (Census Income), UCI dataset 2",
+    "host": "archive.ics.uci.edu",
+    "url": "https://archive.ics.uci.edu/dataset/2/adult",
+    "reachable_now": true,
+    "license_note": "not read in this session",
+    "what": "Classic fairness benchmark criticized by Fabris et al."
+   },
+   {
+    "name": "Statlog (German Credit Data), UCI dataset 144",
+    "host": "archive.ics.uci.edu",
+    "url": "https://archive.ics.uci.edu/dataset/144/statlog+german+credit+data",
+    "reachable_now": true,
+    "license_note": "not read in this session",
+    "what": "Credit-risk benchmark with sensitive attributes"
+   },
+   {
+    "name": "OpenML adult (data id 1590)",
+    "host": "openml.org",
+    "url": "https://www.openml.org/api/v1/json/data/1590",
+    "reachable_now": true,
+    "license_note": "not read",
+    "what": "OpenML copy of Adult"
+   },
+   {
+    "name": "folktables",
+    "host": "PyPI; Hugging Face mirror birkhoffg/folktables-acs-income",
+    "url": "https://pypi.org/project/folktables/",
+    "reachable_now": true,
+    "license_note": "not read",
+    "what": "ACS PUMS-derived fairness prediction tasks proposed as Adult replacement"
+   },
+   {
+    "name": "COMPAS (ProPublica compas-analysis)",
+    "host": "github.com (repository must be added to the session); Hugging Face mirror mstz/compas",
+    "url": "https://github.com/propublica/compas-analysis",
+    "reachable_now": false,
+    "license_note": "not shown; confirmed via search only",
+    "what": "Broward County recidivism scores and outcomes 2013-14"
+   },
+   {
+    "name": "Fair_Credit_Scoring (Kozodoi et al. code)",
+    "host": "github.com (needs adding to the session)",
+    "url": "https://github.com/kozodoi/Fair_Credit_Scoring",
+    "reachable_now": false,
+    "license_note": "not shown; confirmed via search only",
+    "what": "Code for the EJOR fairness-processor comparison"
+   },
+   {
+    "name": "LL 144 audit-report archive (Citizens and Technology Lab)",
+    "host": "citizensandtech.org",
+    "url": "https://citizensandtech.org/2024-algorithm-transparency-law",
+    "reachable_now": true,
+    "license_note": "not shown; host answered 202, content not read",
+    "what": "Audit reports and transparency notices collected by Wright et al."
+   },
+   {
+    "name": "LL 144 bias-audit corpus (Gerchick et al. 2025, N=116)",
+    "host": "not shown (ACM DL paper behind bot protection)",
+    "url": "https://doi.org/10.1145/3715275.3732004",
+    "reachable_now": false,
+    "license_note": "not shown",
+    "what": "All publicly available LL 144 audits July 2023 to November 2024"
+   },
+   {
+    "name": "Regulation (EU) 2024/1689 (AI Act) text",
+    "host": "eur-lex.europa.eu",
+    "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+    "reachable_now": true,
+    "license_note": "EU legal text; reuse notice not read (host answered 202)",
+    "what": "Legal text including Articles 8-15 high-risk obligations"
+   },
+   {
+    "name": "fairlearn and aif360",
+    "host": "PyPI",
+    "url": "https://pypi.org/project/fairlearn/",
+    "reachable_now": true,
+    "license_note": "open-source; license fields not read",
+    "what": "Fairness assessment and mitigation toolkits"
+   }
+  ],
+  "audit": {
+   "checked": 5,
+   "confirmed": 4,
+   "issues": [
+    {
+     "title": "Explained, yet misunderstood: How AI Literacy shapes HR Managers' interpretation of User Interfaces in Recruiting Recommender Systems (Kalff and Simbeck 2025)",
+     "issue": "Paper exists (arXiv 2509.06475v1, authors and year match) but has no Crossref record; the table had labelled it 'workshop paper (peer review of the workshop not verified here)'. The CEUR-WS index and Vol-4046 page confirm it is published in the Proceedings of the 5th Workshop on Recommender Systems for Human Resources (RecSys-in-HR 2025), whose page states 16 papers were submitted for peer review and 9 accepted; Semantic Scholar lists only the arXiv DOI 10.48550/arXiv.2509.06475. Status cell corrected to a CEUR-WS Vol-4046 peer-reviewed workshop paper (not a journal or main-conference paper); page numbers not shown; content equivalence between arXiv v1 and the CEUR version not checked."
+    }
+   ]
+  }
+ },
+ {
+  "area": "AI evaluation methodology and safety: LLM-as-judge validity, benchmark contamination, reproducibility, sycophancy and agent security",
+  "file": "/home/user/employee_monitoring_system/research/01_literature/evaluation-validity-safety.md",
+  "gaps": [
+   "G1. Judge validation standards for domain tasks: raw agreement dominates validation although chance-corrected agreement is 33-41 points lower and judge rankings do not transfer across benchmarks (2026 cohort preprint); no record received tests whether small CPU-runnable open judges pass a chance-corrected, calibrated validation on IS-style artefacts. Disproved by a paper reporting kappa and calibrated CIs for 1-4B judges on MT-bench, LLMBar or JUDGE-BENCH or on IS artefacts.",
+   "G2. Preference leakage and self-preference in same-family generate-and-judge pipelines: Preference Leakage, Wataoka et al. and Panickssery et al. establish the effect for frontier models, but no record measures it for small open judges from the same family as the generator, which is the setting a no-API project would use. Disproved by a small-scale cross-family leakage study or evidence that perplexity-based familiarity is negligible below some size.",
+   "G3. Statistical and reporting practice audit for LLM evaluations in IS and BISE venues: Miller, Bowyer et al. and Lee et al. give recommendations and Bean et al. audit 445 CS benchmarks, but domain-filtered searches (queries 9-14, 24) returned no IS hits. Disproved by an existing IS meta-research paper auditing error bars, repeated runs, judge validation or model-version reporting.",
+   "G4. Contamination and nondeterminism as threats to IS evaluation claims: TS-Guessing, training-on-the-test-task adjustment and N-run variance protocols exist, but none of the records applies them to the business-process or enterprise datasets used in IS papers. Disproved by a study running contamination probes or repeated-run variance on such datasets.",
+   "G5. Enterprise-document prompt injection at small scale: Liu et al.'s resume-screening example, AgentDojo, ASB and NetInjectBench cover consumer, finance and network domains, and Nasr et al. show static evaluations over-claim; no benchmark received covers HR, monitoring or internal-document pipelines with small open backbones and adaptive attackers. Disproved by a domain benchmark covering enterprise documents or evidence that AgentDojo results transfer unchanged.",
+   "G6. Sycophancy of the judge toward the submitter: Sharma et al., SycEval, CALM and Chen et al. document agreement, authority and bandwagon effects in generation and judging, but none of the records tests whether a verdict shifts when the artefact's author asserts quality, seniority or a prior rating; two 2026 preprints seen as titles only (AMEL, Jagged Judges) may cover it. Disproved by reading those or by a null result."
+  ],
+  "contradictions": [
+   "Validation metric: Zheng et al. and most follow-ups validate judges with raw agreement, while 'Reliability without Validity' (2026 preprint) and Lee et al. (ICML 2026) argue raw agreement overstates discrimination by 33-41 points and require chance correction or calibration sets; the field has not converged on a standard.",
+   "Error bars: Miller 2024 recommends CLT standard errors with clustering, whereas Bowyer et al. (ICML 2025 position paper) show CLT intervals are badly anti-conservative below a few hundred items, which covers MT-bench (80 questions) and JudgeBench (350 pairs); compatible in principle but applied work rarely states which regime it is in.",
+   "Verbosity bias: Zheng et al. report 91.3% failure of Claude-v1 and GPT-3.5 under a repetitive-list attack, while the 2026 cohort study reports verbosity bias as small (<0.011) under a single pairwise rubric; the sources received do not resolve whether newer judges changed or the designs differ.",
+   "Self-preference as harm: Wataoka et al. and Panickssery et al. frame self-preference as bias, while 'Do LLM Evaluators Prefer Themselves for a Reason?' (2025 preprint, abstract only) asks whether it reflects genuinely better outputs on verifiable tasks.",
+   "Position bias cause: Zheng et al. speculate it is architectural or data-driven; Shi et al. (IJCNLP-AACL 2025) find it is driven mainly by the quality gap between candidates and only weakly by length, suggesting tie-breaking behaviour rather than a fixed prior.",
+   "Honesty vs truthfulness: MASK argues prior truthfulness benchmarks measure accuracy rather than honesty, so earlier 'honesty' results are not comparable with its own (a construct-validity dispute, not conflicting measurements).",
+   "Verification metadata: Crossref offered the same Findings of EMNLP 2025 DOI (10.18653/v1/2025.findings-emnlp.510) for both Preference Leakage (0.451) and Self-Preference Bias (0.673); both cannot be right, so both stay labelled preprint."
+  ],
+  "key_papers": [
+   {
+    "title": "Judging LLM-as-a-judge with MT-Bench and Chatbot Arena",
+    "authors": "Zheng, Chiang, Sheng, Zhuang et al.",
+    "year": "2023",
+    "venue": "NeurIPS 2023 Datasets and Benchmarks (Advances in NeurIPS 36)",
+    "status": "peer-reviewed",
+    "finding": "GPT-4 pairwise judgments agree with human experts 85% on non-tie votes (human-human 81%), but position bias is strong (Claude-v1 consistent in only 23.8% of swapped pairs, GPT-4 65%), a repetitive-list verbosity attack fools Claude-v1 and GPT-3.5 in 91.3% of c",
+    "url": "https://arxiv.org/abs/2306.05685"
+   },
+   {
+    "title": "Formalizing and Benchmarking Prompt Injection Attacks and Defenses",
+    "authors": "Liu, Jia, Geng, Jia, Gong",
+    "year": "2024",
+    "venue": "USENIX Security Symposium 2024",
+    "status": "peer-reviewed",
+    "finding": "Combined Attack reaches average attack success value 0.75 on GPT-4 across 7 tasks and 10 LLMs, attack success correlates positively with model size (r = 0.63), and no prevention or detection defense is sufficient: paraphrasing costs 0.14 utility, perplexity de",
+    "url": "https://arxiv.org/abs/2310.12815"
+   },
+   {
+    "title": "Adding Error Bars to Evals: A Statistical Approach to Language Model Evaluations",
+    "authors": "Miller",
+    "year": "2024",
+    "venue": "arXiv (stat.AP)",
+    "status": "preprint",
+    "finding": "Treats evals as experiments on a super-population: clustered standard errors can be over 3x naive ones on real Anthropic data, paired comparisons reduce variance for free, lowering temperature should not be used for variance reduction, and a power formula impl",
+    "url": "https://arxiv.org/abs/2411.00640"
+   },
+   {
+    "title": "LLMs instead of Human Judges? A Large Scale Empirical Study across 20 NLP Evaluation Tasks",
+    "authors": "Bavaresco, Bernardi, Bertolazzi, Elliott et al.",
+    "year": "2025",
+    "venue": "ACL 2025 Volume 2: Short Papers",
+    "status": "peer-reviewed",
+    "finding": "Across 20 human-annotated datasets and 11 LLMs, reliability varies substantially with the property evaluated, annotator expertise and whether the text is human- or model-generated; the authors conclude LLMs must be validated against human judgments before use ",
+    "url": "https://arxiv.org/abs/2406.18403"
+   },
+   {
+    "title": "Justice or Prejudice? Quantifying Biases in LLM-as-a-Judge",
+    "authors": "Ye, Wang, Huang, Chen et al.",
+    "year": "2025",
+    "venue": "ICLR 2025 (per Semantic Scholar; arXiv 2024)",
+    "status": "peer-reviewed",
+    "finding": "Defines 12 bias types and the CALM automated perturbation framework; advanced judges perform well overall but significant biases persist in specific tasks.",
+    "url": "https://arxiv.org/abs/2410.02736"
+   },
+   {
+    "title": "Preference Leakage: A Contamination Problem in LLM-as-a-judge",
+    "authors": "Li, Jiang, Wang, Wei et al.",
+    "year": "2025",
+    "venue": "arXiv (OpenReview forum exists; Crossref offered Findings of EMNLP 2025 at similarity 0.451, unconfirmed)",
+    "status": "preprint",
+    "finding": "Judges are biased toward student models trained on data from a related generator (same model, inheritance, same family); the leakage is described as pervasive and harder to detect than previously identified judge biases. Code and data released on GitHub.",
+    "url": "https://arxiv.org/abs/2502.01534"
+   },
+   {
+    "title": "JudgeBench: A Benchmark for Evaluating LLM-based Judges",
+    "authors": "Tan, Zhuang, Montgomery, Tang et al.",
+    "year": "2025",
+    "venue": "ICLR 2025 (per Semantic Scholar and OpenReview)",
+    "status": "peer-reviewed",
+    "finding": "On 350 response pairs with objectively correct preference labels, many strong judges such as GPT-4o perform only slightly better than random guessing, showing that human-preference agreement and objective correctness diverge.",
+    "url": "https://arxiv.org/abs/2410.12784"
+   },
+   {
+    "title": "Investigating Data Contamination in Modern Benchmarks for Large Language Models",
+    "authors": "Deng, Wang, Xiao, Cao, Vosoughi",
+    "year": "2024",
+    "venue": "NAACL 2024 Long Papers",
+    "status": "peer-reviewed",
+    "finding": "Testset Slot Guessing: ChatGPT and GPT-4 reproduce masked wrong options from MMLU with 52% and 57% exact match, read as evidence of exposure to test data.",
+    "url": "https://arxiv.org/abs/2311.09783"
+   },
+   {
+    "title": "Training on the Test Task Confounds Evaluation and Emergence",
+    "authors": "Dominguez-Olmedo, Dorner, Hardt",
+    "year": "2025",
+    "venue": "ICLR 2025 (per Semantic Scholar; arXiv 2024)",
+    "status": "peer-reviewed",
+    "finding": "Legitimate task-targeted training confounds model comparisons and emergence claims; fine-tuning all compared models on the same task data before evaluation changes rankings and makes emergent behaviour disappear gradually.",
+    "url": "https://arxiv.org/abs/2407.07890"
+   }
+  ],
+  "datasets": [
+   {
+    "name": "MT-bench questions, 3K expert votes and 30K/33K Chatbot Arena conversations with human preferences",
+    "what": "80 multi-turn questions, pairwise expert votes, crowd conversations with votes",
+    "host": "GitHub (lm-sys/FastChat llm_judge) and Hugging Face (lmsys/chatbot_arena_conversations)",
+    "url": "https://huggingface.co/datasets/lmsys/chatbot_arena_conversations",
+    "reachable_now": true,
+    "license_note": "not shown in results received"
+   },
+   {
+    "name": "JudgeBench",
+    "what": "350 response pairs with objective preference labels (knowledge, reasoning, math, coding)",
+    "host": "GitHub (ScalerLab/JudgeBench)",
+    "url": "https://github.com/ScalerLab/JudgeBench",
+    "reachable_now": true,
+    "license_note": "not shown; repo must be added to the session before cloning"
+   },
+   {
+    "name": "LLMBar",
+    "what": "419 instruction-following instances with two outputs, five subsets",
+    "host": "GitHub (princeton-nlp/LLMBar) and Hugging Face (princeton-nlp/LLMBar)",
+    "url": "https://huggingface.co/datasets/princeton-nlp/LLMBar",
+    "reachable_now": true,
+    "license_note": "LICENSE file exists in the repo; type not shown"
+   },
+   {
+    "name": "RewardBench",
+    "what": "2,985 human-verified prompt-chosen-rejected triplets (Chat, Chat-Hard, Safety, Reasoning); RewardBench 2 also listed",
+    "host": "Hugging Face (allenai/reward-bench) and GitHub (allenai/reward-bench)",
+    "url": "https://huggingface.co/datasets/allenai/reward-bench",
+    "reachable_now": true,
+    "license_note": "not shown"
+   },
+   {
+    "name": "Preference Leakage code and data",
+    "what": "Student models, judge prompts and results for generator-judge relatedness experiments",
+    "host": "GitHub (David-Li0406/Preference-Leakage)",
+    "url": "https://github.com/David-Li0406/Preference-Leakage",
+    "reachable_now": true,
+    "license_note": "not shown; add repo to session before use"
+   },
+   {
+    "name": "Open-Prompt-Injection",
+    "what": "5 attacks, 10 defenses, 7 tasks, evaluation platform from Liu et al. USENIX Security 2024",
+    "host": "GitHub (liu00222/Open-Prompt-Injection)",
+    "url": "https://github.com/liu00222/Open-Prompt-Injection",
+    "reachable_now": true,
+    "license_note": "paper CC BY 4.0 on arXiv; code license not shown"
+   },
+   {
+    "name": "AgentDojo",
+    "what": "97 agent tasks, 629 security test cases, attacks and defenses",
+    "host": "GitHub (ethz-spylab/agentdojo)",
+    "url": "https://github.com/ethz-spylab/agentdojo",
+    "reachable_now": true,
+    "license_note": "not shown"
+   },
+   {
+    "name": "InjecAgent",
+    "what": "1,054 indirect-injection test cases, 17 user tools, 62 attacker tools",
+    "host": "GitHub (uiuc-kang-lab; exact URL truncated in the abstract received)",
+    "url": "https://github.com/uiuc-kang-lab/ (truncated)",
+    "reachable_now": true,
+    "license_note": "not shown; repo name must be confirmed first"
+   },
+   {
+    "name": "MASK honesty benchmark",
+    "what": "Human-collected pressure scenarios, belief-elicitation prompts and evaluation code",
+    "host": "GitHub (centerforaisafety/mask) and Hugging Face (cais/mask); also in UK AISI inspect_evals",
+    "url": "https://github.com/centerforaisafety/mask",
+    "reachable_now": true,
+    "license_note": "not shown"
+   },
+   {
+    "name": "llm-stability (Atil et al.)",
+    "what": "Code and data for 10-run non-determinism experiments across five LLMs and eight tasks",
+    "host": "GitHub (breckbaldwin/llm-stability)",
+    "url": "https://github.com/breckbaldwin/llm-stability",
+    "reachable_now": true,
+    "license_note": "not shown"
+   },
+   {
+    "name": "bayes_evals (Bowyer et al.)",
+    "what": "Python library for Bayesian uncertainty in small LLM evals",
+    "host": "GitHub (sambowyer/bayes_evals)",
+    "url": "https://github.com/sambowyer/bayes_evals",
+    "reachable_now": true,
+    "license_note": "not shown"
+   },
+   {
+    "name": "evalci",
+    "what": "Python library for statistically rigorous comparison of LLM evaluations (arXiv 2607.04429)",
+    "host": "PyPI",
+    "url": "https://pypi.org/project/evalci/",
+    "reachable_now": true,
+    "license_note": "not shown"
+   },
+   {
+    "name": "JUDGE-BENCH (Bavaresco et al.)",
+    "what": "20 NLP datasets with human annotations used to test LLM evaluators",
+    "host": "not shown in the abstract received",
+    "url": "not shown",
+    "reachable_now": false,
+    "license_note": "not shown"
+   }
+  ],
+  "audit": {
+   "checked": 7,
+   "confirmed": 3,
+   "issues": [
+    {
+     "title": "Preference Leakage: A Contamination Problem in LLM-as-a-judge (Li et al., arXiv 2502.01534; evidence row 6)",
+     "issue": "Author short list in the table ('Li, Jiang, Wang, Wei et al.') matched no arXiv version; arXiv API lists Dawei Li, Renliang Sun, Yue Huang, Ming Zhong, Bohan Jiang, ... -> corrected to 'Li, Sun, Huang, Zhong et al.'. arXiv v3 (2026-03-04) comment says 'Accepted by ICLR 2026', so status changed from 'preprint, venue unconfirmed' to 'ICLR 2026 per arXiv comment, proceedings version not read' (OpenReview forum/PDF bot-walled, WebSearch budget exhausted, so acceptance rests on the author comment only). The Crossref candidate DOI 10.18653/v1/2025.findings-emnlp.510 resolves to a different paper ('Assistant-Guided Mitigation of Teacher Preference Bias in LLM-as-a-Judge', Zhuo Liu et al.) and was marked rejected. Abstract-level content of the row matches the arXiv abstract."
+    },
+    {
+     "title": "Reflections on the Reproducibility of Commercial LLM Performance in Empirical Software Engineering Studies (ICSE 2026, arXiv 2510.25506; evidence row 15, second-to-last)",
+     "issue": "Title, venue (Proceedings of the 2026 IEEE/ACM 48th ICSE, ACM, issued 2026-04-12), DOI 10.1145/3744916.3773207 and all abstract figures (85/18/5/0/2/3) confirmed via Crossref, arXiv API and Semantic Scholar; but the row said 'Authors not shown'. Authors added from Crossref/arXiv: Angermeir, Amougou, Kreitz, Bauer, Linhuber, Fucci, Moyon C., Mendez, Gorschek. Limitations bullet updated."
+    },
+    {
+     "title": "Non-Determinism of \"Deterministic\" LLM Settings (Atil et al., arXiv 2408.04667; evidence row 16) - extra check",
+     "issue": "Row listed 'Atil, Chittams, Fu, Ferraro et al.'; 'Ferraro' appears in no arXiv version (v1: Atil, Chittams, Fu, Ture, Xu, Baldwin; v5: 13 authors starting Atil, Aykent, Chittams, Fu). Corrected to the v5 list with the version history noted. The Eval4NLP 2025 Crossref candidate remains unconfirmed."
+    },
+    {
+     "title": "Self-Preference Bias in LLM-as-a-Judge (Wataoka et al., arXiv 2410.21819; additional record) - extra check",
+     "issue": "The Crossref DOI offered earlier (10.18653/v1/2025.findings-emnlp.510) belongs to a different paper and was marked rejected; arXiv v2 comment says 'Accepted at NeurIPS 2024 Safe Generative AI Workshop' (workshop page not read). Record annotated, status otherwise unchanged."
+    }
+   ]
+  }
+ },
+ {
+  "area": "Efficient and private AI for resource-constrained organizations and underserved languages",
+  "file": "/home/user/employee_monitoring_system/research/01_literature/efficiency-privacy-low-resource.md",
+  "gaps": [
+   "Gap 1: no study found evaluating quantized small models (1-4B) on Bangla, Swahili or Indonesian organizational text tasks under CPU constraints; existing disparate-harm evidence (Marchisio et al.; Marie and Fujita) uses MMLU-style and MT benchmarks on languages the models already support. Disproved if Miranda et al.'s 232-paper survey or the LowResNLP 2025 workshop contains such an evaluation.",
+   "Gap 2: no peer-reviewed, costed CPU-only deployment frontier (quality per dollar or per watt) for SMEs or public bodies in developing economies; Khalil et al. use an RTX 5090 and Pan et al. assume GPU servers and subscription pricing. Disproved by a CPU-only TCO study with measurements for small organizations, possibly in systems venues not domain-filtered here.",
+   "Gap 3: country-level language effects on adoption (Misra et al.; Daepp and Slaughter) and firm-level SME adoption models (Kasigit et al.; Mohammed et al.) do not connect; no firm-level study includes local-language model performance or on-premise deployability as a construct. Disproved by an IS study in EJISDC, ITD or ISF with such constructs.",
+   "Gap 4: the contradiction between Borgersen and Goodwin's null result (GGUF, 70B, Norwegian) and the disparate-harm findings (GPTQ/AWQ/bitsandbytes and multiple formats, 1.7B-103B, non-Latin scripts) is unresolved; no factorial replication crossing quantizer family, model size (1-8B) and script on the same tasks was found. Feasible on this project's CPU-only hardware.",
+   "Gap 5: no locally grounded public-sector or SME-task benchmark for Bangla, Swahili or Indonesian comparable to M\u00d6VE (German) or the Dutch government benchmark; SOMAJGYAAN covers Bangla culture and social knowledge only. Disproved if such a benchmark exists on the ACL Anthology or Hugging Face."
+  ],
+  "contradictions": [
+   "Borgersen and Goodwin 2025 find non-significant effects of calibration language under GGUF k-quantization (Llama 3.3 70B, English and Norwegian), whereas Marchisio et al. 2024 and Marie and Fujita 2025 report larger degradation for non-Latin-script and low-resource languages and for smaller models; the studies differ in quantizer family, model size, script and metric, and Marie and Fujita's finding that GGUF is the most robust format partially reconciles them.",
+   "Khalil et al. 2025 frame their single-GPU server as comparable to cloud services, but their own results show per-request efficiency falling 75% from one to two concurrent users and no cost figures appear in the text despite the SMB-affordability claim.",
+   "Misra et al. 2025 conclude that more training data is the only solution, while TigerLLM claims a 1B-class Bangla model already beats GPT-3.5 and Mahfuz et al. argue dedicated Bengali LLMs are needed but the data to build them are lacking.",
+   "IS adoption studies (Kasigit et al.; Mohammed et al.) explain SME non-adoption with finance, skills and infrastructure and no language or compute variables, while CS studies explain capability gaps with no organizational variables; the reference lists of the three central papers show no cross-citation between the strands.",
+   "Marchisio et al. show automatic metrics understate quantization harm by roughly an order of magnitude relative to human evaluation, yet the deployment and efficiency papers in this set rely on automatic benchmarks alone."
+  ],
+  "key_papers": [
+   {
+    "title": "AI Diffusion in Low Resource Language Countries",
+    "authors": "Misra, Zamir, Hamidouche, Becker-Reshef, Lavista Ferres",
+    "year": "2025",
+    "venue": "arXiv:2511.02752 (Microsoft AI for Good Research Lab)",
+    "status": "preprint",
+    "finding": "Using Microsoft AI User Share telemetry for 147 economies and ATT-weighted fractional-logit regression with GDP, electricity, internet and age controls, low-resource-language countries show a 2.1 pp lower AI user share, about 20% of their 10 pp baseline (relat",
+    "url": "https://arxiv.org/abs/2511.02752"
+   },
+   {
+    "title": "How Does Quantization Affect Multilingual LLMs?",
+    "authors": "Marchisio, Dash, Chen, Aumiller, \u00dcst\u00fcn, Hooker, Ruder",
+    "year": "2024",
+    "venue": "Findings of the Association for Computational Linguistics: EMNLP 2024",
+    "status": "peer-reviewed",
+    "finding": "Across Command R/R+ (35B/103B) and Aya 23 (8B/35B) in up to 23 languages, automatic metrics understate quantization harm (Japanese -1.7% automatic vs -16.0% human), non-Latin-script languages degrade more (-1.9% vs -0.7% at 103B W4-g), MGSM drops -13.1% for 35",
+    "url": "https://arxiv.org/abs/2407.03211"
+   },
+   {
+    "title": "Viability and Performance of a Private LLM Server for SMBs: A Benchmark Analysis of Qwen3-30B on Consumer-Grade Hardware",
+    "authors": "Khalil, Parraga, Heilles, Heilles",
+    "year": "2025",
+    "venue": "arXiv:2512.23029",
+    "status": "preprint",
+    "finding": "A single RTX 5090 running Qwen3-30B-A3B at Q6_K_XL in llama.cpp reaches 83% MMLU (o3: 92%) and 70-90% on AIME, with 0.171 s TTFT and 192 tokens/s for one user, but per-request throughput efficiency falls 75% from one to two concurrent users and completion rate",
+    "url": "https://arxiv.org/abs/2512.23029"
+   },
+   {
+    "title": "How Early Adopters Used Generative AI Worldwide: Variation by Country Income and Language",
+    "authors": "Daepp, Slaughter",
+    "year": "2026",
+    "venue": "arXiv:2605.30685",
+    "status": "preprint",
+    "finding": "From large-scale anonymized logs of a free chatbot, schooling is the dominant use domain in low-income countries (inverse association with GDP), leisure use rises with income, and English-language interactions are over-represented where local languages were po",
+    "url": "https://arxiv.org/abs/2605.30685"
+   },
+   {
+    "title": "AI Adoption by SMEs in Developing Countries: Challenges, Applications, and Benefits",
+    "authors": "Kasigit, Akhlaghpour, Karanasios",
+    "year": "2025",
+    "venue": "ACIS 2025 (Australasian Conference on Information Systems), AIS eLibrary",
+    "status": "peer-reviewed",
+    "finding": "A systematic review of 32 peer-reviewed articles (2015-2025) finds SMEs use AI for market engagement, innovation, operations and strategic decisions, with adoption constrained by financial limits, technological barriers, knowledge gaps, cultural rigidity and e",
+    "url": "https://aisel.aisnet.org/acis2025/271/"
+   },
+   {
+    "title": "Bridging the AI Divide: Barriers and Challenges to AI Adoption for Nigerian SMEs",
+    "authors": "Mohammed, Kutar, Albakri",
+    "year": "2025",
+    "venue": "UKAIS 2025 (UK Academy for Information Systems), AIS eLibrary",
+    "status": "peer-reviewed",
+    "finding": "An SLR plus survey of 144 Nigerian SMEs finds technical barriers (infrastructure, outdated technology) intersect with social ones (resistance to change, low digital literacy), with skills shortages, ethical concerns and regulatory gaps hindering integration; n",
+    "url": "https://aisel.aisnet.org/ukais2025/28/"
+   },
+   {
+    "title": "Generative Artificial Intelligence: Evolving Technology, Growing Societal Impact, and Opportunities for Information Systems Research",
+    "authors": "Storey, Yue, Zhao, Lukyanenko",
+    "year": "2025",
+    "venue": "Information Systems Frontiers",
+    "status": "peer-reviewed",
+    "finding": "A conceptual sociotechnical paper arguing that most GenAI papers are either too technical or too shallow for IS and proposing a bridge between technical and organizational communities with IS research opportunities; resource-constrained organizations and low-r",
+    "url": "https://link.springer.com/article/10.1007/s10796-025-10581-7"
+   },
+   {
+    "title": "BenLLM-Eval: A Comprehensive Evaluation into the Potentials and Pitfalls of Large Language Models on Bengali NLP",
+    "authors": "Kabir, Islam, Laskar, Nayeem et al.",
+    "year": "2024",
+    "venue": "LREC-COLING 2024 (Proceedings of the Language Resources and Evaluation Conference)",
+    "status": "peer-reviewed",
+    "finding": "Zero-shot ChatGPT, LLaMA-2 and Claude-2 on Bangla summarization, QA, paraphrasing, NLI, classification and sentiment match or beat fine-tuned SOTA on some tasks but are quite poor on most, with open-source LLaMA-2 significantly bad.",
+    "url": "https://aclanthology.org/2024.lrec-main.201/"
+   },
+   {
+    "title": "TigerLLM - A Family of Bangla Large Language Models",
+    "authors": "Raihan, Zampieri",
+    "year": "2025",
+    "venue": "Proceedings of the 63rd Annual Meeting of the ACL (Volume 2: Short Papers)",
+    "status": "peer-reviewed",
+    "finding": "Introduces a family of open Bangla LLMs claimed to surpass all open-source alternatives and outperform GPT-3.5 on standard benchmarks; a 1B instruction-tuned model is reachable on Hugging Face under CC BY 4.0.",
+    "url": "https://aclanthology.org/2025.acl-short.69/"
+   }
+  ],
+  "datasets": [
+   {
+    "name": "IndoNLU",
+    "what": "Indonesian NLU benchmark, twelve classification and sequence-labelling tasks",
+    "host": "Hugging Face (indonlp/indonlu)",
+    "url": "https://huggingface.co/datasets/indonlp/indonlu",
+    "reachable_now": true,
+    "license_note": "license tag mit (HF API)"
+   },
+   {
+    "name": "XL-Sum",
+    "what": "Multilingual abstractive summarization incl. Bengali, Swahili, Indonesian",
+    "host": "Hugging Face (csebuetnlp/xlsum)",
+    "url": "https://huggingface.co/datasets/csebuetnlp/xlsum",
+    "reachable_now": true,
+    "license_note": "cc-by-nc-sa-4.0 (non-commercial)"
+   },
+   {
+    "name": "MasakhaNEWS",
+    "what": "News topic classification for 16 African languages incl. Swahili",
+    "host": "Hugging Face (masakhane/masakhanews)",
+    "url": "https://huggingface.co/datasets/masakhane/masakhanews",
+    "reachable_now": true,
+    "license_note": "license tag afl-3.0"
+   },
+   {
+    "name": "BanglaParaphrase",
+    "what": "Bangla paraphrase pairs from the BanglaBERT group",
+    "host": "Hugging Face (csebuetnlp/BanglaParaphrase)",
+    "url": "https://huggingface.co/datasets/csebuetnlp/BanglaParaphrase",
+    "reachable_now": true,
+    "license_note": "cc-by-nc-sa-4.0"
+   },
+   {
+    "name": "TigerLLM-1B-it",
+    "what": "Instruction-tuned 1B Bangla LLM (Raihan and Zampieri 2025)",
+    "host": "Hugging Face (md-nishat-008/TigerLLM-1B-it)",
+    "url": "https://huggingface.co/md-nishat-008/TigerLLM-1B-it",
+    "reachable_now": true,
+    "license_note": "cc-by-4.0, not gated"
+   },
+   {
+    "name": "Global-MMLU",
+    "what": "Culturally annotated multilingual MMLU",
+    "host": "Hugging Face (CohereLabs/Global-MMLU)",
+    "url": "https://huggingface.co/datasets/CohereLabs/Global-MMLU",
+    "reachable_now": true,
+    "license_note": "apache-2.0"
+   },
+   {
+    "name": "FLORES+ / FLORES-200",
+    "what": "Many-to-many MT evaluation incl. ben, swh, ind",
+    "host": "Hugging Face (openlanguagedata/flores_plus; facebook/flores)",
+    "url": "https://huggingface.co/datasets/openlanguagedata/flores_plus",
+    "reachable_now": false,
+    "license_note": "cc-by-sa-4.0; gated=auto, files need a Hugging Face login this session lacks"
+   },
+   {
+    "name": "Aya Dataset",
+    "what": "Human-annotated multilingual instruction data",
+    "host": "Hugging Face (CohereLabs/aya_dataset)",
+    "url": "https://huggingface.co/datasets/CohereLabs/aya_dataset",
+    "reachable_now": true,
+    "license_note": "apache-2.0"
+   },
+   {
+    "name": "FineWeb-2",
+    "what": "Multilingual web pretraining corpus used by Misra et al. to tier languages",
+    "host": "Hugging Face (HuggingFaceFW/fineweb-2)",
+    "url": "https://huggingface.co/datasets/HuggingFaceFW/fineweb-2",
+    "reachable_now": true,
+    "license_note": "odc-by; very large, only language statistics usable here"
+   },
+   {
+    "name": "Tiny Aya base",
+    "what": "3.35B multilingual model, 70 languages (Salamanca et al. 2026)",
+    "host": "Hugging Face (CohereLabs/tiny-aya-base)",
+    "url": "https://huggingface.co/CohereLabs/tiny-aya-base",
+    "reachable_now": false,
+    "license_note": "cc-by-nc-4.0; gated=auto, needs HF login"
+   },
+   {
+    "name": "Qwen3-30B-A3B-Instruct-2507 GGUF",
+    "what": "Quantized weights of the model Khalil et al. benchmarked",
+    "host": "Hugging Face (unsloth/Qwen3-30B-A3B-Instruct-2507-GGUF)",
+    "url": "https://huggingface.co/unsloth/Qwen3-30B-A3B-Instruct-2507-GGUF",
+    "reachable_now": true,
+    "license_note": "apache-2.0; Q4-Q6 files exceed this session's 15 GB RAM, not runnable here"
+   },
+   {
+    "name": "AIME 2024",
+    "what": "Math reasoning set used by Khalil et al.",
+    "host": "Hugging Face (Maxwell-Jia/AIME_2024)",
+    "url": "https://huggingface.co/datasets/Maxwell-Jia/AIME_2024",
+    "reachable_now": true,
+    "license_note": "mit"
+   },
+   {
+    "name": "BanglaBERT / BLUB",
+    "what": "Bangla pretrained encoder; BLUB benchmark tasks described in arXiv:2101.00204 and hosted on the authors' GitHub",
+    "host": "Hugging Face model (csebuetnlp/banglabert); GitHub benchmark seen in search only",
+    "url": "https://huggingface.co/csebuetnlp/banglabert",
+    "reachable_now": true,
+    "license_note": "no license tag shown by the HF API; GitHub benchmark not confirmed from this session"
+   },
+   {
+    "name": "AI User Share (Microsoft AI Diffusion)",
+    "what": "Country-level AI usage metric for 147 economies (Misra et al. 2025)",
+    "host": "Microsoft (aka.ms/AI_Diffusion_Technical_Report)",
+    "url": "https://arxiv.org/abs/2511.02781",
+    "reachable_now": false,
+    "license_note": "not shown; data release not visible in the paper text"
+   },
+   {
+    "name": "M\u00d6VE results",
+    "what": "Living benchmark results for 39 models on German public-sector tasks",
+    "host": "Bundesdruckerei site",
+    "url": "https://moeve.bundesdruckerei.de/",
+    "reachable_now": false,
+    "license_note": "not shown; some datasets described as private; site not fetched"
+   }
+  ],
+  "audit": {
+   "checked": 5,
+   "confirmed": 5,
+   "issues": []
+  }
+ }
+]
