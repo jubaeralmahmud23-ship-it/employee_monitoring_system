@@ -111,6 +111,11 @@ Author's usage allowance was about to end. Actions taken so that nothing is lost
 - A background loop in the container commits any new files under `research/` every three minutes and will push automatically if GitHub access is granted while the session is alive.
 - Stage 3-4 continuation workflow still running: novelty and feasibility checks complete for ideas 1-3 (six files in `03_challenge/`); ideas 4-8 and the synthesis and critique stages pending. `RESUME.md` says how to finish them.
 
+
+### GitHub push working (2026-10-03, 12:41 UTC)
+
+The author granted the Claude GitHub App access. `git push` succeeded; the remote branch `claude/peaceful-cori-ny59q5` matches the local HEAD exactly (verified by SHA and a 24-file tree listing through the GitHub API). From this point the repository on GitHub is the durable copy; the bundle and tarball sent earlier are a redundant backup. The background autosave loop now also pushes after each commit.
+
 ### Decision
 
 **Proceed** to the preliminary literature landscape using web search, with every record marked as snippet-level evidence, and in parallel generate and adversarially challenge candidate ideas. No project selection yet.

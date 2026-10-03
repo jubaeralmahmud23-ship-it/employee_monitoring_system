@@ -24,12 +24,12 @@ Written 2026-10-03 because the author's usage allowance was about to end. Everyt
 
 ## Known blockers
 
-- **GitHub push refused**: the Claude GitHub App has no access to this repository. Fix at https://claude.ai/connect-github or https://github.com/apps/claude/installations/select_target. Until then commits exist only in the session container, which is discarded when the session ends. A git bundle and a tarball were sent to the author in the chat as a fallback; restore with `git clone -b claude/peaceful-cori-ny59q5 research-records.bundle employee_monitoring_system` or by unpacking the tarball into a fresh clone.
+- **GitHub push works since 12:41 UTC on 2026-10-03** (access granted by the author). The remote branch `claude/peaceful-cori-ny59q5` is the durable copy. A git bundle and tarball sent in the chat before that are a redundant backup; if ever needed, restore with `git clone -b claude/peaceful-cori-ny59q5 research-records.bundle employee_monitoring_system`.
 - Workflow journals live outside the repository and do not survive the session; the scripts that reproduce the stages are saved in `tools/`.
 
 ## How to continue
 
-1. Confirm the branch `claude/peaceful-cori-ny59q5` has these files. If the repository is still empty on GitHub, restore from the bundle or tarball first, then push once GitHub access works.
+1. Start the new session on branch `claude/peaceful-cori-ny59q5` of the GitHub repository; it holds all records. Confirm `research/03_challenge/` contents against the table above.
 2. Re-probe network access (`curl -sI https://arxiv.org/`), run `python3 research/tools/verify_refs.py --self-test`.
 3. List `03_challenge/`. For each of the 8 ideas in `02_candidate_ideas_merged.json`, an idea is done when both `NN-...__novelty.md` and `NN-...__feasibility.md` exist. Re-run only the missing ones: edit `tools/workflow_stage34_continuation_args.json` to keep only the missing titles (keep their original order so slugs stay stable, or accept new numbering), then run the Workflow tool with `scriptPath` = `tools/workflow_stage34_continuation.js` and the JSON as `args`. The script reads ideas by index into the merged JSON, so if you subset the titles you must also pass matching indices; simplest is to re-run all eight if usage allows.
 4. When all 16 files exist, run the synthesis and critic stages (the last part of the continuation script), or ask the session to write `02_candidate_ideas.md` from the challenge files directly.
