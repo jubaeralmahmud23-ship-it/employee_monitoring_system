@@ -24,7 +24,7 @@ Written 2026-10-03 because the author's usage allowance was about to end. Everyt
 
 ## Known blockers
 
-- **GitHub push refused**: the Claude GitHub App has no access to this repository. Fix at https://claude.ai/connect-github or https://github.com/apps/claude/installations/select_target. Until then commits exist only in the session container, which is discarded when the session ends. A git bundle and a tarball were sent to the author in the chat as a fallback; restore with `git clone research-records.bundle` or by unpacking the tarball into a fresh clone.
+- **GitHub push refused**: the Claude GitHub App has no access to this repository. Fix at https://claude.ai/connect-github or https://github.com/apps/claude/installations/select_target. Until then commits exist only in the session container, which is discarded when the session ends. A git bundle and a tarball were sent to the author in the chat as a fallback; restore with `git clone -b claude/peaceful-cori-ny59q5 research-records.bundle employee_monitoring_system` or by unpacking the tarball into a fresh clone.
 - Workflow journals live outside the repository and do not survive the session; the scripts that reproduce the stages are saved in `tools/`.
 
 ## How to continue
