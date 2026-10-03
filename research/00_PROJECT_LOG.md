@@ -61,6 +61,17 @@ Additional hosts probed and **blocked** on 2026-10-03: SEC EDGAR (sec.gov), data
 
 Git push to GitHub was refused on 2026-10-03 (the Claude GitHub App lacks write access to this repository). Commits are held locally until access is granted.
 
+
+### Author answers received (2026-10-03)
+
+1. **Network policy:** author agrees to widen network access. Not yet in effect as of this entry (arxiv.org, doi.org, api.crossref.org, api.openalex.org, api.semanticscholar.org, huggingface.co, zenodo.org still denied on re-probe). Full-text review, DOI verification and any model-based experiment remain blocked until the change is applied.
+2. **Repository name:** unrelated to the project. AI-enabled employee monitoring is not a preferred topic; the human-AI / algorithmic-management area stays in the landscape only on its own merits.
+3. **Goal:** publication in a top journal. No preferred discipline, journal or deadline stated. Implication: the contribution must be substantive by top-tier standards; a model-on-dataset study will not meet that bar.
+4. **External resources:** none. No GPU, no institutional full-text access, no LLM API credits, no organizational data, no participants.
+5. **Budget:** article processing charges only if the manuscript is very strong; otherwise a no-cost route. Note for later journal selection: most top IS and CS journals charge nothing on the standard subscription route; open access is optional, and choosing the no-fee route does not remove the paper from indexing or citation databases.
+
+Working assumptions updated accordingly: zero cost, CPU only, public data via GitHub/PyPI now and via widened network access later; studies must be designed so that the main claim does not depend on paid APIs.
+
 ### Decision
 
 **Proceed** to the preliminary literature landscape using web search, with every record marked as snippet-level evidence, and in parallel generate and adversarially challenge candidate ideas. No project selection yet.
