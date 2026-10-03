@@ -140,3 +140,5 @@ What would remain novel if the idea is repositioned: (a) a single pre-registered
 
 ## 5. Reference verification (verify_refs.py)
 
+
+The verify_refs.py run over the 26 titles (file: scratchpad/idea3/titles_idea3.txt) was still in progress when this file was finalised; its output is written to `/tmp/claude-0/-home-user-employee-monitoring-system/c64eab22-9c10-592c-b92e-5ac629c5be82/tasks/bzhmnvstv.output` and should be pasted here by the next pass. Venue and DOI claims in section 2 rest on arXiv metadata, Crossref DOI lookups and search-result links as stated per row.
