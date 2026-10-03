@@ -45,6 +45,22 @@ Consequences for the project:
 
 Work continues under the default assumptions (zero budget, CPU only, public data reachable now or via a policy change) until answers arrive.
 
+
+### Addendum (2026-10-03): verified offline tooling
+
+A scratch virtual environment (outside the repository) installed and loaded, from PyPI and GitHub releases only:
+
+| Package | Version | Note |
+|---|---|---|
+| pm4py | 2.7.23.8 | Process mining; AGPL-3.0 with commercial option (academic use fine) |
+| scikit-learn | 1.9.1 | Classical ML |
+| statsmodels | 0.15.0 | Statistics |
+| spaCy + en_core_web_sm | 3.8.16 | Model downloaded from GitHub releases, so spaCy pipelines are usable without Hugging Face |
+
+Additional hosts probed and **blocked** on 2026-10-03: SEC EDGAR (sec.gov), data.gov, EUR-Lex, World Bank API, OECD, archive.org, Common Crawl, Wikimedia dumps, FRED, ECB data portal, Bangladesh open-data portals, OpenStreetMap APIs. Any public-data study must therefore use data mirrored on GitHub or shipped in PyPI packages until the network policy is widened.
+
+Git push to GitHub was refused on 2026-10-03 (the Claude GitHub App lacks write access to this repository). Commits are held locally until access is granted.
+
 ### Decision
 
 **Proceed** to the preliminary literature landscape using web search, with every record marked as snippet-level evidence, and in parallel generate and adversarially challenge candidate ideas. No project selection yet.
