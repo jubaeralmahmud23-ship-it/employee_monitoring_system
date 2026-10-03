@@ -91,6 +91,11 @@ Consequences: literature records can now reach abstract depth broadly and full-t
 
 GitHub push remains refused (Claude GitHub App not connected to the repository).
 
+
+### Scope note (2026-10-03)
+
+The author briefly considered broadening the landscape to software tools and packages and to other AI subfields such as computer vision, then withdrew the request. Scope remains the eight areas listed for Stage 1-2; a broadening can be added as a ninth sweep later if a candidate idea calls for it.
+
 ### Decision
 
 **Proceed** to the preliminary literature landscape using web search, with every record marked as snippet-level evidence, and in parallel generate and adversarially challenge candidate ideas. No project selection yet.
