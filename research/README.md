@@ -14,6 +14,7 @@ Persistent, auditable records for the research collaboration (CS / AI / business
 | `03_challenge/<idea>__novelty.md` | Adversarial prior-art search per idea (search log, comparison table, verdict, search limits, reference verification). |
 | `03_challenge/<idea>__feasibility.md` | Data, compute (CPU-only container and local GPU machine), approval and claim-support assessment per idea. |
 | `04_journals/venue_landscape.md` | Stage 5: 18 journals and conferences with scope, fees, no-fee routes, rankings seen, fit matrix for ideas 1-8, requirements of top IS journals, open questions. |
+| `05_critique_2026-10-05.md` | Completeness and integrity critique over all records (files read, issues fixed, issues left open, verdict). |
 | `tools/verify_refs.py` | Title-based check of references against Crossref, OpenAlex, arXiv and Semantic Scholar. |
 | `tools/verify_evidence_tables.py` | Identifier-based check of evidence-table rows (DOI and arXiv id) with year, venue and status flags. |
 | `tools/workflow_*.js`, `tools/*_args.json` | The multi-agent workflow scripts that produced Stages 1-4 on 2026-10-03 (kept for provenance; paths inside refer to the earlier cloud container). |

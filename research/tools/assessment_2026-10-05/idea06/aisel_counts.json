@@ -1,0 +1,74 @@
+{
+ "icis2024": {
+  "landing_http": 200,
+  "track_pages_found": 26,
+  "track_pages_fetched_200": 26,
+  "track_fetch_failures": 0,
+  "paper_titles_total": 423,
+  "title_term_hits": 46,
+  "sample_hits": [
+   "Exploring the Potential of Large Language Models (LLMs) for Grounded Theorizing: A Human-in-the-Loop",
+   "Integrating LLMs and Psychometrics:  Global Construct Validity",
+   "Algorithm Aversion to Generative Artificial Intelligence in Creative Content",
+   "Brainstorming with a Generative Language Model: The Role of Creative Ability and Tool-Support for Br",
+   "Challenges, Success Factors, and Potential Benefits of GenAI Development: Insights from an Ongoing C",
+   "Cognitive Load Dynamics in Generative AI-Assistance: A NeuroIS Study",
+   "GenAI-ing Ideas? Understanding Human-IS Collaboration for Creative Problem Solving",
+   "GPT-doctor: Customizing Large Language Models for Medical Consultation"
+  ]
+ },
+ "icis2025": {
+  "landing_http": 200,
+  "track_pages_found": 29,
+  "track_pages_fetched_200": 29,
+  "track_fetch_failures": 0,
+  "paper_titles_total": 534,
+  "title_term_hits": 76,
+  "sample_hits": [
+   "The Reward of Being Authentic: How Does Generative AI Reshape Reward and Contribution Dynamics on To",
+   "Do LLMs Care How You Ask? Prompt Tones and AI Accuracy, Trust, and Engagement",
+   "Benchmarking Evidence-Augmented Large Language Models for Misinformation Fact-Checking: An Informati",
+   "Regulatory Spillover and Privacy Rationalizations: Evidence from ChatGPT Discourse After the TikTok ",
+   "Can large language models evaluate suppliers’ qualifications of complex production lines? An approac",
+   "Identifying Lead Users on Social Media to Foster Digital Innovation: A Generative AI Approach",
+   "Sparking Digital Innovation: A Framework for Employee and Generative AI Involvement",
+   "Temporality of Organizational Knowledge in Generative AI Systems"
+  ]
+ },
+ "ecis2024": {
+  "landing_http": 200,
+  "track_pages_found": 27,
+  "track_pages_fetched_200": 27,
+  "track_fetch_failures": 0,
+  "paper_titles_total": 349,
+  "title_term_hits": 23,
+  "sample_hits": [
+   "Generative AI: The Emptiness Within",
+   "Crafting Meaningful Generative AI-Enabled Knowledge Work",
+   "Generative Reference-Shot Learning for Emotions: Auto-Labelling Datasets by Leveraging Generative AI",
+   "Generative AI in the Wild: An Exploratory Case Study of Knowledge Workers",
+   "Generative Artificial Intelligence for Enterprise Platforms",
+   "Navigating Public Sentiment: Acceptance of Disruptive Innovations Created by Transformational Genera",
+   "The Future of Work Unleashed: Generative AI's Role in Shaping Knowledge Workers' Autonomous Motivati",
+   "Unpopular Policies, Ineffective Bans: Lessons Learned from ChatGPT Prohibition in Italy"
+  ]
+ },
+ "ecis2025": {
+  "landing_http": 200,
+  "track_pages_found": 27,
+  "track_pages_fetched_200": 27,
+  "track_fetch_failures": 0,
+  "paper_titles_total": 251,
+  "title_term_hits": 26,
+  "sample_hits": [
+   "Bridging AI and Business: Are Large Language Models Good Management Consultants?",
+   "GENAI-POWERED ORGANIZATIONAL TRANSFORMATION: RETHINKING CHANGE MANAGEMENT TO UNLOCK NEW POTENTIALS F",
+   "ORGANIZATIONAL READINESS FOR GENERATIVE AI ADOPTION",
+   "Social Biases in Generative AI: Implications for Bias Mitigation in Decision Making",
+   "Thinking Outside the Box With Generative AI: Exploring Perceived Team Collaboration in the Innovatio",
+   "What can we learn from LLMs? Building a Foundation Model for Inventory Management",
+   "Unlocking Business Value with Generative AI: Balancing Co-Creation and Co-Destruction in Knowledge W",
+   "Designing Adaptive LLM-Based Social Robots for Retail Sales Consultations"
+  ]
+ }
+}

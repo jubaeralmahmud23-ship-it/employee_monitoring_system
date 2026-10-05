@@ -1,0 +1,227 @@
+{
+ "Business & Information Systems Engineering": {
+  "cc_license_all": 195,
+  "cc_license_hits": 23,
+  "total_articles_2023plus": 232,
+  "with_crossref_abstract": 121,
+  "title_hits": 19,
+  "title_or_abstract_hits": 24,
+  "ta_hits_by_year": {
+   "2023": 2,
+   "2025": 10,
+   "2026": 12
+  },
+  "sample_titles": [
+   "Welcome to the Era of ChatGPT et al.",
+   "Generative AI",
+   "ChatGPT and Beyond: Exploring the Responsible Use of Generative AI in the Workplace",
+   "Case ID Revealed HERE: Hybrid Elusive Case Repair Method for Transformer-Driven Business Process Event Log Enh",
+   "Social-Oriented Communication with AI Companions: Benefits, Costs, and Contextual Patterns",
+   "Generation AI: Job Crafting by Entry-Level Professionals in the Age of Generative AI"
+  ]
+ },
+ "Information Systems Frontiers": {
+  "cc_license_all": 183,
+  "cc_license_hits": 26,
+  "total_articles_2023plus": 446,
+  "with_crossref_abstract": 156,
+  "title_hits": 27,
+  "title_or_abstract_hits": 41,
+  "ta_hits_by_year": {
+   "2023": 1,
+   "2024": 1,
+   "2025": 11,
+   "2026": 28
+  },
+  "sample_titles": [
+   "Charting the Evolution and Future of Conversational Agents: A Research Agenda Along Five Waves and New Frontie",
+   "Comparing and Improving Active Learning Uncertainty Measures for Transformer Models by Discarding Outliers",
+   "Reimagining Higher Education: Navigating the Challenges of Generative AI Adoption",
+   "Generative Artificial Intelligence: Evolving Technology, Growing Societal Impact, and Opportunities for Inform",
+   "Factors Affecting Behavioural Intention to Use Generative Artificial Intelligence Tool: A Multigroup Analysis",
+   "Automatic Generation of Job Safety Reports with Explainable RAG-Based LLMs"
+  ]
+ },
+ "Electronic Markets": {
+  "cc_license_all": 202,
+  "cc_license_hits": 16,
+  "total_articles_2023plus": 314,
+  "with_crossref_abstract": 197,
+  "title_hits": 9,
+  "title_or_abstract_hits": 18,
+  "ta_hits_by_year": {
+   "2023": 2,
+   "2025": 5,
+   "2026": 11
+  },
+  "sample_titles": [
+   "Assistant platforms",
+   "Generative artificial intelligence",
+   "SynDEc: A Synthetic Data Ecosystem",
+   "Exploring the scope of generative AI in literature review development",
+   "Wisdom of the crowd signals: Predictive power of social media trading signals for cryptocurrencies",
+   "AI-powered smart tourism 2.0: A 10-year retrospective and updated model"
+  ]
+ },
+ "Information & Management": {
+  "cc_license_all": 103,
+  "cc_license_hits": 1,
+  "total_articles_2023plus": 502,
+  "with_crossref_abstract": 0,
+  "title_hits": 12,
+  "title_or_abstract_hits": 12,
+  "ta_hits_by_year": {
+   "2024": 1,
+   "2025": 3,
+   "2026": 8
+  },
+  "sample_titles": [
+   "Knowledge-prompted ChatGPT: Enhancing drug trafficking detection on social media",
+   "Addressing bias in generative AI: Challenges and research opportunities in information management",
+   "Engagement or entanglement? The dual impact of generative artificial intelligence in online knowledge exchange",
+   "From emotion to reflection: leveraging EmotionPrompt strategy to empower self-determination in decision-making",
+   "Next output is better? Overgeneration effect in generative artificial intelligence interaction",
+   "The impact of generative artificial intelligence on software development performance: a study based on the the"
+  ]
+ },
+ "Decision Support Systems": {
+  "cc_license_all": 93,
+  "cc_license_hits": 5,
+  "total_articles_2023plus": 575,
+  "with_crossref_abstract": 0,
+  "title_hits": 25,
+  "title_or_abstract_hits": 25,
+  "ta_hits_by_year": {
+   "2024": 1,
+   "2025": 8,
+   "2026": 16
+  },
+  "sample_titles": [
+   "Blockchain as a trust machine: From disillusionment to enlightenment in the era of generative AI",
+   "Know where to go: Make LLM a relevant, responsible, and trustworthy searchers",
+   "Revisiting time-varying dynamics in stock market forecasting: A multi-source sentiment analysis approach with ",
+   "Tell me a story! Narrative-driven XAI with Large Language Models",
+   "Modeling the role of generative AI in organizational privacy and security",
+   "Exploring users' post-adoption use of generative AI: An attitudinal ambivalence perspective"
+  ]
+ },
+ "MIS Quarterly": {
+  "cc_license_all": 36,
+  "cc_license_hits": 0,
+  "total_articles_2023plus": 279,
+  "with_crossref_abstract": 260,
+  "title_hits": 1,
+  "title_or_abstract_hits": 4,
+  "ta_hits_by_year": {
+   "2023": 1,
+   "2026": 2,
+   "2025": 1
+  },
+  "sample_titles": [
+   "Unifying Algorithmic and Theoretical Perspectives: Emotions in Online Reviews and Sales",
+   "AI-Augmented Content Validation in Behavioral Research: Development and Evaluation of the RATER System",
+   "Mitigating Bias in Hate Speech Detection With a Small Number of Expert Annotations: A Prompt-Based Learning Ap",
+   "Generative AI as an Information Intermediary: A Novel Deep Learning Method for Financial Distress Prediction"
+  ]
+ },
+ "Information Systems Research": {
+  "cc_license_all": 0,
+  "cc_license_hits": 0,
+  "total_articles_2023plus": 555,
+  "with_crossref_abstract": 507,
+  "title_hits": 21,
+  "title_or_abstract_hits": 34,
+  "ta_hits_by_year": {
+   "2023": 1,
+   "2024": 3,
+   "2026": 27,
+   "2025": 3
+  },
+  "sample_titles": [
+   "The Janus Effect of Generative AI: Charting the Path for Responsible Conduct of Scholarly Activities in Inform",
+   "Resilience Messaging: The Effect of Governors\u2019 Social Media Communications on Community Compliance During a Pu",
+   "When Does Beauty Pay? A Large-Scale Image-Based Appearance Analysis on Career Transitions",
+   "Pathways for Design Research on Artificial Intelligence",
+   "Does Social Bot Help Socialize? Evidence from a Microblogging Platform",
+   "Quality Control for Crowd Workers and for Language Models: A Framework for Free-Text Response Evaluation with "
+  ]
+ },
+ "Journal of Management Information Systems": {
+  "cc_license_all": 33,
+  "cc_license_hits": 5,
+  "total_articles_2023plus": 173,
+  "with_crossref_abstract": 0,
+  "title_hits": 10,
+  "title_or_abstract_hits": 10,
+  "ta_hits_by_year": {
+   "2024": 1,
+   "2025": 7,
+   "2026": 2
+  },
+  "sample_titles": [
+   "Can ChatGPT Perform a Grounded Theory Approach to Do Risk Analysis? An Empirical Study",
+   "Shifting Dynamics: How Generative AI as a Boundary Resource Reshapes Digital Platform Governance",
+   "Complementor Value Co-Creation in Generative AI Platform Ecosystems",
+   "Generative Artificial Intelligence (GenAI)-Based Recommender Addressing Contribution Pollution and Information",
+   "Heterogeneous Effects of Generative artificial intelligence (GenAI) on Knowledge Seeking in Online Communities",
+   "Are You Willing to Pay for Generative Artificial Intelligence (GenAI) Products? Disentangling the Disclosure E"
+  ]
+ },
+ "Journal of the Association for Information Systems": {
+  "cc_license_all": 0,
+  "cc_license_hits": 0,
+  "total_articles_2023plus": 106,
+  "with_crossref_abstract": 106,
+  "title_hits": 5,
+  "title_or_abstract_hits": 13,
+  "ta_hits_by_year": {
+   "2023": 1,
+   "2024": 12
+  },
+  "sample_titles": [
+   "Data Science for Social Good",
+   "The Societal Impacts of Generative Artificial Intelligence: A Balanced Perspective",
+   "Navigating Generative Artificial Intelligence Promises and Perils for Knowledge and Creative Work",
+   "Reimagining the Journal Editorial Process: An AI-Augmented Versus an AI-Driven Future",
+   "Human-in-the-Loop AI Reviewing: Feasibility, Opportunities, and Risks",
+   "Should We Collaborate with AI to Conduct Literature Reviews? Changing Epistemic Values in a Flattening World"
+  ]
+ },
+ "European Journal of Information Systems": {
+  "cc_license_all": 71,
+  "cc_license_hits": 2,
+  "total_articles_2023plus": 153,
+  "with_crossref_abstract": 0,
+  "title_hits": 2,
+  "title_or_abstract_hits": 2,
+  "ta_hits_by_year": {
+   "2026": 2
+  },
+  "sample_titles": [
+   "Design principles for text-to-image generative artificial intelligence creativity support tools for visual des",
+   "Platform capture of scientific knowledge production: publishers\u2019 dominance, generative AI and Subsumption of a"
+  ]
+ },
+ "Information Systems Journal": {
+  "cc_license_all": 117,
+  "cc_license_hits": 5,
+  "total_articles_2023plus": 248,
+  "with_crossref_abstract": 183,
+  "title_hits": 1,
+  "title_or_abstract_hits": 6,
+  "ta_hits_by_year": {
+   "2023": 1,
+   "2024": 1,
+   "2025": 3,
+   "2026": 1
+  },
+  "sample_titles": [
+   "The \u2018hijacking\u2019 of the Scandinavian Journal of Information Systems: Implications for the information systems c",
+   "The ethics of using generative AI for qualitative data analysis",
+   "Integrating Generative <scp>AI</scp> Into Enterprise Platforms: Insights From Salesforce",
+   "An\n                    <scp>AI</scp>\n                    \u2010Assisted Framework for Improving Innovativeness in S",
+   "The Human\u2010\n                    <scp>GenAI</scp>\n                    Value Loop in Human\u2010Centered Innovation: B",
+   "Generative\n                    <scp>AI</scp>\n                    Implementation in Enterprises: Lessons From a"
+  ]
+ }
+}

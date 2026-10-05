@@ -1,0 +1,32 @@
+{
+ "Information Systems Journal": {
+  "total": 248,
+  "title_hits_stripped": 6,
+  "ta_hits_stripped": 9,
+  "titles": [
+   "The ethics of using generative AI for qualitative data analysis",
+   "Integrating Generative AI Into Enterprise Platforms: Insights From Salesforce",
+   "Generative AI Is Neither Just Another IT Artefact nor a Colleague: Methodological Guidance",
+   "Generative AI Implementation in Enterprises: Lessons From a Case Study of Enhanced IT Serv",
+   "Scholarly Integrity and Generative AI : Five Boundary Violations for IS Scholarship",
+   "Research Integrity Matters, But It Is Undermined by Generative AI"
+  ]
+ },
+ "European Journal of Information Systems": {
+  "total": 153,
+  "title_hits_stripped": 2,
+  "ta_hits_stripped": 2,
+  "titles": [
+   "Design principles for text-to-image generative artificial intelligence creativity support ",
+   "Platform capture of scientific knowledge production: publishers\u2019 dominance, generative AI "
+  ]
+ },
+ "MIS Quarterly": {
+  "total": 279,
+  "title_hits_stripped": 1,
+  "ta_hits_stripped": 4,
+  "titles": [
+   "Generative AI as an Information Intermediary: A Novel Deep Learning Method for Financial D"
+  ]
+ }
+}

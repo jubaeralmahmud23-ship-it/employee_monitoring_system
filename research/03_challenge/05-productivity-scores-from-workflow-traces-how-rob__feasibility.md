@@ -138,7 +138,7 @@ Reasoning: all candidate logs exist, are reachable today through at least one 4T
 - "Discrimination-Aware Process Mining: A Discussion" — Crossref 10.1007/978-3-031-27815-0_8, LNBIP, Process Mining Workshops, 2023 (peer-reviewed); pages 1–3 read.
 - "Towards comprehensive support for organizational mining" — Crossref 10.1016/j.dss.2008.07.002, Decision Support Systems, 2008-12 (peer-reviewed).
 - "A meta-analysis of the effects of electronic performance monitoring on work outcomes" (Ravid et al.) and "Algorithms at Work: The New Contested Terrain of Control" (Kellogg et al.) — carried over from the idea record; not re-queried today.
-- "Kelemen (2022)" named in the idea record — not located today (DBLP bot wall; WebSearch budget exhausted); the Crossref hit "Measuring human resources performance using process mining" (ejournals.facultas.at, OCG) surfaced in a search snippet and may be the intended source; treat as unverified.
+- "Kelemen (2022)" named in the idea record — not located today (DBLP bot wall; WebSearch budget exhausted); the Crossref hit "Measuring human resources performance using process mining" (ejournals.facultas.at, OCG) surfaced in a search snippet and may be the intended source; treat as unverified here. (Cross-reference added 2026-10-05: the novelty file for this idea, written the same day, resolved it through a Crossref bibliographic query to Kelemen 2022, "Measuring human resources performance using process mining", Central and Eastern European eDem and eGov Days, DOI 10.24989/ocg.v335.41, abstract read.)
 
 ---
 
