@@ -4,3 +4,10 @@ __pycache__/
 venv/
 .ipynb_checkpoints/
 _export/
+
+# Stage 4 pilot raw data (large downloads stay out of git)
+research/06_stage4/**/data/
+*.xes
+*.xes.gz
+*.parquet
+*.zip
