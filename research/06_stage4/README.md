@@ -642,3 +642,48 @@ Disk: about 30 GB free in the container. BPI 2019 alone is 728.6 MB raw.
 **Deviations from the task.**
 - `research/README.md` was not updated (see N8).
 - `idea06/codebook_v0.md` and the per-idea result CSVs other than those listed above were not re-read. Their numbers are cited through the idea READMEs that report them.
+
+---
+
+## 8. Integrity critic pass (2026-10-19, after the synthesis)
+
+A separate critic pass read every Markdown, JSON, code and `run.sh` file under `06_stage4/`, plus the CSV headers. It also read the Stage 4 entry of `00_PROJECT_LOG.md` and the 2026-10-19 section of `RESUME.md`. It checked the README and log numbers against the result files. **No result file, code file or `run.sh` was changed**, so the code checksums in the pilot READMEs and in `idea06/results/run_metadata.json` still match. The sha256 table in section 7 records the files as the synthesis read them, before the edits below.
+
+**Edits (wording and consistency only):**
+- **This file.**
+  - "45 flagged titles" became 44. `idea06/results/novelty/aisel_flagged_titles.csv` holds 44 rows: 34 flag A, 8 flag B and 2 with both.
+  - The idea-5 rule is now quoted verbatim, with the reading of "pre-registered minimum-event threshold".
+  - A note on the idea-6 eLibrary precondition was added.
+  - The idea-4 Semantic Scholar legs are completed from `idea04/results/novelty_chase_log.csv`.
+  - The section 7 refit arithmetic was reworded.
+  - N7 and N8 were updated.
+- **`idea05/README.md`.**
+  - The rule labelled "as written" was a paraphrase; it is now quoted verbatim.
+  - A dated note points to the novelty check.
+  - The pseudonym statement now mentions the three BPI 2019 batch-account labels in `bpic2019_sensitivity.csv`.
+  - The results file count was corrected from 49 to 50.
+- **`idea06/README.md`.** A dated note gives the rule state after the novelty check.
+- **`idea04/README.md`.**
+  - A pointer was added to the literature-condition outcome.
+  - `run.sh` regenerates the pilot files but not the three `novelty_*` files.
+- **`idea06/novelty_deep_check.md`.**
+  - 45 flagged titles became 44.
+  - "Only as the first one for LLM-evaluation papers" was replaced by a claim bounded by the searches.
+  - Only 12 of the 16 arXiv searches are in `arxiv_api_queries.csv`; the note says where the other four are.
+  - 2606.07936 was relabelled as abstract depth in the deviation list and the table heading.
+- **`idea05/novelty_deep_check.md`.** "The first configuration-factorial reliability audit" was replaced by a claim bounded by the searches.
+- **`00_PROJECT_LOG.md`.** Idea-4 Semantic Scholar forward chasing covered eight seeds, not four, with the Lam et al. leg not done. A pointer to this section was added.
+- **`RESUME.md`** and **`research/README.md`.** The `06_stage4/` index row was added.
+
+**Spot re-runs (outputs in `$SCRATCH/critic_check/`, outside the repository).** Each was run with the venv interpreter, `-I` and working directory `/`.
+- Idea 4: `ll144_pilot.py`. The 25 CSVs are byte-identical to `idea04/results/` (35 s).
+- Idea 6: the offline steps of `run.sh` (draw, calculator self-test, validation, claims, `analyze_pilot.py`). The 11 derived files are byte-identical to `idea06/results/pilot/` (3.6 s).
+- Idea 5: `02_resource_fields.py` and `04_factorial.py` for BPI 2017. The 15 outputs are byte-identical to `idea05/results/`.
+
+  The bootstrap, the placebo and BPI 2019 were not re-run.
+
+**Still open:**
+- **N1.** The e-mail address remains in two idea-6 scripts and two idea-6 logs. Scrubbing them would alter the run record and result logs, so it stays the author's decision.
+- **Run headers.** The `idea04/code/run.sh` header comment still says it reproduces every file in `results/`. It was left unedited to keep its recorded sha256.
+- **Novelty runners.** The idea-6 and idea-4 novelty scripts have no runner script. Idea 4 gives their command lines in a table (`idea04/novelty_deep_check.md` §8); idea 6 names the scripts but gives no command lines (`idea06/novelty_deep_check.md` §8).
+- **Unverifiable log.** The idea-4 `run.sh` time of 55 s comes from `$SCRATCH/idea04_run.log`, which is outside the repository.

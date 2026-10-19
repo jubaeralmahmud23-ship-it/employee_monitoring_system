@@ -21,8 +21,11 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
-UA = "idea06-novelty-check/1.0 (mailto:jubaeralmahmud23@gmail.com)"
-MAILTO = "jubaeralmahmud23@gmail.com"
+import os as _os
+# Contact for API "polite pools": set the MAILTO environment variable to your own address.
+# It is deliberately not hardcoded (redacted 2026-10-19).
+MAILTO = _os.environ.get("MAILTO", "")
+UA = "idea06-novelty-check/1.0" + (" (mailto:%s)" % MAILTO if MAILTO else "")
 PACE = 3.5
 BACKOFF = [30, 45, 60]
 

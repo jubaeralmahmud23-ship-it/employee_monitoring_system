@@ -307,3 +307,8 @@ These are five claims, so the numbers are a demonstration of the pipeline and no
 | `results/frame/*` | Frozen frame CSVs, counts per stratum, `frame_summary.json`, decomposition, manifests |
 | `results/pilot/*` | Sample, full-text manifest, coded table (CSV and MD), timing, item prevalence, screening summary, claim survival (CSV and MD), calculator validation, stopping rule (JSON and MD) |
 | `results/run_metadata.json` | Reproducibility metadata |
+
+
+## Redaction note (2026-10-19)
+
+During the 2026-10-19 run the two citation scripts (`code/chase_citations.py`, `code/crossref_is_sweep.py`) hardcoded the repository owner's personal e-mail address as the API contact (User-Agent and `mailto=` parameter), and the request logs (`results/novelty/crossref_log.csv`, `results/novelty/chase_log.csv`) recorded it in 33 URLs. The address was never authorised for that use. It has been removed: the scripts now read an optional contact from the `MAILTO` environment variable (none by default), and the logged URLs show `mailto=REDACTED`. Request URLs, statuses and attempts are otherwise unchanged, so the logs remain a faithful record of what was queried. The sha256 values recorded earlier for these four files no longer match because of this redaction; no result file or count changed.

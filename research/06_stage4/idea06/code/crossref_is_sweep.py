@@ -24,7 +24,11 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
-UA = "idea06-novelty-check/1.0 (mailto:jubaeralmahmud23@gmail.com)"
+import os as _os
+# Contact for the Crossref polite pool: set the MAILTO environment variable to your own address.
+# It is deliberately not hardcoded (redacted 2026-10-19).
+MAILTO = _os.environ.get("MAILTO", "")
+UA = "idea06-novelty-check/1.0" + (" (mailto:%s)" % MAILTO if MAILTO else "")
 SOURCES = [
     ("MIS Quarterly", "issn", "0276-7783"),
     ("Information Systems Research", "issn", "1047-7047"),
@@ -111,7 +115,7 @@ def main():
             filt = f"{kind}:{ident},from-pub-date:2023-01-01,until-pub-date:2026-12-31"
             url = ("https://api.crossref.org/works?filter=" + urllib.parse.quote(filt, safe=":,")
                    + "&select=DOI,title,abstract,issued,container-title,type&rows=1000&cursor="
-                   + urllib.parse.quote(cursor) + "&mailto=jubaeralmahmud23@gmail.com")
+                   + urllib.parse.quote(cursor) + ("&mailto=" + urllib.parse.quote(MAILTO) if MAILTO else ""))
             d = get(url, log)
             if d is None:
                 counts.append([name, ident, n, "incomplete"])
