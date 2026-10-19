@@ -221,7 +221,7 @@ def build_tables(df):
     first_by_sig = {}
     dup_of = []
     for tbl, sig in zip(T["tbl"], T["signature"]):
-        if sig is None:
+        if not isinstance(sig, str):   # pandas stores a missing signature as NaN
             dup_of.append(None)
         elif sig in first_by_sig:
             dup_of.append(first_by_sig[sig])

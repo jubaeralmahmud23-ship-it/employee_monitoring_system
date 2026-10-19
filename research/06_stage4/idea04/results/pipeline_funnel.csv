@@ -5,11 +5,11 @@ audit reports (audit_report_id),44
 "rows after excluding HackerRank (negative outcome, as Gerchick et al.)",4406
 "result tables (audit x rate definition x characteristic), all",527
 "tables after HackerRank exclusion, primary rate definition",332
-tables dropped as duplicates (identical counts),50
+tables dropped as duplicates (identical counts),49
 "  of which share auditor, tool and known data window (plan key)",35
-tables kept after de-duplication,282
+tables kept after de-duplication,283
 tables the literal plan key would drop instead,87
-known-group rows in kept tables,2128
+known-group rows in kept tables,2142
   with N reported,2104
   with N > 0,1803
   with N > 0 and selected count reported,1780

@@ -1,5 +1,5 @@
 {
-  "run_utc": "2026-10-19T04:52:42Z",
+  "run_utc": "2026-10-19T04:53:57Z",
   "python": "3.11.15",
   "platform": "Linux-6.18.44-fc-v139-x86_64-with-glibc2.39",
   "numpy": "2.4.6",
@@ -51,15 +51,15 @@
   },
   "ratios_union_computed": 2661,
   "timings_seconds": {
-    "load_profile": 0.376,
-    "tables_dedup_consistency": 2.189,
-    "ratios_statistics": 25.627,
-    "tabulations": 0.364,
-    "funnel_dedup_consistency_comparator": 2.011,
-    "excluded_population": 1.119,
-    "extras": 0.026,
-    "osf_crosscheck": 0.617,
-    "stopping_rule_meta": 0.064
+    "load_profile": 0.366,
+    "tables_dedup_consistency": 2.326,
+    "ratios_statistics": 25.612,
+    "tabulations": 0.382,
+    "funnel_dedup_consistency_comparator": 2.058,
+    "excluded_population": 1.222,
+    "extras": 0.032,
+    "osf_crosscheck": 0.706,
+    "stopping_rule_meta": 0.049
   },
   "stopping_rule": {
     "rule_text": "stop Part 1 if the ACLU code already computes sampling intervals or if, after de-duplication, more than about 80% of employer-level ratios have 95% intervals excluding 0.8",
@@ -113,5 +113,5 @@
       ]
     ]
   },
-  "total_seconds": 32.392
+  "total_seconds": 32.753
 }
