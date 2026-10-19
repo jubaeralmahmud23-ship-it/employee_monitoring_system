@@ -1,0 +1,86 @@
+{
+ "seed": 20261015,
+ "n_min_events": 100,
+ "logs": {
+  "bpic2017": {
+   "n_ranked": 140,
+   "median_tau_distinct": 0.033409610983981694,
+   "median_tau_405cells": 0.03762282536456538,
+   "median_tau_within_metric": 0.48760164799931216,
+   "median_tau_cross_metric": -0.00043572984749455336,
+   "median_tau_by_metric_within": {
+    "EPH": 0.6723535457348407,
+    "CCA": 0.5319620110492269,
+    "APT": 0.7984583761562178,
+    "RWK": 0.3429704792952543,
+    "DLA": 0.19060684537623293
+   },
+   "median_reclass_bottom": 0.17857142857142858,
+   "median_status_change_all": 0.07142857142857142,
+   "placebo_mean_median_tau": 0.05210763150645231,
+   "placebo_range_median_tau": [
+    0.031807173336408714,
+    0.07775122833027048
+   ],
+   "placebo_mean_within_metric_tau": 0.3616663148698289,
+   "placebo_range_within_metric_tau": [
+    0.338175805022162,
+    0.39362078582930293
+   ],
+   "placebo_mean_median_reclass": 0.2963638716356108,
+   "bootstrap_ci_median_tau": [
+    0.01686767686148251,
+    0.049515554539077064
+   ],
+   "bootstrap_ci_median_reclass": [
+    0.17391304347826086,
+    0.25
+   ],
+   "sources": [
+    "bpic2017_tau_summary.json",
+    "bpic2017_bootstrap_stopping.json",
+    "bpic2017_placebo_summary.json"
+   ]
+  },
+  "bpic2019": {
+   "n_ranked": 307,
+   "median_tau_distinct": 0.040608786523424215,
+   "median_tau_405cells": 0.03760941073152983,
+   "median_tau_within_metric": 0.5030434802925006,
+   "median_tau_cross_metric": 0.0004718362662964374,
+   "median_tau_by_metric_within": {
+    "EPH": 0.6674543867492708,
+    "CCA": 0.7170527584511921,
+    "APT": 0.5430705938769844,
+    "RWK": 0.23110027619777737,
+    "DLA": 0.2763187432100365
+   },
+   "median_reclass_bottom": 0.2727272727272727,
+   "median_status_change_all": 0.09446254071661238,
+   "placebo_mean_median_tau": 0.04718787013381026,
+   "placebo_range_median_tau": [
+    0.03312734177725174,
+    0.060394265232974906
+   ],
+   "placebo_mean_within_metric_tau": 0.4148508597896994,
+   "placebo_range_within_metric_tau": [
+    0.40473489103675214,
+    0.4230370114147354
+   ],
+   "placebo_mean_median_reclass": 0.33994787285926253,
+   "bootstrap_ci_median_tau": [
+    0.03170727095300843,
+    0.0468850321773375
+   ],
+   "bootstrap_ci_median_reclass": [
+    0.24615384615384617,
+    0.29014017581373247
+   ],
+   "sources": [
+    "bpic2019_tau_summary.json",
+    "bpic2019_bootstrap_stopping.json",
+    "bpic2019_placebo_summary.json"
+   ]
+  }
+ }
+}

@@ -180,6 +180,12 @@ def main():
         "reclassification": res["rsum"],
         "T_days_deadline": P["T_days"], "completed_cases": int(P["completed"].sum()), "cases": int(P["nC"]),
         "processing_time_mode": P["apt"]["mode"],
+        "processing_time_units": int(len(P["apt"]["y"])), "processing_time_segments": P["apt"]["segments"],
+        "processing_time_segments_dropped_resource_change": P["apt"]["segments_dropped_resource_change"],
+        "share_completed_cases_with_rework": float(P["rework"][P["completed"]].mean()),
+        "share_completed_cases_on_time": float(np.mean(P["ontime"][P["completed"]])),
+        "attributed_completed_cases_by_rule": {r: int(len(P["cases"][r]["case"])) for r in L.ATTRS},
+        "slots_per_window": {w: int(P["slots"][w][1]) for w in L.WINS},
         "casemix_covariates": P["Xcase_names"][:60],
     })
     with open(os.path.join(outdir, f"{log}_tau_summary.json"), "w") as fh:

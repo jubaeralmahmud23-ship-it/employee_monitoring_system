@@ -1,0 +1,27 @@
+{
+ "rule_text_section_4.2": "stop the confirmatory framing ... if, after excluding labelled or detected system accounts and resources below the pre-registered minimum-event threshold, the median Kendall tau across defensible configurations exceeds 0.9 on both BPI 2017 and BPI 2019 and bottom-quintile reclassification under case-mix adjustment is below 10% on both; also stop if the proceedings sweep finds a rank-stability study of resource measures on public logs.",
+ "empirical_clause_all_four_conditions_met_primary_reading": false,
+ "empirical_clause_met_under_any_reading_shown": false,
+ "sensitivity_max_median_tau_any_variant": {
+  "bpic2017": 0.0509782386625909,
+  "bpic2019": 0.0692546081895758
+ },
+ "sensitivity_max_within_metric_median_tau_any_variant": {
+  "bpic2017": 0.5051160050944581,
+  "bpic2019": 0.580578636747799
+ },
+ "sensitivity_min_median_reclass_any_variant": {
+  "bpic2017": 0.1666666666666666,
+  "bpic2019": 0.2334710743801653
+ },
+ "bootstrap_share_replicates_median_tau_gt_0.9": {
+  "bpic2017": 0.0,
+  "bpic2019": 0.0
+ },
+ "bootstrap_share_replicates_median_reclass_lt_0.10": {
+  "bpic2017": 0.0,
+  "bpic2019": 0.0
+ },
+ "literature_clause": "not assessed in this pilot (the ICPM/BPM proceedings sweep was not part of this run)",
+ "outcome_empirical_clause": "not triggered"
+}

@@ -1,0 +1,9 @@
+criterion,log,statistic,value,ci95_lo,ci95_hi,threshold,condition_met
+1a median Kendall tau across defensible configurations > 0.9,bpic2017,"median tau-b over 6,786 distinct configuration pairs (primary)",0.033409610983981694,0.01686767686148251,0.049515554539077064,> 0.9,False
+"1a (alternative reading) same, over the 81,810 pairs of the 405 cells",bpic2017,"median tau-b, 405-cell pairs (identical cells count tau = 1)",0.03762282536456538,0.024259493214991257,0.05840861923118416,> 0.9,False
+1b bottom-quintile reclassification under case-mix adjustment < 10%,bpic2017,median over 78 distinct none-vs-adjusted pairs of the share of the unadjusted bottom quintile leaving it (primary),0.17857142857142858,0.17391304347826086,0.25,< 0.10,False
+1b (alternative reading) share of ALL ranked workers whose bottom-quintile status changes,bpic2017,median over 78 distinct pairs of |B_none symmetric-difference B_adj| / n,0.07142857142857142,0.07032813010787839,0.1,< 0.10,True
+1a median Kendall tau across defensible configurations > 0.9,bpic2019,"median tau-b over 6,786 distinct configuration pairs (primary)",0.040608786523424215,0.03170727095300843,0.0468850321773375,> 0.9,False
+"1a (alternative reading) same, over the 81,810 pairs of the 405 cells",bpic2019,"median tau-b, 405-cell pairs (identical cells count tau = 1)",0.03760941073152983,0.03130313414665775,0.04703470526636982,> 0.9,False
+1b bottom-quintile reclassification under case-mix adjustment < 10%,bpic2019,median over 78 distinct none-vs-adjusted pairs of the share of the unadjusted bottom quintile leaving it (primary),0.2727272727272727,0.24615384615384617,0.29014017581373247,< 0.10,False
+1b (alternative reading) share of ALL ranked workers whose bottom-quintile status changes,bpic2019,median over 78 distinct pairs of |B_none symmetric-difference B_adj| / n,0.09446254071661238,0.08794788273615635,0.10515559919238576,< 0.10,True

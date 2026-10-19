@@ -167,14 +167,16 @@ def main():
             ax.text(v - 0.02, ax.get_ylim()[1] * 0.97, lab, color=INK2, fontsize=7.5, ha="right", va="top", rotation=90)
         m = tau[lg]["median_tau_distinct"]
         ax.axvline(m, color=INK, linewidth=1)
-        ax.text(m + 0.02, ax.get_ylim()[1] * 0.97, f"median all pairs {m:.2f}", color=INK, fontsize=7.5, ha="left", va="top", rotation=90)
         ax.set_xlim(-0.6, 1.02)
         ax.set_xlabel("Kendall tau-b between two configurations")
-        ax.set_ylabel("share of pairs")
-        ax.set_title(f"{LABEL[lg]} ({tau[lg]['n_analysis_set']} workers)", fontsize=9.5, color=INK, loc="left")
-        ax.legend(frameon=False, fontsize=7.5, loc="upper left", bbox_to_anchor=(0.0, 0.88), labelcolor=INK2)
+        ax.set_ylabel("share of pairs within group")
+        ax.set_title(f"{LABEL[lg]} ({tau[lg]['n_analysis_set']} workers); black line: median {m:.2f}",
+                     fontsize=9, color=INK, loc="left")
+    handles, labels = axes[0].get_legend_handles_labels()
+    fig.legend(handles, [l.split(" (")[0] + " pairs" for l in labels], frameon=False, fontsize=8, loc="upper right",
+               ncol=2, labelcolor=INK2, bbox_to_anchor=(0.99, 0.99))
     fig.suptitle("Pairwise rank agreement across the 117 distinct scoring configurations", fontsize=10.5, color=INK, x=0.01, ha="left")
-    fig.tight_layout()
+    fig.tight_layout(rect=(0, 0, 1, 0.95))
     fig.savefig(os.path.join(outdir, "fig_tau_distribution.png"), dpi=150)
     plt.close(fig)
 
@@ -193,7 +195,8 @@ def main():
             ax.plot(d["point"], y + off, "o", color=SERIES[lg], markersize=5, markeredgecolor=SURF, markeredgewidth=1, label=LABEL[lg])
         thr = 0.9 if stat == "kendall_tau_b" else 0.10
         ax.axvline(thr, color=MUTED, linewidth=1, linestyle=(0, (3, 2)))
-        ax.text(thr, len(names) - 0.3, f"stop threshold {thr:g}", color=INK2, fontsize=7.5, ha="center", va="bottom")
+        ax.text(thr + (-0.01 if stat == "kendall_tau_b" else 0.01), len(names) - 0.3, f"stop threshold {thr:g}", color=INK2,
+                fontsize=7.5, ha="right" if stat == "kendall_tau_b" else "left", va="bottom")
         ax.set_yticks(np.arange(len(names))[::-1])
         ax.set_yticklabels(names, fontsize=7.5)
         ax.set_xlabel(xlab)

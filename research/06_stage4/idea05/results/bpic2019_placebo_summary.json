@@ -1,0 +1,448 @@
+{
+ "log": "bpic2019",
+ "n_shuffles": 20,
+ "seed": [
+  20261015,
+  6
+ ],
+ "touch_units": 933995,
+ "strata": 28,
+ "seconds_placebo": 150.7,
+ "seconds_total": 166.1,
+ "observed": {
+  "n_analysis_set": 307,
+  "median_tau_distinct": 0.040608786523424215,
+  "median_tau_405cells": 0.03760941073152983,
+  "median_tau_within_metric_distinct": 0.5030434802925006,
+  "median_tau_cross_metric_distinct": 0.0004718362662964374,
+  "median_reclass_bottom_distinct": 0.2727272727272727,
+  "median_reclass_bottom_405": 0.3114754098360656,
+  "median_status_change_all_distinct": 0.09446254071661238,
+  "tau::metric: CCA vs EPH": 0.09970444999891032,
+  "reclass::metric: CCA vs EPH": 0.8411214953271028,
+  "tau::metric: CCA vs APT": -0.22742401842677068,
+  "reclass::metric: CCA vs APT": 0.8170731707317073,
+  "tau::metric: CCA vs RWK": -0.26492058733038454,
+  "reclass::metric: CCA vs RWK": 0.7,
+  "tau::metric: CCA vs DLA": -0.11928274847640068,
+  "reclass::metric: CCA vs DLA": 0.575,
+  "tau::attribution: last vs first": 0.18461063005169479,
+  "reclass::attribution: last vs first": 0.6261682242990654,
+  "tau::attribution: last vs majority": 0.29537389913675566,
+  "reclass::attribution: last vs majority": 0.719626168224299,
+  "tau::window: month vs week": 0.9660249728054173,
+  "reclass::window: month vs week": 0.0,
+  "tau::window: month vs quarter": 0.9789276306174592,
+  "reclass::window: month vs quarter": 0.0,
+  "tau::idle gap (EPH): 60 vs 15 min": 0.8313853228587852,
+  "reclass::idle gap (EPH): 60 vs 15 min": 0.16393442622950818,
+  "tau::idle gap (EPH): 60 vs 240 min": 0.839901215643695,
+  "reclass::idle gap (EPH): 60 vs 240 min": 0.2459016393442623,
+  "tau::case-mix (EPH): none vs activity": 0.7373698665133805,
+  "reclass::case-mix (EPH): none vs activity": 0.22950819672131148,
+  "tau::case-mix (EPH): none vs regression": 0.5672649081348066,
+  "reclass::case-mix (EPH): none vs regression": 0.4262295081967213,
+  "tau::case-mix (CCA): none vs activity": 0.9761415997818647,
+  "reclass::case-mix (CCA): none vs activity": 0.0,
+  "tau::case-mix (CCA): none vs regression": 0.9120307096819894,
+  "reclass::case-mix (CCA): none vs regression": 0.0,
+  "tau::case-mix (APT): none vs activity": 0.6774942580954544,
+  "reclass::case-mix (APT): none vs activity": 0.39285714285714285,
+  "tau::case-mix (APT): none vs regression": 0.3175841094369148,
+  "reclass::case-mix (APT): none vs regression": 0.7678571428571429,
+  "tau::case-mix (RWK): none vs activity": 0.6421874176626912,
+  "reclass::case-mix (RWK): none vs activity": 0.125,
+  "tau::case-mix (RWK): none vs regression": 0.4532484018206756,
+  "reclass::case-mix (RWK): none vs regression": 0.175,
+  "tau::case-mix (DLA): none vs activity": 0.7454449984521753,
+  "reclass::case-mix (DLA): none vs activity": 0.15,
+  "tau::case-mix (DLA): none vs regression": 0.41709910104397724,
+  "reclass::case-mix (DLA): none vs regression": 0.375
+ },
+ "placebo": {
+  "n_analysis_set": {
+   "mean": 296.0,
+   "min": 293.0,
+   "max": 299.0,
+   "p05": 294.9,
+   "p95": 299.0,
+   "share_placebo_ge_observed": 0.0
+  },
+  "median_tau_distinct": {
+   "mean": 0.04718787013381026,
+   "min": 0.03312734177725174,
+   "max": 0.060394265232974906,
+   "p05": 0.03363310993283763,
+   "p95": 0.05945497645217587,
+   "share_placebo_ge_observed": 0.85
+  },
+  "median_tau_405cells": {
+   "mean": 0.04273248041273475,
+   "min": 0.026888037211514903,
+   "max": 0.05096496955269558,
+   "p05": 0.03406730412293717,
+   "p95": 0.05066762897944714,
+   "share_placebo_ge_observed": 0.9
+  },
+  "median_tau_within_metric_distinct": {
+   "mean": 0.4148508597896994,
+   "min": 0.40473489103675214,
+   "max": 0.4230370114147354,
+   "p05": 0.40706751347056835,
+   "p95": 0.4217655955460188,
+   "share_placebo_ge_observed": 0.0
+  },
+  "median_tau_cross_metric_distinct": {
+   "mean": 0.0007127017024214242,
+   "min": -0.008208426106408446,
+   "max": 0.017313013042625156,
+   "p05": -0.007425914052916825,
+   "p95": 0.016982918094342415,
+   "share_placebo_ge_observed": 0.45
+  },
+  "median_reclass_bottom_distinct": {
+   "mean": 0.33994787285926253,
+   "min": 0.31525974025974024,
+   "max": 0.38608374384236455,
+   "p05": 0.31659632034632035,
+   "p95": 0.38159232278533856,
+   "share_placebo_ge_observed": 1.0
+  },
+  "median_reclass_bottom_405": {
+   "mean": 0.3858028212098162,
+   "min": 0.35714285714285715,
+   "max": 0.4298029556650246,
+   "p05": 0.3646186440677966,
+   "p95": 0.40657943349753695,
+   "share_placebo_ge_observed": 1.0
+  },
+  "median_status_change_all_distinct": {
+   "mean": 0.13600720142272008,
+   "min": 0.12681159420289856,
+   "max": 0.15473806521792874,
+   "p05": 0.12707636566332217,
+   "p95": 0.15258798407642088,
+   "share_placebo_ge_observed": 1.0
+  },
+  "tau::metric: CCA vs EPH": {
+   "mean": 0.37830467697687953,
+   "min": 0.3601071660615389,
+   "max": 0.39876800830947223,
+   "p05": 0.3627664565362482,
+   "p95": 0.389080387524263,
+   "share_placebo_ge_observed": 1.0
+  },
+  "reclass::metric: CCA vs EPH": {
+   "mean": 0.8196032133820841,
+   "min": 0.7627118644067796,
+   "max": 0.8709677419354839,
+   "p05": 0.780323093220339,
+   "p95": 0.8668817204301076,
+   "share_placebo_ge_observed": 0.25
+  },
+  "tau::metric: CCA vs APT": {
+   "mean": -0.21468239478692638,
+   "min": -0.2614442169068362,
+   "max": -0.1739020736989645,
+   "p05": -0.2607710350123803,
+   "p95": -0.17517555941288127,
+   "share_placebo_ge_observed": 0.7
+  },
+  "reclass::metric: CCA vs APT": {
+   "mean": 0.7910561886539434,
+   "min": 0.734375,
+   "max": 0.847457627118644,
+   "p05": 0.7415574596774194,
+   "p95": 0.8439353813559322,
+   "share_placebo_ge_observed": 0.25
+  },
+  "tau::metric: CCA vs RWK": {
+   "mean": -0.3366732878899006,
+   "min": -0.4039572629993376,
+   "max": -0.2719490318370686,
+   "p05": -0.38769801346766697,
+   "p95": -0.2962955333265311,
+   "share_placebo_ge_observed": 0.0
+  },
+  "reclass::metric: CCA vs RWK": {
+   "mean": 0.8552942658658219,
+   "min": 0.7833333333333333,
+   "max": 0.9464285714285714,
+   "p05": 0.7891666666666667,
+   "p95": 0.9282305194805195,
+   "share_placebo_ge_observed": 1.0
+  },
+  "tau::metric: CCA vs DLA": {
+   "mean": -0.2961922829866565,
+   "min": -0.35158241498183607,
+   "max": -0.2439338476842289,
+   "p05": -0.34712188743517386,
+   "p95": -0.24458233277672178,
+   "share_placebo_ge_observed": 0.0
+  },
+  "reclass::metric: CCA vs DLA": {
+   "mean": 0.8165575856543347,
+   "min": 0.7321428571428571,
+   "max": 0.8928571428571429,
+   "p05": 0.7491071428571429,
+   "p95": 0.8758928571428571,
+   "share_placebo_ge_observed": 1.0
+  },
+  "tau::attribution: last vs first": {
+   "mean": 0.23616053668448397,
+   "min": 0.22838247097336523,
+   "max": 0.2453359725099152,
+   "p05": 0.23068705083519328,
+   "p95": 0.24270064967692317,
+   "share_placebo_ge_observed": 1.0
+  },
+  "reclass::attribution: last vs first": {
+   "mean": 0.741523681885969,
+   "min": 0.6923076923076923,
+   "max": 0.78125,
+   "p05": 0.715448717948718,
+   "p95": 0.7745463709677419,
+   "share_placebo_ge_observed": 1.0
+  },
+  "tau::attribution: last vs majority": {
+   "mean": 0.33553017092740434,
+   "min": 0.3245062652540782,
+   "max": 0.34414305870542183,
+   "p05": 0.3265587136437555,
+   "p95": 0.34235651850362836,
+   "share_placebo_ge_observed": 1.0
+  },
+  "reclass::attribution: last vs majority": {
+   "mean": 0.7228617428460182,
+   "min": 0.6615384615384615,
+   "max": 0.7666666666666667,
+   "p05": 0.6871752837326608,
+   "p95": 0.7656770833333333,
+   "share_placebo_ge_observed": 0.55
+  },
+  "tau::window: month vs week": {
+   "mean": 0.9828565475239618,
+   "min": 0.9808327055258368,
+   "max": 0.9857689752207883,
+   "p05": 0.9811525531445175,
+   "p95": 0.9854658577319558,
+   "share_placebo_ge_observed": 1.0
+  },
+  "reclass::window: month vs week": {
+   "mean": 0.06765381469171836,
+   "min": 0.03278688524590164,
+   "max": 0.11290322580645161,
+   "p05": 0.03330601092896175,
+   "p95": 0.10640273704789835,
+   "share_placebo_ge_observed": 1.0
+  },
+  "tau::window: month vs quarter": {
+   "mean": 0.9932851696177704,
+   "min": 0.99122265398609,
+   "max": 0.9949080220849529,
+   "p05": 0.9914239718245305,
+   "p95": 0.9948805824715643,
+   "share_placebo_ge_observed": 1.0
+  },
+  "reclass::window: month vs quarter": {
+   "mean": 0.024873101515089882,
+   "min": 0.0,
+   "max": 0.1076923076923077,
+   "p05": 0.0,
+   "p95": 0.09732009925558313,
+   "share_placebo_ge_observed": 1.0
+  },
+  "tau::idle gap (EPH): 60 vs 15 min": {
+   "mean": 0.8322443483566806,
+   "min": 0.8252840244985741,
+   "max": 0.8404313404313404,
+   "p05": 0.8257056279044644,
+   "p95": 0.8396798167621412,
+   "share_placebo_ge_observed": 0.55
+  },
+  "reclass::idle gap (EPH): 60 vs 15 min": {
+   "mean": 0.10902542372881356,
+   "min": 0.05084745762711865,
+   "max": 0.1694915254237288,
+   "p05": 0.06694915254237288,
+   "p95": 0.1533898305084746,
+   "share_placebo_ge_observed": 0.05
+  },
+  "tau::idle gap (EPH): 60 vs 240 min": {
+   "mean": 0.8061430831900015,
+   "min": 0.7962335301115575,
+   "max": 0.8158883892540066,
+   "p05": 0.7972570761599067,
+   "p95": 0.8133711487343449,
+   "share_placebo_ge_observed": 0.0
+  },
+  "reclass::idle gap (EPH): 60 vs 240 min": {
+   "mean": 0.20872881355932202,
+   "min": 0.15254237288135594,
+   "max": 0.2711864406779661,
+   "p05": 0.16864406779661018,
+   "p95": 0.25508474576271184,
+   "share_placebo_ge_observed": 0.15
+  },
+  "tau::case-mix (EPH): none vs activity": {
+   "mean": 0.5694580647860245,
+   "min": 0.5535004825929833,
+   "max": 0.580537299665629,
+   "p05": 0.5583294430391016,
+   "p95": 0.5786971059610285,
+   "share_placebo_ge_observed": 0.0
+  },
+  "reclass::case-mix (EPH): none vs activity": {
+   "mean": 0.771723163841808,
+   "min": 0.6949152542372882,
+   "max": 0.8166666666666667,
+   "p05": 0.7271186440677966,
+   "p95": 0.8137146892655368,
+   "share_placebo_ge_observed": 1.0
+  },
+  "tau::case-mix (EPH): none vs regression": {
+   "mean": 0.5748429245419089,
+   "min": 0.5570469798657718,
+   "max": 0.5898074484030901,
+   "p05": 0.5648370609780006,
+   "p95": 0.5856451054998271,
+   "share_placebo_ge_observed": 0.9
+  },
+  "reclass::case-mix (EPH): none vs regression": {
+   "mean": 0.7590254237288135,
+   "min": 0.6779661016949152,
+   "max": 0.8166666666666667,
+   "p05": 0.7101694915254237,
+   "p95": 0.7976129943502824,
+   "share_placebo_ge_observed": 1.0
+  },
+  "tau::case-mix (CCA): none vs activity": {
+   "mean": 0.9474059006090705,
+   "min": 0.9415574566766081,
+   "max": 0.9526668578362212,
+   "p05": 0.9438119402973997,
+   "p95": 0.9514460287927156,
+   "share_placebo_ge_observed": 0.0
+  },
+  "reclass::case-mix (CCA): none vs activity": {
+   "mean": 0.06674677369159596,
+   "min": 0.0,
+   "max": 0.109375,
+   "p05": 0.03166666666666667,
+   "p95": 0.10777644230769232,
+   "share_placebo_ge_observed": 1.0
+  },
+  "tau::case-mix (CCA): none vs regression": {
+   "mean": 0.9134019946066199,
+   "min": 0.9004059666313422,
+   "max": 0.923403413056578,
+   "p05": 0.9072945790764192,
+   "p95": 0.9217084523462875,
+   "share_placebo_ge_observed": 0.75
+  },
+  "reclass::case-mix (CCA): none vs regression": {
+   "mean": 0.09188182252467303,
+   "min": 0.03389830508474576,
+   "max": 0.12903225806451613,
+   "p05": 0.04919491525423729,
+   "p95": 0.12903225806451613,
+   "share_placebo_ge_observed": 1.0
+  },
+  "tau::case-mix (APT): none vs activity": {
+   "mean": 0.44684913956177236,
+   "min": 0.4105845728121757,
+   "max": 0.5064683500518852,
+   "p05": 0.4118023199137001,
+   "p95": 0.49967303928437246,
+   "share_placebo_ge_observed": 0.0
+  },
+  "reclass::case-mix (APT): none vs activity": {
+   "mean": 0.5722457627118643,
+   "min": 0.5254237288135594,
+   "max": 0.6333333333333333,
+   "p05": 0.5254237288135594,
+   "p95": 0.6274293785310734,
+   "share_placebo_ge_observed": 1.0
+  },
+  "tau::case-mix (APT): none vs regression": {
+   "mean": 0.35003858560275286,
+   "min": 0.2602790268649833,
+   "max": 0.41570390868211693,
+   "p05": 0.3035235789230947,
+   "p95": 0.39472504437395484,
+   "share_placebo_ge_observed": 0.75
+  },
+  "reclass::case-mix (APT): none vs regression": {
+   "mean": 0.6264124293785309,
+   "min": 0.5423728813559322,
+   "max": 0.6779661016949152,
+   "p05": 0.5745762711864407,
+   "p95": 0.6779661016949152,
+   "share_placebo_ge_observed": 0.0
+  },
+  "tau::case-mix (RWK): none vs activity": {
+   "mean": 0.6225817499346151,
+   "min": 0.5779122089195761,
+   "max": 0.6674118820413364,
+   "p05": 0.5874165479831002,
+   "p95": 0.6613736077003205,
+   "share_placebo_ge_observed": 0.25
+  },
+  "reclass::case-mix (RWK): none vs activity": {
+   "mean": 0.19158720665299617,
+   "min": 0.12727272727272726,
+   "max": 0.26785714285714285,
+   "p05": 0.12727272727272726,
+   "p95": 0.25521103896103897,
+   "share_placebo_ge_observed": 1.0
+  },
+  "tau::case-mix (RWK): none vs regression": {
+   "mean": 0.5081026600648869,
+   "min": 0.45626200229256053,
+   "max": 0.5555872682212584,
+   "p05": 0.45753553647169765,
+   "p95": 0.552027141370307,
+   "share_placebo_ge_observed": 1.0
+  },
+  "reclass::case-mix (RWK): none vs regression": {
+   "mean": 0.2365743905217589,
+   "min": 0.12727272727272726,
+   "max": 0.375,
+   "p05": 0.1618181818181818,
+   "p95": 0.3123863636363637,
+   "share_placebo_ge_observed": 0.9
+  },
+  "tau::case-mix (DLA): none vs activity": {
+   "mean": 0.6405865895307365,
+   "min": 0.5884766922082106,
+   "max": 0.6907222962892823,
+   "p05": 0.610545693977573,
+   "p95": 0.6712157786120008,
+   "share_placebo_ge_observed": 0.0
+  },
+  "reclass::case-mix (DLA): none vs activity": {
+   "mean": 0.4126941754990526,
+   "min": 0.32727272727272727,
+   "max": 0.49122807017543857,
+   "p05": 0.3618181818181818,
+   "p95": 0.49092503987240826,
+   "share_placebo_ge_observed": 1.0
+  },
+  "tau::case-mix (DLA): none vs regression": {
+   "mean": 0.4187517568982746,
+   "min": 0.3569071096584242,
+   "max": 0.46476109567992746,
+   "p05": 0.36009624789040456,
+   "p95": 0.46127286206903567,
+   "share_placebo_ge_observed": 0.55
+  },
+  "reclass::case-mix (DLA): none vs regression": {
+   "mean": 0.471446149644341,
+   "min": 0.41818181818181815,
+   "max": 0.5357142857142857,
+   "p05": 0.41818181818181815,
+   "p95": 0.5357142857142857,
+   "share_placebo_ge_observed": 1.0
+  }
+ }
+}

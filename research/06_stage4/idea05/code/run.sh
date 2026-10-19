@@ -7,7 +7,8 @@
 # <data_dir> must contain (download commands and checksums below):
 #   bpic2017/bpic2017.xes.gz            4TU DOI 10.4121/uuid:5f3067df-f10b-45da-b98b-86ae4c7a310b
 #   bpic2019/BPI_Challenge_2019.xes     4TU DOI 10.4121/uuid:d06aff4b-79f0-45e6-8ec8-e19730c248f1
-# Derived per-resource files go to <data_dir>/derived (untracked); aggregate results to ../results.
+# Derived per-resource files go to <data_dir>/derived (untracked); aggregate results to ../results
+# (or to $RESULTS_DIR if set).
 # Every interpreter call runs with -I from / (never from the data directory).
 set -euo pipefail
 DATA=$(cd "${1:?usage: run.sh <data_dir> [n_jobs] [B] [shuffles]}" && pwd)
@@ -16,7 +17,7 @@ B=${3:-500}
 SH=${4:-20}
 PY=${PY:-python3}
 HERE=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
-RES=$(cd "$HERE/.." && pwd)/results
+RES=${RESULTS_DIR:-$(cd "$HERE/.." && pwd)/results}   # override with RESULTS_DIR for test runs
 DER=$DATA/derived
 mkdir -p "$RES" "$DER"
 cd /
