@@ -1,0 +1,11 @@
+claim_id,pilot_id,role,metric,a_label,b_label,p_a_pct,p_b_pct,n_a,n_b,n_source,structure,cluster_m,runs,run_sd_pp,source_loc
+C01,A02,H1 (rule claim),AIME2024 accuracy,DistilQwen2.5-3B-R1,Qwen2.5-3B-Instruct,16.7,6.7,30,30,derived (benchmark size; not stated in paper),paired,,1,,Table 1 p.5
+C02,A02,alternative cell,MATH-500 accuracy,DistilQwen2.5-3B-R1,Qwen2.5-3B-Instruct,70.0,62.6,500,500,paper (§4.1 p.4),paired,,1,,Table 1 p.5
+C03,A03,H1 (rule claim),HIT@5 (shipbuilding),Ours (BGE-M3),ColQwen2.5-3B,96.0,95.9,2932,2932,paper (§4.1 p.4),paired,,1,,Table 1 p.3
+C04,A03,alternative cell,HIT@5 (shipbuilding),Ours (BGE-M3),BGE-M3 backbone,96.0,87.7,2932,2932,paper (§4.1 p.4),paired,,1,,Table 1 p.3
+C05,A04,H1 (rule claim),macro success rate VestaBench-VH,ReAct (GPT-4.1-Mini),Direct Stepwise (GPT-4.1-Mini),47.0,42.0,100,100,paper (p.1-2; App. B.2 p.9),paired,,1,,Table 2 p.5
+C06,A07,alternative cell,share of conversations with >=1 excellent response,REPO,GRPO,66.67,43.33,30,30,paper (§5 p.4),paired,,1,,abstract p.1; §6 p.5
+C07,A08,alternative cell (Small variant assumed),page-level accuracy DocSplit-Mono-Seq,Qwen 3 VL 235B,Claude Sonnet 4.5,84.18,82.39,6655,6655,assumed (500 packets x 13.31 pages; variant not stated),paired+clustered,13.31,1,,Table 2 p.6; Table 8 p.15
+C08,A08,alternative cell (Large variant assumed),page-level accuracy DocSplit-Mono-Seq,Qwen 3 VL 235B,Claude Sonnet 4.5,84.18,82.39,5599,5599,assumed (102 packets x 54.89 pages; variant not stated),paired+clustered,54.89,1,,Table 2 p.6; Table 8 p.15
+C09,A09,H1 (rule claim),AIME-2025 exact-match accuracy,CaR (Distill-Qwen-14B),CoT-Raw (Distill-Qwen-14B),53.3,40.0,30,30,derived (benchmark size; not stated in paper),paired,,1,,Table 1 p.5
+C10,A10,H1 (rule claim),OCR-VQA test accuracy,MQMA-large,SQSA-large,74.0,71.5,100400,100400,paper (Table 7 p.11; 100.4K rounded),paired+clustered,4.83,1,,Table 2 p.6
