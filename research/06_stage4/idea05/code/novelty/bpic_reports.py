@@ -40,7 +40,7 @@ def links(page, base, pattern):
     html = open(page, encoding="utf-8", errors="replace").read()
     out = []
     for h in re.findall(r'href="([^"]+\.pdf)"', html):
-        u = urllib.parse.urljoin(base, h)
+        u = urllib.parse.urljoin(base, h).replace("http://", "https://")  # plain http fails via the proxy
         if re.search(pattern, u) and u not in out:
             out.append(u)
     return out

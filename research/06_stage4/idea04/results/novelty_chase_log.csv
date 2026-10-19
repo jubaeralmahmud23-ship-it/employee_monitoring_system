@@ -9,24 +9,24 @@ morris_lobsenz2000,forward,SemanticScholar,done,0,0
 morris_lobsenz2000,backward,SemanticScholar,done (S2 returned data=null: list withheld for this paper),0,0
 morris_lobsenz2000,backward,Crossref,done,1,39
 roth_bobko_switzer2006,forward,OpenAlex,not done (429 daily budget exhausted (not retried)),0,0
-roth_bobko_switzer2006,backward,OpenAlex,not done (seed unresolved),3,0
+roth_bobko_switzer2006,backward,OpenAlex,not done (seed unresolved: 429 daily budget exhausted (not retried)) [attempts corrected by hand from a hard-coded 3; see novelty_deep_check.md],0,0
 roth_bobko_switzer2006,forward,SemanticScholar,done,2,58
 roth_bobko_switzer2006,backward,SemanticScholar,done (S2 returned data=null: list withheld for this paper),1,0
 roth_bobko_switzer2006,backward,Crossref,done,1,50
 collins_morris2008,forward,OpenAlex,not done (429 daily budget exhausted (not retried)),0,0
-collins_morris2008,backward,OpenAlex,not done (seed unresolved),3,0
+collins_morris2008,backward,OpenAlex,not done (seed unresolved: 429 daily budget exhausted (not retried)) [attempts corrected by hand from a hard-coded 3; see novelty_deep_check.md],0,0
 collins_morris2008,forward,SemanticScholar,done,1,44
 collins_morris2008,backward,SemanticScholar,done (S2 returned data=null: list withheld for this paper),1,0
 collins_morris2008,backward,Crossref,done (no reference list deposited),1,0
 switzer_roth_rosopa2016,forward,OpenAlex,not done (429 daily budget exhausted (not retried)),0,0
-switzer_roth_rosopa2016,backward,OpenAlex,not done (seed unresolved),3,0
+switzer_roth_rosopa2016,backward,OpenAlex,not done (seed unresolved: 429 daily budget exhausted (not retried)) [attempts corrected by hand from a hard-coded 3; see novelty_deep_check.md],0,0
 switzer_roth_rosopa2016,forward,SemanticScholar,done,2,0
 switzer_roth_rosopa2016,backward,SemanticScholar,not done (429 x3),3,0
 switzer_roth_rosopa2016,backward,Crossref,done,1,28
 lam2024,forward,OpenAlex,not done (429 daily budget exhausted (not retried)),0,0
 lam2024,forward,SemanticScholar,not done (429 x3),3,0
 ferrara2025,forward,OpenAlex,not done (429 daily budget exhausted (not retried)),0,0
-ferrara2025,backward,OpenAlex,not done (seed unresolved),3,0
+ferrara2025,backward,OpenAlex,not done (seed unresolved: 429 daily budget exhausted (not retried)) [attempts corrected by hand from a hard-coded 3; see novelty_deep_check.md],0,0
 ferrara2025,backward,SemanticScholar,done,2,49
 ferrara2025,forward,SemanticScholar,done,2,2
 ferrara2025,backward,Crossref,done (no reference list deposited),1,0

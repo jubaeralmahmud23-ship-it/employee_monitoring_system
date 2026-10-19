@@ -223,12 +223,14 @@ def main():
                 if w["title"] and KEYWORDS.search(w["title"]):
                     hit_rows.append([key, "forward", "OpenAlex", w["title"], w["year"], w["doi"], w["venue"]])
         if doi and "backward" in dirs:
+            att0 = 0
+            st0 = "seed from forward leg"
             if seed_json is None:
                 st0, att0, seed_json = leg("openalex", lambda: paced_get(
                     "openalex", f"https://api.openalex.org/works/doi:{doi}",
                     {"select": "id,display_name,cited_by_count,referenced_works"}), args.raw_dir, f"oa_{key}_seedb")
             if seed_json is None:
-                log_rows.append([key, "backward", "OpenAlex", "not done (seed unresolved)", 3, 0])
+                log_rows.append([key, "backward", "OpenAlex", f"not done (seed unresolved: {st0})", att0, 0])
             else:
                 st, att, works = openalex_backward(seed_json, args.raw_dir, f"oa_{key}")
                 log_rows.append([key, "backward", "OpenAlex", st, att, len(works)])
