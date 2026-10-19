@@ -223,7 +223,7 @@ These works are **not** in the 2026-10-05 table. Earlier entries (Pika et al. 20
 | Shahian, Wolf, Iezzoni, Kirle, Normand, "Variability in the Measurement of Hospital-wide Mortality Rates" | 2010 | NEJM, 10.1056/nejmsa1006396 | https://doi.org/10.1056/nejmsa1006396 | Four vendors' methods on the same 2.5 M discharges; inclusion 28-95%; 12 of 28 hospitals flagged high by one method were low by another (per snippet) | "Same data, different methods, discordant classification" at institution level, with a policy audience | Individual workers; configuration factorial; logs | metadata/snippet |
 | Bas, Tarantola, Carot, Conchado, "Sensitivity Analysis: A Necessary Ingredient for Measuring the Quality of a Teaching Activity Index" | 2016 | Social Indicators Research, 10.1007/s11205-016-1297-2 | https://doi.org/10.1007/s11205-016-1297-2 | Composite indicator of **individual academic staff's** teaching activity at a Spanish university, with sensitivity analysis of effective versus intended weights | Saisana-style sensitivity analysis applied to individual employees' scores | Event-log measures; rank stability across non-weighting choices (window, idle gap, attribution) | abstract (Springer page) |
 | Rhea, Markey, D'Arinzo, Schellmann, Sloane, Squires, "An external stability audit framework to test the validity of personality prediction in AI hiring" | 2022 | Data Mining and Knowledge Discovery, 10.1007/s10618-022-00861-0; arXiv 2201.09151 | https://arxiv.org/abs/2201.09151 | Socio-technical framework and open-source library for **external stability audits** of algorithmic HR tools (Humantic AI, Crystal), on the premise that "reliability is a necessary, but not a sufficient, condition for validity" | The idea's **audit-artefact framing** (open tool, stability as a precondition for validity, high-stakes HR) already exists for hiring | Performance evaluation rather than hiring; deployer-side configuration choices rather than input perturbations of a vendor black box; event logs | abstract (arXiv) |
-| Oliveira, Fernandes, Steinmacher, Cristo, Conte, Garcia, "Code and commit metrics of developer productivity: a study on team leaders perceptions" | 2020 | Empirical Software Engineering, 10.1007/s10664-020-09820-z | https://doi.org/10.1007/s10664-020-09820-z | Eight leaders ranked their developers; Kendall-type correlations of leader rankings with code-based and commit-based metric rankings | Metric choice changes how individual workers rank against a criterion, in software engineering | No configuration factorial; the idea has no criterion and studies internal agreement across configurations | abstract (Springer page) |
+| Oliveira, Fernandes, Steinmacher, Cristo, Conte, Garcia, "Code and commit metrics of developer productivity: a study on team leaders perceptions" | 2020 | Empirical Software Engineering, 10.1007/s10664-020-09820-z | https://doi.org/10.1007/s10664-020-09820-z | Eight leaders of nine projects ranked their developers; the leader rankings were correlated with code-based and commit-based metric rankings (Kendall's tau per a WebSearch snippet), and correlations were greater for code-based metrics | Metric choice changes how individual workers rank against a criterion, in software engineering | No configuration factorial; the idea has no criterion and studies internal agreement across configurations | abstract (Springer page) |
 | Braakman, Zuijderwijk, Beerepoot, Lugtigheid, Martens, Peeters, "Mining for Well-Being: The Potential of Process Mining for Evaluating Employee Well-Being" | 2025 | BPM 2024 Workshops, LNBIP, 10.1007/978-3-031-78666-2_14 | https://doi.org/10.1007/978-3-031-78666-2_14 | Process-mining scores of work characteristics (workload, autonomy and others) compared with validated survey scales; "no strong correlations" between corresponding variables | **Validity of log-derived worker measures**, inside the BPM community | Rank stability across configurations; performance scores rather than well-being; variance decomposition | abstract (Springer page) |
 | Klijn, Tentina, Fahland, Mannhardt, "Decomposing Process Performance based on Actor Behavior" | 2024 | ICPM 2024, 10.1109/icpm63005.2024.10680657 | https://doi.org/10.1109/icpm63005.2024.10680657 | Decomposes waiting time by actor behaviour (continuation, interruption, handover) with event knowledge graphs; evaluated on a loan application process | Shows that a single performance measure can mislead and that actor behaviour should be separated, on a log of the BPI 2017 type | Worker rankings, configuration factorial, stability statistics | abstract (Semantic Scholar) |
 | Leribaux, Oyamada, De Smedt, Bozorgi, Polyvyanyy, De Weerdt, "Linking Actor Behavior to Process Performance over Time" | 2026 (arXiv 2025) | BPM 2025 Workshops, LNBIP, 10.1007/978-3-032-13426-4_20 | https://arxiv.org/abs/2507.23037 | Granger causality from daily actor-behaviour series to throughput time on BPIC 2011, 2017 and 2019 | Same public logs (BPI 2017 and 2019); names misclassification risk from timestamp and task definitions without testing it; treats User 1 as an actor | Testing those definitional choices; per-worker rankings; system-account handling | full-text (arXiv) |
@@ -347,16 +347,19 @@ Abstract texts are kept only in the scratchpad (`abstracts.jsonl` files), not in
 
 **Wall-clock (UTC, 2026-10-19):**
 
+End times are the output files' modification times.
+
 | Step | Time |
 |---|---|
 | Session | 06:01-07:00 |
 | Full-text fetch | 06:04-06:05 (53 s) |
-| Citation chasing, second run | 06:13-06:15 (111 s) |
+| Citation chasing, second run | 06:13-06:15:44 (111 s) |
 | Crossref-only enumeration | 06:13-06:20 |
-| Full sweep with enrichment | 06:21-06:29 |
-| BPIC reports | about 06:27-06:30 |
-| ICIS crawl | about 06:31 (under 1 min) |
-| arXiv queries | about 06:36 (under 1 min) |
+| Full sweep with enrichment | 06:21-06:28:38 |
+| Abstract fetch | 06:30-06:32:11 |
+| BPIC reports, second run | ended 06:27:44 |
+| ICIS crawl | ended 06:33:07 |
+| arXiv queries | ended 06:34:25 |
 
 **Query and call counts:**
 
@@ -370,8 +373,8 @@ Abstract texts are kept only in the scratchpad (`abstracts.jsonl` files), not in
 | dblp | 3 probes | All bot check |
 | Crossref enumeration | 46 units | `sweep_log.csv`: 46 Crossref calls answered 200 after 4 retries on 429 |
 | Crossref exploratory and title queries | about 33 | Not logged by a script; reconstructed from this session's commands |
-| Crossref per-DOI records | 48 | |
-| OpenAlex single-work lookups | 15 | 200 |
+| Crossref per-DOI records | about 54 | 10 in `fetch_fulltexts.py`, 29 in `fetch_abstracts.py`, 14 author lookups, 1 reference list |
+| OpenAlex single-work lookups | about 18 | 200 |
 | OpenAlex list calls | 2 attempts | 429; later legs skipped |
 | BPI Challenge PDFs | 38 | Plus 3 listing pages |
 | AIS eLibrary | 4 track pages | Plus 4 proceedings landing pages |
