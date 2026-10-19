@@ -1,0 +1,9 @@
+query_id,query,http,n_returned,total_results
+A1,"all:""event log"" AND (all:resource OR all:employee OR all:worker) AND (all:ranking OR all:stability OR all:sensitivity OR all:reliability)",200,11,11
+A2,"all:""process mining"" AND (all:employee OR all:worker OR all:workforce OR all:""human resource"") AND (all:performance OR all:productivity)",200,5,5
+A3,"all:""multiverse analysis"" AND (all:ranking OR all:performance OR all:workers OR all:employees)",200,8,8
+A4,"(all:""productivity score"" OR all:""productivity metric"" OR all:""productivity metrics"") AND (all:employee OR all:worker OR all:developer)",200,35,35
+A5,"(all:""rank stability"" OR all:""ranking stability"" OR all:""rank reversal"") AND (all:performance OR all:productivity OR all:indicator)",200,50,81
+A6,"(all:""algorithmic management"" OR all:""workplace surveillance"" OR all:""employee monitoring"") AND (all:metric OR all:measurement OR all:validity OR all:score)",200,11,11
+A7,"(all:""developer productivity"" OR all:""engineer productivity"") AND (all:ranking OR all:robustness OR all:sensitivity OR all:disagree)",200,48,48
+A8,"(all:""value-added"" OR all:""provider profiling"" OR all:""league table"") AND (all:ranking OR all:reliability) AND (all:workers OR all:employees OR all:teachers OR all:physicians)",200,2,2

@@ -1,0 +1,171 @@
+query_id,arxiv_id,published,title
+A1,2609.01320v1,2026-09-01,Automated Event Log Generation from Unstructured Text Using Finetuned LLMs
+A1,2605.20173v2,2026-05-19,A Methodology for Selecting and Composing Runtime Architecture Patterns for Production LLM Agents
+A1,2603.19879v1,2026-03-20,Discovery of Decision Synchronization Patterns from Event Logs
+A1,2603.06671v1,2026-03-03,ERP-RiskBench: Leakage-Safe Ensemble Learning for Financial Risk
+A1,2510.07161v1,2025-10-08,Integrating Domain Knowledge into Process Discovery Using Large Language Models
+A1,2507.06008v1,2025-07-08,The Impact of Event Data Partitioning on Privacy-aware Process Discovery
+A1,2501.10543v2,2025-01-17,An Innovative Data-Driven and Adaptive Reinforcement Learning Approach for Context-Aware Prescriptive Process Monitoring
+A1,2305.00960v1,2023-05-01,PMDG: Privacy for Multi-Perspective Process Mining through Data Generalization
+A1,2210.01060v2,2022-10-03,Generating Hidden Markov Models from Process Models Through Nonnegative Tensor Factorization
+A1,2206.07745v1,2022-06-15,When to intervene? Prescriptive Process Monitoring Under Uncertainty and Resource Constraints
+A1,1206.6557v1,2012-06-28,Mining Event Logs to Support Workflow Resource Allocation
+A2,2510.08118v2,2025-10-09,Accurate and Noise-Tolerant Extraction of Routine Logs in Robotic Process Automation (Extended Version)
+A2,2412.09763v1,2024-12-12,The FLoRA Engine: Using Analytics to Measure and Facilitate Learners' own Regulation Activities
+A2,2311.15362v1,2023-11-26,Application of Process Mining and Sequence Clustering in Recognizing an Industrial Issue
+A2,1908.11451v1,2019-08-28,Fairness-Aware Process Mining
+A2,1706.08259v1,2017-06-26,Relational Algebra for In-Database Process Mining
+A3,2609.08577v1,2026-09-08,Instability in Patient Clustering: A Multiverse Analysis of Unsupervised Clustering in the CENTER-TBI cohort
+A3,2607.17596v1,2026-07-20,E-Values For Multiplicity Control In Multiverse Analysis
+A3,2607.17345v1,2026-07-19,A multiverse-consensus pipeline for reproducible feature selection in untargeted LC-MS metabolomics
+A3,2506.03726v2,2025-06-04,Introducing multiverse analysis to bibliometrics: The case of team size effects on disruptive research
+A3,2402.01514v2,2024-02-02,Mapping the Multiverse of Latent Representations
+A3,2308.16681v3,2023-08-31,One Model Many Scores: Using Multiverse Analysis to Prevent Fairness Hacking and Evaluate the Influence of Model Design Decisions
+A3,2305.08323v1,2023-05-15,Approximation and Progressive Display of Multiverse Analyses
+A3,2206.05985v2,2022-06-13,Modeling the Machine Learning Multiverse
+A4,2609.33346v1,2026-09-27,What Gets Measured Gets Managed: Sign-aware Recommendation Needs Sign-aware Evaluation
+A4,2609.20977v1,2026-09-17,Helpful but Fallible: Developer Experiences of AI Tools Under a Coordinated Industrial Roll-out
+A4,2609.08113v1,2026-09-08,Non-Kähler Critical Hermitian Metrics of the Dinew--Popovici Functional
+A4,2606.02965v2,2026-06-01,Designing for Doubt: The Case for Informed Abstention in Autonomous Agents
+A4,2605.02326v2,2026-05-04,Large-Scale Asset Selection via Metric Dependence with Enriched High Frequency Information
+A4,2604.26667v1,2026-04-29,Will It Break in Production? Metric-Driven Prediction of Residual Defects in Python Systems
+A4,2604.20004v1,2026-04-21,A continuum of Künneth theorems for persistence modules
+A4,2602.21568v1,2026-02-25,From Ad-Hoc Scripts to Orchestrated Pipelines: Architecting a Resilient ELT Framework for Developer Productivity Metrics
+A4,2601.22667v1,2026-01-30,From Horizontal Layering to Vertical Integration: A Comparative Study of the AI-Driven Software Development Paradigm
+A4,2601.09556v1,2026-01-14,Geometry- and Topology-Informed Quantum Computing: From States to Real-Time Control with FPGA Prototypes
+A4,2511.20955v1,2025-11-26,SpaceX: Exploring metrics with the SPACE model for developer productivity
+A4,2410.09285v1,2024-10-11,Contribution Rate Imputation Theory: A Conceptual Model
+A4,2409.08641v2,2024-09-13,Developing an Algorithm Selector for Green Configuration in Scheduling Problems
+A4,2407.10212v1,2024-07-14,Scalar curvature rigidity of domains in a warped product
+A4,2406.16199v1,2024-06-23,Reinterpreting Economic Complexity: A co-clustering approach
+A4,2404.07427v1,2024-04-11,Diversity's Double-Edged Sword: Analyzing Race's Effect on Remote Pair Programming Interactions
+A4,2401.08960v2,2024-01-17,From User Surveys to Telemetry-Driven AI Agents: Exploring the Potential of Personalized Productivity Solutions
+A4,2312.16718v1,2023-12-27,Spaces of distributions on product metric spaces associated with operators
+A4,2309.13265v1,2023-09-23,A Declarative Specification for Authoring Metrics Dashboards
+A4,2305.11030v3,2023-05-18,Is Our Organization Actually Measuring Productivity? How Contrasting Organizational and Individual Measures of Engineering Success is an Opportunity to Drive Engineering Transformation
+A4,2212.03940v1,2022-12-07,Systematics of quasi-Hermitian representations of non-Hermitian quantum models
+A4,2211.03096v2,2022-11-06,Geometric confinement in gauge theories
+A4,2201.04588v1,2022-01-12,Big Data = Big Insights? Operationalising Brooks' Law in a Massive GitHub Data Set
+A4,2101.01430v1,2021-01-05,Why Developers Refactor Source Code: A Mining-based Study
+A4,1809.10329v4,2018-09-27,Evaluation of Ride-Sourcing Search Frictions and Driver Productivity: A Spatial Denoising Approach
+A4,1802.05865v1,2018-02-16,Statistical Analysis of Metrics for Software Quality Improvement
+A4,1511.03194v1,2015-11-10,Quality of Open Source Systems from Product Metrics Perspective
+A4,1509.01482v1,2015-09-04,Measuring economic complexity of countries and products: which metric to use?
+A4,1312.2933v3,2013-12-10,Ricci flow neckpinches without rotational symmetry
+A4,1312.0713v1,2013-12-03,Guiding Testing Activities by Predicting Defect-prone Parts Using Product and Inspection Metrics
+A4,1308.4011v1,2013-08-19,Using Modularity Metrics to assist Move Method Refactoring of Large System
+A4,1303.0827v1,2013-03-04,Critical metrics on connected sums of Einstein four-manifolds
+A4,1209.1325v3,2012-09-06,Ricci curvature bounds for warped products
+A4,1004.4788v1,2010-04-27,Exceptional holonomy and Einstein metrics constructed from Aloff-Wallach spaces
+A4,0504582v1,2005-04-28,"Nonlinear Gravitons, Null Geodesics, and Holomorphic Disks"
+A5,2610.20993v1,2026-10-14,"One Bias Score, Two Factors: How Mitigations Affect Option Bias in Multiple-Choice Evaluation"
+A5,2610.14413v1,2026-10-10,Coarse-Graining Recursive Expert Computation: Continuation-Relative Interfaces and Failure Modes
+A5,2610.12916v1,2026-10-09,DeFiRank: Federated Pairwise Ranking for Governance in Decentralized Financial Networks
+A5,2610.09229v1,2026-10-06,Conditional Accuracy Profiles: Diagnosing LLM Judges across Deployment Conditions
+A5,2609.33125v1,2026-09-27,Train Together or Merge Later? Unifying VLA Experts via a Shared Action Interface
+A5,2609.32322v2,2026-09-26,Not All Errors Matter: Decision-Relevant Prediction Error Predicts Planning Quality
+A5,2609.17977v1,2026-09-16,When to Call an LLM: A Confidence-Gated Hybrid for Cost-Effective Emotion Recognition in Conversational AI
+A5,2609.31662v1,2026-09-15,Learning Steadily: Accumulating Relative Point Margin Scores for Face Image Quality Assessment
+A5,2609.16551v1,2026-09-15,Which Pretext Task Transfers? Self-Supervised Pretraining Objectives for Lung Ultrasound
+A5,2609.14491v1,2026-09-13,MIRAGE: Measuring Interpolation and Redundancy in Affinity GEneralization
+A5,2610.00107v4,2026-09-09,"Structural Properties of DomiRank Centrality: Symmetry Axioms, an Entropy Bound, and Spectral Interpolation"
+A5,2608.30895v1,2026-08-31,A Controlled Evaluation of Model Rankings and Input Reliance in Surface Water Segmentation
+A5,2608.16227v1,2026-08-17,Adaptive Unequal Error Protection for Semantic Split Learning over Wireless Channels
+A5,2608.11985v3,2026-08-12,"Auditing Frame-Level AUC in Weakly Supervised Video Anomaly Detection: Granularity, Resolution, and Scene Bias"
+A5,2608.01555v1,2026-08-03,Sensitivity-driven Adaptive Contention Window Optimization for IEEE 802.11 based V2I Networks
+A5,2607.24422v1,2026-07-27,IJCB-AFMFR 2026: Competition on Adapting Foundation Models for Face Recognition Using Synthetic Training Data
+A5,2607.22736v1,2026-07-22,Benchmarking the Domain Gap: Model Selection Instability Under Domain Shift in Video Capsule Endoscopy
+A5,2607.15231v1,2026-07-16,CRISP: Constrained Refinement via Iterative Squeezing Process for Robust Medical Image Segmentation under Domain Shift
+A5,2607.13328v1,2026-07-14,Privacy Preserving Recommender Systems Balancing Personalization with Privacy
+A5,2609.17538v2,2026-07-14,From Pixels to Pairs: A Comprehensive Benchmark of LLM-Driven Key-Value Extraction in Noisy Document Settings
+A5,2607.12233v1,2026-07-14,Fin-Analyst at FinMMEval 2026 Task 3: A Live Hybrid Trading Agent with LLM Specialists and Rule-Based Signals
+A5,2607.11368v1,2026-07-13,"Decomposing Runtime, Kernel, and Quantization Speedups via a Matched FP16 Intermediate: A Hardware-Conditioned Case Study on Four NVIDIA RTX A5000 GPUs"
+A5,2607.08203v1,2026-07-09,Metrics or Mirage? An Audit of Evaluation Inconsistencies in Colonoscopy Polyp Segmentation Benchmarks
+A5,2606.31646v1,2026-06-30,Diophantine rank stability and non-vanishing of $L$-functions
+A5,2606.24381v1,2026-06-23,On the Stability of Prompt Ranking in Large Language Model Evaluation
+A5,2606.20726v1,2026-06-17,How Well Can Your Video Model Remember? Measuring Memory-Budget Trade-offs in Long Video Understanding
+A5,2606.07253v1,2026-06-05,TOPSIS-RAD: Ranking According to Desires
+A5,2606.05104v2,2026-06-03,Knowledge Index of Noah's Ark
+A5,2606.01344v1,2026-05-31,A Framework for Evaluating the Siting of Fusion Power: Case Study on the Retired Coal Sites in the United States
+A5,2605.30537v1,2026-05-28,The Long-Term Effects of Data Selection in LLM Fine-Tuning
+A5,2607.21613v1,2026-05-25,The Hard Decision Layer: Evidence for Committed Inference in Transformers
+A5,2605.23157v1,2026-05-22,"Same Model, Different Weakness: How Language and Modality Reshape the Jailbreak Attack Surface in Frontier MLLMs"
+A5,2605.11554v2,2026-05-12,A Controlled Counterexample to Strong Proxy-Based Explanations of OOD Performance: in a Fixed Pretraining-and-Probing Setup
+A5,2605.06454v1,2026-05-07,ORTHOBO: Orthogonal Bayesian Hyperparameter Optimization
+A5,2605.23950v1,2026-05-07,Stop Comparing LLM Agents Without Disclosing the Harness
+A5,2605.04338v1,2026-05-05,Robust certification of high-dimensional quantum devices
+A5,2605.03534v2,2026-05-05,SURE-RAG: Sufficiency and Uncertainty-Aware Evidence Verification for Selective Retrieval-Augmented Generation
+A5,2604.20549v1,2026-04-22,Toward Cross-Lingual Quality Classifiers for Multilingual Pretraining Data Selection
+A5,2604.05409v1,2026-04-07,CRISP: Rank-Guided Iterative Squeezing for Robust Medical Image Segmentation under Domain Shift
+A5,2603.29974v1,2026-03-31,Meteorology-Driven GPT4AP: A Multi-Task Forecasting LLM for Atmospheric Air Pollution in Data-Scarce Settings
+A5,2603.29756v1,2026-03-31,One-for-All: A Lightweight Stabilized and Parameter-Efficient Pre-trained LLM for Time Series Forecasting
+A5,2603.24140v1,2026-03-25,A Longitudinal Analysis of the CEC Single-Objective Competitions (2010-2024) and Implications for Variational Quantum Optimization
+A5,2604.14171v1,2026-03-25,"Benchmarking Linguistic Adaptation in Comparable-Sized LLMs: A Study of Llama-3.1-8B, Mistral-7B-v0.1, and Qwen3-8B on Romanized Nepali"
+A5,2603.20991v2,2026-03-22,Structural Sensitivity in Compressed Transformers: Relative Error Propagation and Layer Removal
+A5,2603.11139v2,2026-03-11,H2LooP Spark Preview: Continual Pretraining of Large Language Models for Low-Level Embedded Systems Code
+A5,2603.09219v1,2026-03-10,AlgoXpert Alpha Research Framework. A Rigorous IS WFA OOS Protocol for Mitigating Overfitting in Quantitative Strategies
+A5,2603.08924v3,2026-03-09,Quantifying Uncertainty in AI Visibility: A Statistical Framework for Generative Search Measurement
+A5,2602.21415v3,2026-02-24,"Benchmarking State Space Models, Transformers, and Recurrent Networks for US Grid Forecasting"
+A5,2602.18150v3,2026-02-20,Bayesian Bradley-Terry Framework for Ranking Multi-Indicator Entities: Application to Indian States and Union Territories
+A5,2601.17399v1,2026-01-24,ReLE: A Scalable System and Structured Benchmark for Diagnosing Capability Anisotropy in Chinese LLMs
+A6,2609.16192v1,2026-09-14,"AI-Driven Feedback Systems, Digital Labour, and Silent Quitting: Transforming African Workplaces"
+A6,2511.14231v1,2025-11-18,"Algorithmic Management and the Future of Human Work: Implications for Autonomy, Collaboration, and Innovation"
+A6,2508.09438v1,2025-08-13,Fulfillment of the Work Games: Warehouse Workers' Experiences with Algorithmic Management
+A6,2405.09920v3,2024-05-16,Dynamic online matching with budget refills
+A6,2303.07531v1,2023-03-13,An Algorithm for Subtraction of Doublet Emission Lines in Angle-Resolved Photoemission Spectroscopy
+A6,2002.10718v2,2020-02-25,Denoising IMU Gyroscopes with Deep Learning for Open-Loop Attitude Estimation
+A6,1909.06795v1,2019-09-15,OpenMPR: Recognize Places Using Multimodal Data for People with Visual Impairments
+A6,1212.2460v1,2012-10-19,The Information Bottleneck EM Algorithm
+A6,1206.1402v1,2012-06-07,A New Greedy Algorithm for Multiple Sparse Regression
+A6,1105.6124v1,2011-05-30,Reasoning on Interval and Point-based Disjunctive Metric Constraints in Temporal Contexts
+A6,1007.4389v4,2010-07-26,AntiJam: Efficient Medium Access despite Adaptive and Reactive Jamming
+A7,2609.26457v1,2026-09-22,Recursive self-improvement of AI research agents
+A7,2608.26031v1,2026-08-26,Vulnerable Code Search: Transferable Attack for Code Language Models
+A7,2608.09919v1,2026-08-10,Detecting Behavioral Changes in Python Refactoring Implementations with Foundation Models
+A7,2607.17139v2,2026-07-19,SynH-Rank: Quality-Aware Code Search via Diverse Data Synthesis and Hierarchical Ranking Training
+A7,2606.00438v1,2026-05-30,GitHub Copilot and Developer Productivity: An Observational Dose-Response Analysis
+A7,2603.09029v1,2026-03-09,Automating Detection and Root-Cause Analysis of Flaky Tests in Quantum Software
+A7,2603.04484v1,2026-03-04,CLARC: C/C++ Benchmark for Robust Code Search
+A7,2604.09592v1,2026-03-04,EdgeWeaver: Accelerating IoT Application Development Across Edge-Cloud Continuum
+A7,2602.21697v3,2026-02-25,EditFlow: Benchmarking and Optimizing Code Edit Recommendation Systems via Reconstruction of Developer Flows
+A7,2602.21568v1,2026-02-25,From Ad-Hoc Scripts to Orchestrated Pipelines: Architecting a Resilient ELT Framework for Developer Productivity Metrics
+A7,2603.12268v1,2026-02-07,A Holistic Framework for Automated Configuration Recommendation for Cloud Service Monitoring
+A7,2602.06759v3,2026-02-06,"""Tab, Tab, Bug"": Security Pitfalls of Next Edit Suggestions in AI-Integrated IDEs"
+A7,2512.08769v1,2025-12-09,"A Practical Guide for Designing, Developing, and Deploying Production-Grade Agentic AI Workflows"
+A7,2512.07814v2,2025-12-08,Understanding Privacy Risks in Code Models Through Training Dynamics: A Causal Approach
+A7,2509.15690v1,2025-09-19,CCrepairBench: A High-Fidelity Benchmark and Reinforcement Learning Framework for C++ Compilation Repair
+A7,2509.10803v1,2025-09-13,Enhancing Type Safety in MPI with Rust: A Statically Verified Approach for RSMPI
+A7,2508.16131v3,2025-08-22,The Fools are Certain; the Wise are Doubtful: Exploring LLM Confidence in Code Completion
+A7,2507.14755v1,2025-07-19,A Risk Assessment Framework for Digital Identification Systems
+A7,2507.09089v2,2025-07-12,Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity
+A7,2507.01103v1,2025-07-01,Bugs in the Shadows: Static Detection of Faulty Python Refactorings
+A7,2505.06267v1,2025-05-05,AKD : Adversarial Knowledge Distillation For Large Language Models Alignment on Coding tasks
+A7,2504.20612v1,2025-04-29,The Hidden Risks of LLM-Generated Web Application Code: A Security-Centric Evaluation of Code Generation Capabilities in Large Language Models
+A7,2504.00532v1,2025-04-01,SRLCG: Self-Rectified Large-Scale Code Generation with Multidimensional Chain-of-Thought and Dynamic Backtracking
+A7,2411.07479v1,2024-11-12,Developers Are Victims Too : A Comprehensive Analysis of The VS Code Extension Ecosystem
+A7,2410.01353v3,2024-10-02,Codev-Bench: How Do LLMs Understand Developer-Centric Code Completion?
+A7,2409.04808v1,2024-09-07,HULLMI: Human vs LLM identification with explainability
+A7,2408.02215v1,2024-08-05,Exploring Query Understanding for Amazon Product Search
+A7,2406.06822v1,2024-06-10,An LLM-Assisted Easy-to-Trigger Backdoor Attack on Code Completion Models: Injecting Disguised Vulnerabilities against Strong Detection
+A7,2403.16032v3,2024-03-24,DeepFWI: Identifying Bug-Sensitive Warnings with Multi-Modal Code-Warning Semantics
+A7,2402.14261v1,2024-02-22,Copilot Evaluation Harness: Evaluating LLM-Guided Software Programming
+A7,2310.15988v1,2023-10-24,FabricCRDT: A Conflict-Free Replicated Datatypes Approach to Permissioned Blockchains
+A7,2309.09126v2,2023-09-17,How much can ChatGPT really help Computational Biologists in Programming?
+A7,2305.11030v3,2023-05-18,Is Our Organization Actually Measuring Productivity? How Contrasting Organizational and Individual Measures of Engineering Success is an Opportunity to Drive Engineering Transformation
+A7,2303.08291v1,2023-03-15,Machine Learning Approaches in Agile Manufacturing with Recycled Materials for Sustainability
+A7,2211.04673v2,2022-11-09,Syntax-Aware On-the-Fly Code Completion
+A7,2208.02475v1,2022-08-04,Reliability analysis of discrete-state performance functions via adaptive sequential sampling with detection of failure surfaces
+A7,2207.11842v1,2022-07-24,$\textit{FastSVD-ML-ROM}$: A Reduced-Order Modeling Framework based on Machine Learning for Real-Time Applications
+A7,2206.09326v3,2022-06-19,Toward Robust Manufacturing Scheduling: Stochastic Job-Shop Scheduling
+A7,2202.09465v1,2022-02-18,"Attacks, Defenses, And Tools: A Framework To Facilitate Robust AI/ML Systems"
+A7,2111.04302v2,2021-11-08,How Developers and Managers Define and Trade Productivity for Quality
+A7,2111.04473v2,2021-11-05,Senatus -- A Fast and Accurate Code-to-Code Recommendation Engine
+A7,2108.04375v1,2021-08-09,Detecting Carbon Nanotube Orientation with Topological Data Analysis of Scanning Electron Micrographs
+A7,2105.04671v1,2021-05-10,Extending Python for Quantum-Classical Computing via Quantum Just-in-Time Compilation
+A7,2104.03053v1,2021-04-07,The value of big data for analyzing growth dynamics of technology based new ventures
+A7,2101.07897v2,2021-01-19,Safer Illinois and RokWall: Privacy Preserving University Health Apps for COVID-19
+A7,2004.07313v2,2020-04-15,Evaluation of Generalizability of Neural Program Analyzers under Semantic-Preserving Transformations
+A7,1911.07781v1,2019-11-18,Combining Program Analysis and Statistical Language Model for Code Statement Completion
+A7,1703.03870v1,2017-03-10,Automated target tracking in kilovoltage images using dynamic templates of fiducial marker clusters
+A8,2510.22968v1,2025-10-27,Measuring Teaching with LLMs
+A8,1403.7676v1,2014-03-29,"Computation of Maximum Likelihood Estimates for Multiresponse Generalized Linear Mixed Models with Non-nested, Correlated Random Effects"
