@@ -1,0 +1,91 @@
+{
+ "pilot_id": "A04",
+ "key": "2025.emnlp-industry.149",
+ "I0": {
+  "value": "Y",
+  "reason": "New embodied-planning safety benchmark (VestaBench-VH, 100 tasks; VestaBench-B50, 50 tasks) on which LLM agents (GPT-4.1-Mini, Qwen3-32B with Direct/ReAct/Reflexion/Critic) are evaluated by success and safety rates",
+  "loc": "§2-4 p.1-6; Table 2 p.5"
+ },
+ "encoder_only": false,
+ "items": {
+  "1_n_items": {
+   "value": "Y",
+   "unit": "items (tasks: 100 VH, 50 B50; goals: 135 success and 148 safety goals in VH, 206 and 96 in B50)",
+   "loc": "p.1-2 (100 and 50 tasks); App. B.2 p.9 (goal counts)"
+  },
+  "2a_runs": {
+   "value": "N",
+   "loc": "Tables 2-4 single values; no repetition reported; keyword scan for runs/seeds: none"
+  },
+  "2b_seeds": {
+   "value": "N",
+   "loc": "keyword scan p.1-16"
+  },
+  "3_decoding": {
+   "value": "N",
+   "loc": "§4.1 p.4 and appendices: no temperature or sampling settings (keyword scan 'temperature|top-p|greedy': none)"
+  },
+  "4_model_version": {
+   "value": "Y",
+   "loc": "§4.1 p.4: GPT-4.1-Mini with 'Azure API Version: 2024-10-01-preview' (footnote 6); Qwen3-32B with Hugging Face link (footnote 7); critic GPT-4.1"
+  },
+  "5_prompts": {
+   "value": "Y",
+   "loc": "App. E p.11-16: full planner prompts with safety guidelines and examples"
+  },
+  "6_uncertainty": {
+   "value": "N",
+   "loc": "Tables 2-5 point values only; keyword scan"
+  },
+  "7_llm_judge": {
+   "value": "N",
+   "loc": "success and safety goals checked in the simulator (App. B.2 p.9); GPT-4.1 critic is part of the agent, not the evaluator"
+  },
+  "8_judge_human_validation": {
+   "value": "NA",
+   "loc": ""
+  },
+  "9a_agreement_metric": {
+   "value": "NA",
+   "loc": ""
+  },
+  "9b_chance_corrected": {
+   "value": "NA",
+   "loc": ""
+  },
+  "10_contamination": {
+   "value": "Y",
+   "loc": "p.5: VH tasks 'are designed by us, reducing the likelihood of overfitting'; p.10: B50 augmentation 'minimizes the chance of overfitting'"
+  },
+  "11a_code": {
+   "value": "Y",
+   "loc": "p.2 footnote: github.com/tanmana5/vestabench"
+  },
+  "11b_data": {
+   "value": "Y",
+   "loc": "p.2: benchmark released at the same repository"
+  }
+ },
+ "headline": {
+  "H1": {
+   "sentence": "ReAct demonstrated approximately 5% and 10% improvements in both macro and micro success and safety rates on VestaBench-VH",
+   "loc": "§4.2 RQ1 p.5 with Table 2 p.5 (the abstract has no numeric comparison)",
+   "metric": "macro success rate (% of tasks completed)",
+   "A": "ReAct (GPT-4.1-Mini)",
+   "A_value": "47.0",
+   "B": "Direct (Stepwise) (GPT-4.1-Mini)",
+   "B_value": "42.0",
+   "n": "100",
+   "n_unit": "items (tasks)",
+   "n_loc": "p.1-2, App. B.2 p.9",
+   "structure": "paired (same items)",
+   "cluster_m": "",
+   "runs": "1",
+   "run_sd": ""
+  },
+  "H2": "LLM agents perform poorly on the benchmark, with low success rates and compromised safety (abstract; §4.2 p.5)",
+  "H3_n_extractable": "Y",
+  "H4_acc_extractable": "Y"
+ },
+ "notes": "Possible n inconsistency the audit would flag: App. B.2 states 135 success goals in VestaBench-VH, but four of the five GPT-4.1-Mini micro success rates in Table 2 (9.02, 48.87, 57.14, 61.65) equal k/133 to two decimals (k = 12, 65, 76, 82) and none equals k/135; 63.15 matches 84/133 only if truncated. Checked by arithmetic in this run, not confirmed with the authors."
+}

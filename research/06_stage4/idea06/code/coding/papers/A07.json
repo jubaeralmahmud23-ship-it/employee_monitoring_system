@@ -1,0 +1,30 @@
+{
+ "pilot_id": "A07",
+ "key": "2026.acl-industry.34",
+ "I0": {"value": "Y", "reason": "RL post-training method (REPO) for a Qwen3-32B negotiation agent, evaluated by expert consensus on 30 online conversations and 45 curated bad cases against SFT/DPO/PPO/GRPO, plus a production A/B test on 9,653 conversations", "loc": "§5-6 p.4-6; abstract p.1"},
+ "encoder_only": false,
+ "items": {
+  "1_n_items": {"value": "Y", "unit": "conversations (30 online, ~240 utterances; 45 bad cases, ~360 utterances; A/B 9,653 conversations, arm sizes not given)", "loc": "§5 Evaluation data p.4; §6 p.5"},
+  "2a_runs": {"value": "N", "loc": "§5 p.4: 'We report the best-performing checkpoint'; no repeated runs"},
+  "2b_seeds": {"value": "N", "loc": "keyword scan"},
+  "3_decoding": {"value": "P", "loc": "§5 p.4: maximum response length 512 tokens; no temperature or sampling setting for evaluation"},
+  "4_model_version": {"value": "P", "loc": "§5 p.4: Qwen3-32B-Instruct; base Qwen2.5-32B; the supplementary 'GPT-based rater' (§7.2 p.6) and the reward judges (DeepSeek, GPT-5, App. tables) without snapshot or date"},
+  "5_prompts": {"value": "Y", "loc": "App.: policy prompt Table 7, reward-judge prompt Fig. 6, GPT-based rater criteria Fig. 10 (p.8 onward)"},
+  "6_uncertainty": {"value": "Y", "kind": "significance test (p < 0.001) for the production A/B test only; none for the expert evaluation", "loc": "§6 Production A/B p.5"},
+  "7_llm_judge": {"value": "Y", "loc": "§7.2 p.6: GPT-based rater for four binary conversational skills (supplementary); main evaluation by three human experts (§6 p.5)"},
+  "8_judge_human_validation": {"value": "N", "loc": "§6-7 p.5-6: no comparison of the GPT-based rater with the expert judgements"},
+  "9a_agreement_metric": {"value": "N", "loc": "as item 8; expert evaluation is a consensus ('conducted and agreed upon by three human experts'), no inter-expert agreement reported"},
+  "9b_chance_corrected": {"value": "N", "loc": "as item 8"},
+  "10_contamination": {"value": "P", "loc": "private production conversations (§5 p.4); contamination not discussed"},
+  "11a_code": {"value": "N", "loc": "keyword scan: no repository link"},
+  "11b_data": {"value": "N", "loc": "proprietary production data; ethics statement p.6 does not release it"}
+ },
+ "headline": {
+  "H1": {"sentence": "REPO improves average dialogue rating to 4.63 (+0.33 over GRPO)", "loc": "abstract p.1; §6 p.5", "metric": "mean expert rating (1-5) on online conversations", "A": "REPO", "A_value": "4.63", "B": "GRPO", "B_value": "4.30", "n": "30", "n_unit": "conversations (expert consensus ratings)", "n_loc": "§5 p.4", "structure": "paired (same conversations); utterances clustered within conversations", "cluster_m": "", "runs": "1 (best checkpoint)", "run_sd": ""},
+  "H1_alt_cell": {"sentence": "raises the share of conversations with at least one excellent response to 66.67% (+23.34 pp over GRPO)", "metric": "share of conversations with at least one excellent response", "A_value": "66.67", "B_value": "43.33", "n": "30", "n_loc": "§5 p.4; §6 p.5", "structure": "paired (same conversations)"},
+  "H2": "Production A/B test: response rate 46.72% -> 58.86% (+12.14 pp) and task success 19.32% -> 25.26% (+5.94 pp), p < 0.001, on 9,653 conversations (abstract; §6 p.5)",
+  "H3_n_extractable": "Y",
+  "H4_acc_extractable": "P"
+ },
+ "notes": "The abstract's first comparison is a mean rating (not a proportion); its second is a proportion on n = 30 (run as the alternative cell). The A/B test is the only claim with a significance test."
+}

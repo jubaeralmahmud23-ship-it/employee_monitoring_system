@@ -1,0 +1,29 @@
+{
+ "pilot_id": "A06",
+ "key": "2026.acl-industry.14",
+ "I0": {"value": "Y", "reason": "Linear-probe uncertainty estimates for LLM judges (Llama, Qwen, J1, Llama-4-Scout, GPT-OSS-20B) evaluated for calibration (Kuiper, ECE) on PPE, JudgeBench and RewardBench against verbalized, self-consistency and majority baselines", "loc": "§3-4 p.2-6; Tables 1-3"},
+ "encoder_only": false,
+ "items": {
+  "1_n_items": {"value": "Y", "unit": "items (PPE Preference 10.2K samples, JudgeBench 620, RewardBench 3K; probe trained on 4,000 PPE examples, ~10K held out)", "loc": "§3 p.3; App. A.5 p.13"},
+  "2a_runs": {"value": "Y", "loc": "§3 p.4: 'three different train-test splits of the PPE datasets, reporting average metrics across splits'"},
+  "2b_seeds": {"value": "N", "loc": "keyword scan: no seed values"},
+  "3_decoding": {"value": "P", "loc": "§3 p.4: consistency/majority at N = 10, temperature 0.7 (ablations App. A.9-A.10); decoding for the verbalized-confidence generations not stated"},
+  "4_model_version": {"value": "P", "loc": "p.7 references: Llama-4-Scout-17B-16E-Instruct; Qwen3 technical report; tables say 'LLAMA 8B/70B', 'QWEN 32B' without exact release (Llama 3.x variant not named in the text read)"},
+  "5_prompts": {"value": "Y", "loc": "§3 p.4 'prompts in Appendix A.12'; prompts App. A.12-A.13 p.21 onward"},
+  "6_uncertainty": {"value": "P", "kind": "statement only: 'Standard deviations were near zero for all results' (p.4); Table 7 SD is across models, not runs", "loc": "§3 p.4; Table 7 p.13"},
+  "7_llm_judge": {"value": "N", "loc": "the evaluated systems are LLM judges, scored against benchmark ground truth (verdict accuracy); no LLM scores them"},
+  "8_judge_human_validation": {"value": "NA", "loc": ""},
+  "9a_agreement_metric": {"value": "NA", "loc": ""},
+  "9b_chance_corrected": {"value": "NA", "loc": ""},
+  "10_contamination": {"value": "N", "loc": "out-of-distribution sets used for generalisation (Table 2) but training-data contamination not discussed (keyword scan)"},
+  "11a_code": {"value": "N", "loc": "keyword scan for github/release/code: no link"},
+  "11b_data": {"value": "Y", "loc": "public benchmarks PPE, JudgeBench, RewardBench (§3 p.3)"}
+ },
+ "headline": {
+  "H1": {"sentence": "probes achieve superior calibration compared to existing methods with ≈ 10x computational savings", "loc": "abstract p.1", "metric": "compute cost ratio (and calibration, Kuiper/ECE)", "A": "linear probes", "A_value": "1 forward pass", "B": "multi-generation methods (N = 10 samples)", "B_value": "~10x compute", "n": "", "n_unit": "", "n_loc": "", "structure": "paired (same items)", "cluster_m": "", "runs": "3 splits", "run_sd": "said to be near zero, not reported"},
+  "H2": "Probes consistently achieve the best calibration on PPE (Table 1: e.g. Llama 70B Kuiper 0.017 vs 0.135 verbalized), with 70-92% improvements over multi-generation methods for Llama (§4 p.5)",
+  "H3_n_extractable": "Y",
+  "H4_acc_extractable": "N"
+ },
+ "notes": "Headline metrics (compute ratio, Kuiper, ECE) are not proportions, so the binomial survival models do not apply even though n is reported. The paper is itself about uncertainty of LLM judges."
+}
