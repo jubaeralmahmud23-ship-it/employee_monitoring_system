@@ -41,6 +41,7 @@ START=$(date +%s)
   --osf-csv "$DATA/osf/impact.csv" \
   --osf-pdf-dir "$DATA/osf/extracted/Employer Documents" \
   --out-dir "$OUT" \
-  --private-dir "$PRIV"
+  --private-dir "$PRIV" \
+  --scope-coding "$HERE/data_scope_coding.csv"
 
 echo "wall-clock seconds: $(( $(date +%s) - START ))"

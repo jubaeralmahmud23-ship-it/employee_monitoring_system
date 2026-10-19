@@ -1,0 +1,4 @@
+window,n_slots,n_configs,median_cross_config_tau_whole_log_ranking,median_over_slots_of_median_cross_config_tau_per_slot,slots_used_per_slot_view,median_over_configs_of_adjacent_slot_spearman
+week,55,39,0.04865055088722117,0.055190823172931246,55,0.56022442653373
+month,13,39,0.03190306373173485,0.03796774411051244,13,0.726906693707377
+quarter,5,39,0.029289368086684642,0.04113245073401322,5,0.7551732499826855

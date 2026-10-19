@@ -1,0 +1,21 @@
+contrast,family,config_a,config_b,n_pairwise,tau,spearman,reclass_bottom,status_change_all
+metric: CCA vs EPH,metric,CCA|last|month|-|none,EPH|-|month|60|none,140,0.2728115560742852,0.3572611763468712,0.5357142857142857,0.21428571428571427
+metric: CCA vs APT,metric,CCA|last|month|-|none,APT|-|month|-|none,140,0.2075919005120315,0.2602851311290919,0.6428571428571429,0.2571428571428571
+metric: CCA vs RWK,metric,CCA|last|month|-|none,RWK|last|month|-|none,136,-0.15382937307061026,-0.2392980933019606,0.8148148148148148,0.3235294117647059
+metric: CCA vs DLA,metric,CCA|last|month|-|none,DLA|last|month|-|none,136,-0.04814938453006415,-0.05002469096878811,0.8148148148148148,0.3235294117647059
+attribution: last vs first,attribution,CCA|last|month|-|none,CCA|first|month|-|none,140,0.02132009212777786,-0.03068782469109623,0.8214285714285714,0.32857142857142857
+attribution: last vs majority,attribution,CCA|last|month|-|none,CCA|majority|month|-|none,140,0.1215458371487532,0.16648990142961384,0.5714285714285714,0.22857142857142856
+window: month vs week,window,CCA|last|month|-|none,CCA|last|week|-|none,140,0.9158474748688618,0.9865216673611392,0.03571428571428571,0.014285714285714285
+window: month vs quarter,window,CCA|last|month|-|none,CCA|last|quarter|-|none,140,0.9105892820748485,0.9854137828573436,0.03571428571428571,0.014285714285714285
+idle gap (EPH): 60 vs 15 min,idle_gap,EPH|-|month|60|none,EPH|-|month|15|none,140,0.7792394655704008,0.9284599068465593,0.21428571428571427,0.08571428571428572
+idle gap (EPH): 60 vs 240 min,idle_gap,EPH|-|month|60|none,EPH|-|month|240|none,140,0.8670092497430627,0.9693424591633685,0.17857142857142858,0.07142857142857142
+case-mix (EPH): none vs activity,case_mix,EPH|-|month|60|none,EPH|-|month|60|activity,140,0.651387461459404,0.842002142966478,0.17857142857142858,0.07142857142857142
+case-mix (EPH): none vs regression,case_mix,EPH|-|month|60|none,EPH|-|month|60|regression,140,0.652415210688592,0.8427237541273973,0.17857142857142858,0.07142857142857142
+case-mix (CCA): none vs activity,case_mix,CCA|last|month|-|none,CCA|last|month|-|activity,140,0.9203541577187155,0.9859466623635511,0.03571428571428571,0.014285714285714285
+case-mix (CCA): none vs regression,case_mix,CCA|last|month|-|none,CCA|last|month|-|regression,140,0.9197367466111225,0.9859051135551777,0.07142857142857142,0.02857142857142857
+case-mix (APT): none vs activity,case_mix,APT|-|month|-|none,APT|-|month|-|activity,140,0.7819116135662898,0.9268636154905863,0.14285714285714285,0.05714285714285714
+case-mix (APT): none vs regression,case_mix,APT|-|month|-|none,APT|-|month|-|regression,140,0.7804727646454265,0.9259014672760273,0.14285714285714285,0.05714285714285714
+case-mix (RWK): none vs activity,case_mix,RWK|last|month|-|none,RWK|last|month|-|activity,136,0.5449195269470959,0.7130096673673038,0.4444444444444444,0.17647058823529413
+case-mix (RWK): none vs regression,case_mix,RWK|last|month|-|none,RWK|last|month|-|regression,136,0.5261667941269877,0.6948492098292482,0.48148148148148145,0.19117647058823528
+case-mix (DLA): none vs activity,case_mix,DLA|last|month|-|none,DLA|last|month|-|activity,136,0.38949864569409764,0.5353723800054583,0.6666666666666666,0.2647058823529412
+case-mix (DLA): none vs regression,case_mix,DLA|last|month|-|none,DLA|last|month|-|regression,136,0.39083522067534693,0.5387038573192695,0.6666666666666666,0.2647058823529412

@@ -465,8 +465,33 @@ def summarise(R, by, label=None):
         d["share_post_P_below_0.8_lt_0.05"] = (g["p_below08"] < 0.05).mean()
         d["share_post_P_below_0.8_indeterminate"] = ((g["p_below08"] >= 0.05) & (g["p_below08"] <= 0.95)).mean()
         d["median_katz_width"] = (g["katz_hi"] - g["katz_lo"]).median()
+        # cluster-weighted variants: every audit report (or audit) counts once
+        ex_k = excl(g["katz_lo"], g["katz_hi"], THRESH)
+        d["share_excl_0.8_katz_report_weighted"] = ex_k.groupby(g["audit_report_id"]).mean().mean()
+        d["share_excl_0.8_katz_audit_weighted"] = ex_k.groupby(g["audit_id"]).mean().mean()
         rows.append(d)
     return pd.DataFrame(rows)
+
+
+def apply_scope_coding(T, path):
+    """Attach the manual data-scope coding (code/data_scope_coding.csv) to employer-posted tables."""
+    C = pd.read_csv(path, dtype=str, keep_default_na=False)
+    scope, basis = [], []
+    for rid, st, vp in zip(T["audit_report_id"], T["audit_data_start_date"], T["vendor_posted"]):
+        if vp:
+            scope.append("vendor_posted")
+            basis.append("poster is the tool vendor")
+            continue
+        m = C[(C["audit_report_id"] == rid) & ((C["audit_data_start_date"] == "*") | (C["audit_data_start_date"] == str(st)))]
+        if len(m) != 1:
+            scope.append("uncoded")
+            basis.append("")
+        else:
+            scope.append(m["data_scope"].iloc[0])
+            basis.append(m["basis"].iloc[0])
+    T["data_scope"] = scope
+    T["data_scope_basis"] = basis
+    return T
 
 
 def excluded_population(df, T):
@@ -491,6 +516,7 @@ def excluded_population(df, T):
             ustat = "reported_positive"
         rows.append({
             "tbl": t["tbl"], "auditor": t["auditor"], "vendor": t["vendor_norm"], "scope": t["scope"],
+            "data_scope": t["data_scope"],
             "char_group": t["protected_char_group"], "data_type": t["data_type"],
             "N_known": Nk, "N_unknown": Nu, "unknown_status": ustat,
             "unknown_share": (Nu / (Nk + Nu)) if (pd.notna(Nu)) else np.nan,
@@ -530,7 +556,7 @@ def excluded_population(df, T):
             out.append(d)
         return pd.DataFrame(out)
 
-    return P, summ(P, ["char_group", "scope"]), summ(P, ["char_group", "auditor"])
+    return P, summ(P, ["char_group", "scope"]), summ(P, ["char_group", "auditor"]), summ(P, ["char_group", "data_scope"])
 
 
 # ----------------------------------------------------------------------------- OSF cross-check
@@ -607,8 +633,8 @@ def osf_crosscheck(df, osf_csv, pdf_dir):
             texts[pdfrel] = pdf_text(os.path.join(pdf_dir, pdfrel))
         txt = texts[pdfrel]
         N = arow["N"]
-        found = None
-        if pd.notna(N) and txt:
+        found = None   # None = not checkable: N missing or zero, or PDF text layer lacks the tables
+        if pd.notna(N) and N > 0 and len(txt) >= 1000:
             Ni = int(N)
             pats = {f"{Ni:,}", str(Ni)}
             found = any(re.search(r"(?<![\d,.])" + re.escape(p) + r"(?![\d,])", txt) for p in pats)
@@ -654,6 +680,7 @@ def main():
     ap.add_argument("--osf-pdf-dir", required=True)
     ap.add_argument("--out-dir", required=True)
     ap.add_argument("--private-dir", required=True)
+    ap.add_argument("--scope-coding", required=True)
     args = ap.parse_args()
     os.makedirs(args.out_dir, exist_ok=True)
     os.makedirs(args.private_dir, exist_ok=True)
@@ -670,6 +697,9 @@ def main():
     # 2-3. tables and de-duplication
     T = build_tables(df)
     T["scope"] = np.where(T["vendor_posted"], "vendor-posted", "employer-posted")
+    T = apply_scope_coding(T, args.scope_coding)
+    write_csv(T[~T["vendor_posted"]].groupby(["audit_report_id", "data_scope", "data_scope_basis"]).agg(
+        audits=("audit_id", "nunique"), tables=("tbl", "size")).reset_index(), out("data_scope_coding_applied.csv"))
     # 4. consistency
     df = consistency(df)
     tm.mark("tables_dedup_consistency")
@@ -687,7 +717,7 @@ def main():
     tcols = ["tbl", "audit_id", "audit_report_id", "deploying_entity", "auditor", "tool_vendor", "vendor_norm",
              "tool_id", "selection_or_scoring_rate", "protected_char_group", "data_type", "year_of_audit_result",
              "is_primary_rate", "hackerrank_excluded", "vendor_posted", "scope", "dup_primary", "dup_literal",
-             "shared_across_entities"]
+             "shared_across_entities", "data_scope"]
     Ru = Ru.merge(T[tcols], on="tbl", how="left")
     Ru["metric"] = np.where(Ru["selection_or_scoring_rate"] == "Scoring", "scoring rate", "selection rate")
     tm.mark("ratios_statistics")
@@ -711,6 +741,12 @@ def main():
         "S5_employer_all_rate_definitions": (~Ru["hackerrank_excluded"]) & strict & big & dedup & emp,
         "S6_employer_counts_reported_as_integers": base & strict & big & dedup & emp & Ru["counts_reported_int"],
         "S7_ALL_dedup_all_rate_definitions": (~Ru["hackerrank_excluded"]) & strict & big & dedup,
+        # POST HOC (added after reading the audit reports' data-scope statements; see README):
+        "E4_employer_posted_excl_multi_employer_POSTHOC": base & strict & big & dedup & emp & (Ru["data_scope"] != "multi_employer"),
+        "E5_employer_own_data_POSTHOC": base & strict & big & dedup & Ru["data_scope"].isin(
+            ["employer_own", "employer_own_unverified"]),
+        "E5s_employer_own_data_stated_only_POSTHOC": base & strict & big & dedup & Ru["data_scope"].isin(["employer_own"]),
+        "M_multi_employer_pooled_POSTHOC": base & strict & big & dedup & (Ru["data_scope"] == "multi_employer"),
     }
     variants = pd.concat([summarise(Ru[m], [], label=k) for k, m in sets.items()], ignore_index=True)
     write_csv(variants, out("interval_summary_variants.csv"))
@@ -722,9 +758,23 @@ def main():
         t = pd.concat([summarise(E1, by, "E1_employer_posted_PRIMARY"), summarise(AL, by, "ALL_dedup")],
                       ignore_index=True)
         write_csv(t, out(f"interval_by_{name}.csv"))
+    E5 = Ru[sets["E5_employer_own_data_POSTHOC"]]
+    write_csv(pd.concat([summarise(E5, ["auditor"], "E5_employer_own_data_POSTHOC"),
+                         summarise(E5, ["deploying_entity"], "E5_employer_own_data_POSTHOC")], ignore_index=True),
+              out("interval_E5_by_auditor_and_employer.csv"))
+    write_csv(summarise(AL, ["data_scope"], "ALL_dedup"), out("interval_by_data_scope.csv"))
+    # by size of the smaller group in the comparison (descriptive; added for RQ3)
+    bins = [0, 100, 500, 1000, 5000, 50000, np.inf]
+    labels = ["<100", "100-499", "500-999", "1000-4999", "5000-49999", ">=50000"]
+    gs = []
+    for k in ["E1_employer_posted_PRIMARY", "E5_employer_own_data_POSTHOC", "ALL_dedup"]:
+        g = Ru[sets[k]].copy()
+        g["size_bin"] = pd.cut(np.minimum(g["Ng"], g["Nc"]), bins=bins, labels=labels, right=False).astype(str)
+        gs.append(summarise(g, ["size_bin"], k))
+    write_csv(pd.concat(gs, ignore_index=True), out("interval_by_group_size.csv"))
     # UGESP cross-tabulation
     ug = []
-    for k in ["E1_employer_posted_PRIMARY", "V_vendor_posted", "ALL_dedup"]:
+    for k in ["E1_employer_posted_PRIMARY", "E5_employer_own_data_POSTHOC", "V_vendor_posted", "ALL_dedup"]:
         g = Ru[sets[k]]
         for ff in (True, False):
             for sd in (True, False):
@@ -735,7 +785,7 @@ def main():
     write_csv(pd.DataFrame(ug), out("ugesp_crosstab.csv"))
     # posterior probability bands
     pb = []
-    for k in ["E1_employer_posted_PRIMARY", "V_vendor_posted", "ALL_dedup"]:
+    for k in ["E1_employer_posted_PRIMARY", "E5_employer_own_data_POSTHOC", "V_vendor_posted", "ALL_dedup"]:
         g = Ru[sets[k]]
         bins = [-0.001, 0.05, 0.5, 0.95, 1.0]
         lab = ["P<0.05", "0.05-0.5", "0.5-0.95", ">0.95"]
@@ -830,14 +880,15 @@ def main():
 
     # excluded populations (kept tables, primary rate definition)
     Tk = Tp[~Tp["dup_primary"]]
-    Pex, ex_scope, ex_aud = excluded_population(df, Tk)
+    Pex, ex_scope, ex_aud, ex_ds = excluded_population(df, Tk)
     write_csv(ex_scope, out("excluded_population_by_scope.csv"))
     write_csv(ex_aud, out("excluded_population_by_auditor.csv"))
+    write_csv(ex_ds, out("excluded_population_by_data_scope.csv"))
     tm.mark("excluded_population")
 
     # extras: reporting precision (rounding) and Gerchick et al. missing-data bounds vs sampling
     ex = []
-    for k in ["E1_employer_posted_PRIMARY", "ALL_dedup"]:
+    for k in ["E1_employer_posted_PRIMARY", "E5_employer_own_data_POSTHOC", "ALL_dedup"]:
         g = Ru[sets[k]]
         der = g[~g["counts_reported_int"] & g["r_g"].notna() & g["r_c"].notna()]
         ex.append({"set": k, "ratios": len(g), "ratios_with_derived_counts_and_reported_rates": len(der),
@@ -849,7 +900,7 @@ def main():
     write_csv(pd.DataFrame(ex), out("extra_rounding_vs_sampling.csv"))
     mb = []
     lbm = df.set_index("row_id")
-    for k in ["E1_employer_posted_PRIMARY", "ALL_dedup"]:
+    for k in ["E1_employer_posted_PRIMARY", "E5_employer_own_data_POSTHOC", "ALL_dedup"]:
         g = Ru[sets[k]].copy()
         g["mlo"] = g["row_id"].map(lbm["impact_ratio_lower_bound_num"])
         g["mhi"] = g["row_id"].map(lbm["impact_ratio_upper_bound_num"])
@@ -900,6 +951,12 @@ def main():
         "criterion_2_range_over_all_variants_and_methods": [float(stop_tab["share_excl_0.8"].min()),
                                                             float(stop_tab["share_excl_0.8"].max())],
         "criterion_2_variants_exceeding_threshold": stop_tab.loc[stop_tab["exceeds_threshold"], ["set", "method"]].values.tolist(),
+        "criterion_2_employer_level_sets_katz": {
+            r["set"]: [int(r["n_ratios"]), float(r["share_excl_0.8"])]
+            for _, r in stop_tab[(stop_tab["method"] == "katz") & stop_tab["set"].str.match(r"^(E\d|S[1-6])")].iterrows()},
+        "note": ("E1 was fixed as primary before any result was computed. E4/E5/E5s/M are POST HOC sets added after "
+                 "the audit reports were found to state multi-employer pooled data for most employer-posted DCI/HireVue, "
+                 "NBCUniversal, BNP Paribas and Sheppard Mullin audits; they are reported, not substituted."),
     }
 
     meta = {

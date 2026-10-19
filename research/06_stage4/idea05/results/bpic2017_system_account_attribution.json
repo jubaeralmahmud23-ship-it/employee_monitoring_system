@@ -1,0 +1,58 @@
+{
+ "system_accounts": [
+  "User_1"
+ ],
+ "share_of_events": 0.12343680729821246,
+ "share_of_completed_cases_attributed": {
+  "first": 0.6475120180828372,
+  "last": 0.253191557097832,
+  "majority": 0.018624048900066855
+ },
+ "system_accounts_ranked_when_included": 1,
+ "quintile_of_system_accounts_when_included_(1=bottom,5=top)": {
+  "CCA|last|month|-|none": [
+   5
+  ],
+  "EPH|-|month|60|none": [
+   5
+  ],
+  "APT|-|month|-|none": []
+ },
+ "contrast_primary_vs_included": {
+  "median_tau_distinct": [
+   0.033409610983981694,
+   0.041412657822346016
+  ],
+  "median_reclass_bottom_distinct": [
+   0.17857142857142858,
+   0.17857142857142858
+  ]
+ },
+ "human_ranking_agreement_system_excluded_vs_included": {
+  "CCA|last|month|-|none": {
+   "n": 140,
+   "tau_same_config_system_excluded_vs_included": 0.6631244208393183,
+   "reclass_bottom": 0.32142857142857145
+  },
+  "CCA|first|month|-|none": {
+   "n": 140,
+   "tau_same_config_system_excluded_vs_included": 0.6838273648147518,
+   "reclass_bottom": 0.10714285714285714
+  },
+  "CCA|majority|month|-|none": {
+   "n": 140,
+   "tau_same_config_system_excluded_vs_included": 0.9873952068218955,
+   "reclass_bottom": 0.0
+  },
+  "RWK|first|month|-|none": {
+   "n": 108,
+   "tau_same_config_system_excluded_vs_included": 0.5946978492665441,
+   "reclass_bottom": 0.2727272727272727
+  },
+  "DLA|first|month|-|none": {
+   "n": 108,
+   "tau_same_config_system_excluded_vs_included": 0.4935408119055244,
+   "reclass_bottom": 0.5
+  }
+ }
+}

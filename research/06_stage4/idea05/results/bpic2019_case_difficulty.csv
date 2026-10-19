@@ -1,0 +1,16 @@
+config,n,spearman_oriented_score_vs_mean_expected_case_effort
+EPH|-|month|60|none,200,0.08195473326668899
+EPH|-|month|60|activity,200,-0.011617816585531366
+EPH|-|month|60|regression,200,-0.042671662802919404
+CCA|last|month|-|none,200,-0.08053963874958024
+CCA|last|month|-|activity,200,-0.01522909267335773
+CCA|last|month|-|regression,200,0.1944652991798949
+APT|-|month|-|none,200,-0.22087651888569876
+APT|-|month|-|activity,200,-0.0996882165041521
+APT|-|month|-|regression,200,-0.2594005686661528
+RWK|last|month|-|none,200,-0.3770012992367132
+RWK|last|month|-|activity,200,-0.05646846400326595
+RWK|last|month|-|regression,200,0.22067417887725685
+DLA|last|month|-|none,200,-0.5089671454236461
+DLA|last|month|-|activity,200,-0.288281188497683
+DLA|last|month|-|regression,200,-0.1713555620226155
