@@ -1,0 +1,14 @@
+{
+ "pilot_id": "S10",
+ "key": "10.1007/s12525-026-00915-x",
+ "I0": {"value": "N", "reason": "Qualitative study: 15 interviews in two German tech firms plus analysis of handbooks and workflow artefacts, deriving a nine-step oversight protocol (OP-9); no system is evaluated quantitatively", "loc": "abstract p.1; method p.2-8; Results p.9-12; Discussion p.12-15"},
+ "encoder_only": null,
+ "items": "NA_inclusion_failed",
+ "headline": {
+  "H1": {"sentence": "", "loc": "abstract p.1: no quantitative comparison", "metric": "", "A": "", "A_value": "", "B": "", "B_value": "", "n": "", "n_unit": "", "n_loc": "", "structure": "", "cluster_m": "", "runs": "", "run_sd": ""},
+  "H2": "nine-step Oversight Protocol (OP-9) preserving human agency in GenAI workflows (qualitative)",
+  "H3_n_extractable": "NA",
+  "H4_acc_extractable": "NA"
+ },
+ "notes": ""
+}

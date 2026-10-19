@@ -1,0 +1,29 @@
+{
+ "pilot_id": "S09",
+ "key": "10.1007/s10796-024-10503-z",
+ "I0": {"value": "Y", "reason": "Quantitative evaluation of active-learning uncertainty measures for fine-tuned transformer-encoder language models (BERT-base, RoBERTa-base) on seven public NLP datasets", "loc": "abstract p.1; §4 p.8-10; §5 p.10-14"},
+ "encoder_only": true,
+ "items": {
+  "1_n_items": {"value": "Y", "unit": "items (test examples per dataset, 500 to 25,000)", "loc": "Table 2 p.9 (#Train/#Test per dataset; Hugging Face train-test splits)"},
+  "2a_runs": {"value": "Y", "loc": "§4.1.1 p.8: 'Each simulation was repeated 10 times using different initially labeled samples'; p.10 means over 10 repetitions"},
+  "2b_seeds": {"value": "P", "loc": "p.8 (MC dropout 'each one with a different seed'), p.10 ('per random seed'): seeds referenced, values not stated in the paper (may be in the repository; not checked)"},
+  "3_decoding": {"value": "NA", "loc": "encoder classifiers; no generation"},
+  "4_model_version": {"value": "Y", "loc": "§4.1 p.8: original BERT-base (Devlin et al. 2019) and RoBERTa-base (Liu et al. 2019)"},
+  "5_prompts": {"value": "NA", "loc": "no prompting"},
+  "6_uncertainty": {"value": "P", "kind": "boxplots of acc_last5 distributions (Fig. 5); no SE, CI or significance test for the comparisons, although p.8 says repetitions are 'to ensure statistical significance'", "loc": "Fig. 5 p.11; Table 3 p.10 (means only); keyword scan p.1-15"},
+  "7_llm_judge": {"value": "N", "loc": "accuracy against gold labels"},
+  "8_judge_human_validation": {"value": "NA", "loc": ""},
+  "9a_agreement_metric": {"value": "NA", "loc": ""},
+  "9b_chance_corrected": {"value": "NA", "loc": ""},
+  "10_contamination": {"value": "N", "loc": "searched full text (keyword scan 'contamin|leak|memori'): no hits"},
+  "11a_code": {"value": "Y", "loc": "p.8 footnote 3 and p.15 'Availability of code, data and materials': github.com/jgonsior/active-learning-softmax-uncertainty-clipping"},
+  "11b_data": {"value": "Y", "loc": "§4.2 p.9: public Hugging Face datasets"}
+ },
+ "headline": {
+  "H1": {"sentence": "First Peak clipping ... slightly outperforms top-k clipping throughout all results (Table 3: average relative gain in acc_last5 of 0.98% vs 0.95% for BERT)", "loc": "§5.1 p.10, Table 3 p.10 (the abstract has no numeric comparison)", "metric": "mean relative % gain in acc_last5 (pooled over 7 datasets and 10 seeds)", "A": "First Peak clipping (BERT, average over measures)", "A_value": "0.98%", "B": "Top-k clipping (BERT)", "B_value": "0.95%", "n": "", "n_unit": "pooled over datasets with test sizes 500-25,000 and 10 repetitions; underlying accuracies not reported", "n_loc": "Table 2 p.9", "structure": "paired (same test sets, seeds)", "cluster_m": "", "runs": "10", "run_sd": "not reported"},
+  "H2": "Uncertainty-Clipping results in improvements for most uncertainty measures compared to the softmax function (abstract; Table 3: positive mean relative gains for 10 of 11 measures)",
+  "H3_n_extractable": "P",
+  "H4_acc_extractable": "N"
+ },
+ "notes": "Headline gains are reported as relative percentages pooled over datasets and seeds; the two accuracies being compared are not reported, so no binomial interval can be computed from the paper. Per-dataset accuracies appear only as boxplots (Fig. 5)."
+}

@@ -1,0 +1,30 @@
+{
+ "pilot_id": "A02",
+ "key": "2025.emnlp-industry.94",
+ "I0": {"value": "Y", "reason": "Distilled reasoning LLMs (DistilQwen) evaluated on AIME2024, MATH-500, GPQA Diamond and LiveCodeBench V2 against Qwen2.5/Qwen3 and OpenThinker baselines", "loc": "§4 p.4-6, Tables 1-2 p.5"},
+ "encoder_only": false,
+ "items": {
+  "1_n_items": {"value": "P", "unit": "items (problems)", "loc": "§4.1 p.4: MATH-500 '500 difficult mathematical problems' stated; AIME2024, GPQA Diamond and LiveCodeBench V2 sizes not stated (AIME footnote 9 links only the 2024 AIME I page)"},
+  "2a_runs": {"value": "N", "loc": "Tables 1-2 single values; Pass@K analysis (Fig. 3, p.5-6) is inference-time scaling, not repeated evaluation; keyword scan found no runs/seeds"},
+  "2b_seeds": {"value": "N", "loc": "keyword scan p.1-9: no seed"},
+  "3_decoding": {"value": "N", "loc": "p.3 temperatures mentioned only for CoT data generation; evaluation decoding not stated"},
+  "4_model_version": {"value": "Y", "loc": "Tables 1-2 p.5: Qwen2.5-3B/7B/14B/32B-Instruct, Qwen3-4B/8B/32B, OpenThinker-7B/32B; teachers DeepSeek-R1, DeepSeek-R1-0528, QwQ-32B with Hugging Face links p.3"},
+  "5_prompts": {"value": "N", "loc": "no evaluation prompts or templates in the paper (p.1-9); none in an appendix"},
+  "6_uncertainty": {"value": "N", "loc": "Tables 1-4 point values only; keyword scan p.1-9"},
+  "7_llm_judge": {"value": "N", "loc": "benchmark accuracy / pass rates; the RV and CD reward scores are training signals, not evaluation"},
+  "8_judge_human_validation": {"value": "NA", "loc": ""},
+  "9a_agreement_metric": {"value": "NA", "loc": ""},
+  "9b_chance_corrected": {"value": "NA", "loc": ""},
+  "10_contamination": {"value": "N", "loc": "keyword scan: only a reference title (p.8); not discussed although AIME2024 precedes the teacher models' training"},
+  "11a_code": {"value": "Y", "loc": "p.1 footnote: EasyDistill toolkit on GitHub; models released on Hugging Face/ModelScope (p.2)"},
+  "11b_data": {"value": "P", "loc": "evaluation benchmarks public (§4.1 p.4); training CoT subset from DeepSeek-R1-0528 'to be released' (p.5)"}
+ },
+ "headline": {
+  "H1": {"sentence": "Table 1: DistilQwen2.5-3B-R1 16.7 vs Qwen2.5-3B-Instruct 6.7 on AIME2024 (first comparison in the results; §4.2 text: 'consistent and substantial gains across multiple benchmarks')", "loc": "Table 1 p.5 (the abstract has no numeric comparison)", "metric": "accuracy (%)", "A": "DistilQwen2.5-3B-R1", "A_value": "16.7", "B": "Qwen2.5-3B-Instruct", "B_value": "6.7", "n": "30", "n_unit": "items (AIME 2024 I+II problems; not stated in the paper; derived from benchmark convention and value granularity, all reported AIME values except OpenThinker-7B are multiples of 1/30)", "n_loc": "not in paper", "structure": "paired (same items)", "cluster_m": "", "runs": "1 (no repetition reported)", "run_sd": ""},
+  "H1_alt_cell": {"sentence": "Table 1: DistilQwen2.5-3B-R1 70.0 vs Qwen2.5-3B-Instruct 62.6 on MATH-500", "metric": "accuracy (%)", "A_value": "70.0", "B_value": "62.6", "n": "500", "n_loc": "§4.1 p.4", "structure": "paired (same items)"},
+  "H2": "The distilled models markedly enhance reasoning abilities with consistent and substantial gains over Qwen2.5 and OpenThinker (§4.2 p.5); comprehensive evaluations demonstrate high inference efficiency and strong reasoning performance (abstract)",
+  "H3_n_extractable": "P",
+  "H4_acc_extractable": "Y"
+ },
+ "notes": "Claim selection is ambiguous when the first comparison is a table: the rule's first cell (AIME2024, n not stated) and the MATH-500 cell (n = 500 stated) differ in extractability. Both are run through the calculator (the MATH-500 cell as an alternative-cell sensitivity)."
+}

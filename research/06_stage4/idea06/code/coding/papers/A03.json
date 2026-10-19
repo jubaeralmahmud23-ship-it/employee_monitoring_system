@@ -1,0 +1,30 @@
+{
+ "pilot_id": "A03",
+ "key": "2025.emnlp-industry.173",
+ "I0": {"value": "Y", "reason": "Retrievers distilled from an LLM (synthetic queries) and a VLM (ranking scores), evaluated on industrial retrieval benchmarks; RAG pipelines with Llama-3.1-8B evaluated with RAGAs", "loc": "§4 p.4-6; Tables 1-4"},
+ "encoder_only": false,
+ "items": {
+  "1_n_items": {"value": "Y", "unit": "items (synthetic queries; 2,932 shipbuilding test, 3,312 electrical test; 100 curated RAG queries, 20 per type)", "loc": "§4.1 Dataset p.4"},
+  "2a_runs": {"value": "P", "loc": "§4.2 p.5: 'A t-test on the five independent training results ... p-value for ours (BGE-M3) is 0.171'; only for one configuration; tables do not say whether values are means; no spread reported"},
+  "2b_seeds": {"value": "N", "loc": "App. C p.10-11 (training settings); keyword scan"},
+  "3_decoding": {"value": "N", "loc": "§4.1 Settings p.4 and App. C p.10-11: generation settings for Qwen3-32B (query generation), Llama-3.1-8B (QA) and Qwen2.5-VL-7B not stated; 'contrastive temperature 0.02' is a training loss parameter"},
+  "4_model_version": {"value": "P", "loc": "§4.1 p.4: Qwen3-32B, Llama-3.1-8B-instruct, Qwen2.5-VL-7B, ColQwen2.5-3B, text-embedding-005, text-embedding-large-exp-03-07 (versioned); RAGAs judge Gemini-2.0-flash without snapshot or access date"},
+  "5_prompts": {"value": "P", "loc": "Tables 6-7 p.12: prompt templates for image description and synthetic query generation; RAG answer prompt and RAGAs judge prompts not given"},
+  "6_uncertainty": {"value": "P", "kind": "t-test across five training runs of one model (run-to-run check), none for the model comparisons", "loc": "§4.2 p.5"},
+  "7_llm_judge": {"value": "Y", "loc": "§4.1 p.4: RAGAs with Google Gemini-2.0-flash and text-embedding-005 for faithfulness and answer correctness (Table 3 p.4)"},
+  "8_judge_human_validation": {"value": "N", "loc": "searched §4-5 and appendices; keyword scan for human/annotator/agreement: no hits"},
+  "9a_agreement_metric": {"value": "N", "loc": "as item 8"},
+  "9b_chance_corrected": {"value": "N", "loc": "as item 8"},
+  "10_contamination": {"value": "P", "loc": "test sets built from in-house industrial PDFs (§4.1 p.4); contamination not discussed (keyword scan: no hits)"},
+  "11a_code": {"value": "N", "loc": "keyword scan for github/available/release: no hits"},
+  "11b_data": {"value": "N", "loc": "industrial PDFs; no release statement (keyword scan)"}
+ },
+ "headline": {
+  "H1": {"sentence": "Our retrievers outperform all baseline models across all evaluation metrics.", "loc": "§4.2 p.5 referring to Table 1 p.3 (the abstract has no numeric comparison)", "metric": "HIT@5 (share of test queries whose positive document is in the top 5)", "A": "Ours (BGE-M3)", "A_value": "96.0", "B": "ColQwen2.5-3B (strongest baseline, teacher)", "B_value": "95.9", "n": "2932", "n_unit": "items (test queries, shipbuilding)", "n_loc": "§4.1 p.4", "structure": "paired (same items)", "cluster_m": "", "runs": "1 per table value as far as stated (5 training runs mentioned for Ours (BGE-M3) only)", "run_sd": "not reported"},
+  "H1_alt_cell": {"sentence": "Table 1: Ours (BGE-M3) HIT@5 96.0 vs its backbone BGE-M3 87.7", "metric": "HIT@5", "A_value": "96.0", "B_value": "87.7", "n": "2932", "n_loc": "§4.1 p.4", "structure": "paired (same items)"},
+  "H2": "The framework improves domain understanding and visual-structural retrieval, outperforming larger baselines with significantly less computation (abstract)",
+  "H3_n_extractable": "Y",
+  "H4_acc_extractable": "Y"
+ },
+ "notes": "The headline sentence is not literally true in Table 1: Ours (BGE-M3) ties ColQwen2.5-3B on MRR@5/@10 and nDCG@5/@10 (87.9/88.2/90.0/90.5 both); it is higher only on HIT@5 (96.0 vs 95.9) and HIT@10 (97.6 vs 97.4). The paper's only test (t-test, p = 0.171) checks run-to-run variation of its own model, not the comparison."
+}
