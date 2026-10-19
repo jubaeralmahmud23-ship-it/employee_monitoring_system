@@ -46,6 +46,6 @@ START=$(date +%s)
   --scope-coding "$HERE/data_scope_coding.csv"
 
 # Validation of the interval code (agreement with scipy; coverage at a true ratio of 0.8).
-"$PY" -I "$HERE/validate_methods.py" --pilot "$HERE/ll144_pilot.py" --out "$OUT/method_validation.csv" > /dev/null
+"$PY" -I -B "$HERE/validate_methods.py" --pilot "$HERE/ll144_pilot.py" --out "$OUT/method_validation.csv" > /dev/null
 
 echo "wall-clock seconds: $(( $(date +%s) - START ))"

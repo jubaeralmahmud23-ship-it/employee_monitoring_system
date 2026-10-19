@@ -840,6 +840,7 @@ def main():
         cs.append({"auditor": aud, "rows_N_gt_0": len(g), "rows_with_selected_count": len(h),
                    "count_integer_as_reported": int(h["n_is_int"].sum()),
                    "count_non_integer_derived": int((~h["n_is_int"]).sum()),
+                   "non_integer_equal_N_times_reported_rate": int(((~h["n_is_int"]) & ((h["n"] - h["N"] * h["r"]).abs() < 1e-6)).sum()),
                    "pass": int((g["cons_status"] == "pass").sum()),
                    "pass_lenient_only": int((g["cons_status"] == "pass_lenient_only").sum()),
                    "fail": int((g["cons_status"] == "fail").sum()),
@@ -851,7 +852,9 @@ def main():
     # comparator recomputation check (kept tables, primary rate definition, all scopes)
     AR = Ru[base & strict & dedup & big]
     comp = []
-    for aud, g in [("ALL", AR)] + list(AR.groupby("auditor")):
+    subsets = [("ALL", AR), ("SET: E1 employer-posted", AR[AR["scope"] == "employer-posted"]),
+               ("SET: E5 employer own data (post hoc)", AR[AR["data_scope"].isin(["employer_own", "employer_own_unverified"])])]
+    for aud, g in subsets + list(AR.groupby("auditor")):
         tabs = g.groupby("tbl").first()
         rep_comp_match = []
         for tbl, t in tabs.iterrows():
@@ -873,6 +876,10 @@ def main():
             "abs_diff_le_0.005": int((dlt <= 0.005 + 1e-9).sum()), "abs_diff_le_0.01": int((dlt <= 0.01 + 1e-9).sum()),
             "abs_diff_le_0.05": int((dlt <= 0.05 + 1e-9).sum()), "abs_diff_gt_0.05": int((dlt > 0.05 + 1e-9).sum()),
             "four_fifths_classification_flips": int(((has_ir["ir_point"] < THRESH) != (has_ir["ir_reported"] < THRESH)).sum()),
+            "flips_recomputed_below_reported_not": int(((has_ir["ir_point"] < THRESH) & (has_ir["ir_reported"] >= THRESH)).sum()),
+            "flips_reported_below_recomputed_not": int(((has_ir["ir_point"] >= THRESH) & (has_ir["ir_reported"] < THRESH)).sum()),
+            "share_reported_ir_below_0.8": float((has_ir["ir_reported"] < THRESH).mean()) if len(has_ir) else np.nan,
+            "share_recomputed_ir_below_0.8_same_rows": float((has_ir["ir_point"] < THRESH).mean()) if len(has_ir) else np.nan,
             "reported_ir_missing_for_usable_ratio": int(g["ir_reported"].isna().sum()),
         })
     write_csv(pd.DataFrame(comp), out("comparator_check.csv"))
@@ -951,6 +958,9 @@ def main():
         "criterion_2_range_over_all_variants_and_methods": [float(stop_tab["share_excl_0.8"].min()),
                                                             float(stop_tab["share_excl_0.8"].max())],
         "criterion_2_variants_exceeding_threshold": stop_tab.loc[stop_tab["exceeds_threshold"], ["set", "method"]].values.tolist(),
+        "criterion_2_range_over_employer_level_sets_all_methods": [
+            float(stop_tab.loc[stop_tab["set"].str.match(r"^(E\d|S[1-6])"), "share_excl_0.8"].min()),
+            float(stop_tab.loc[stop_tab["set"].str.match(r"^(E\d|S[1-6])"), "share_excl_0.8"].max())],
         "criterion_2_employer_level_sets_katz": {
             r["set"]: [int(r["n_ratios"]), float(r["share_excl_0.8"])]
             for _, r in stop_tab[(stop_tab["method"] == "katz") & stop_tab["set"].str.match(r"^(E\d|S[1-6])")].iterrows()},

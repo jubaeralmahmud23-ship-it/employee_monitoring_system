@@ -1,0 +1,49 @@
+{
+ "log": "bpic2017",
+ "replicates": 500,
+ "seed": 20261015,
+ "n_jobs": 4,
+ "n_analysis_set": 140,
+ "seconds_bootstrap": 137.9,
+ "seconds_total": 148.5,
+ "resampling_unit": "case (multinomial weights)",
+ "held_fixed": "active-time credits, case-mix model fits, case completion and attribution",
+ "median_tau_distinct": {
+  "point": 0.033409610983981694,
+  "ci95_lo": 0.01686767686148251,
+  "ci95_hi": 0.049515554539077064,
+  "boot_mean": 0.032292604127953414
+ },
+ "median_tau_405cells": {
+  "point": 0.03762282536456538,
+  "ci95_lo": 0.024259493214991257,
+  "ci95_hi": 0.05840861923118416,
+  "boot_mean": 0.040846306773615296
+ },
+ "median_tau_within_metric_distinct": {
+  "point": 0.48760164799931216,
+  "ci95_lo": 0.43752054572123583,
+  "ci95_hi": 0.48012100836034244,
+  "boot_mean": 0.4601264666689358
+ },
+ "median_reclass_bottom_distinct": {
+  "point": 0.17857142857142858,
+  "ci95_lo": 0.17391304347826086,
+  "ci95_hi": 0.25,
+  "boot_mean": 0.1992417303253135
+ },
+ "median_reclass_bottom_405": {
+  "point": 0.18187830687830686,
+  "ci95_lo": 0.15301069703243617,
+  "ci95_hi": 0.25,
+  "boot_mean": 0.20148314929836666
+ },
+ "median_status_change_all_distinct": {
+  "point": 0.07142857142857142,
+  "ci95_lo": 0.07032813010787839,
+  "ci95_hi": 0.1,
+  "boot_mean": 0.07967146954244185
+ },
+ "share_replicates_median_tau_distinct_gt_0.9": 0.0,
+ "share_replicates_median_reclass_bottom_distinct_lt_0.10": 0.0
+}

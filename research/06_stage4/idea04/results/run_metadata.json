@@ -1,5 +1,5 @@
 {
-  "run_utc": "2026-10-19T05:04:10Z",
+  "run_utc": "2026-10-19T05:07:22Z",
   "python": "3.11.15",
   "platform": "Linux-6.18.44-fc-v139-x86_64-with-glibc2.39",
   "numpy": "2.4.6",
@@ -51,14 +51,14 @@
   },
   "ratios_union_computed": 2661,
   "timings_seconds": {
-    "load_profile": 0.265,
-    "tables_dedup_consistency": 2.638,
-    "ratios_statistics": 26.262,
-    "tabulations": 0.758,
-    "funnel_dedup_consistency_comparator": 1.939,
-    "excluded_population": 1.128,
-    "extras": 0.038,
-    "osf_crosscheck": 0.639,
+    "load_profile": 0.316,
+    "tables_dedup_consistency": 2.529,
+    "ratios_statistics": 25.384,
+    "tabulations": 0.72,
+    "funnel_dedup_consistency_comparator": 2.655,
+    "excluded_population": 1.244,
+    "extras": 0.048,
+    "osf_crosscheck": 0.576,
     "stopping_rule_meta": 0.058
   },
   "stopping_rule": {
@@ -112,6 +112,10 @@
         "jeffreys"
       ]
     ],
+    "criterion_2_range_over_employer_level_sets_all_methods": [
+      0.4284369114877589,
+      0.8333333333333334
+    ],
     "criterion_2_employer_level_sets_katz": {
       "E1_employer_posted_PRIMARY": [
         854,
@@ -164,5 +168,5 @@
     },
     "note": "E1 was fixed as primary before any result was computed. E4/E5/E5s/M are POST HOC sets added after the audit reports were found to state multi-employer pooled data for most employer-posted DCI/HireVue, NBCUniversal, BNP Paribas and Sheppard Mullin audits; they are reported, not substituted."
   },
-  "total_seconds": 33.725
+  "total_seconds": 33.529
 }
