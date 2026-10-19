@@ -1,0 +1,14 @@
+{
+ "pilot_id": "S07",
+ "key": "10.1007/s12599-026-00998-y",
+ "I0": {"value": "N", "reason": "Qualitative study: 30 expert interviews with software development practitioners on GenAI opportunities and pitfalls; no system is evaluated quantitatively", "loc": "abstract p.1; §3.2 Data Collection p.6; §4 findings (interview quotes) p.8-19; §5 Discussion p.20"},
+ "encoder_only": null,
+ "items": "NA_inclusion_failed",
+ "headline": {
+  "H1": {"sentence": "", "loc": "abstract p.1: no quantitative comparison", "metric": "", "A": "", "A_value": "", "B": "", "B_value": "", "n": "", "n_unit": "", "n_loc": "", "structure": "", "cluster_m": "", "runs": "", "run_sd": ""},
+  "H2": "GenAI enhances productivity and creative problem solving but raises over-reliance, skill degradation and homogenisation concerns (qualitative)",
+  "H3_n_extractable": "NA",
+  "H4_acc_extractable": "NA"
+ },
+ "notes": ""
+}

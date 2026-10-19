@@ -1,0 +1,14 @@
+{
+ "pilot_id": "S04",
+ "key": "10.1007/s12525-025-00812-9",
+ "I0": {"value": "N", "reason": "Single-case study of the Amazon Alexa ecosystem through service-dominant logic; the only model evaluated is a graph attention network (GNN) for skill complementarity, not an LLM or other language/generative model; ChatGPT appears only as an example of an assistant platform (the term hit)", "loc": "abstract p.1; §Case selection and §GNN-based analysis p.9-11; GNN metrics p.11"},
+ "encoder_only": null,
+ "items": "NA_inclusion_failed",
+ "headline": {
+  "H1": {"sentence": "The model achieved 84.33% accuracy, effectively distinguishing between complementary and non-complementary pairs.", "loc": "p.11 (results; the abstract has no quantitative comparison)", "metric": "accuracy of a GNN (not an LLM); no comparator", "A": "GNN", "A_value": "0.8433", "B": "", "B_value": "", "n": "3813 test pairs stated; the confusion counts on p.11 sum to 25,415 (the full dataset)", "n_unit": "skill pairs", "n_loc": "p.11", "structure": "", "cluster_m": "", "runs": "1; fixed seed 42", "run_sd": ""},
+  "H2": "SDL axioms are operationalised by the Alexa platform (qualitative)",
+  "H3_n_extractable": "P",
+  "H4_acc_extractable": "N"
+ },
+ "notes": "Out of scope for the audit (no LLM evaluated), but an illustration of an n inconsistency the audit would catch: 15% test split = 3,813 pairs, while TN+TP+FP+FN = 11,185+10,247+1,560+2,423 = 25,415 (p.11). The paper reports t-tests (p < 0.05) for the label construction, not for model performance."
+}

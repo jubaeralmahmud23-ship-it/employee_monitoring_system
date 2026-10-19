@@ -1,0 +1,14 @@
+{
+ "pilot_id": "S03",
+ "key": "10.1007/s12525-024-00746-8",
+ "I0": {"value": "B-T", "reason": "Design science study of a synthetic-data ecosystem; the evaluated generative models are GMM, CTGAN, TVAE and TimeGAN for tabular transaction data (no language model); quantitative evaluation via XGBoost ROC AUC on a 30% holdout", "loc": "§Evaluation of synthetic financial data generation algorithms p.13-14; Table 6 p.13; keyword scan for LLM/GPT/transformer: only literature mentions (p.4)"},
+ "encoder_only": null,
+ "items": "NA_inclusion_failed",
+ "headline": {
+  "H1": {"sentence": "While CTGAN (ROC AUC score 0.59) performed a little better, TVAE (ROC AUC score 0.89) excelled", "loc": "p.13 (results; the abstract has no quantitative comparison)", "metric": "ROC AUC of an XGBoost fraud classifier trained on synthetic data", "A": "TVAE", "A_value": "0.89", "B": "CTGAN", "B_value": "0.59", "n": "", "n_unit": "transactions (30% holdout of the IEEE-CIS Kaggle data; size not stated)", "n_loc": "p.13", "structure": "paired (same holdout)", "cluster_m": "", "runs": "1 (not stated otherwise)", "run_sd": ""},
+  "H2": "Merging synthetic with real data per institution increases ROC AUC by 1% (p.14); smaller banks benefit most (abstract)",
+  "H3_n_extractable": "P",
+  "H4_acc_extractable": "P"
+ },
+ "notes": "Borderline-technology case: would enter only if the frame's inclusion criterion is widened to non-language generative models. Code and tuning described in a GitHub repository (footnotes 2 and 4, p.13). No uncertainty reported for the AUC comparisons."
+}

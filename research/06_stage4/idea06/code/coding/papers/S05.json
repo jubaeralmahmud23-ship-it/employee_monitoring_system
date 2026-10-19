@@ -1,0 +1,14 @@
+{
+ "pilot_id": "S05",
+ "key": "10.1007/s10796-023-10375-9",
+ "I0": {"value": "N", "reason": "Bibliometric study of over 5,000 research articles on conversational agents (keywords, topics, author networks); no system is evaluated", "loc": "abstract p.1; §3-4 bibliometric method and keyword clusters (p.4-9); §5 discussion; keyword scan for uncertainty/evaluation terms found only rhetorical 'significant'"},
+ "encoder_only": null,
+ "items": "NA_inclusion_failed",
+ "headline": {
+  "H1": {"sentence": "", "loc": "abstract p.1: no quantitative comparison of systems", "metric": "", "A": "", "A_value": "", "B": "", "B_value": "", "n": "", "n_unit": "", "n_loc": "", "structure": "", "cluster_m": "", "runs": "", "run_sd": ""},
+  "H2": "five waves of conversational-agent research (bibliometric synthesis)",
+  "H3_n_extractable": "NA",
+  "H4_acc_extractable": "NA"
+ },
+ "notes": ""
+}

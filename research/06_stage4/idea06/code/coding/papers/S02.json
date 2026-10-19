@@ -1,0 +1,14 @@
+{
+ "pilot_id": "S02",
+ "key": "10.1007/s10796-026-10804-5",
+ "I0": {"value": "N", "reason": "Cross-sectional survey of 143 knowledge workers' self-reported GenAI use, dependence and perceived skill erosion; no LLM output or performance is evaluated", "loc": "abstract p.1; §4.2 Data Collection p.11-12; §5 results with beta, 95% CI and p-values for the survey model (p.14-15, e.g. 'beta = 0.149, 95% CI [0.057, 0.262]')"},
+ "encoder_only": null,
+ "items": "NA_inclusion_failed",
+ "headline": {
+  "H1": {"sentence": "", "loc": "abstract p.1: no quantitative comparison of LLM systems (survey associations only)", "metric": "", "A": "", "A_value": "", "B": "", "B_value": "", "n": "", "n_unit": "", "n_loc": "", "structure": "", "cluster_m": "", "runs": "", "run_sd": ""},
+  "H2": "sequential mediation entrepreneurial orientation -> collaboration depth -> dependence -> perceived skill erosion (survey path model; not an LLM evaluation)",
+  "H3_n_extractable": "NA",
+  "H4_acc_extractable": "NA"
+ },
+ "notes": "The paper does report CIs and p-values, but for a behavioural survey model, which is outside the codebook's object (evaluation of an LLM-based system)."
+}

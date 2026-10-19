@@ -1,0 +1,14 @@
+{
+ "pilot_id": "S08",
+ "key": "10.1007/s10796-025-10581-7",
+ "I0": {"value": "N", "reason": "Conceptual and historical review proposing a sociotechnical research agenda for GenAI in IS; no evaluation", "loc": "abstract p.1; body p.1-17 skimmed (historical narrative, framework, research agenda); keyword scan for uncertainty/evaluation terms found none relating to a system evaluation"},
+ "encoder_only": null,
+ "items": "NA_inclusion_failed",
+ "headline": {
+  "H1": {"sentence": "", "loc": "abstract p.1: no quantitative comparison", "metric": "", "A": "", "A_value": "", "B": "", "B_value": "", "n": "", "n_unit": "", "n_loc": "", "structure": "", "cluster_m": "", "runs": "", "run_sd": ""},
+  "H2": "research agenda (conceptual)",
+  "H3_n_extractable": "NA",
+  "H4_acc_extractable": "NA"
+ },
+ "notes": ""
+}
