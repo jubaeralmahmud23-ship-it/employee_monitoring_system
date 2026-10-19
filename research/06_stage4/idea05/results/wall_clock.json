@@ -1,0 +1,47 @@
+{
+ "note": "assembled from run logs on 2026-10-19; container: 4 vCPU Intel Xeon @ 2.10GHz, 15 GB RAM; another pilot process (idea04) shared the CPUs during steps 04-06, so times are upper bounds",
+ "download_bpic2019": [
+  "attempt 1 2026-10-19T04:39:14Z",
+  "http=200 size=728558522 time=22.359334",
+  "2026-10-19T04:39:36Z",
+  "4eb909242351193a61e1c15b9c3cc814  /tmp/claude-0/-home-user-employee-monitoring-system/c64eab22-9c10-592c-b92e-5ac629c5be82/scratchpad/data/idea05/bpic2019/BPI_Challenge_2019.xes"
+ ],
+ "steps": {
+  "01_convert_bpic2017_seconds": 89.8,
+  "04_factorial_bpic2017_seconds_final_run": 34.8,
+  "05_bootstrap_bpic2017_seconds_B500_4procs": 148.5,
+  "06_placebo_bpic2017_seconds_20shuffles_4procs": 98.1,
+  "01_convert_bpic2019_seconds": 128.0,
+  "04_factorial_bpic2019_seconds_final_run": 43.8,
+  "05_bootstrap_bpic2019_seconds_B500_4procs": 513.6,
+  "06_placebo_bpic2019_seconds_20shuffles_4procs": 166.1
+ },
+ "timing_log_bootstrap_placebo": [
+  "bootstrap bpic2017 start 2026-10-19T05:04:56Z",
+  "bootstrap bpic2017 end 2026-10-19T05:07:25Z exit 0",
+  "bootstrap bpic2019 start 2026-10-19T05:07:25Z",
+  "bootstrap bpic2019 end 2026-10-19T05:15:59Z exit 0",
+  "placebo bpic2017 start 2026-10-19T05:15:59Z",
+  "placebo bpic2017 end 2026-10-19T05:17:38Z exit 0",
+  "placebo bpic2019 start 2026-10-19T05:17:38Z",
+  "placebo bpic2019 end 2026-10-19T05:20:24Z exit 0"
+ ],
+ "run_sh_test_B20_shuffles2": {
+  "stamps": [
+   "[2026-10-19T05:21:40Z] 01 convert XES -> Parquet (pm4py.read_xes)",
+   "[2026-10-19T05:21:40Z] 02 resource fields",
+   "[2026-10-19T05:21:51Z] 03 automated-account detector (calibrate on BPI 2019, apply to BPI 2017)",
+   "[2026-10-19T05:21:59Z] 04 factorial point estimates: bpic2017",
+   "[2026-10-19T05:22:33Z] 04 factorial point estimates: bpic2019",
+   "[2026-10-19T05:23:16Z] 05 case bootstrap (20 replicates): bpic2017",
+   "[2026-10-19T05:23:29Z] 05 case bootstrap (20 replicates): bpic2019",
+   "[2026-10-19T05:23:57Z] 06 placebo shuffles (2): bpic2017",
+   "[2026-10-19T05:24:17Z] 06 placebo shuffles (2): bpic2019",
+   "[2026-10-19T05:24:51Z] 07 stopping rule, summary, figures",
+   "[2026-10-19T05:24:53Z] done"
+  ],
+  "real": [
+   "3m13.107s"
+  ]
+ }
+}

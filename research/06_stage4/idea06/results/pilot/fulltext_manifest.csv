@@ -1,0 +1,21 @@
+pilot_id,url,http,content_type,final_url,bytes,sha256,pdf_pages_by_formfeed,fetch_seconds
+S01,https://link.springer.com/content/pdf/10.1007/s12525-023-00680-1.pdf,200,text/html; charset=utf-8,https://link.springer.com/content/pdf/10.1007/s12525-023-00680-1.pdf,0,,,2.5
+S02,https://link.springer.com/content/pdf/10.1007/s10796-026-10804-5.pdf,200,text/html; charset=utf-8,https://link.springer.com/content/pdf/10.1007/s10796-026-10804-5.pdf,0,,,2.2
+S03,https://link.springer.com/content/pdf/10.1007/s12525-024-00746-8.pdf,200,text/html; charset=utf-8,https://link.springer.com/content/pdf/10.1007/s12525-024-00746-8.pdf,0,,,2.2
+S04,https://link.springer.com/content/pdf/10.1007/s12525-025-00812-9.pdf,200,text/html; charset=utf-8,https://link.springer.com/content/pdf/10.1007/s12525-025-00812-9.pdf,0,,,2.2
+S05,https://link.springer.com/content/pdf/10.1007/s10796-023-10375-9.pdf,200,text/html; charset=utf-8,https://link.springer.com/content/pdf/10.1007/s10796-023-10375-9.pdf,0,,,2.2
+S06,https://link.springer.com/content/pdf/10.1007/s12599-025-00974-y.pdf,200,text/html; charset=utf-8,https://link.springer.com/content/pdf/10.1007/s12599-025-00974-y.pdf,0,,,2.2
+S07,https://link.springer.com/content/pdf/10.1007/s12599-026-00998-y.pdf,200,text/html; charset=utf-8,https://link.springer.com/content/pdf/10.1007/s12599-026-00998-y.pdf,0,,,2.2
+S08,https://link.springer.com/content/pdf/10.1007/s10796-025-10581-7.pdf,200,text/html; charset=utf-8,https://link.springer.com/content/pdf/10.1007/s10796-025-10581-7.pdf,0,,,2.2
+S09,https://link.springer.com/content/pdf/10.1007/s10796-024-10503-z.pdf,200,text/html; charset=utf-8,https://link.springer.com/content/pdf/10.1007/s10796-024-10503-z.pdf,0,,,2.2
+S10,https://link.springer.com/content/pdf/10.1007/s12525-026-00915-x.pdf,200,text/html; charset=utf-8,https://link.springer.com/content/pdf/10.1007/s12525-026-00915-x.pdf,0,,,2.2
+A01,https://aclanthology.org/2024.naacl-industry.1.pdf,200,application/pdf,https://aclanthology.org/2024.naacl-industry.1.pdf,701227,1aa9bcdca1e990740cbefc30b2bb1f97b9cd786d7d2475cd66bbffcf9f7408c3,9,2.5
+A02,https://aclanthology.org/2025.emnlp-industry.94.pdf,200,application/pdf,https://aclanthology.org/2025.emnlp-industry.94.pdf,2169946,50ea2f5ce68c5a7e11fff432b7cdb780b95e007eb6ff771fb34bceb2937f2e29,9,2.4
+A03,https://aclanthology.org/2025.emnlp-industry.173.pdf,200,application/pdf,https://aclanthology.org/2025.emnlp-industry.173.pdf,560111,c75918fa91ab88e028875ef66fcbed89b5b1d14274923a323851082174e6583a,13,2.3
+A04,https://aclanthology.org/2025.emnlp-industry.149.pdf,200,application/pdf,https://aclanthology.org/2025.emnlp-industry.149.pdf,3796702,5e46401d286a4fef75855aa05669f9634d4afece2f1de86ffc8f20d2a42e9599,24,2.4
+A05,https://aclanthology.org/2025.naacl-industry.49.pdf,200,application/pdf,https://aclanthology.org/2025.naacl-industry.49.pdf,259909,190f7944d1944d656e58260cb99122af689a84b8d553477982556e187f89cce3,9,2.3
+A06,https://aclanthology.org/2026.acl-industry.14.pdf,200,application/pdf,https://aclanthology.org/2026.acl-industry.14.pdf,2841153,a17c086e0fa39805e65180be06f90bd6e6d674a61c45f413aef01bc58626749e,24,2.4
+A07,https://aclanthology.org/2026.acl-industry.34.pdf,200,application/pdf,https://aclanthology.org/2026.acl-industry.34.pdf,2584469,9d14583d1f606c0d2a9a512bd19b7a6234ae99de9e57a4822651ba76591b7b2c,13,2.5
+A08,https://aclanthology.org/2026.acl-industry.12.pdf,200,application/pdf,https://aclanthology.org/2026.acl-industry.12.pdf,1205032,3dd050409ea52ce752c85c8784886aaf4f2ac1911ac6aa501f9363697d83e00f,25,2.4
+A09,https://aclanthology.org/2025.emnlp-industry.146.pdf,200,application/pdf,https://aclanthology.org/2025.emnlp-industry.146.pdf,3024710,73d8faf8dcafbebfc5639904ef9d3aedfda880886f421a9e6bf0596e49df8546,15,2.4
+A10,https://aclanthology.org/2024.naacl-industry.7.pdf,200,application/pdf,https://aclanthology.org/2024.naacl-industry.7.pdf,7054682,ba509cdc743983f324d72b1c7756bce78e82f96819741576f4140094bfc548c2,16,2.7
