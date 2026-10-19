@@ -53,6 +53,7 @@ def main():
     ap.add_argument("--landing-root", required=True)
     ap.add_argument("--manifest-out", required=True)
     ap.add_argument("--abstracts-out", required=True, help="CSV outside the repository")
+    ap.add_argument("--landing-manifest-out", required=True, help="small manifest (no abstract text) for the repository")
     a = ap.parse_args()
     man = []
     for r in csv.DictReader(open(a.pilot_csv, encoding="utf-8")):
@@ -104,6 +105,11 @@ def main():
         w = csv.DictWriter(f, fieldnames=list(out[0].keys()))
         w.writeheader()
         w.writerows(out)
+    with open(a.landing_manifest_out, "w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f)
+        w.writerow(["doi", "article_type_meta", "abstract_found", "landing_sha256"])
+        for o in out:
+            w.writerow([o["doi"], o["article_type_meta"], int(bool(o["abstract"])), o["landing_sha256"]])
     print(f"landing pages: {len(out)}; with abstract: {sum(1 for o in out if o['abstract'])}", file=sys.stderr)
 
 

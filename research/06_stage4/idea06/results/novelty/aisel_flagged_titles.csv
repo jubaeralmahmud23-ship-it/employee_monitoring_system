@@ -1,0 +1,45 @@
+proceedings,track,url,title,flag,terms
+icis2024,adv_theory,https://aisel.aisnet.org/icis2024/adv_theory/adv_theory/2,Integrating LLMs and Psychometrics:  Global Construct Validity,A,validity
+icis2024,aiinbus,https://aisel.aisnet.org/icis2024/aiinbus/aiinbus/6,Evaluation of Stereotypical Biases in Recent GPT Models,A,evaluat
+icis2024,aiinbus,https://aisel.aisnet.org/icis2024/aiinbus/aiinbus/2,The Narrative AI Advantage? A Field Experiment on Generative AI-Augmented Evaluations of Early-Stage Innovations,A,evaluat
+icis2024,learnandiscurricula,https://aisel.aisnet.org/icis2024/learnandiscurricula/learnandiscurricula/9,"Design and Evaluation Attributes for Scalable, Cost-Effective Personalization of LLM Tutors in Programming Education",A,evaluat
+icis2024,practitioner,https://aisel.aisnet.org/icis2024/practitioner/practitioner/3,Reconciling Agile Transformation Paradoxes: Process Polarities in Agile Development Methodologies and Internal Audit Practices,B,audit;methodolog;audit
+icis2025,cyb_security,https://aisel.aisnet.org/icis2025/cyb_security/cyb_security/19,Benchmarking Evidence-Augmented Large Language Models for Misinformation Fact-Checking: An Information Systems Perspective on Scale and Augmentation,A,benchmark
+icis2025,da_bus,https://aisel.aisnet.org/icis2025/da_bus/da_bus/5,Can large language models evaluate suppliers’ qualifications of complex production lines? An approach incorporating retrieval-augmented generation and Chain-of-Thought,A,evaluat
+icis2025,gen_ai,https://aisel.aisnet.org/icis2025/gen_ai/gen_ai/34,Same Same but Different: Evaluating Hate Speech Detoxification through an LLM-based Agentic Framework,A,evaluat
+icis2025,gen_ai,https://aisel.aisnet.org/icis2025/gen_ai/gen_ai/20,Trusting Generative AI-based Conversational Agents: The Role of Anthropomorphism and Transparency as Trust Signals,A,transparen
+icis2025,is_transformwork,https://aisel.aisnet.org/icis2025/is_transformwork/is_transformwork/5,AI-Enabled Audit Processes: A Sociomaterial Investigation of Professional Judgment,B,audit;audit
+icis2025,isdesign,https://aisel.aisnet.org/icis2025/isdesign/isdesign/6,Intelligent Tutoring for Law Courses: Design and Evaluation of an LLM-based System,A,evaluat
+icis2025,sustain,https://aisel.aisnet.org/icis2025/sustain/sustain/5,Understanding the Environment: How Generative AI Reshapes Organizations’ Sensemaking in Sustainability Reporting,A,reporting
+ecis2025,hci,https://aisel.aisnet.org/ecis2025/hci/hci/2,Design and Evaluation of a Generative AI-Driven VR Texturing Tool: A Design Science Approach,A,evaluat
+ecis2026,bus_analytics,https://aisel.aisnet.org/ecis2026/bus_analytics/bus_analytics/5,Designing For Imperfect Prompts: A Simulation-Based Evaluation Of An LLM-Based Enterprise Data Assistant Using Knowledge Graphs,A,evaluat
+ecis2026,resp_AI,https://aisel.aisnet.org/ecis2026/resp_AI/resp_AI/9,Towards Using AI Bias Audits As Inputs For Red Teaming and Performance,B,audit;audit
+amcis2024,acctinfosys,https://aisel.aisnet.org/amcis2024/acctinfosys/acctinfosys/2,Operationalizing AI Auditability Measures: An AI Audit Case Study of College Admissions System,B,audit;audit
+amcis2024,ai_aa,https://aisel.aisnet.org/amcis2024/ai_aa/ai_aa/2,When Transparency Is Costly: GenAI Disclosure Suppresses Empathy in Medical Crowdfunding,A,transparen
+amcis2024,is_education,https://aisel.aisnet.org/amcis2024/is_education/is_education/20,ChatGPT in Academia: Students Information Collection and Validation Strategies,A,validation
+amcis2025,acctinfosys,https://aisel.aisnet.org/amcis2025/acctinfosys/acctinfosys/4,Generation of Synthetic Accounting Data in Audit: A Comparison of Tabular Generation Methods,B,audit;audit
+amcis2025,acctinfosys,https://aisel.aisnet.org/amcis2025/acctinfosys/acctinfosys/2,The Role of Generative AI in Alleviating Auditor Burnout,A+B,audit;audit
+amcis2025,sig_green,https://aisel.aisnet.org/amcis2025/sig_green/sig_green/10,Assessing Biodiversity Reporting in the Coal Mining Industry: Leveraging Large Language Models,A,reporting
+amcis2025,sig_osra,https://aisel.aisnet.org/amcis2025/sig_osra/sig_osra/29,Generative AI for Methodological Contributions in Information Systems Research,A,methodolog
+amcis2025,sig_sec,https://aisel.aisnet.org/amcis2025/sig_sec/sig_sec/40,“Am I Secure by Design ?”  Evaluating the Security and Transparency of GenAI: An End User-Centric Approach,A,evaluat;transparen
+amcis2026,ai_aiaa,https://aisel.aisnet.org/amcis2026/ai_aiaa/ai_aiaa/9,EVALUATING FINE-TUNED LLMS FOR MENTAL HEALTH SUPPORT: TEXT AND AUDIO MODALITIES,A,evaluat
+amcis2026,ai_systdesign,https://aisel.aisnet.org/amcis2026/ai_systdesign/ai_systdesign/8,Beyond Overt Harm: Benchmarking LLM Resistance to Moral Neutralization Requests,A,benchmark
+amcis2026,ai_systdesign,https://aisel.aisnet.org/amcis2026/ai_systdesign/ai_systdesign/4,Towards Trustworthy AI: A Unified Framework for LLM Hallucination Detection and Mitigation via System Reliability Theory,A,reliab
+amcis2026,conftheme,https://aisel.aisnet.org/amcis2026/conftheme/conftheme/29,Beyond Agreement: Structural Alignment in Hybrid Human–LLM Evaluation Systems,A,agreement;evaluat
+amcis2026,conftheme,https://aisel.aisnet.org/amcis2026/conftheme/conftheme/13,Collective Sensemaking in Generative AI Contexts: Evaluation Practices Under Uncertainty,A,evaluation practice;uncertaint
+amcis2026,conftheme,https://aisel.aisnet.org/amcis2026/conftheme/conftheme/26,Evaluative Misalignment in LLM-Supported Policy Analysis: Two Heuristic Cases,A,evaluat
+amcis2026,scuidt,https://aisel.aisnet.org/amcis2026/scuidt/scuidt/3,Scale or Validity? Measuring Competitive Moves with Validated LLM Coding,A,validity
+amcis2026,sig_dsa,https://aisel.aisnet.org/amcis2026/sig_dsa/sig_dsa/18,Can Generative AI Truly Democratize Investment Analysis? An Evaluation of Gemini Deep Research,A,evaluat
+amcis2026,sig_ed,https://aisel.aisnet.org/amcis2026/sig_ed/sig_ed/4,Investigating GenAI Technical Skill Gap:  A Methodological Approach,A,methodolog
+amcis2026,sig_green,https://aisel.aisnet.org/amcis2026/sig_green/sig_green/5,"Green GenAI or, Dirty Infrastructure: Employees’ Perceived Ecological Impact Transparency of LLMs at Work",A,transparen
+amcis2026,sig_itpm,https://aisel.aisnet.org/amcis2026/sig_itpm/sig_itpm/3,Sustainable GenAI in Regulated IT Projects: Minimal Governance Gates for Auditability and Accountability,A+B,audit;audit
+amcis2026,sig_sec,https://aisel.aisnet.org/amcis2026/sig_sec/sig_sec/44,The Operationalization Gap: Auditing Provenance Transparency under the AI Act,B,audit;transparen;audit
+amcis2026,sig_svs,https://aisel.aisnet.org/amcis2026/sig_svs/svs/1,Structural Biases in LLM-as-a-Judge Systems: Implications for reliable IS Adoption,A,reliab
+amcis2026,sigasys,https://aisel.aisnet.org/amcis2026/sigasys/acctinfosys/2,The Price of Compliance: Economic Implications of Partisan Bias in Audit Markets,B,audit;audit
+pacis2024,track01_aibussoc,https://aisel.aisnet.org/pacis2024/track01_aibussoc/track01_aibussoc/14,Evaluation Framework for Large Language Model-based Conversational Agents,A,evaluat
+pacis2024,track14_educ,https://aisel.aisnet.org/pacis2024/track14_educ/track14_educ/12,"Socratic ChatGPT: Theory, Design, and Empirical Evaluations",A,evaluat
+pacis2024,track19_userbeh,https://aisel.aisnet.org/pacis2024/track19_userbeh/track19_userbeh/22,Generative AI-Created Visual Content and Aesthetic Evaluation: Bridging Human Intuition and Analytical Judgment,A,evaluat
+pacis2024,track19_userbeh,https://aisel.aisnet.org/pacis2024/track19_userbeh/track19_userbeh/11,Measuring Internal Validity in Mixed Methods User Feedback Survey by Finding Inconsistencies with sentimentR and ChatGPT-4,A,validity
+pacis2025,aiandml,https://aisel.aisnet.org/pacis2025/aiandml/aiandml/28,Investigating the Effect of Signaling GenAI Expertise on Employers’ Evaluation of Gig Workers,A,evaluat
+pacis2025,ishealthcare,https://aisel.aisnet.org/pacis2025/ishealthcare/ishealthcare/15,Evaluating the Impact of Counseling Skills in Online Platforms: An LLM-Based Analysis,A,evaluat
+ecis2023,ecis2023_rp,https://aisel.aisnet.org/ecis2023_rp/265,What Makes AI Different? Exploring Affordances and Constraints - The Case of Auditing,B,audit;audit

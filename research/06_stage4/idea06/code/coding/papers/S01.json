@@ -1,14 +1,33 @@
 {
  "pilot_id": "S01",
  "key": "10.1007/s12525-023-00680-1",
- "I0": {"value": "N", "reason": "Fundamentals article (conceptual overview of generative AI): no evaluation of any system", "loc": "p.1 article type 'FUNDAMENTALS'; sections skimmed p.1-12 (Table 1 overview of deep generative models, Fig. 3 conceptual framework); keyword scan for uncertainty/comparison terms found only rhetorical 'significant'"},
+ "I0": {
+  "value": "N",
+  "reason": "Fundamentals article (conceptual overview of generative AI): no evaluation of any system",
+  "loc": "p.1 article type 'FUNDAMENTALS'; sections skimmed p.1-12 (Table 1 overview of deep generative models, Fig. 3 conceptual framework); keyword scan for uncertainty/comparison terms found only rhetorical 'significant'"
+ },
  "encoder_only": null,
  "items": "NA_inclusion_failed",
  "headline": {
-  "H1": {"sentence": "", "loc": "abstract p.1 (no quantitative statement); no results section", "metric": "", "A": "", "A_value": "", "B": "", "B_value": "", "n": "", "n_unit": "", "n_loc": "", "structure": "", "cluster_m": "", "runs": "", "run_sd": ""},
+  "H1": {
+   "sentence": "",
+   "loc": "abstract p.1 (no quantitative statement); no results section",
+   "metric": "",
+   "A": "",
+   "A_value": "",
+   "B": "",
+   "B_value": "",
+   "n": "",
+   "n_unit": "",
+   "n_loc": "",
+   "structure": "",
+   "cluster_m": "",
+   "runs": "",
+   "run_sd": ""
+  },
   "H2": "none (conceptual article)",
-  "H3_n_extractable": "N",
-  "H4_acc_extractable": "N"
+  "H3_n_extractable": "NA",
+  "H4_acc_extractable": "NA"
  },
  "notes": "Quoted ChatGPT (GPT-4, 'Mar 23 Version') epigraph on p.1 is not an evaluation."
 }

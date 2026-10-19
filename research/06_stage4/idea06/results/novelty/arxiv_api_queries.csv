@@ -1,0 +1,13 @@
+query_file,search_query,totalResults
+q1,"(abs:""meta-research"" OR abs:""metascience"" OR abs:""meta-science"") AND (abs:""language model"" OR abs:LLM OR abs:LLMs)",9
+q10,"(abs:""statistical power"" OR abs:""minimum detectable"" OR abs:""underpowered"") AND (abs:LLM OR abs:LLMs OR abs:""language model"") AND (abs:papers OR abs:literature OR abs:published)",15
+q11,"(abs:""industry track"" OR abs:""industry papers"" OR abs:""applied papers"") AND (abs:evaluation) AND (abs:LLM OR abs:LLMs OR abs:""language model"")",3
+q12,"(abs:""business"" OR abs:""management"" OR abs:""marketing"" OR abs:""economics"") AND (abs:LLM OR abs:LLMs) AND (abs:""reporting"" OR abs:""reproducibility"") AND (abs:""systematic review"" OR abs:""scoping review"" OR abs:""audit"")",78
+q2,"abs:audit AND (abs:""published papers"" OR abs:""published studies"" OR abs:""published claims"") AND (abs:LLM OR abs:LLMs OR abs:""language model"")",5
+q3,"(abs:""LLM-as-a-judge"" OR abs:""LLM judges"" OR abs:""LLM-as-judge"") AND (abs:""systematic review"" OR abs:""we survey"" OR abs:""we review"" OR abs:""papers"") AND (abs:validation OR abs:agreement)",144
+q4,"(abs:""statistical significance"" OR abs:""confidence intervals"" OR abs:""error bars"" OR abs:uncertainty) AND (abs:""reporting practices"" OR abs:""reporting practice"" OR abs:""evaluation practices"") AND (abs:LLM OR abs:LLMs OR abs:""language model"")",10
+q5,"(abs:""information systems"") AND (abs:LLM OR abs:LLMs OR abs:""large language model"") AND (abs:reproducibility OR abs:""reporting"" OR abs:rigor OR abs:validity) AND (abs:review OR abs:audit OR abs:""literature"")",5
+q6,"(abs:""outperformance claims"" OR abs:""false claims"" OR abs:""claims survive"" OR abs:""evidential"") AND (abs:benchmark OR abs:evaluation)",416
+q7,"(abs:""repeated runs"" OR abs:""multiple runs"" OR abs:""single run"" OR abs:""single-run"") AND (abs:""papers"" OR abs:""literature"") AND (abs:""meta-analysis"" OR abs:""we audit"" OR abs:""hand-coded"" OR abs:""systematic review"" OR abs:""we code"") AND (abs:LLM OR abs:LLMs OR abs:""language model"")",1
+q8,"(abs:""reporting checklist"" OR abs:""reporting standard"") AND (abs:LLM OR abs:LLMs) AND (abs:papers OR abs:literature) AND (abs:variance OR abs:""confidence"" OR abs:""statistical"")",1
+q9,"(abs:""human validation"" OR abs:""validated against human"" OR abs:""agreement with human"") AND (abs:""LLM-as-a-judge"" OR abs:""LLM judge"" OR abs:""LLM judges"") AND (abs:""meta-analysis"" OR abs:""systematic review"" OR abs:""literature review"" OR abs:""survey of"")",1

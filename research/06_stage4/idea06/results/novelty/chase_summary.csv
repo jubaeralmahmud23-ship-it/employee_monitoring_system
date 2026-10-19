@@ -1,0 +1,17 @@
+seed,direction,tool,status,n_works
+christodoulou2025,backward,OpenAlex,done (0 referenced_works deposited),0
+christodoulou2025,forward,OpenAlex,not done,
+christodoulou2025,backward,SemanticScholar,done,25
+christodoulou2025,forward,SemanticScholar,not done,
+bean2025,forward,OpenAlex,not done,
+bean2025,forward,SemanticScholar,done,145
+gross2020,forward,OpenAlex,not done,
+gross2020,forward,SemanticScholar,done,7
+dewynter_awes2024,backward,OpenAlex,done (0 referenced_works deposited),0
+dewynter_awes2024,forward,OpenAlex,not done,
+dewynter_awes2024,backward,SemanticScholar,done,55
+dewynter_awes2024,forward,SemanticScholar,not done,
+miller2024,forward,OpenAlex,not done,
+miller2024,forward,SemanticScholar,done,172
+bowyer2025,forward,OpenAlex,not done,
+bowyer2025,forward,SemanticScholar,done,27

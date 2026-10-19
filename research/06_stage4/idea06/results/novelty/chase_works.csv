@@ -1,0 +1,432 @@
+seed,direction,tool,id,doi_or_arxiv,title,year,venue
+christodoulou2025,backward,SemanticScholar,0b9d190f69696aed8549f21e648de12fc54c9446,10.48550/arXiv.2412.08763,Beyond Knowledge Silos: Task Fingerprinting for Democratization of Medical Imaging AI,2024,arXiv.org
+christodoulou2025,backward,SemanticScholar,3d6be47c043d4ec1111e376a3e52eb879c814cb3,10.1007/978-3-031-72117-5_12,Confidence Intervals Uncovered: Are We Ready for Real-World Medical Imaging AI?,2024,International Conference on Medical Image Computing and Computer-Assisted Intervention
+christodoulou2025,backward,SemanticScholar,02882aa74675b324808096609037a2dffb24c713,10.1016/j.patter.2023.100804,Leakage and the reproducibility crisis in machine-learning-based science,2023,Patterns
+christodoulou2025,backward,SemanticScholar,fc4cbc7a75f5a3bbca59db5513231555f078fe78,10.1109/TPAMI.2023.3329173,MetaFormer Baselines for Vision,2022,IEEE Transactions on Pattern Analysis and Machine Intelligence
+christodoulou2025,backward,SemanticScholar,2fe71acc2c3f1e75b6149dea72838f0b594ad013,10.48550/arXiv.2207.10666,TinyViT: Fast Pretraining Distillation for Small Vision Transformers,2022,European Conference on Computer Vision
+christodoulou2025,backward,SemanticScholar,979a9f247700d00ff2c3f0612d5eb001379f93c8,10.1038/s41467-022-30695-9,The Medical Segmentation Decathlon,2021,Nature Communications
+christodoulou2025,backward,SemanticScholar,9f4b69762ffb1ba42b573fd4ced996f3153e21c0,2106.04803,CoAtNet: Marrying Convolution and Attention for All Data Sizes,2021,Neural Information Processing Systems
+christodoulou2025,backward,SemanticScholar,2ffcf95e4916d3a44c474f7a6cccaabe9d11df83,10.1038/s41597-021-00815-z,A patient-centric dataset of images and metadata for identifying melanomas using clinical context,2020,Scientific Data
+christodoulou2025,backward,SemanticScholar,7cc44884667e9771d11491c142df90e091d3d4a7,2003.13865,COVID-CT-Dataset: A CT Scan Dataset about COVID-19,2020,arXiv.org
+christodoulou2025,backward,SemanticScholar,131329a5142fad8e0efa475d017b2a7a8c1f297a,10.1038/s41597-020-00622-y,"HyperKvasir, a comprehensive multi-class image and video dataset for gastrointestinal endoscopy",2019,Scientific Data
+christodoulou2025,backward,SemanticScholar,5c3e024698538385a7be01f1234eeac6a3e46186,10.1016/j.dib.2019.104863,Dataset of breast ultrasound images,2019,Data in Brief
+christodoulou2025,backward,SemanticScholar,88ee291cf1f57fd0f4914a80b986a08a90d887f1,1905.00546,Billion-scale semi-supervised learning for image classification,2019,arXiv.org
+christodoulou2025,backward,SemanticScholar,a0b7b10d504929bdb8765b72ce67077fe82b5971,10.1109/JBHI.2018.2824327,Seven-Point Checklist and Skin Lesion Classification Using Multitask Multimodal Neural Nets,2019,IEEE journal of biomedical and health informatics
+christodoulou2025,backward,SemanticScholar,89a816719613e220a64ab2590c938c23bbfe187e,10.1609/aaai.v33i01.3301590,CheXpert: A Large Chest Radiograph Dataset with Uncertainty Labels and Expert Comparison,2019,AAAI Conference on Artificial Intelligence
+christodoulou2025,backward,SemanticScholar,9b0cb302ecdb4a3236ca55f415bac657fcea3f07,10.1201/9781315274300,Bayesian Biostatistics,2018,
+christodoulou2025,backward,SemanticScholar,d39318a82409cccf959a99d291bfab61ec6a8880,1712.06957,MURA Dataset: Towards Radiologist-Level Abnormality Detection in Musculoskeletal Radiographs,2017,arXiv.org
+christodoulou2025,backward,SemanticScholar,ccf0099a72593d734c2cf441d8f4909e76c5f929,10.1016/j.neuroimage.2017.06.061,Cross‐validation failure: Small sample sizes lead to large error bars,2017,NeuroImage
+christodoulou2025,backward,SemanticScholar,92dc49d6d828ccc08f8de7c6f31b72c361e7e499,10.1080/00949655.2016.1169421,A derivation of prediction intervals for gamma regression,2016,
+christodoulou2025,backward,SemanticScholar,44fc4497fbd8de9f92c8cfd480b6f8a8c0b4ff39,10.1080/09332480.2005.10722754,Why Most Published Research Findings Are False,2005,PLoS Medicine
+christodoulou2025,backward,SemanticScholar,c8b25fab5608c3e033d34b4483ec47e68ba109b7,10.1109/ICCV48922.2021.00986,Swin Transformer: Hierarchical Vision Transformer using Shifted Windows,2021,IEEE International Conference on Computer Vision
+christodoulou2025,backward,SemanticScholar,,,No unbiased estimator of the variance of k-fold cross-validation,2004,Journal of machine learning research
+christodoulou2025,backward,SemanticScholar,,,International Skin Imaging Collaboration,,SIIM-ISIC 2020 Challenge Dataset
+christodoulou2025,backward,SemanticScholar,,,Medical meta learner (version 1.0.0) [computer software],,:
+christodoulou2025,backward,SemanticScholar,,,Analysis of images to detect abnormalities in endoscopy (aida-e) challenge,,aidasub-clebarrett.grand-challenge.org/home/
+christodoulou2025,backward,SemanticScholar,,,"Bayesian data analysis, Second Edition",,
+bean2025,forward,SemanticScholar,f61980ef81343c502be67139f7e49ec2ae149ae8,2610.21227,KBS: A Korean Benchmark Suite for Foundation Model Evaluation,2026,
+bean2025,forward,SemanticScholar,46eac853da7ddb65883c54d1aaddf79d111f19ea,2610.22243,Shortcut Sensitivity in Agent-Safety Evaluations,2026,
+bean2025,forward,SemanticScholar,21ccd14fc7442adc72f586b84531b8199ed6bddc,2610.17378,"Get In, Decide, Prove: A Merchant-Side Readiness Benchmark for Agentic Commerce",2026,
+bean2025,forward,SemanticScholar,ae9051f7cf7f1c7b2026140e9a673a13484d9b8b,2610.15415,Sensitivity or Criterion? Measuring and Moving When Language Models Act,2026,
+bean2025,forward,SemanticScholar,63f0c76bda9e536252325dcb16c803febc56a1fd,2610.12841,Fear Is Not Always Fear: Variation in Emotion Label Equivalence Across Datasets,2026,
+bean2025,forward,SemanticScholar,09e4054febf02a1acc75813a376257e5ed87f2d3,2610.11678,TRACE: Diagnosing Verifier Brittleness in Agentic Evaluation,2026,
+bean2025,forward,SemanticScholar,677c8a869209ef9cedc52cfde427635290fc296d,10.1145/3843282.3844423,"Measuring the Wrong Number: Cost-Aware, Correctness-Gated Evaluation of Efficiency Claims in Multi-turn Agentic Coding",2026,Proceedings of the 1st International Workshop on Agentic AI for Next-Generation Software Development
+bean2025,forward,SemanticScholar,8a9cbd4a6929bc3f1ad4b6de4a4806007e47729f,2610.11069,Clinician use of language models diverges from how the models are evaluated,2026,
+bean2025,forward,SemanticScholar,27e71d031d4c18355123d9e0688786110dd0bab5,2610.11938,Does Target Alignment Mean Target Recovery? An Evidence-Ladder Study of Adversarial Claims on Contrastive Encoders,2026,
+bean2025,forward,SemanticScholar,9db570c39025998329061b23b2f9778f944a5b26,2610.12125,The learner who does not learn: when optimizing a pedagogical metric degrades LLM tutoring,2026,
+bean2025,forward,SemanticScholar,d4d51af4c4d86001eaf372c0166011cd2f0580a1,2610.10506,Validity Without Ground Truth: What Stated-Preference Economics Offers the Evaluation of Language Models,2026,
+bean2025,forward,SemanticScholar,d4e5303e88aee497825bae2b49ee61a31b58ecc8,2610.09193,"Bookkeeping, Composition, or Unreachable Gold? Reading MemoryAgentBench's Conflict-Resolution Scores Against a Frozen Last-Write Resolver",2026,
+bean2025,forward,SemanticScholar,92098e8dff4f5db0f8185c15ee63117ba7ba7ade,2610.04915,Are We Measuring Scientific Intelligence? Rethinking the Evaluation of AI Scientists,2026,
+bean2025,forward,SemanticScholar,314d9d3a5e77ab77381dbd5b40c9462f4df3826a,2610.05532,DelegationBench: Measuring When AI Agents Should Ask Before Acting,2026,
+bean2025,forward,SemanticScholar,7032bfb738cd0f9839276a1f1a00d6c3bc93909b,2610.02563,OpenGameEval: Benchmarking Agentic Programming and Exploration in a Stateful Game Engine,2026,
+bean2025,forward,SemanticScholar,08a3c95a79decd8ec93d0ebae2626b561f296b08,2610.00416,Benchmarking Prompt Optimization of Large Language Models With Chess,2026,
+bean2025,forward,SemanticScholar,497c417e16edd5d15963be7f02f704259c6ea4b1,2609.37315,Do Agent Benchmarks Do What They Say? An Executable-Contract Audit of Tool-Using Agent Environments,2026,
+bean2025,forward,SemanticScholar,9000955d8859a0a6d3ca7282b4a2134b665d70b5,2609.34428,AgentHop: A Diagnostic Benchmark for Agentic Multi-Hop Scientific Question Answering,2026,
+bean2025,forward,SemanticScholar,dc015bd70a394dda7a41d01ac31a1b508d30350f,2609.33505,When Evidence Changes the Subject: Subject-Typed Claim Licensing for Learned Routing,2026,
+bean2025,forward,SemanticScholar,6e986ca4b45c39efc0551c0d211c338406a36412,2609.32318,What Can a Leaderboard Certify? Compositional Controllability for Fair Evaluation and Training of Biomedical Literature-Review Agents,2026,
+bean2025,forward,SemanticScholar,9e716dc610f6e78e56f64d639e45dcf27751f1c2,2609.32622,Does CoT-Pass@k Really Check the CoT? A Multilingual Mathematical Audit,2026,
+bean2025,forward,SemanticScholar,c9eb617e31dace797918a0cb1025596cdf5cb377,2609.23058,LazyAgent: Demand-Driven Materialization and Physical Optimization of Agentic Programs,2026,
+bean2025,forward,SemanticScholar,f4d7d888203d7219eadc8c2857cf00cd5b5cbe08,2609.19866,Reproducibility is not construct validity: LLM measurement of institutionally situated communication,2026,
+bean2025,forward,SemanticScholar,826bc6e5d3d84a51483f9dbba6436f326c32517c,2609.16793,Available but Unclaimed: An Empirical Study of Human-AI Synergy,2026,
+bean2025,forward,SemanticScholar,b9a38437f7daab0ef46b9a9f7c5e731d04315bea,2609.19182,What Do We Expect from LLMs? Mapping the Design of LLM Benchmarks,2026,
+bean2025,forward,SemanticScholar,8ad9a963c934b2379d270dd29170c8aebff85c60,2609.16267,"The record is part of the task: matched-record evaluation of text classifiers across maintenance, safety and recall reporting",2026,
+bean2025,forward,SemanticScholar,4a83ba69954fab58e11c924d2afd31d327f2f511,2609.13642,When Compliance Data Masquerades as Evaluation: Measurement Validity for Deployed AI Systems,2026,
+bean2025,forward,SemanticScholar,b951030902e6f7bfae99f84dab10bda3c0a2c58a,2609.11291,Off-Target Effects of Response-Style Alignment in a Korean 27B Language Model,2026,
+bean2025,forward,SemanticScholar,3891cfe23a26ae757106878779011d2b7e6b7c9f,2609.08812,What AI Benchmarks Actually Measure: Adapting Convergent and Discriminant Validity to Interrogate Fifty-Six AI Benchmarks,2026,
+bean2025,forward,SemanticScholar,3498e24404b8695dfb63e806adfa85d3f54ff489,2609.06190,One Perturbation Is Not Enough: Identifiability and Blind Baselines for Behavioral AI Evaluation,2026,
+bean2025,forward,SemanticScholar,7c939a9a27caff54528fed8b4a06c34bcb2441f6,10.65701/1zidk02aqx,Moral Competence Before Moral Content: Why LLM Agents Lack the Prerequisites for Coherent Alignment,2026,The Paris Journal on AI &amp; Digital Ethics
+bean2025,forward,SemanticScholar,734b961b2dc6d55eeabbaeabd9cb52bfc1019f8a,2609.05296,LexFlip: A Dissociation Diagnostic for Legal Meaning Preservation Metrics,2026,
+bean2025,forward,SemanticScholar,cad00b6cb56e36d37fbcae29665b64ecd30a7586,10.1177/08944393261481511,"Wild, Thick, and Wicked: Situated Evidence on AI-In-Use for Decisions About Deploying AI Systems",2026,Social science computer review
+bean2025,forward,SemanticScholar,1c295d84f7af45317e9c46a9cd4c3afe845fdcaf,2609.03047,SHELF: A Synthetic Harness for Multi-Task Bibliographic Benchmarking,2026,
+bean2025,forward,SemanticScholar,96c5c7670b65dee1adc74eab2b024fb568032514,2609.01519,When Guardrails Look Effective: Construct Validity Failures in LLM Agent Commerce Evaluation,2026,
+bean2025,forward,SemanticScholar,56521c6154e52d42fa8b3e518e3a0ddf484ac01c,2609.00482,Are Near-Tied LLM Rankings Robust to Family-DIF-Guided Benchmark Recomposition?,2026,
+bean2025,forward,SemanticScholar,3f32078d0a358b54e7511cbd096422c4e75a5c67,2608.29560,Which LLM for Which Work? Budgeted Model Allocation under Uncertain Evaluation,2026,
+bean2025,forward,SemanticScholar,a56dc7004925a9a6721bc1bbba184a9bd873d972,2608.29420,One Capability or Many? Structural and Predictive Tests of Benchmark Validity Disagree About Economic Benchmarks for Frontier AI,2026,
+bean2025,forward,SemanticScholar,f7aec713d74ab3de912342cfb68a1ec7e05fdff2,2608.29463,Benchmark Contamination: A Taxonomy Organized by Defeated Mitigation,2026,
+bean2025,forward,SemanticScholar,31f4998e2bf81619cb2868927931efc2c5f3672f,2608.27009,The Guard That Cried Wolf: How Scary Words Make Agent Guardrails Refuse Legitimate Actions,2026,
+bean2025,forward,SemanticScholar,a0e6cd8134fca420a5afdbc23e4fcc84dd9f0883,2608.27716,PCFBench: A Diagnostic Benchmark for Product Carbon Footprint Estimation,2026,
+bean2025,forward,SemanticScholar,27c76ee8159f57403b3ea8ed7768b03028b676c2,10.1080/15366367.2026.2716787,Construct-Validity Slippage in Psychological Measurement: Quiet Eye as a Case Study in Behavioral Inference,2026,Measurement: Interdisciplinary Research and Perspectives
+bean2025,forward,SemanticScholar,8d9fbbccf0f89cf9996a8d3c4dfc4c7dc481098f,10.1609/aies.v9i2.43241,"“I Want to Be Pushed, I Want to Grow”: Enabling Social Workers to Design Evaluations of LLM Augmentation in Their Work (Extended Abstract)",2026,"Proceedings of the AAAI/ACM Conference on AI, Ethics, and Society"
+bean2025,forward,SemanticScholar,1c2919c701a93fc09ceebeca9548398634ca7ee7,2608.20729,Calibrating Criterion Revision in LLM Agents: Failure Modes and a Trace-Anchored Protocol,2026,
+bean2025,forward,SemanticScholar,2a6c43b02a7580f1cf3d5502a68adbd995928e85,2608.21601,K-Bench: measuring model performance on real scientific agent requests,2026,
+bean2025,forward,SemanticScholar,dd1c8356fef6ea812bdc3ca65658b25bac7df41a,2608.20204,ContractScrub: A benchmark for final review of legal contracts,2026,
+bean2025,forward,SemanticScholar,cd1e28ecb4ada599f83d4ce119c500511607adc8,2608.19269,What Does an Evaluation License? A Commit-Bound Census of Claim Replay in Inspect Evals,2026,
+bean2025,forward,SemanticScholar,4ba807af130814ab39e52fd54c72727c6782a07f,2608.14065,"Rethinking Automated Program Repair: The Impact of Bug Complexity, Fault Localization, and LLM Cost-efficiency",2026,
+bean2025,forward,SemanticScholar,2388d30c93d2bf086fe9dffd191fd01ae81065f9,2608.13840,ASSERT: A Measurement Pipeline for GenAI Audits,2026,
+bean2025,forward,SemanticScholar,8c12cd6b7938cfcec628e227689544c75b76222c,2608.12880,Labels Are Not Endpoints: Treatment Leakage and Construct Validity in MCP Agent Security Evaluation,2026,
+bean2025,forward,SemanticScholar,af7736b0635e8183e7c4a50a5c17e6b8d4eada29,2608.13331,Training AI Scientists to Replicate Research,2026,
+bean2025,forward,SemanticScholar,3203ddaf6aeab51dac3ae2d2474154888cc892f8,2608.10089,Status Association Does Not Reliably Predict Decision Leakage,2026,
+bean2025,forward,SemanticScholar,7d983b271b3e24973d65260ba1a784176a6750d7,2608.10268,Toward Human Rights Benchmarking for LLMs: A Pilot Methodology,2026,
+bean2025,forward,SemanticScholar,fe39497c5003978d8e6e1a2ef2bda58792e65192,2608.10030,Causal Behavioral Evaluation of AI Agents at Scale via Automated Behavioral Science,2026,
+bean2025,forward,SemanticScholar,335852d1d40965c2d24242b51e13a22358a694ac,10.1609/aies.v9i1.43154,Studying People to Study AI: Expert Perspectives on the Epistemic Fit and Barriers of Human Research in AI Safety & Ethics,2026,"Proceedings of the AAAI/ACM Conference on AI, Ethics, and Society"
+bean2025,forward,SemanticScholar,407aa84886785d604633649707314acaaafc2614,2608.03340,Benchmarking the Benchmarks: Testing the Predictive Validity of Commonsense Benchmarks,2026,
+bean2025,forward,SemanticScholar,f7b76ad7ccc88546bd8c0a550d6be795df2e1a14,10.1109/REW72749.2026.00076,MESA: Requirements-Oriented Review of AI Benchmarks as Measurement Instruments,2026,2026 IEEE 34th International Requirements Engineering Conference Workshops (REW)
+bean2025,forward,SemanticScholar,e1a5254c75970fa21956f39170e7614867334b5b,10.1109/REW72749.2026.00059,Safety First! Modelling Requirements from GPT-5 System Card Using Lightweight Safety Models,2026,2026 IEEE 34th International Requirements Engineering Conference Workshops (REW)
+bean2025,forward,SemanticScholar,6580774958ac250e2775958b9fe5ec2a8dc5ba03,10.1109/RO-MAN72286.2026.11714781,Desiderata for Foundation Models in Social Robots: Capturing Embodied and Social Aspects for Benchmarking,2026,IEEE International Symposium on Robot and Human Interactive Communication
+bean2025,forward,SemanticScholar,6fc4e1b96169e73a7539c7b62da25f188f0f89d5,10.48550/arXiv.2607.28274,MORFES: A Benchmark for Productive Inflectional Competence in Modern Greek,2026,arXiv.org
+bean2025,forward,SemanticScholar,cda094c3582bfa5e4b35e4f45de0c0f9868f3dc0,10.48550/arXiv.2607.28685,"Safety, or Just Capability? A Validity Audit of Agent-Safety Benchmarks",2026,arXiv.org
+bean2025,forward,SemanticScholar,29e3f10e0232fc9930215b859d6dd00b569bc32a,10.1145/3832783.3837456,Not as Sweet by Another Name: An Empirical Study of Format Robustness in LLM Document Workflows,2026,Proceedings of the 41st IEEE/ACM International Conference on Automated Software Engineering
+bean2025,forward,SemanticScholar,e44ae7c31610b4d8a275467f30f891b414fd5674,10.48550/arXiv.2607.28677,Reasoning in Real World Clinical Care: Why Large Language Models Are Not Yet Safe for Autonomous Clinical Decision Support,2026,arXiv.org
+bean2025,forward,SemanticScholar,6a68df71896096b9e641028c167c3a549627d881,2607.26587,The Implementation Lottery: Auditing Idea Reliability in Automated Research,2026,
+bean2025,forward,SemanticScholar,2fda53f655c64c72262723066206219e539ce920,10.48550/arXiv.2607.26159,When benchmark inferences do not compose: Projectibility in AI evaluation,2026,arXiv.org
+bean2025,forward,SemanticScholar,c7481cff51d0148acd4dce8b870f981e85c1c517,10.1007/s10462-026-11666-8,Epistemic Norms for AI Safety and Alignment Research,2026,Artificial Intelligence Review
+bean2025,forward,SemanticScholar,e804081e5c4d8022c2f1aac1e69e822b220d7e6c,10.48550/arXiv.2607.24999,CogArena: A Multimethod Evaluation of Cognitive Ability Structure in Large Language Models,2026,arXiv.org
+bean2025,forward,SemanticScholar,9f491f6394b31d2d101167ea398a932741bfa80d,10.48550/arXiv.2607.14336,Copy-on-Write Scoring: Application-Specific Agent Evaluations,2026,arXiv.org
+bean2025,forward,SemanticScholar,42d2d4f2d468d543a78775468840dc20c6bd2ea4,10.48550/arXiv.2607.14399,Instrument Effects in Language-Model Honesty Evaluation: An Auditable Single-System Demonstration,2026,arXiv.org
+bean2025,forward,SemanticScholar,1c18c528cc5cf2fc59da7217c48f48f40c412c01,10.48550/arXiv.2607.09306,Exposure is not manifestation: measurement target and output resolution jointly determine which behavioural-faithfulness evaluator wins,2026,arXiv.org
+bean2025,forward,SemanticScholar,9b18b1bf3d765d711b228b9f2d4188b64657c628,10.48550/arXiv.2607.04576,Progressive Disclosure for LLM-Maintained Wiki Knowledge Bases: a Preregistered Ablation,2026,arXiv.org
+bean2025,forward,SemanticScholar,d296238cec6c3805e80d09fb6dcc3548160086a2,10.48550/arXiv.2607.05113,"Rating the Pitch, Not the Product: User Evaluations of LLMs Reflect Expectations More Than Performance",2026,arXiv.org
+bean2025,forward,SemanticScholar,c8c091aaadc5841504d590cf851366f211985c8b,10.48550/arXiv.2607.05552,"The yes-no bias of large language models reflects answer order and wording, not shifts in moral judgment",2026,arXiv.org
+bean2025,forward,SemanticScholar,ff858a63b2e466ceeb4c6a6de438aacae8be2a83,10.48550/arXiv.2607.02467,"Human Capital, Not Model Benchmarks, Predicts Hybrid Intelligence in Forecasting",2026,arXiv.org
+bean2025,forward,SemanticScholar,7875f695d8da802e6a531c112d238a50e87d6541,2608.13566,Don't Claim Benchmark-Oriented Optimization Improves General Coding Capability -- Diverse Evaluation Is Required,2026,
+bean2025,forward,SemanticScholar,19218424151967d73aa514d3268bddbe66d16f04,10.48550/arXiv.2606.28574,Correct codes for the wrong reasons? validating LLMs as measurement instruments for theoretical constructs,2026,arXiv.org
+bean2025,forward,SemanticScholar,d120e3af065c4e2150847f56e14eae2daebb01dc,10.48550/arXiv.2606.26079,"Same Evidence, Different Answer: Auditing Order Sensitivity in Multimodal Large Language Models",2026,arXiv.org
+bean2025,forward,SemanticScholar,94f719d090feeb070693be627093db3c91dde5d2,10.48550/arXiv.2606.12993,Charge as a Construct-Validity Factor in Chinese Legal Case Retrieval: A Cross-Benchmark Audit,2026,arXiv.org
+bean2025,forward,SemanticScholar,ea981b3708ad4ab9eaf4cc4e823d154aeb588587,10.48550/arXiv.2606.08044,When Behavioral Safety Evaluation Fails: A Representation-Level Perspective,2026,arXiv.org
+bean2025,forward,SemanticScholar,d2e131bfc17ccd2acda0e0341672136ef70480e1,2606.07897,Pander Score: A Continuous Measure of Sycophancy as Epistemic Deference,2026,
+bean2025,forward,SemanticScholar,1e1ec2d77d46dc3981e62b72628b464da435a396,10.48550/arXiv.2606.05806,When Tools Fail: Benchmarking Dynamic Replanning and Anomaly Recovery in LLM Agents,2026,arXiv.org
+bean2025,forward,SemanticScholar,f35e8cc662b5f50d5585c456fe5f302da682f8d1,10.48550/arXiv.2606.05029,Validity Threats for Foundation Model Research,2026,arXiv.org
+bean2025,forward,SemanticScholar,dfeeda52d1c148108998240b0fa7b13ef88e891b,10.48550/arXiv.2606.07612,Position: Anthropomorphic Misalignment Research Needs Stronger Evidence,2026,arXiv.org
+bean2025,forward,SemanticScholar,98bedddfaede9a86a1dc986cfd20a12988c66a04,10.48550/arXiv.2605.30315,Resolution Diagnostics for Paired LLM Evaluation,2026,arXiv.org
+bean2025,forward,SemanticScholar,9e9b814af7047990658da533a79df2139ab1def1,10.48550/arXiv.2605.25240,JudgmentBench: Comparing Rubric and Preference Evaluation for Quality Assessment,2026,arXiv.org
+bean2025,forward,SemanticScholar,062a2ad0dafa496a63931124c2fccdca393cee9b,10.48550/arXiv.2605.23715,"NLG Evaluation: Past, Present, Future",2026,arXiv.org
+bean2025,forward,SemanticScholar,3ee535c4d42c413da80a866ab0810777525f2435,2605.23262,Designing Benchmarks for Knowledge Work,2026,
+bean2025,forward,SemanticScholar,308863bbd7c2039856e325cc999a6c6c96b5f5ba,10.48550/arXiv.2605.20251,ProcCtrlBench: Evaluating Process-Level Defects and Control Preservation in LLM Coding Agents,2026,arXiv.org
+bean2025,forward,SemanticScholar,30c9230ee867801a7ec3a7e2b0895dc12628fefc,10.48550/arXiv.2605.13318,VERA-MH: Validation of Ethical and Responsible AI in Mental Health,2026,arXiv.org
+bean2025,forward,SemanticScholar,57bd1f23236f02842509a404adb6f1a9dcb7d01b,10.48550/arXiv.2605.11398,AcuityBench: Evaluating Clinical Acuity Identification and Uncertainty Alignment,2026,arXiv.org
+bean2025,forward,SemanticScholar,421129dbf9f2e3f8fb7b4ca9e2ac752bd0f95d9b,10.48550/arXiv.2605.08522,Coordinates of Capability: A Unified MTMM-Geometric Framework for LLM Evaluation,2026,arXiv.org
+bean2025,forward,SemanticScholar,0fcd074a578370c3316c251f312ed60f9a21772b,10.48550/arXiv.2605.06652,When No Benchmark Exists: Validating Comparative LLM Safety Scoring Without Ground-Truth Labels,2026,arXiv.org
+bean2025,forward,SemanticScholar,4bade00775c0c1ff77bfb47d48ea91363f85210e,10.3390/rel17050551,AI and the Reduction of Truth: A Eucharistic Alternative,2026,Religions
+bean2025,forward,SemanticScholar,439b62fabfb86f25db31a3bc4d3b70d0adf64aeb,10.1109/ISSSR69973.2026.00023,When Prompts Fail to Differentiate: Understanding Discriminative Power in LLM Agent Evaluation,2026,"2026 12th International Symposium on System Security, Safety, and Reliability (ISSSR)"
+bean2025,forward,SemanticScholar,efcd62db6eb40b66053c0ca0786d1b5361dc9246,10.48550/arXiv.2604.27405,Beyond the Mean: Within-Model Reliable Change Detection for LLM Evaluation,2026,arXiv.org
+bean2025,forward,SemanticScholar,40cf0af9c72da3bb797b049f2ac376cc266286ba,10.48550/arXiv.2606.11208,BioDivergence: A Benchmark and Evaluation Framework for Hidden Contextual Contradictions in Biomedical Abstracts,2026,arXiv.org
+bean2025,forward,SemanticScholar,8a7d938b4c2987af9f568e0bff09d4c623c4a709,10.48550/arXiv.2604.20622,pAI/MSc: ML Theory Research with Humans on the Loop,2026,arXiv.org
+bean2025,forward,SemanticScholar,3580dbacdeb1788196dc20262fb27b74cd04674b,2605.16301,Do LLMs Hold Their Values? MANTA: A Multi-Turn Adversarial Benchmark for Animal Welfare Reasoning,2026,
+bean2025,forward,SemanticScholar,f77a1844d05325d18466aeca7e8d8fcb966e8c38,10.48550/arXiv.2604.14856,ClimateCause: Complex and Implicit Causal Structures in Climate Reports,2026,Annual Meeting of the Association for Computational Linguistics
+bean2025,forward,SemanticScholar,389e3e707f947e6c97c39abdf7970eb7b7d0907e,10.48550/arXiv.2604.15203,MADE: A Living Benchmark for Multi-Label Text Classification with Uncertainty Quantification of Medical Device Adverse Events,2026,Annual Meeting of the Association for Computational Linguistics
+bean2025,forward,SemanticScholar,6cc10dbe4b0a10172e22e44cff3039451c18a8bb,10.48550/arXiv.2604.13371,Empirical Evidence of Complexity-Induced Limits in Large Language Models on Finite Discrete State-Space Problems with Explicit Validity Constraints,2026,arXiv.org
+bean2025,forward,SemanticScholar,b377b038daa26cb9fdc5099b36fd8d6089641147,10.3389/frobt.2026.1769361,What ethical AI and robots could mean: a conceptual and ethical reflection,2026,Frontiers in Robotics and AI
+bean2025,forward,SemanticScholar,563df4d94efa96f1a790200bc0e6bd1eec339fcd,10.1145/3774904.3793008,From Words to Worlds: Measuring Cultural Narrative Bias in LLMs via a Structural–Value Pipeline,2026,The Web Conference
+bean2025,forward,SemanticScholar,b27517764fc4d1e40b8f5c162ab65847b81b96fd,10.48550/arXiv.2603.21636,Silicon Bureaucracy and AI Test-Oriented Education: Contamination Sensitivity and Score Confidence in LLM Benchmarks,2026,arXiv.org
+bean2025,forward,SemanticScholar,1dd8fb95df62c1448dee5af4d2183bb4f783099b,10.48550/arXiv.2603.20172,Measuring Faithfulness Depends on How You Measure: Classifier Sensitivity in LLM Chain-of-Thought Evaluation,2026,arXiv.org
+bean2025,forward,SemanticScholar,d3cd33185ed5b1b7ca204e3a7f924c24a7768389,10.48550/arXiv.2603.18116,Responsible AI in criminal justice: LLMs in policing and risks to case progression,2026,arXiv.org
+bean2025,forward,SemanticScholar,701ae1f6f899c087b350bf986f4c24b63d20b55d,10.48550/arXiv.2603.18294,The Validity Gap in Health AI Evaluation: A Cross-Sectional Analysis of Benchmark Composition,2026,arXiv.org
+bean2025,forward,SemanticScholar,b43a2acca585ebe16e0abf90229f43a10a2fa007,10.48550/arXiv.2603.15121,Establishing Construct Validity in LLM Capability Benchmarks Requires Nomological Networks,2026,arXiv.org
+bean2025,forward,SemanticScholar,dd8ab2530ea62e87b8c184c06df0b881710b83b0,10.48550/arXiv.2603.14417,Questionnaire Responses Do not Capture the Safety of AI Agents,2026,arXiv.org
+bean2025,forward,SemanticScholar,32e09fb02f32e627072efd006fb3ce1d6d320840,10.48550/arXiv.2603.06811,Making AI Evaluation Deployment Relevant Through Context Specification,2026,arXiv.org
+bean2025,forward,SemanticScholar,c865bbd6dcd62ca16a02669b9164875218673f29,10.48550/arXiv.2603.13294,Real-World AI Evaluation: How FRAME Generates Systematic Evidence to Resolve the Decision-Maker's Dilemma,2026,arXiv.org
+bean2025,forward,SemanticScholar,4521dcc00b1e6ee197a637570c733118ea9a4a02,10.1007/978-3-032-32732-1_41,CIRCLE: A Framework for Evaluating AI from a Real-World Lens,2026,arXiv.org
+bean2025,forward,SemanticScholar,e0dd48e1a2f29b42114afbf7457e8d1c7e4ac2f9,10.48550/arXiv.2603.13285,Brittlebench: Quantifying LLM robustness via prompt sensitivity,2026,arXiv.org
+bean2025,forward,SemanticScholar,c0a2c53bcf352b0d4e8d221eba746379fc7d453e,2604.03244,AI Evaluation Should Require Standardized Item-Level Data Releases,2026,
+bean2025,forward,SemanticScholar,03dc9e134fc060ee5eb93da1201a361f77631215,2603.18019,BenchBrowser: Retrieving Evidence for Evaluating Benchmark Validity,2026,
+bean2025,forward,SemanticScholar,02c66adf13a234cdf7fa4354675c4a5d69201b05,10.48550/arXiv.2602.14307,Benchmarking at the Edge of Comprehension,2026,arXiv.org
+bean2025,forward,SemanticScholar,46356e3870501afc87ed509a0aca2922c7cc689b,10.48550/arXiv.2603.00063,Measuring What AI Systems Might Do: Towards A Measurement Science in AI,2026,arXiv.org
+bean2025,forward,SemanticScholar,4921e81b3cc144f639533074fda1ee27a82a84dd,10.48550/arXiv.2601.23112,How should AI Safety Benchmarks Benchmark Safety?,2026,arXiv.org
+bean2025,forward,SemanticScholar,1874ae4ef4163f8581aaf815b478df98889c8311,10.48550/arXiv.2601.20617,Agent Benchmarks Fail Public Sector Requirements,2026,Proceedings of IASEAI Conference
+bean2025,forward,SemanticScholar,5997d405fb45dd63a9325fe121032158b95c3ef8,2601.18486,Different Demographic Cues Yield Inconsistent Conclusions About LLM Personalization and Bias,2026,
+bean2025,forward,SemanticScholar,8f40d91565dc1d57b7aff12a8a41cbb1b064ac9e,10.48550/arXiv.2601.18572,"One Persona, Many Cues, Different Results: How Sociodemographic Cues Impact LLM Personalization",2026,Annual Meeting of the Association for Computational Linguistics
+bean2025,forward,SemanticScholar,4644b0e106182d28d94447724dc12a54f73aa482,10.48550/arXiv.2601.10926,"Selecting Language Models for Social Science: Start Small, Start Open, and Validate",2026,arXiv.org
+bean2025,forward,SemanticScholar,c7e93a4db65969bb07dca0628c7aea687f07b351,10.1145/3805689.3806462,The Algorithmic Gaze of Image Quality Assessment: An Audit and Trace Ethnography of the LAION-Aesthetics Predictor,2026,"Conference on Fairness, Accountability and Transparency"
+bean2025,forward,SemanticScholar,10fc4a7e21c237c5cd88f4d5d95cf8bb9afa9dff,10.48550/arXiv.2601.01878,Theory Trace Card: Theory-Driven Socio-Cognitive Evaluation of LLMs,2026,arXiv.org
+bean2025,forward,SemanticScholar,6933e23870988ee58d3a9c1157aec5519faffc18,10.48550/arXiv.2601.02285,"pdfQA: Diverse, Challenging, and Realistic Question Answering over PDFs",2026,arXiv.org
+bean2025,forward,SemanticScholar,7a65385621e97f07c7a192bdfaa6e638e682cf3a,10.48550/arXiv.2512.04062,Eval Factsheets: A Structured Framework for Documenting AI Evaluations,2025,arXiv.org
+bean2025,forward,SemanticScholar,0d7f7edd7e0cdebdc032363af2c8c3bd63a3e723,10.1007/s10899-026-10483-6,The Need for Benchmarks to Advance AI-Enabled Player Risk Detection in Gambling,2025,Journal of Gambling Studies
+bean2025,forward,SemanticScholar,10598cabe138027c9b0e779c284665de1f5c1270,10.1162/tacl.a.789,Understanding Benchmark Language Under Weakened Formal Semantics,2025,Transactions of the Association for Computational Linguistics
+bean2025,forward,SemanticScholar,c3bd777ffe5542ca6530ff5f1f8b0232ca23b1f4,2508.18646,Beyond Benchmarks: LLM Evaluation with an Anthropomorphic and Lifecycle-oriented Roadmap,2025,
+bean2025,forward,SemanticScholar,18317cad61c12e313a2718754c5fb89453fdc77f,2504.07825,Who Benchmarks the Benchmarks? Towards Comprehensive Evaluation of Commonsense Reasoning Benchmarks,2025,
+bean2025,forward,SemanticScholar,cf214c88567f30a2636278d1082fd8a41cc002f0,10.1613/jair.1.22039,Text-to-Image Models and Their Representation of People from Different Nationalities Engaging in Activities,2025,Journal of Artificial Intelligence Research
+bean2025,forward,SemanticScholar,0d94e7172a2cf1b39516839b55b7e232b55b6135,2503.02972,LINGOLY-TOO: Disentangling Reasoning from Knowledge with Templatised Orthographic Obfuscation,2025,
+bean2025,forward,SemanticScholar,1147047241713c4e6dca1f5346789f22ee1dd4e4,10.1162/OPMI.a.385,On Benchmarking Human-like Intelligence in Machines,2025,Open Mind
+bean2025,forward,SemanticScholar,9269f2324015094aaa0d8943dfd973a071e24fce,10.48550/arXiv.2601.09896,The Algorithmic Gaze: An Audit and Ethnography of the LAION-Aesthetics Predictor Model,2026,arXiv.org
+bean2025,forward,SemanticScholar,61f739825901ad9c1d3d91ba7bdde1496993a847,10.48550/arXiv.2603.20088,Beyond Accuracy: Towards a Robust Evaluation Methodology for AI Systems for Language Education,2026,arXiv.org
+bean2025,forward,SemanticScholar,d329931cdb63a75b5190d53165f4cb02f13828a5,10.48550/arXiv.2605.26937,Beyond Questions: Evaluating What Large Language Models (Actually) Know,2026,arXiv.org
+bean2025,forward,SemanticScholar,93cd6094aaef8de759178ff4ebe6403347d4dbcf,10.5220/0014737700004018,Benchmarking Small Language Models for Medical Question Answering in Resource-Constrained Environments,2026,International Conference on Enterprise Information Systems
+bean2025,forward,SemanticScholar,e3fbea311c3f22cc64d78ebdab6eb49393a27d21,10.48550/arXiv.2604.03244,Position: Science of AI Evaluation Requires Item-level Benchmark Data,2026,arXiv.org
+bean2025,forward,SemanticScholar,221681fcddfae3ab0e12c31acebc2f0b8237d3f8,10.5220/0015091300004021,What's the Difference? A Bibliographic Analysis on Automatic Item and Question Generation,2026,International Conference on Computer Supported Education
+bean2025,forward,SemanticScholar,dcf4decd8094aa9f1a3b0c06e85ec12e19b179e7,,AI for Science Needs Scientific Alignment,,
+bean2025,forward,SemanticScholar,4224e343149913b1b04067cd63e885866d35afff,,PoggioAI /MSc : ML Theory Research with Humans on the Loop A Technical Report,,
+bean2025,forward,SemanticScholar,8646c24c1483954f7617fc8a974c8b3a7b399468,,A Measurement Science Roadmap: From Human Assessment to AI Evaluation,,
+bean2025,forward,SemanticScholar,8f16f4c97553d239359a75a7829320b16477f5c4,,Beyond Questions: Evaluating LLM’s Knowledge Expression,,
+bean2025,forward,SemanticScholar,05b0c78230c8b57ec8686d2a951652bdefbe7cd2,,W HAT D OES AN E VALUATION L ICENSE ? A C OMMIT -B OUND C ENSUS OF C LAIM -R ELATIVE I NFERENCE IN I NSPECT E VALS,,
+bean2025,forward,SemanticScholar,a98f9a9f283db3beab6a02076e51032606b77477,,The Unreasonable Benchmark,,
+gross2020,forward,SemanticScholar,4102a67bf4054431aa16e734fda901271ec09ddd,10.1145/3706598.3714022,A Qualitative Study on How Usable Security and HCI Researchers Judge the Size and Importance of Odds Ratio and Cohen's d Effect Sizes,2025,International Conference on Human Factors in Computing Systems
+gross2020,forward,SemanticScholar,88312e809227353a33b526fb644d022f9b3cd026,10.1145/3706598.3713671,"Small, Medium, Large? A Meta-Study of Effect Sizes at CHI to Aid Interpretation of Effect Sizes and Power Calculation",2025,International Conference on Human Factors in Computing Systems
+gross2020,forward,SemanticScholar,0014d58ca1179e31485d64b0bcdad8c4ceb17ce7,10.1093/cybsec/tyag030,"Unaware, Unfunded and Uneducated: A Systematic Review of SME Cybersecurity",2023,arXiv.org
+gross2020,forward,SemanticScholar,06de6b18de5d6d45a9cdc390726b063dfc4a3067,10.1007/978-3-031-83072-3_3,Why Most Results of Socio-Technical Security User Studies Are False,2021,Workshop on Socio-Technical Aspects in Security and Trust
+gross2020,forward,SemanticScholar,c350b61d09534380fb2025f92feec9196b63fc63,10.1109/ICICCS51141.2021.9432092,The Urgency of Cyber Security in Secure Networks,2021,International Conference Intelligent Computing and Control Systems
+gross2020,forward,SemanticScholar,b24591afea2fbeed1542473034d5e3dceff0209c,10.1007/978-3-030-79318-0_10,Statistical Reliability of 10 Years of Cyber Security User Studies (Extended Version),2020,Workshop on Socio-Technical Aspects in Security and Trust
+gross2020,forward,SemanticScholar,643619a5757b998aef7f6d75550d5692bd78c818,,"SoK: I Have the (Developer) Power! Sample Size Estimation for Fisher's Exact, Chi-Squared, McNemar's, Wilcoxon Rank-Sum, Wilcoxon Signed-Rank and t-tests in Developer-Centered Usable Security",2023,Symposium On Usable Privacy and Security
+dewynter_awes2024,backward,SemanticScholar,0e751f27672c9bf32620bf4f3ec7a1f2c5259058,10.48550/arXiv.2502.03689,Stop treating 'AGI' as the north-star goal of AI research,2025,International Conference on Machine Learning
+dewynter_awes2024,backward,SemanticScholar,03bceced7669f2b9175beaa8409772d4771d6118,10.1609/icwsm.v20i1.42650,Beyond English: Evaluating Automated Measurement of Moral Foundations in Non-English Discourse with a Chinese Case Study,2025,Proceedings of the International AAAI Conference on Web and Social Media
+dewynter_awes2024,backward,SemanticScholar,017a5cb0dd05a23b72cdcacb44c61527524f6330,10.48550/arXiv.2412.03152,A Measure of the System Dependence of Automated Metrics,2024,Annual Meeting of the Association for Computational Linguistics
+dewynter_awes2024,backward,SemanticScholar,271edbdb1a28731f33f5812cce8ce10672e05beb,10.48550/arXiv.2410.16834,Analyzing and Evaluating Correlation Measures in NLG Meta-Evaluation,2024,North American Chapter of the Association for Computational Linguistics
+dewynter_awes2024,backward,SemanticScholar,db938f004bc9ec78e4aaf538054b907d5d20e635,10.1371/journal.pone.0337127,Transforming scholarly landscapes: The influence of large language models on academic fields beyond computer science,2024,PLoS ONE
+dewynter_awes2024,backward,SemanticScholar,cc1bf7149bf1ec2d4dceb8fea6b9d6401f980fb4,10.48550/arXiv.2407.03129,Social Bias Evaluation for Large Language Models Requires Prompt Variations,2024,Conference on Empirical Methods in Natural Language Processing
+dewynter_awes2024,backward,SemanticScholar,910e3b8e3c90d468e459d8911807c94dc93e224d,10.1038/s42256-024-00857-z,"Systematic analysis of 32,111 AI model cards characterizes documentation practice in AI",2024,Nature Machine Intelligence
+dewynter_awes2024,backward,SemanticScholar,384f91e20bd3516b35e564c7f9b43ddd46656b86,10.48550/arXiv.2406.13439,Finding Blind Spots in Evaluator LLMs with Interpretable Checklists,2024,Conference on Empirical Methods in Natural Language Processing
+dewynter_awes2024,backward,SemanticScholar,53d212ea368e75cc152c3cb287343da22849915e,10.48550/arXiv.2405.01724,Large Language Models are Inconsistent and Biased Evaluators,2024,arXiv.org
+dewynter_awes2024,backward,SemanticScholar,fec9e5449c5a03792ee7fc1875e57a6efcb97e1e,10.1609/aaai.v39i27.35011,RTP-LX: Can LLMs Evaluate Toxicity in Multilingual Scenarios?,2024,AAAI Conference on Artificial Intelligence
+dewynter_awes2024,backward,SemanticScholar,363064388aeef51f916131e87916a48054435cb5,10.48550/arXiv.2403.07872,Rethinking Generative Large Language Model Evaluation for Semantic Comprehension,2024,International Conference on Machine Learning
+dewynter_awes2024,backward,SemanticScholar,53f4fb0e9972989194368faf288ff8e3cba5bd60,10.48550/arXiv.2403.04132,Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference,2024,International Conference on Machine Learning
+dewynter_awes2024,backward,SemanticScholar,d0ee37d9e5ae942fce2c48db468738e014cb6a3c,10.1145/3576915.3623130,"""Get in Researchers; We're Measuring Reproducibility"": A Reproducibility Study of Machine Learning Papers in Tier 1 Security Conferences",2023,Conference on Computer and Communications Security
+dewynter_awes2024,backward,SemanticScholar,cd2f4aaf98bb1e020cff310000c8049d3460c54e,10.48550/arXiv.2310.18018,NLP Evaluation in trouble: On the Need to Measure LLM Data Contamination for each Benchmark,2023,Conference on Empirical Methods in Natural Language Processing
+dewynter_awes2024,backward,SemanticScholar,37cbf656ca8b76f29684c37c2ee43118d5bd8a8c,10.48550/arXiv.2309.07462,Are Large Language Model-based Evaluators the Solution to Scaling Up Multilingual Evaluation?,2023,Findings
+dewynter_awes2024,backward,SemanticScholar,9b2a802cccdbba0cee4d98ee9fd32301c298d0d7,10.1145/3571884.3604316,"Opening up ChatGPT: Tracking openness, transparency, and accountability in instruction-tuned text generators",2023,International Conference on Conversational User Interfaces
+dewynter_awes2024,backward,SemanticScholar,a0a79dad89857a96f8f71b14238e5237cbfc4787,10.52202/075280-2020,Judging LLM-as-a-judge with MT-Bench and Chatbot Arena,2023,Neural Information Processing Systems
+dewynter_awes2024,backward,SemanticScholar,e9ef16c4537499904de8a0b7563e80f012af7aec,10.18653/v1/2023.emnlp-main.142,"A Diachronic Analysis of Paradigm Shifts in NLP Research: When, How, and Why?",2023,Conference on Empirical Methods in Natural Language Processing
+dewynter_awes2024,backward,SemanticScholar,03055978e278960de9fbb5c648b1779ef9f26cd1,10.48550/arXiv.2305.01937,Can Large Language Models Be an Alternative to Human Evaluations?,2023,Annual Meeting of the Association for Computational Linguistics
+dewynter_awes2024,backward,SemanticScholar,31efded912389bcff148c3205b42669ad434f7d9,10.1016/j.nlp.2023.100024,An Evaluation on Large Language Model Outputs: Discourse and Memorization,2023,Natural Language Processing Journal
+dewynter_awes2024,backward,SemanticScholar,0857e8e6a84a672e64fb060532d6617887cb07f8,10.1126/science.adf6369,Rethink reporting of evaluation results in AI,2023,Science
+dewynter_awes2024,backward,SemanticScholar,381ab7a640f5b46b62f7e08d1af4a8e0d3eadd55,10.18653/v1/2023.emnlp-main.153,G-Eval: NLG Evaluation using GPT-4 with Better Human Alignment,2023,Conference on Empirical Methods in Natural Language Processing
+dewynter_awes2024,backward,SemanticScholar,163b4d6a79a5b19af88b8585456363340d9efd04,2303.08774,GPT-4 Technical Report,2023,
+dewynter_awes2024,backward,SemanticScholar,03013e291fb3192b286147f5bdb5770e434f91b2,10.1145/3543507.3583199,Do Language Models Plagiarize?,2022,The Web Conference
+dewynter_awes2024,backward,SemanticScholar,cb20d389dd4c68fc4d124165adc1598e0377c472,10.1145/3514094.3534196,The Worst of Both Worlds: A Comparative Analysis of Errors in Learning from Data in Psychology and Machine Learning,2022,"AAAI/ACM Conference on AI, Ethics, and Society"
+dewynter_awes2024,backward,SemanticScholar,e4e9d556e9725a5fdb2e133b61243ff7c1ca8aeb,10.1613/jair.1.13715,Repairing the Cracked Foundation: A Survey of Obstacles in Evaluation Practices for Generated Text,2022,Journal of Artificial Intelligence Research
+dewynter_awes2024,backward,SemanticScholar,aa7faa0c7d90bede91742e167b0db285c3d93fdb,10.1609/aimag.v42i3.18145,Progress in Recommender Systems Research: Crisis? What Crisis?,2022,The AI Magazine
+dewynter_awes2024,backward,SemanticScholar,a16ae67070de155789a871cb27ecbf9eaa98b379,10.18653/v1/2021.acl-long.565,All That’s ‘Human’ Is Not Gold: Evaluating Human Evaluation of Generated Text,2021,Annual Meeting of the Association for Computational Linguistics
+dewynter_awes2024,backward,SemanticScholar,8d7ed6580a26d2ecb8282e81c8649e193e67d81f,10.1016/j.csl.2020.101151,Human evaluation of automatically generated text: Current trends and best practice guidelines,2021,Computer Speech and Language
+dewynter_awes2024,backward,SemanticScholar,0adec918885dff698acf359988ed79a543157f80,10.18653/v1/2022.acl-long.556,Fantastically Ordered Prompts and Where to Find Them: Overcoming Few-Shot Prompt Order Sensitivity,2021,Annual Meeting of the Association for Computational Linguistics
+dewynter_awes2024,backward,SemanticScholar,2abdca069a95add94f5c0c540c09efb7adeee230,10.1126/scitranslmed.abb1655,Reproducibility in Machine Learning and Healthcare: How far do we have to go?,2021,Science Translational Medicine
+dewynter_awes2024,backward,SemanticScholar,9ceae85a0bd4231cd2efe14884c40b7bc04d3dac,2103.03098,Accounting for Variance in Machine Learning Benchmarks,2021,Conference on Machine Learning and Systems
+dewynter_awes2024,backward,SemanticScholar,3a1311fbba348a13857f54b92c24be4ee75d1b41,10.1609/aaai.v35i14.17492,Learning to Rationalize for Nonmonotonic Reasoning with Distant Supervision,2020,AAAI Conference on Artificial Intelligence
+dewynter_awes2024,backward,SemanticScholar,d865574ccdd75502ade7e2daa7aaceb18c3002db,10.15195/v7.a13,The Influence of Changing Marginals on Measures of Inequality in Scholarly Citations: Evidence of Bias and a Resampling Correction,2020,
+dewynter_awes2024,backward,SemanticScholar,90abbc2cf38462b954ae1b772fac9532e2ccd8b0,2005.14165,Language Models are Few-Shot Learners,2020,Neural Information Processing Systems
+dewynter_awes2024,backward,SemanticScholar,5e331bf7887e2e634bf5b12788849d2d2b74bc7f,2003.12206,Improving Reproducibility in Machine Learning Research (A Report from the NeurIPS 2019 Reproducibility Program),2020,Journal of machine learning research
+dewynter_awes2024,backward,SemanticScholar,74b4f16c5ac91e3e7c88ae81cc8c91416b71d151,2002.05651,Towards the Systematic Reporting of the Energy and Carbon Footprints of Machine Learning,2020,arXiv.org
+dewynter_awes2024,backward,SemanticScholar,d1aa325a5adefeba786d4c50a8ca9a8df9598f32,10.18653/v1/W19-8643,Best practices for the human evaluation of automatically generated text,2019,International Conference on Natural Language Generation
+dewynter_awes2024,backward,SemanticScholar,814db99ccf6b88d6af5b406b0c344b64c0a710b7,10.1162/COLI_a_00322,A Structured Review of the Validity of BLEU,2018,International Conference on Computational Logic
+dewynter_awes2024,backward,SemanticScholar,151c7cb45c75ac5573a6c03b2ea089b34512898c,10.1609/aaai.v32i1.11503,State of the Art: Reproducibility in Artificial Intelligence,2018,AAAI Conference on Artificial Intelligence
+dewynter_awes2024,backward,SemanticScholar,0df347f5e3118fac7c351917e3a497899b071d1e,10.1145/3458723,Datasheets for datasets,2018,Communications of the ACM
+dewynter_awes2024,backward,SemanticScholar,0d441ab58a1027cb64084ad065cfea5e15b8e74c,10.18653/v1/D17-1238,Why We Need New Evaluation Metrics for NLG,2017,Conference on Empirical Methods in Natural Language Processing
+dewynter_awes2024,backward,SemanticScholar,129cbad01be98ee88a930e31898cb76be79c41c1,10.18653/v1/D16-1230,How NOT To Evaluate Your Dialogue System: An Empirical Study of Unsupervised Evaluation Metrics for Dialogue Response Generation,2016,Conference on Empirical Methods in Natural Language Processing
+dewynter_awes2024,backward,SemanticScholar,26f9cf29abebe12a4fed9b92a97d3b0152772864,10.1038/250698C0,Publish or perish,1974,Nature
+dewynter_awes2024,backward,SemanticScholar,,,Neurips paper checklist guidelines,2024,NeurIPS
+dewynter_awes2024,backward,SemanticScholar,9ca11e50e0bed509ceeb839d84485b6ca67cdc57,10.18653/v1/2023.findings-emnlp.599,A Closer Look into Using Large Language Models for Automatic Evaluation,2023,Conference on Empirical Methods in Natural Language Processing
+dewynter_awes2024,backward,SemanticScholar,29c7f009df21d0112c48dec254ff80cc45fac3af,10.48550/arXiv.2304.15004,Are Emergent Abilities of Large Language Models a Mirage?,2023,Neural Information Processing Systems
+dewynter_awes2024,backward,SemanticScholar,7c9975fedb81929f0115f1fb1f7b7535121f8c4e,10.18653/v1/2022.emnlp-main.150,Reproducibility in Computational Linguistics: Is Source Code Enough?,2022,Conference on Empirical Methods in Natural Language Processing
+dewynter_awes2024,backward,SemanticScholar,be67273c483856f6df0f8f01283dee28cf8f4a3c,,Conference on Natural Language Generation,2004,
+dewynter_awes2024,backward,SemanticScholar,,,2025. Understanding the LLM-ification of CHI: Unpacking the impact of LLMs at CHI through a systematic literature review,,
+dewynter_awes2024,backward,SemanticScholar,,,2025. Scopes of alignment,,AAAI
+dewynter_awes2024,backward,SemanticScholar,,,2025. Gemini: A family of highly capable multimodal models,,Preprint
+dewynter_awes2024,backward,SemanticScholar,,,2024. Ethical concern identification in NLP: A corpus of ACL anthol-ogy ethics statements,,
+dewynter_awes2024,backward,SemanticScholar,,,Reproducibility checklist,,aaai
+dewynter_awes2024,backward,SemanticScholar,,,"New York, NY, USA",,"Communications Security , ser. CCS ’23"
+miller2024,forward,SemanticScholar,83b861e3819398a74375ee48d0c2663032097b74,2610.21074,OmicsBench: a long-horizon multi-turn benchmark of AI agents on research-study-scale bioinformatics,2026,
+miller2024,forward,SemanticScholar,7b9cb1ecdbf8f886a2155b064cda7064b511eb79,2610.18354,Choosing LLMs for Strategic Agent Interactions,2026,
+miller2024,forward,SemanticScholar,3e650b25903c6407749e4621f5939d96af759292,2610.18248,Are We Testing Too Much? A Survey of Benchmark Compression for Efficient Evaluation of Large Language Models,2026,
+miller2024,forward,SemanticScholar,3aa4abca91e52a461b5ba3af69a8adad558cce9a,2610.18201,How Reliable Are Large Language Models for Soil Organic Carbon Assessment? An Australian Benchmark,2026,
+miller2024,forward,SemanticScholar,1b1fae8a962806a79ad07395cb6084c815de9cf0,2610.19185,How to Evaluate When You Don't Know How to Evaluate? Choosing Reliable Setups for Base Language Model Benchmarking,2026,
+miller2024,forward,SemanticScholar,024e959e1c4d8d4730a3f92d405a2e787a7b8181,2610.17471,Scaling Inference-Time Compute with Teams of Coding Agents,2026,
+miller2024,forward,SemanticScholar,e7ae0fc6a2c150c81774973fa5c04f069ac16a18,2610.15884,RetryBench: Separating Retry Permission from Recovery Outcomes in GPT Tool Use,2026,
+miller2024,forward,SemanticScholar,42f110affe265d9a5b8fe71c8c82e343dd104ec0,2610.14216,Cortex: Measurement-Gated Evolution and Pruning of Coding-Agent Skills and Rules,2026,
+miller2024,forward,SemanticScholar,c8094b7141fb00a8f4a862ec1265c8ca99de8a1a,2610.14112,"Does System One Transfer? Calibrated Typed-Decision Models, Label Budgets, and Translation for Indonesian Regional Languages",2026,
+miller2024,forward,SemanticScholar,781222883a8306b608949301ba4ea625cd94614b,2610.11655,Harness Evolution Hits a Ceiling: When Weight Training Should Begin,2026,
+miller2024,forward,SemanticScholar,911024c96e2a3652b4e345004bc380daac05d5e2,2610.10142,When Can You Ship on Evals Alone? Trial-Level Surrogacy for Offline Evaluation of LLM Systems,2026,
+miller2024,forward,SemanticScholar,686d4cb68da9c9342bd0a0548a9031fd674edf3c,2610.08719,Holdout Best-of-N: Unbiased Evaluation and Its Cost,2026,
+miller2024,forward,SemanticScholar,d4e5303e88aee497825bae2b49ee61a31b58ecc8,2610.09193,"Bookkeeping, Composition, or Unreachable Gold? Reading MemoryAgentBench's Conflict-Resolution Scores Against a Frozen Last-Write Resolver",2026,
+miller2024,forward,SemanticScholar,01d2d1db17d589b2435966131c7bc5d6f6e555c4,2610.05778,MedicalHarness: A Controlled Evaluation of LLMs and Agent Harnesses on Medical Tasks,2026,
+miller2024,forward,SemanticScholar,673f0ceb084cbba58f3c54349efd975c31a4b9c0,2610.06204,Do Small Language Models Learn to Negotiate? A Controlled Scaling Study of RL-Trained Sellers,2026,
+miller2024,forward,SemanticScholar,d990ec334dacd1e3b02d1d4b6b3ac5b57d825176,2610.05034,"Agentic RAG Evaluation: Budget Allocation Across Questions, Trajectories, and Reads",2026,
+miller2024,forward,SemanticScholar,5fb79c105c1b2c6e6f3363a3d6733dbf2a9102ab,2610.04433,"What Does a Harness Buy? Tokens, Mostly",2026,
+miller2024,forward,SemanticScholar,fd193eedda3be214da6d75b1a1e9786e6cf370b4,2610.04523,All against the machine: the Solo score for rating skill in variable environments,2026,
+miller2024,forward,SemanticScholar,c9e81124e9465ba0b3c2088ec31fda76fb57b581,2610.03329,SyntaxBench: A Statistical Diagnostic Framework for Character-Level Reasoning in Large Language Models,2026,
+miller2024,forward,SemanticScholar,4148c4d23a9d33d97da05968d2ba449828a5b392,2610.01618,"Agents Are Systems, Not Models: Rethinking Agentic Evaluation",2026,
+miller2024,forward,SemanticScholar,366a712ca978005734dfdcfb6714c337ca51db3d,2610.02304,SimuVerity: Benchmarking Agents for Engineering-Grade Simulink Model Generation,2026,
+miller2024,forward,SemanticScholar,7032bfb738cd0f9839276a1f1a00d6c3bc93909b,2610.02563,OpenGameEval: Benchmarking Agentic Programming and Exploration in a Stateful Game Engine,2026,
+miller2024,forward,SemanticScholar,b10c718fd4fbb16adfa7ed78cfcf5622325ec760,2609.39958,Better Deck or Different Judge? Evaluating Agentic Harness Gains in Corporate and Investment Banking,2026,
+miller2024,forward,SemanticScholar,141ebe2ae083aadcfe5d834da5b2970f9acc3456,2609.40190,"Cheap to Draw, Expensive to Trust: Certifying Test-Time Scaling Curves",2026,
+miller2024,forward,SemanticScholar,17c6e01557c90e6a05c9b6fe4676159fb3ab3baa,2610.00609,Legal Research Bench: Measuring End-to-End Reliability in Long-Horizon Legal Research Agents,2026,
+miller2024,forward,SemanticScholar,6f0e2bc6d7517dac2f96cceb743efe20e0589046,2609.36730,Can Agents Design Libraries for Agents?,2026,
+miller2024,forward,SemanticScholar,8e96f229a55b1bf0ab8568cee5f65ebeb53dfb06,2609.36777,Code4Scene: Benchmarking Coding Agents for Constructing and Editing 3D Scenes,2026,
+miller2024,forward,SemanticScholar,d7db559d5eaaa5ebb4e2956d1ba05aebec733d1a,2609.37236,Asking for What Was Never Requested: Horizontal and Vertical Proactivity in Agents,2026,
+miller2024,forward,SemanticScholar,4b31f52e8ce03b23170c01fbe403a311ab1f8607,2609.35922,"Almost Human, Except When It Matters: VoxParity and the Decisions a Voice Should Change",2026,
+miller2024,forward,SemanticScholar,5697493caedb3a5fe77999fd7e2c0647e743fa4f,2609.33717,Self-Designed Evaluators and Warm Memory for Long-Horizon Agents,2026,
+miller2024,forward,SemanticScholar,511ffd67ebe1728d03cc101b5744a2a21483518b,2609.33321,Separating Memory and Workflow Effects in Predicting Individual Answers,2026,
+miller2024,forward,SemanticScholar,c1ebb8c5a9d1f219d2d2da5e2c57facf3815432f,2609.33812,"Identical Runs, Different Results: Benchmarking AI Coding Agents on Open-Weight Models",2026,
+miller2024,forward,SemanticScholar,6e986ca4b45c39efc0551c0d211c338406a36412,2609.32318,What Can a Leaderboard Certify? Compositional Controllability for Fair Evaluation and Training of Biomedical Literature-Review Agents,2026,
+miller2024,forward,SemanticScholar,9e716dc610f6e78e56f64d639e45dcf27751f1c2,2609.32622,Does CoT-Pass@k Really Check the CoT? A Multilingual Mathematical Audit,2026,
+miller2024,forward,SemanticScholar,32ad6390379da1830359403d677fd93b803e9839,2609.32211,Rank Confidence Sequences:Anytime-valid Leaderboards,2026,
+miller2024,forward,SemanticScholar,2989dec7d78c851c3fadbc27ca3d0a4791b25161,2609.32996,Oracle Gaps in Reliability Coverage: Sampling Noise or Policy Specialization?,2026,
+miller2024,forward,SemanticScholar,c09d6b3c6f2667fdc75ee3ea8eefbfd6b3bde858,2609.30725,Analyzing and Mitigating Cost-Inefficient Behaviors in Coding Agents,2026,
+miller2024,forward,SemanticScholar,2c986cb2cd9ad1c0f4921b39f614d182a05e1a74,2609.30074,How Reproducible Are Evaluation Conclusions? A Self-Audit of LLM-Inferred Prompt Structure,2026,
+miller2024,forward,SemanticScholar,80808ed68f3d8f2d72ce430c8d510c0d66900e0f,2609.28177,How Sensitive Are LLM Leaderboard Claims to Hidden Model Selection?,2026,
+miller2024,forward,SemanticScholar,255748a0566b9a44db6e8639aecd94202c0b7525,2609.25173,Attack Success Rate Is Not a Number: On Measurement Validity in Agentic AI Security Evaluation,2026,
+miller2024,forward,SemanticScholar,10f260e472c2d65023b4554788e47de879545091,2609.24128,OSCAR: Order-aware Sensitivity Correction for AI Rankings,2026,
+miller2024,forward,SemanticScholar,5ab9f3dd7130b0909f1c92abb90225b04776c8f9,2609.35815,How to Run Statistics over LLM Judges and Trust the Results: Calibrated Inference for Small-Sample AI Evaluation with evalstats,2026,
+miller2024,forward,SemanticScholar,42f01ee7179ef3192d6bbeaa3c1009b0c91baa2c,2609.22547,"RLVR is a Kernel, Not a Function: Statistical Inference for pass@$k$ Crossovers",2026,
+miller2024,forward,SemanticScholar,0be24a69fd3f403b922823de603dbe4ff5f08281,2609.18005,A Calibrated Instrument for Measuring How Inference Optimizations Affect Output Quality,2026,
+miller2024,forward,SemanticScholar,89e90deab0b60301908c4772e9af4e795e478cda,2609.18384,GYROval: A Robust Benchmark for Cultural Value Orientation in Large Language Models,2026,
+miller2024,forward,SemanticScholar,826bc6e5d3d84a51483f9dbba6436f326c32517c,2609.16793,Available but Unclaimed: An Empirical Study of Human-AI Synergy,2026,
+miller2024,forward,SemanticScholar,d8535778d9ee098f0a77a252578a329be22319c7,2609.14239,CoArena: Evaluating Computer-Use and Multi-Agent Systems in Real Time,2026,
+miller2024,forward,SemanticScholar,25aad0c9873abd6e37503acbef0044de70b3e5f4,2609.09396,VANTAGE-Bench: Evaluating the Infrastructure AI Gap in Vision-Language Models,2026,
+miller2024,forward,SemanticScholar,61f895a83cfd76aa3ae9747e9b1f8b6f90b3d2c7,2609.09218,"The Double Measurement Confound in Agent Benchmarks: De-Scaffolding, Ground-Truth Scoring, and Reliability Beyond the Mean",2026,
+miller2024,forward,SemanticScholar,3d8846e3c7123c811f27a565ad7f63ece7cbfc23,2609.04748,"Same Request, Different Answer: Quantization Amplifies Cache-Induced Divergence in LLM Serving",2026,
+miller2024,forward,SemanticScholar,7dce5752fc476e9dfbeb0e7553b34dca0d8ea569,2610.00074,K-Dense BYOK: An Open-Source AI Research Assistant That Runs Locally and Keeps a Hash-Chained Lab Notebook,2026,
+miller2024,forward,SemanticScholar,4aedc8fedbab7e56e50ef122894fcb6a74533270,2609.04198,"Clean Engineering, Unstable Measurement: A Preregistered Reliability Failure of Black-Box LLM Observers on Shared Endpoints",2026,
+miller2024,forward,SemanticScholar,4c37a736d22b33d10cb7b8db97de5eb3d52bb54e,2609.04518,Multi-Harness Reinforcement Learning for Coding Agents: Training Gains and Harness Dependence,2026,
+miller2024,forward,SemanticScholar,ff8439cb85c35e117ae802b971959eed87cfc1fe,2609.01354,Where the Verifier Fails: A Category-Level Audit of Reward Signals in RLVR,2026,
+miller2024,forward,SemanticScholar,f51b5dd42039b73340c821bc49b16c0684317632,2608.31102,LLM Post-Training as Brownfield Maintenance: An Industrial Perspective on Dataware Engineering,2026,
+miller2024,forward,SemanticScholar,1bbf4b4f3ef1a3056c5bec6382751ba9fd38df82,2608.22659,Statistical Methods for Multiple Language Model Comparison on a Shared Evaluation,2026,
+miller2024,forward,SemanticScholar,4cb548f2031a60d9dcae0dd3f5505934046777d6,2608.22335,Register Shifts Break LLM Safety: A Bengali Benchmark with Culturally Grounded Harms,2026,
+miller2024,forward,SemanticScholar,2adda89bb358f7d781ca665954ca0e32797911fb,2608.22331,Noise Floor Audit for Agent Benchmarks,2026,
+miller2024,forward,SemanticScholar,23ceb977d6cb967e79306a5b6205e8559019592a,2608.21262,The Exceedance Design Effect: Effective Sample Size for Thresholds under Clustering,2026,
+miller2024,forward,SemanticScholar,fc4485cae9575af6ce9fc712f16d383f3509fd31,2608.20290,Phantom Gains: Auditing Self-Improvement Against a Measured Null,2026,
+miller2024,forward,SemanticScholar,e1aa3892d955fcc066273687d761e8e094e67f0b,2609.27787,"Ask Which, Not How Good: Sizing Benchmarks Scored by an LLM",2026,
+miller2024,forward,SemanticScholar,7d998f3d0523d6c70967ca6bbb2351204a1a7697,2608.14425,Knowing When to Stop: Bayesian Optimal Stopping for LLM Evaluations,2026,
+miller2024,forward,SemanticScholar,a9ba521e28745b38e5bc3f8dcaf67929dd01bb78,2609.26261,Coding Agents are Strong Prompt Optimizers,2026,
+miller2024,forward,SemanticScholar,278759912d7e6aeb8cbe8ebaf4e97bba8384ab23,2608.12599,Dead text or binding clause? Measuring and restoring constraint influence in black-box LLM dialogues,2026,
+miller2024,forward,SemanticScholar,061ebefef21b94785bfadd20242ebbe06fb8826b,2608.11323,Deployment Decision Reliability: A Generalizability-Theory Framework for Sizing Long-Horizon Agent Evaluations,2026,
+miller2024,forward,SemanticScholar,5b78d33c32fd23f84a61d80f30d5d872b50b37b3,2608.07545,DarwinX: Evolving Agent Harnesses Through Natural Selection,2026,
+miller2024,forward,SemanticScholar,5318e0689869614b1efebff574dd80943e3b97ad,10.48550/arXiv.2607.28576,"Sample More, Reflect Less: Self-Refine and Reflexion Lose to Repeated Sampling at Equal Token Cost, from 1.5B to 7B",2026,arXiv.org
+miller2024,forward,SemanticScholar,0f87632e1cef9fa88ce72a798760305f0f0ec0e8,10.48550/arXiv.2607.26987,How Developers Experience Debugging Unfamiliar Codebases with Code Tours Generated and Evaluated by Local LLMs,2026,arXiv.org
+miller2024,forward,SemanticScholar,9d754be46cf69b9ec341c5f2b1c81b631daf5bb0,10.48550/arXiv.2607.25257,Laplace-PSN-IRT: Uncertainty Quantification for Neural Item Response Theory Models of LLM Benchmarks,2026,arXiv.org
+miller2024,forward,SemanticScholar,2419a7bf8b0b165d291f4dd1b2cd1f3c98b0a703,10.48550/arXiv.2607.22951,Modeling Memory-Dependent Reliability of LLMs: A Hidden Markov Model,2026,arXiv.org
+miller2024,forward,SemanticScholar,5ac1a19d9e04829701552cea010f3dbdd72e65f3,10.48550/arXiv.2607.21735,What AI Red-Team Evaluations Can and Cannot Prove,2026,arXiv.org
+miller2024,forward,SemanticScholar,0fc0b83b6ca5fd27b12c9c96ecfa65594b1374c0,10.48550/arXiv.2607.08842,L2-Bench: An Evaluation Benchmark for Measuring LLM Capabilities in Second Language Education,2026,"Proceedings of the AAAI/ACM Conference on AI, Ethics, and Society"
+miller2024,forward,SemanticScholar,7e870d635fa722edefb94ff57bc9b3faadd92046,10.48550/arXiv.2607.06411,RuBench: A Repository-Level Agentic Coding Benchmark with Natively Authored Russian Task Specifications,2026,arXiv.org
+miller2024,forward,SemanticScholar,38559d2f5c3090e4fe58e2d71ecfdfd1c62431e6,10.48550/arXiv.2607.04429,evalci: A Python Library for Statistically Rigorous Comparison of Language Model Evaluations,2026,arXiv.org
+miller2024,forward,SemanticScholar,c886ce3cff0c4e33ee47b8957dd7d1cc141a58fe,2607.02975,Where Knowledge and Authority Sit Changes What an Agent Benchmark Can Resolve,2026,
+miller2024,forward,SemanticScholar,46f8d7af74acd5aa033402faae2b54fd8f961e3c,10.48550/arXiv.2607.16259,Quantifying Ranking Uncertainty in LLM Benchmarks,2026,arXiv.org
+miller2024,forward,SemanticScholar,ade02bb46b7fb1f9d50e39d01576af6099df7c75,10.48550/arXiv.2606.28960,Expert Evaluation of Clinical AI Tools on Real Point-of-Care Clinical Queries,2026,arXiv.org
+miller2024,forward,SemanticScholar,30cf5485fd520ace01bf1fbfec941f83bb92fe99,10.48550/arXiv.2606.25487,How Reliable Is Your Jailbreak Judge? Calibration and Adversarial Robustness of Automated ASR Scoring,2026,arXiv.org
+miller2024,forward,SemanticScholar,9623606ba3d01673a5f071cad04d76373d118464,10.48550/arXiv.2606.17426,Bounded Difference Concentration for Infinitely Exchangeable Sequences with Applications to AI Benchmark Uncertainty,2026,arXiv.org
+miller2024,forward,SemanticScholar,120fbc4dc3c58f536079a9b16f876c37d8d18fdb,10.48550/arXiv.2606.19380,"ClayBuddy: A Framework, Evaluation, & Mitigation of Coding Agent Failures",2026,arXiv.org
+miller2024,forward,SemanticScholar,bf3fc82be06ad49a8be5cba9ff1eab0f1dba2f70,10.48550/arXiv.2606.08679,Rank Intervals for Leaderboards: A Hierarchical Framework for Model Evaluation,2026,arXiv.org
+miller2024,forward,SemanticScholar,f35e8cc662b5f50d5585c456fe5f302da682f8d1,10.48550/arXiv.2606.05029,Validity Threats for Foundation Model Research,2026,arXiv.org
+miller2024,forward,SemanticScholar,b407a6883c30959901177e29932ace70ff61db66,10.48550/arXiv.2605.30758,Pairwise Reference Alignment as a Model-Level Ordinal Observable,2026,arXiv.org
+miller2024,forward,SemanticScholar,8a6c38cfe316db06300f5270a4d02e029da6280c,10.48550/arXiv.2607.01245,Office Comprehension Benchmark,2026,arXiv.org
+miller2024,forward,SemanticScholar,98bedddfaede9a86a1dc986cfd20a12988c66a04,10.48550/arXiv.2605.30315,Resolution Diagnostics for Paired LLM Evaluation,2026,arXiv.org
+miller2024,forward,SemanticScholar,05a50ea818f0d240525ed50edea9b07bd8d3e4b3,10.48550/arXiv.2605.29107,GEO-Bench: Benchmarking Ranking Manipulation in Generative Engine Optimization,2026,arXiv.org
+miller2024,forward,SemanticScholar,614031882a46ea614f92df0f19bb2f68deddff93,10.48550/arXiv.2605.21095,Backchaining Loss of Control Mitigations from Mission-Specific Benchmarks in National Security,2026,arXiv.org
+miller2024,forward,SemanticScholar,3f024e17ee772a816f1adbf8028f14320486a9a9,10.48550/arXiv.2605.10575,Acceptance Cards:A Four-Diagnostic Standard for Safe Fine-Tuning Defense Claims,2026,arXiv.org
+miller2024,forward,SemanticScholar,35face12ebc1d904e67d2ee4e0be53b7c84ffc96,10.48550/arXiv.2605.06939,Bias and Uncertainty in LLM-as-a-Judge Estimation,2026,arXiv.org
+miller2024,forward,SemanticScholar,efcd62db6eb40b66053c0ca0786d1b5361dc9246,10.48550/arXiv.2604.27405,Beyond the Mean: Within-Model Reliable Change Detection for LLM Evaluation,2026,arXiv.org
+miller2024,forward,SemanticScholar,4a9cb1c48791028729573d717b31d402348d4caa,10.48550/arXiv.2604.11581,"Hidden Measurement Error in LLM Pipelines Distorts Annotation, Evaluation, and Benchmarking",2026,arXiv.org
+miller2024,forward,SemanticScholar,d4a176a4bfd5e2645307ca191d7dec7a1848a82f,10.48550/arXiv.2604.03472,Vocabulary Dropout for Curriculum Diversity in LLM Co-Evolution,2026,arXiv.org
+miller2024,forward,SemanticScholar,ebadfb24d8d26dca70e802839debbae87ffd6ef2,10.1016/j.chbr.2026.101063,Would ChatGPT Help Me Eat My Dead Dog? Probing Moral Judgment and Moral Action in Large Language Models,2026,Computers in Human Behavior Reports
+miller2024,forward,SemanticScholar,cc6a0bbdc37f420700b96f3c9673dcd7066f47ce,10.1145/3786335.3813180,Vibe Code Bench: Evaluating AI Models on End-to-End Web Application Development,2026,CAIS
+miller2024,forward,SemanticScholar,60c0385880f7bb644427f8ea93bdf7597fffb6b4,10.48550/arXiv.2603.01865,CyclicJudge: Mitigating Judge Bias Efficiently in LLM-based Evaluation,2026,arXiv.org
+miller2024,forward,SemanticScholar,65a7fc689fce714cb51d1e3d9305d997a2f5169b,10.48550/arXiv.2602.08229,InfiCoEvalChain: A Blockchain-Based Decentralized Framework for Collaborative LLM Evaluation,2026,arXiv.org
+miller2024,forward,SemanticScholar,a1dd0ac18c121dbcd4219b59f8aa952cf6de32d6,10.48550/arXiv.2602.10144,When LLMs get significantly worse: A statistical approach to detect model degradations,2026,arXiv.org
+miller2024,forward,SemanticScholar,a8246213a76b60b6e7c3a1a35cccbba411d32570,10.48550/arXiv.2602.07150,On Randomness in Agentic Evals,2026,arXiv.org
+miller2024,forward,SemanticScholar,1874ae4ef4163f8581aaf815b478df98889c8311,10.48550/arXiv.2601.20617,Agent Benchmarks Fail Public Sector Requirements,2026,Proceedings of IASEAI Conference
+miller2024,forward,SemanticScholar,993d74cdce4d62e06160c85431891e3a9d8060f0,10.48550/arXiv.2601.19532,Benchmarks Saturate When The Model Gets Smarter Than The Judge,2026,arXiv.org
+miller2024,forward,SemanticScholar,bdbcca40a0bfe90af9beab2b7d0f62f8779a1f7b,10.1145/3805689.3812365,Expanding External Access to Frontier AI Models for Dangerous Capability Evaluations,2026,"Conference on Fairness, Accountability and Transparency"
+miller2024,forward,SemanticScholar,4644b0e106182d28d94447724dc12a54f73aa482,10.48550/arXiv.2601.10926,"Selecting Language Models for Social Science: Start Small, Start Open, and Validate",2026,arXiv.org
+miller2024,forward,SemanticScholar,4fa19cdd5548e0359339f28645d0e71f6483365f,10.48550/arXiv.2601.09084,How Many Human Judgments Are Enough? Feasibility Limits of Human Preference Evaluation,2026,arXiv.org
+miller2024,forward,SemanticScholar,737e7f1b1e64dc942c1ffdbb72e5e65a9eab6ce4,10.48550/arXiv.2512.21326,Measuring all the noises of LLM Evals,2025,arXiv.org
+miller2024,forward,SemanticScholar,2875f3e6806d2a1115858034867f9e8d77763417,10.48550/arXiv.2512.21080,LLM Personas as a Substitute for Field Experiments in Method Benchmarking,2025,arXiv.org
+miller2024,forward,SemanticScholar,12df2defb8df06521d83745bc4f13b476403daf7,10.48550/arXiv.2512.18601,On Finding Inconsistencies in Documents,2025,Annual Meeting of the Association for Computational Linguistics
+miller2024,forward,SemanticScholar,fa5bc2ef3fe9d8f833f249e249704f50602db1ac,10.2196/89839,Performance of Large Language Models on the Brazilian National Medical Education Examination: Comparative Benchmark Study,2025,JMIR Medical Education
+miller2024,forward,SemanticScholar,9d003cf1871f64982647285143929737bcf8de51,10.1145/3777867.3777881,ConVart: A Framework for Evaluating Confidence and Variability in Large Language Models for Domain-Specific Reliability,2025,Fire
+miller2024,forward,SemanticScholar,4bf522beb61263b5261d82f779f6bf77cd945348,10.48550/arXiv.2512.07795,ReasonBENCH: Benchmarking the (In)Stability of LLM Reasoning,2025,arXiv.org
+miller2024,forward,SemanticScholar,704dc54bf1b3ba908fd75bfc8604d09f6c61b470,10.48550/arXiv.2512.06710,Stochasticity in Agentic Evaluations: Quantifying Inconsistency with Intraclass Correlation,2025,arXiv.org
+miller2024,forward,SemanticScholar,09ce85b2811c7ec920ab6b7338ebce44bae54e19,10.48550/arXiv.2512.05929,LLM Harms: A Taxonomy and Discussion,2025,arXiv.org
+miller2024,forward,SemanticScholar,0de1755350b018ecd10498c2c7de0e84be15c93e,10.48550/arXiv.2512.05858,Prompting Science Report 4: Playing Pretend: Expert Personas Don't Improve Factual Accuracy,2025,arXiv.org
+miller2024,forward,SemanticScholar,26ee57cf62ebbf55e917755c23e5d949c5cc1d4a,10.48550/arXiv.2511.21140,How to Correctly Report LLM-as-a-Judge Evaluations,2025,arXiv.org
+miller2024,forward,SemanticScholar,2680315ceb130c96bc45ae1a338cfa60b595e0d4,2511.10661,Sequential Bayesian Evaluation of Large Language Model Behavior,2025,
+miller2024,forward,SemanticScholar,2d23402001da59509b1bc8ee629491e33f5cbbbf,10.48550/arXiv.2511.04703,Measuring what Matters: Construct Validity in Large Language Model Benchmarks,2025,Neural Information Processing Systems
+miller2024,forward,SemanticScholar,5e2fa8cc5c69add1276a4e613fe3c6c5db88394b,10.48550/arXiv.2511.00527,HIP-LLM: A Hierarchical Imprecise Probability Approach to Reliability Assessment of Large Language Models,2025,arXiv.org
+miller2024,forward,SemanticScholar,38c14d6143158cca317fe50270b8d81e4ad95d5f,10.48550/arXiv.2510.26768,AMO-Bench: Large Language Models Still Struggle in High School Math Competitions,2025,Annual Meeting of the Association for Computational Linguistics
+miller2024,forward,SemanticScholar,03de1d05ffa14ed74554412369588f70ad3e558c,10.48550/arXiv.2510.21524,EU-Agent-Bench: Measuring Illegal Behavior of LLM Agents Under EU Law,2025,arXiv.org
+miller2024,forward,SemanticScholar,9c899c2628827ab15a5a6f11fafd788961008bca,10.1038/s41746-025-02008-z,When helpfulness backfires: LLMs and the risk of false medical information due to sycophantic behavior,2025,npj Digital Medicine
+miller2024,forward,SemanticScholar,1c750c3e3c4ee5cede9ba1b28b5a189f9df74ca1,10.48550/arXiv.2510.11595,Reproducibility: The New Frontier in AI Governance,2025,arXiv.org
+miller2024,forward,SemanticScholar,d6aa8fbc65a4d948d713042161c9ad532c8967c1,2510.05709,Correcting Prompt Dependence in LLM Benchmarks: A Bayesian Hierarchical Model with Embedding-Space Clustering,2025,
+miller2024,forward,SemanticScholar,f050fdb981c93f672ed5a82dc46a055c0c8bc7d9,10.48550/arXiv.2509.24086,Do Repetitions Matter? Strengthening Reliability in LLM Evaluations,2025,arXiv.org
+miller2024,forward,SemanticScholar,ba6a5faa593ba4f8314ec63c15bddc8c36c1d42e,10.18653/v1/2025.findings-emnlp.456,Representing LLMs in Prompt Semantic Task Space,2025,Conference on Empirical Methods in Natural Language Processing
+miller2024,forward,SemanticScholar,47f8a94950f9ba174c094e46c8caa7933b089b2b,10.48550/arXiv.2509.19489,Estimating the Self-Consistency of LLMs,2025,arXiv.org
+miller2024,forward,SemanticScholar,3e6ec6b27c082bba331d493e1cb50840a6d0f311,2509.19590,Position: AI Evaluations Should be Grounded on a Theory of Capability,2025,
+miller2024,forward,SemanticScholar,cec2f7e9849e69a96707548b5854aeedf68a7a3f,10.48550/arXiv.2509.12382,LLM-as-a-Judge: Rapid Evaluation of Legal Document Recommendation for Retrieval-Augmented Generation,2025,arXiv.org
+miller2024,forward,SemanticScholar,60b5163bcd83de8637bbf4ae2446727d7b3d06a2,10.48550/arXiv.2509.10963,Testing for LLM response differences: the case of a composite null consisting of semantically irrelevant query perturbations,2025,arXiv.org
+miller2024,forward,SemanticScholar,60ac6c04b6089cd01b7f47b2240a60b388c54477,10.48550/arXiv.2509.08494,HumanAgencyBench: Scalable Evaluation of Human Agency Support in AI Assistants,2025,arXiv.org
+miller2024,forward,SemanticScholar,2a0f1eaeddac6d2d3d726dd197e99fa40d5d22a4,10.48550/arXiv.2509.07054,Statistical Methods in Generative AI,2025,arXiv.org
+miller2024,forward,SemanticScholar,3f0c849509de91ddf09835c9a09c5887830e03e6,10.48550/arXiv.2508.13144,Signal and Noise: A Framework for Reducing Uncertainty in Language Model Evaluation,2025,Neural Information Processing Systems
+miller2024,forward,SemanticScholar,ad4066de43f1c78066b9bd3b540504a78a7dbc54,10.48550/arXiv.2508.09853,STREAM (ChemBio): A Standard for Transparently Reporting Evaluations in AI Model Reports,2025,arXiv.org
+miller2024,forward,SemanticScholar,7879f9d8b4f7b571ac824b654996bf6107d3ce43,10.48550/arXiv.2508.00614,Prompting Science Report 3: I'll pay you or I'll kill you - but will you care?,2025,arXiv.org
+miller2024,forward,SemanticScholar,e2fd1d0a4daabf799d6426cf76b3ba5552e23f47,10.48550/arXiv.2507.08616,AgentsNet: Coordination and Collaborative Reasoning in Multi-Agent LLMs,2025,arXiv.org
+miller2024,forward,SemanticScholar,4bbea0946433826259e55c15bb0988aa0555ff0e,10.3389/frai.2025.1557920,Swedish Medical LLM Benchmark: development and evaluation of a framework for assessing large language models in the Swedish medical domain,2025,Frontiers Artif. Intell.
+miller2024,forward,SemanticScholar,d64fe0261fabb90fe5e3db1cb9073092124f85ca,10.52202/085713-1702,Quantifying Uncertainty in Error Consistency: Towards Reliable Behavioral Comparison of Classifiers,2025,Neural Information Processing Systems
+miller2024,forward,SemanticScholar,3d1a8ae27b904bf145ee222462cbab13a2982ac4,10.48550/arXiv.2507.06893,Developing and Maintaining an Open-Source Repository of AI Evaluations: Challenges and Insights,2025,arXiv.org
+miller2024,forward,SemanticScholar,dab723953ccfc6fef3807a9915cdb69e2c2cb916,10.3758/s13428-026-03073-2,A validity-guided workflow for robust large language model research in psychology,2025,Behavior Research Methods
+miller2024,forward,SemanticScholar,afcfeadb77f7c65d6d55a78b528fa4cfe3e5fa74,10.48550/arXiv.2506.18213,A Conceptual Framework for AI Capability Evaluations,2025,arXiv.org
+miller2024,forward,SemanticScholar,adf4e6e5d2f15c00079bec4e3c5273b3cc99c303,10.48550/arXiv.2506.10481,OIBench: Benchmarking Strong Reasoning Models with Olympiad in Informatics,2025,arXiv.org
+miller2024,forward,SemanticScholar,fe2fb936b1dd27c75b503bca69c975c83a0d0c7e,10.48550/arXiv.2506.07142,Prompting Science Report 2: The Decreasing Value of Chain of Thought in Prompting,2025,arXiv.org
+miller2024,forward,SemanticScholar,e86cc88054ac5a0af7f03da0ccb9fd1b90678cf8,10.1109/IPDPSW66978.2025.00152,Is In-Context Learning Feasible for HPC Performance Autotuning?,2025,"IEEE International Symposium on Parallel & Distributed Processing, Workshops and Phd Forum"
+miller2024,forward,SemanticScholar,bd5558bbca710c55b194f222f5a1832fdf7f3e2d,10.48550/arXiv.2505.23432,A Mathematical Framework for AI-Human Integration in Work,2025,International Conference on Machine Learning
+miller2024,forward,SemanticScholar,dadaedc2b2c8249370b712530b77d850de9dbc09,10.48550/arXiv.2506.00066,Literature Review Of Multi-Agent Debate For Problem-Solving,2025,arXiv.org
+miller2024,forward,SemanticScholar,da0830d88fa40c7c337969fbc28da197ba85b57a,10.48550/arXiv.2505.21097,Thinker: Learning to Think Fast and Slow,2025,Neural Information Processing Systems
+miller2024,forward,SemanticScholar,6c8f155cafdb286e09abbed89cd7c70a550a8aef,10.48550/arXiv.2505.19145,Do Large Language Models (Really) Need Statistical Foundations?,2025,Annals of Applied Statistics
+miller2024,forward,SemanticScholar,2f749b0f1378c17f523fb1d25513324d0058b01e,2505.06108,LLMs Outperform Experts on Challenging Biology Benchmarks,2025,
+miller2024,forward,SemanticScholar,e8f120b3c2ca6d58bab29ba0242a6a5f97ef5496,10.48550/arXiv.2505.05602,HiBayES: A Hierarchical Bayesian Modeling Framework for AI Evaluation Statistics,2025,arXiv.org
+miller2024,forward,SemanticScholar,e9ec7469c943133d2006a46cce5378f6f5187434,10.1145/3715275.3732033,Identities are not Interchangeable: The Problem of Overgeneralization in Fair Machine Learning,2025,"Conference on Fairness, Accountability and Transparency"
+miller2024,forward,SemanticScholar,3a7d53c76dc39e31493c1480a359230ed44160cb,10.48550/arXiv.2505.03814,Cer-Eval: Certifiable and Cost-Efficient Evaluation Framework for LLMs,2025,arXiv.org
+miller2024,forward,SemanticScholar,a6cad00e214c0f3ccdb0145bc4c384475d8b9828,10.48550/arXiv.2504.21303,Confidence in Large Language Model Evaluation: A Bayesian Approach to Limited-Sample Challenges,2025,arXiv.org
+miller2024,forward,SemanticScholar,9494a78f8bfe277d6f4c41d71b10dfd3a39c2d47,10.21203/rs.3.rs-6206365/v1,When Helpfulness Backfires: LLMs and the Risk of Misinformation Due to Sycophantic Behavior,2025,Research Square
+miller2024,forward,SemanticScholar,810c1d51e992f7755ace1cc479879a13eb4cabc9,10.18653/v1/2025.acl-long.1262,ChatBench: From Static Benchmarks to Human-AI Evaluation,2025,Annual Meeting of the Association for Computational Linguistics
+miller2024,forward,SemanticScholar,fde9d06f4cd8e7fa52ed8160beb5e16d55dbd8b4,10.48550/arXiv.2503.11911,LAG-MMLU: Benchmarking Frontier LLM Understanding in Latvian and Giriama,2025,NoDaLiDa/Baltic-HLT
+miller2024,forward,SemanticScholar,9896f5f15bdb97a8ccc06ab02a45854a1c78e550,10.48550/arXiv.2503.02574,LLM-Safety Evaluations Lack Robustness,2025,arXiv.org
+miller2024,forward,SemanticScholar,4ca76fd94f9227eb3c2cd717206734645932dc4e,10.48550/arXiv.2503.01747,Position: Don't use the CLT in LLM evals with fewer than a few hundred datapoints,2025,International Conference on Machine Learning
+miller2024,forward,SemanticScholar,f693607759a333ebf3b198a25fbf5caccec12462,10.48550/arXiv.2503.01470,Position: Ensuring mutual privacy is necessary for effective external evaluation of proprietary AI systems,2025,arXiv.org
+miller2024,forward,SemanticScholar,0d89e576e67b5a4aeb641629fad456b32411596f,10.1145/3715275.3732094,What do Large Language Models Say About Animals? Investigating Risks of Animal Harm in Generated Text,2025,"Conference on Fairness, Accountability and Transparency"
+miller2024,forward,SemanticScholar,9c25eeec80843f14ed03384fad0b6a47209795ee,10.48550/arXiv.2502.15096,Detecting Student Intent for Chat-Based Intelligent Tutoring Systems,2025,arXiv.org
+miller2024,forward,SemanticScholar,b24610392dec5ea2316457cf2638f975a0b77eaa,10.48550/arXiv.2502.14491,Statistical Scenario Modelling and Lookalike Distributions for Multi-Variate AI Risk,2025,arXiv.org
+miller2024,forward,SemanticScholar,fd389b6993dd537ea0a013fcdb9fa5f246f070a0,10.18653/v1/2026.findings-acl.488,Beyond the Singular: Revealing the Value of Multiple Generations in Benchmark Evaluation,2025,Annual Meeting of the Association for Computational Linguistics
+miller2024,forward,SemanticScholar,7deaa55c18b1cbb315df8ac7a05441c0ec6b38a0,10.48550/arXiv.2502.09696,ZeroBench: An Impossible Visual Benchmark for Contemporary Large Multimodal Models,2025,arXiv.org
+miller2024,forward,SemanticScholar,c97b597e7dd98d3e00703fab3deecf23dce9f67f,10.48550/arXiv.2502.01754,Evaluation of Large Language Models via Coupled Token Generation,2025,arXiv.org
+miller2024,forward,SemanticScholar,61f739825901ad9c1d3d91ba7bdde1496993a847,10.48550/arXiv.2603.20088,Beyond Accuracy: Towards a Robust Evaluation Methodology for AI Systems for Language Education,2026,arXiv.org
+miller2024,forward,SemanticScholar,caabc005c428b48c4061b3870853173afeb6d278,10.1109/ACCESS.2026.3719838,Deterministic Runtime Enforcement: The Execution Authority for Autonomous AI Agents,2026,IEEE Access
+miller2024,forward,SemanticScholar,9e23c726853968805b80b9102ae12d08713848f6,10.63317/4j37zxirsi26,How Many Samples Do We Need? A Toolkit for Power-Aware Evaluation Design,2026,International Conference on Language Resources and Evaluation
+miller2024,forward,SemanticScholar,9b477496861078c08ee533be818613d21613ccb0,10.48550/arXiv.2502.08943,Beyond the Singular: The Essential Role of Multiple Generations in Effective Benchmark Evaluation and Analysis,2025,arXiv.org
+miller2024,forward,SemanticScholar,e314032ad8aea0ebd840e0241e10301bc44947bc,10.48550/arXiv.2505.06108,LLMs Outperform Experts on Challenging Biology Benchmarks,2025,arXiv.org
+miller2024,forward,SemanticScholar,3ca945188052a7981d6c18296b55e91fd4f3861a,10.1007/978-3-032-05663-4_2,Some Hidden Traps of Confidence Intervals in Medical Image Segmentation: Coverage Issues,2025,BRIDGE/DeCaF@MICCAI
+miller2024,forward,SemanticScholar,db1f7706ed9cdca2a3f9f5572076dba87d8f673b,,Do Large Language Models Need Statistical Foundations?,,
+miller2024,forward,SemanticScholar,b72e86c36fd1416e2e4d7df77110b4fe52f220b1,,versus external validity of reported numbers,,
+miller2024,forward,SemanticScholar,8b270d7d03c422be39b1bf9c549bf76c5a0c0ff0,,Resilient Systems for Capturing Tacit Knowledge: The next generation of healthcare foundation models,,
+miller2024,forward,SemanticScholar,71de551918736924a8e514a339a2f961e9cec055,,AEF-1: Minimum Operating Conditions for Independent Third Party AI Evaluations,,
+bowyer2025,forward,SemanticScholar,673f0ceb084cbba58f3c54349efd975c31a4b9c0,2610.06204,Do Small Language Models Learn to Negotiate? A Controlled Scaling Study of RL-Trained Sellers,2026,
+bowyer2025,forward,SemanticScholar,32ad6390379da1830359403d677fd93b803e9839,2609.32211,Rank Confidence Sequences:Anytime-valid Leaderboards,2026,
+bowyer2025,forward,SemanticScholar,b378118a71983757e7ab0dafe0973f3e74c426dd,2609.30219,Requirement-Bound Verified Commissioning: A Frozen Four-Billion-Parameter Local Model as a Candidate Generator under an External Acceptance Layer with Verification and Release Authority,2026,
+bowyer2025,forward,SemanticScholar,80808ed68f3d8f2d72ce430c8d510c0d66900e0f,2609.28177,How Sensitive Are LLM Leaderboard Claims to Hidden Model Selection?,2026,
+bowyer2025,forward,SemanticScholar,5ab9f3dd7130b0909f1c92abb90225b04776c8f9,2609.35815,How to Run Statistics over LLM Judges and Trust the Results: Calibrated Inference for Small-Sample AI Evaluation with evalstats,2026,
+bowyer2025,forward,SemanticScholar,42f01ee7179ef3192d6bbeaa3c1009b0c91baa2c,2609.22547,"RLVR is a Kernel, Not a Function: Statistical Inference for pass@$k$ Crossovers",2026,
+bowyer2025,forward,SemanticScholar,3a4801a7375464b770b4eb9ff793fb653626a50f,2608.16894,An Investigation of the NeurIPS and ICML 2025 Position Tracks,2026,
+bowyer2025,forward,SemanticScholar,d56c4e5dec50c71431f03e47a4066656ae7480d8,2606.28324,The multiply iterated law of the iterated logarithm: game-theoretic foundations of sequential detection boundaries,2026,
+bowyer2025,forward,SemanticScholar,c37a2baf54d7235389061c248f921076d0fc2ea7,2606.00920,How Much Can Repeated Running Buy? A Measured Variance Ceiling for LLM Code Evaluation,2026,
+bowyer2025,forward,SemanticScholar,98ac0d6fec21bb6f99388727b8ae091c8b3ac345,10.1109/TNSRE.2026.3675361,Predicting Fall Risk in Community-Dwelling Older Adults Using a Fine-Tuned Quantized Large Language Model,2026,IEEE transactions on neural systems and rehabilitation engineering
+bowyer2025,forward,SemanticScholar,993d74cdce4d62e06160c85431891e3a9d8060f0,10.48550/arXiv.2601.19532,Benchmarks Saturate When The Model Gets Smarter Than The Judge,2026,arXiv.org
+bowyer2025,forward,SemanticScholar,190546efa116837b59b5bc3c4af261506bf11835,10.48550/arXiv.2601.11866,Advances in LLM Reasoning Enable Flexibility in Clinical Problem-Solving,2026,AMIA Joint Summits on Translational Science proceedings. AMIA Joint Summits on Translational Science
+bowyer2025,forward,SemanticScholar,737e7f1b1e64dc942c1ffdbb72e5e65a9eab6ce4,10.48550/arXiv.2512.21326,Measuring all the noises of LLM Evals,2025,arXiv.org
+bowyer2025,forward,SemanticScholar,2680315ceb130c96bc45ae1a338cfa60b595e0d4,2511.10661,Sequential Bayesian Evaluation of Large Language Model Behavior,2025,
+bowyer2025,forward,SemanticScholar,d6aa8fbc65a4d948d713042161c9ad532c8967c1,2510.05709,Correcting Prompt Dependence in LLM Benchmarks: A Bayesian Hierarchical Model with Embedding-Space Clustering,2025,
+bowyer2025,forward,SemanticScholar,e2b514fa2bbb991fab69024ed5cc40c529a973b2,10.48550/arXiv.2510.04265,Don't Pass@k: A Bayesian Framework for Large Language Model Evaluation,2025,arXiv.org
+bowyer2025,forward,SemanticScholar,7a7f417a97cb5972d858938e01b331b930ff1c0e,10.48550/arXiv.2510.05152,A Single Character can Make or Break Your LLM Evals,2025,arXiv.org
+bowyer2025,forward,SemanticScholar,f050fdb981c93f672ed5a82dc46a055c0c8bc7d9,10.48550/arXiv.2509.24086,Do Repetitions Matter? Strengthening Reliability in LLM Evaluations,2025,arXiv.org
+bowyer2025,forward,SemanticScholar,2a0f1eaeddac6d2d3d726dd197e99fa40d5d22a4,10.48550/arXiv.2509.07054,Statistical Methods in Generative AI,2025,arXiv.org
+bowyer2025,forward,SemanticScholar,fc1bc4b7594c7d92cceb3968f5e3c2784c4d4e5d,10.1038/s41598-026-55000-2,Lexical hints of accuracy in LLM reasoning chains,2025,Scientific Reports
+bowyer2025,forward,SemanticScholar,3f0c849509de91ddf09835c9a09c5887830e03e6,10.48550/arXiv.2508.13144,Signal and Noise: A Framework for Reducing Uncertainty in Language Model Evaluation,2025,Neural Information Processing Systems
+bowyer2025,forward,SemanticScholar,f8fc0386fdd208b51fa885aef27e345a9c08b51b,10.1017/epi.2026.10139,Benchmark-Driven Selection of AI: Evidence from DeepSeek-R1,2025,Episteme
+bowyer2025,forward,SemanticScholar,cefd220658769a3d7e83d0407df3ee244cc4c419,10.48550/arXiv.2507.03772,Skewed Score: A statistical framework to assess autograders,2025,arXiv.org
+bowyer2025,forward,SemanticScholar,b4d1293841fbc115729bc0f9c126a4f60085d273,10.48550/arXiv.2505.06046,Healthy LLMs? Benchmarking LLM Knowledge of UK Government Public Health Information,2025,arXiv.org
+bowyer2025,forward,SemanticScholar,aa3517c664890cd36aee3cfff0f09d2645e373b6,10.48550/arXiv.2504.07086,A Sober Look at Progress in Language Model Reasoning: Pitfalls and Paths to Reproducibility,2025,arXiv.org
+bowyer2025,forward,SemanticScholar,8536dba22d34f719cf156228e8cc534138f7615a,10.1038/s41598-025-22940-0,Limitations of large language models in clinical problem-solving arising from inflexible reasoning,2025,Scientific Reports
+bowyer2025,forward,SemanticScholar,9e23c726853968805b80b9102ae12d08713848f6,10.63317/4j37zxirsi26,How Many Samples Do We Need? A Toolkit for Power-Aware Evaluation Design,2026,International Conference on Language Resources and Evaluation

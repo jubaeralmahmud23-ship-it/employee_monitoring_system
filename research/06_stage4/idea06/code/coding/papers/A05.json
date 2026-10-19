@@ -1,26 +1,88 @@
 {
  "pilot_id": "A05",
  "key": "2025.naacl-industry.49",
- "I0": {"value": "Y", "reason": "LLM-based risk-detection (guardrail) models Granite-Guardian-3.0-2B/8B evaluated against Llama-Guard and ShieldGemma on public prompt/response harmfulness benchmarks and the TRUE groundedness benchmark", "loc": "§5 p.6-7; Tables 1-2"},
+ "I0": {
+  "value": "Y",
+  "reason": "LLM-based risk-detection (guardrail) models Granite-Guardian-3.0-2B/8B evaluated against Llama-Guard and ShieldGemma on public prompt/response harmfulness benchmarks and the TRUE groundedness benchmark",
+  "loc": "§5 p.6-7; Tables 1-2"
+ },
  "encoder_only": false,
  "items": {
-  "1_n_items": {"value": "N", "unit": "", "loc": "§5 p.6: test datasets named (AegisSafetyTest, ToxicChat, OpenAI Moderation, BeaverTails, SafeRLHF, XSTEST-RESP, TRUE) without test sizes; TRUE described as 'over 100K annotated examples' in total; p.3 sizes refer to training data"},
-  "2a_runs": {"value": "N", "loc": "Tables 1-2 single values; keyword scan"},
-  "2b_seeds": {"value": "N", "loc": "'seed' only as seed datasets (p.4)"},
-  "3_decoding": {"value": "NA", "loc": "§5 p.6: classification by normalised Yes/No token log-likelihoods over top-k tokens (Eq. 1-2); no free generation evaluated"},
-  "4_model_version": {"value": "Y", "loc": "Table 1 p.6: Granite-Guardian-3.0-2B/8B, Llama-Guard-7b, Llama-Guard-2-8B, Llama-Guard-3-1B/8B, ShieldGemma-2b/9b/27b"},
-  "5_prompts": {"value": "P", "loc": "Fig. 1 p.5: instruction template and harm risk definition sample; further templates referred to the Appendix and the arXiv version (p.1-2), not in this proceedings PDF"},
-  "6_uncertainty": {"value": "N", "loc": "Tables 1-2 point values; keyword scan"},
-  "7_llm_judge": {"value": "N", "loc": "evaluation against benchmark gold labels (the evaluated system is itself an LLM classifier/judge)"},
-  "8_judge_human_validation": {"value": "NA", "loc": ""},
-  "9a_agreement_metric": {"value": "NA", "loc": ""},
-  "9b_chance_corrected": {"value": "NA", "loc": ""},
-  "10_contamination": {"value": "P", "loc": "§5 p.6: test sets labelled 'Out of Distribution Harm Benchmarks'; overlap with base-model pretraining data not discussed"},
-  "11a_code": {"value": "Y", "loc": "abstract p.1: github.com/ibm-granite/granite-guardian; models released open-source (p.7)"},
-  "11b_data": {"value": "P", "loc": "evaluation benchmarks public (§5 p.6); training data (human-annotated and synthetic, §3 p.3-4) release not stated"}
+  "1_n_items": {
+   "value": "N",
+   "unit": "",
+   "loc": "§5 p.6: test datasets named (AegisSafetyTest, ToxicChat, OpenAI Moderation, BeaverTails, SafeRLHF, XSTEST-RESP, TRUE) without test sizes; TRUE described as 'over 100K annotated examples' in total; p.3 sizes refer to training data"
+  },
+  "2a_runs": {
+   "value": "N",
+   "loc": "Tables 1-2 single values; keyword scan"
+  },
+  "2b_seeds": {
+   "value": "N",
+   "loc": "'seed' only as seed datasets (p.4)"
+  },
+  "3_decoding": {
+   "value": "NA",
+   "loc": "§5 p.5-6: classification by normalised Yes/No token log-likelihoods over top-k tokens (Eq. 1-2); no free generation evaluated"
+  },
+  "4_model_version": {
+   "value": "Y",
+   "loc": "Table 1 p.6: Granite-Guardian-3.0-2B/8B, Llama-Guard-7b, Llama-Guard-2-8B, Llama-Guard-3-1B/8B, ShieldGemma-2b/9b/27b"
+  },
+  "5_prompts": {
+   "value": "P",
+   "loc": "Fig. 1 p.5: instruction template and harm risk definition sample; further templates referred to the Appendix and the arXiv version (p.1-2), not in this proceedings PDF"
+  },
+  "6_uncertainty": {
+   "value": "N",
+   "loc": "Tables 1-2 point values; keyword scan"
+  },
+  "7_llm_judge": {
+   "value": "N",
+   "loc": "evaluation against benchmark gold labels (the evaluated system is itself an LLM classifier/judge)"
+  },
+  "8_judge_human_validation": {
+   "value": "NA",
+   "loc": ""
+  },
+  "9a_agreement_metric": {
+   "value": "NA",
+   "loc": ""
+  },
+  "9b_chance_corrected": {
+   "value": "NA",
+   "loc": ""
+  },
+  "10_contamination": {
+   "value": "P",
+   "loc": "§5 p.6: test sets labelled 'Out of Distribution Harm Benchmarks'; overlap with base-model pretraining data not discussed"
+  },
+  "11a_code": {
+   "value": "Y",
+   "loc": "abstract p.1: github.com/ibm-granite/granite-guardian; models released open-source (p.7)"
+  },
+  "11b_data": {
+   "value": "P",
+   "loc": "evaluation benchmarks public (§5 p.6); training data (human-annotated and synthetic, §3 p.3-4) release not stated"
+  }
  },
  "headline": {
-  "H1": {"sentence": "Granite-Guardian-3.0-8B consistently shows higher scores in both F1 and AUC ... achieves higher aggregate scores (Table 1: aggregate F1 0.758 vs 0.723 for Llama-Guard-2-8B, the best competitor)", "loc": "§5 p.6, Table 1 p.6 (the abstract has no numeric comparison)", "metric": "F1 (aggregate over 8 test sets)", "A": "Granite-Guardian-3.0-8B", "A_value": "0.758", "B": "Llama-Guard-2-8B", "B_value": "0.723", "n": "", "n_unit": "items (test examples; sizes not stated)", "n_loc": "", "structure": "paired (same items)", "cluster_m": "", "runs": "1", "run_sd": ""},
+  "H1": {
+   "sentence": "Granite-Guardian-3.0-8B consistently shows higher scores in both F1 and AUC ... achieves higher aggregate scores (Table 1: aggregate F1 0.758 vs 0.723 for Llama-Guard-2-8B, the best competitor)",
+   "loc": "§5 p.6, Table 1 p.6 (the abstract has no numeric comparison)",
+   "metric": "F1 (aggregate over 8 test sets)",
+   "A": "Granite-Guardian-3.0-8B",
+   "A_value": "0.758",
+   "B": "Llama-Guard-2-8B",
+   "B_value": "0.723",
+   "n": "",
+   "n_unit": "items (test examples; sizes not stated)",
+   "n_loc": "",
+   "structure": "paired (same items)",
+   "cluster_m": "",
+   "runs": "1",
+   "run_sd": ""
+  },
   "H2": "Granite Guardian excels in identifying risks, particularly jailbreak attempts and RAG-specific challenges (abstract)",
   "H3_n_extractable": "N",
   "H4_acc_extractable": "P"
