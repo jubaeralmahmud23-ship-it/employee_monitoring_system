@@ -1,0 +1,4 @@
+file,file_sha256,n_lines,family,line,text
+extraction_template.Rmd,241336c8372ab856841fa8464630c666a673a48035bed1cd0b05aac2a2a3a660,169,(no hit in any family),,
+helpers.R,20e7603dac1598db1987a82b8040df8f640b625a6c2203500a47a8b661167409,185,(no hit in any family),,
+paper_results.Rmd,95f6d58b3c4e0973abfdc39a1b673753e1b69a2d6824225320b0873775cab436,853,bootstrap / resampling,2,"title: ""Replication of paper results for Gerchick et al. Auditing the Audits FAccT 2025 Paper"""

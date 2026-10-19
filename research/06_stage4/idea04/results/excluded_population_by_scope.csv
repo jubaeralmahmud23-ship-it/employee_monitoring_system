@@ -1,0 +1,7 @@
+char_group,scope,n_tables,n_tables_unknown_count_reported,n_tables_unknown_positive,unknown_share_median,unknown_share_q1,unknown_share_q3,unknown_share_max,unknown_share_pooled,n_tables_with_sub2_groups,sub2_share_median,sub2_share_max,sub2_share_pooled,excluded_total_share_median,excluded_total_share_max,applicants_known_sum,applicants_unknown_sum,applicants_sub2_sum,n_groups_N_but_no_count
+intersectional,employer-posted,69,62,60,0.042144,0.0301052,0.0866306,0.321306,0.0589161,60,0.0170201,0.0376254,0.0136177,0.0647738,0.337042,8.4197e+06,488417,114657,0
+intersectional,vendor-posted,25,16,13,0.0818273,0.00827269,0.531399,0.875203,0.748727,21,0.0198455,0.0457907,0.0233826,0.100581,0.879351,5.04431e+07,1.06942e+08,1.17949e+06,14
+race/ethnicity,employer-posted,70,61,56,0.0354541,0.024746,0.0800899,0.192036,0.0547877,30,0,0.0242801,0.00791198,0.0356984,0.192036,8.53427e+06,444909,67523,0
+race/ethnicity,vendor-posted,25,10,8,0.195813,0.0505871,0.50889,0.812148,0.739707,18,0.00811861,0.0336355,0.00950742,0.201757,0.814031,5.81323e+07,9.57814e+07,552688,7
+sex,employer-posted,68,59,53,0.0117701,0.00814924,0.0398141,0.164161,0.0241334,0,0,0,0,0.0117701,0.164161,8.68753e+06,192999,0,0
+sex,vendor-posted,24,9,8,0.274469,0.0328067,0.491951,0.709931,0.649224,0,0,0,0,0.274469,0.709931,8.42034e+07,8.23373e+07,0,2

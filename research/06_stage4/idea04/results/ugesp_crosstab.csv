@@ -1,0 +1,13 @@
+set,four_fifths_ratio_below_0.8,two_sd_significant,n_ratios,share,of_which_fisher_p_lt_0.05
+E1_employer_posted_PRIMARY,True,True,168,0.196721,163
+E1_employer_posted_PRIMARY,True,False,30,0.0351288,0
+E1_employer_posted_PRIMARY,False,True,396,0.4637,394
+E1_employer_posted_PRIMARY,False,False,260,0.30445,0
+V_vendor_posted,True,True,5,0.0165017,5
+V_vendor_posted,True,False,9,0.029703,0
+V_vendor_posted,False,True,206,0.679868,205
+V_vendor_posted,False,False,83,0.273927,0
+ALL_dedup,True,True,173,0.149525,168
+ALL_dedup,True,False,39,0.0337079,0
+ALL_dedup,False,True,602,0.520311,599
+ALL_dedup,False,False,343,0.296456,0

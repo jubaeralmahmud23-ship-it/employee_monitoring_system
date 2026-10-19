@@ -1,0 +1,117 @@
+{
+  "run_utc": "2026-10-19T04:52:42Z",
+  "python": "3.11.15",
+  "platform": "Linux-6.18.44-fc-v139-x86_64-with-glibc2.39",
+  "numpy": "2.4.6",
+  "pandas": "3.0.6",
+  "scipy": "1.17.1",
+  "pdftotext": "pdftotext version 24.02.0",
+  "seeds": {
+    "bootstrap": 20261015,
+    "jeffreys_posterior": [
+      20261015,
+      1
+    ],
+    "osf_sample": 20261015
+  },
+  "n_boot": 2000,
+  "n_posterior_draws": 20000,
+  "primary_method": "katz",
+  "bootstrap_nan_resamples_total": 79,
+  "inputs": {
+    "aclu_csv": {
+      "path": "/tmp/claude-0/-home-user-employee-monitoring-system/c64eab22-9c10-592c-b92e-5ac629c5be82/scratchpad/data/idea04/auditing-the-audits-facct-2025/audits/audits_full.csv",
+      "sha256": "69fd290fb0be9523254027e3508722e70501f8501a9a3d92f47f7ffd31bbf85e",
+      "bytes": 2320698,
+      "rows": 4507,
+      "columns": 46
+    },
+    "osf_csv": {
+      "path": "/tmp/claude-0/-home-user-employee-monitoring-system/c64eab22-9c10-592c-b92e-5ac629c5be82/scratchpad/data/idea04/osf/impact.csv",
+      "sha256": "b54629ca7f0c14053720ebb69d5b28317dec6cb8c7d1137418e603ef9508b846",
+      "bytes": 52881
+    }
+  },
+  "osf_crosscheck_pool": {
+    "osf_rows_total": 449,
+    "osf_rows_direct_employers": 134,
+    "osf_rows_with_exactly_one_aclu_match": 134,
+    "osf_rows_with_no_match": 0,
+    "osf_rows_with_multiple_matches": 0,
+    "sample_size": 20,
+    "sample_seed": 20261015,
+    "pdf_sha256": {
+      "BNP Paribas/Harver Soft Skills Platform Public Summary.pdf": "1524b8f0ab54b1013719ba513168f55439f77eb21047228be2c97df4e1deb091",
+      "Bloomberg/20230703-BLP-Bias-Audit-for-AEDT.pdf": "2dbbf1464a094ed9b4b4f3bd9b083171837f6cb7413107cc8ad1ed8609430bcf",
+      "Cigna/nyc-aedt-bias-audit-2023.pdf": "d033b99e033a5967b0d368202e75ecff122853104e72cc25d59c0fc164c43ef8",
+      "Morgan Stanley/MORGAN-STANLEY-BIAS-AUDIT-REPORT-07052023brs.pdf": "67bb955c3e46a638e8759365228ba711606cc643cdb6c987b4a5e28251c49ea6",
+      "NBC/nbc audit.pdf": "6c0c9b7f5bdc75cbf077ac6f9b456efa5e7ba67ccbb055feeceeabf99b38f3d4",
+      "Pfizer/HireVue_2023_Bias_Report_14AUG2023.pdf": "27510bbf1fb0097305943a0c74e78c4b49b96203357842cbc14d88a98390d2a5"
+    }
+  },
+  "ratios_union_computed": 2661,
+  "timings_seconds": {
+    "load_profile": 0.376,
+    "tables_dedup_consistency": 2.189,
+    "ratios_statistics": 25.627,
+    "tabulations": 0.364,
+    "funnel_dedup_consistency_comparator": 2.011,
+    "excluded_population": 1.119,
+    "extras": 0.026,
+    "osf_crosscheck": 0.617,
+    "stopping_rule_meta": 0.064
+  },
+  "stopping_rule": {
+    "rule_text": "stop Part 1 if the ACLU code already computes sampling intervals or if, after de-duplication, more than about 80% of employer-level ratios have 95% intervals excluding 0.8",
+    "criterion_1_aclu_code_computes_sampling_intervals": "see aclu_code_inference_check.csv and README (manual reading)",
+    "criterion_2_primary": {
+      "set": "E1_employer_posted_PRIMARY",
+      "method": "katz",
+      "n_ratios": 854,
+      "share_excl_0.8": 0.5983606557377049,
+      "threshold": 0.8,
+      "triggered": false
+    },
+    "criterion_2_E1_other_methods": {
+      "katz": 0.5983606557377049,
+      "cp_bonf": 0.4496487119437939,
+      "boot": 0.5878220140515222,
+      "jeffreys": 0.5889929742388759
+    },
+    "criterion_2_range_over_all_variants_and_methods": [
+      0.4284369114877589,
+      0.8943894389438944
+    ],
+    "criterion_2_variants_exceeding_threshold": [
+      [
+        "V_vendor_posted",
+        "katz"
+      ],
+      [
+        "V_vendor_posted",
+        "cp_bonf"
+      ],
+      [
+        "V_vendor_posted",
+        "boot"
+      ],
+      [
+        "V_vendor_posted",
+        "jeffreys"
+      ],
+      [
+        "S6_employer_counts_reported_as_integers",
+        "katz"
+      ],
+      [
+        "S6_employer_counts_reported_as_integers",
+        "boot"
+      ],
+      [
+        "S6_employer_counts_reported_as_integers",
+        "jeffreys"
+      ]
+    ]
+  },
+  "total_seconds": 32.392
+}

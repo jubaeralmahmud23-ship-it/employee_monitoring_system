@@ -1,0 +1,26 @@
+auditor,vendor_norm,tables,dup_identical_counts,dup_identical_same_plan_key,literal_plan_key_would_drop,shared_across_entities,window_known
+"Ambrose Consulting, LLC",Talent Plus,15,0,0,0,0,3
+BABL AI,Eightfold,6,0,0,0,0,6
+BABL AI,Pymetrics,3,0,0,0,0,3
+BABL AI,RippleMatch,6,0,0,0,0,6
+"BLDS, LLC",ADP,12,0,0,0,0,0
+"BLDS, LLC",Eightfold,6,0,0,0,0,6
+Conductor AI,Covey,3,0,0,0,0,0
+Conductor AI,Landed,6,1,0,0,2,0
+Conductor AI,Phenom,3,0,0,0,0,3
+Conductor AI,SmartRecruiters,6,0,0,0,0,6
+DCI Consulting Group,HireVue,201,45,35,84,72,201
+DCI Consulting Group,Unknown,9,0,0,3,0,9
+Holistic AI,Bryq,6,0,0,0,3,6
+Holistic AI,Paradox,12,0,0,0,0,12
+Holistic AI,Plum,3,0,0,0,0,3
+Holistic AI,Sense,2,1,0,0,0,0
+Holistic AI,Suited,6,0,0,0,0,6
+Holistic AI,Vervoe,3,0,0,0,0,3
+Idiro Analytics,Covey,3,0,0,0,0,0
+Resolution Economics,Plum,3,0,0,0,0,3
+Unknown,HiredScore,6,0,0,0,0,6
+Unknown,Unknown,3,0,0,0,0,0
+Unknown,ZoomInfo,3,3,0,0,3,3
+Varun Ganesan,Dover,3,0,0,0,0,0
+Warden AI,Beamery,3,0,0,0,0,0

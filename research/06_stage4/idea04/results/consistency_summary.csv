@@ -1,0 +1,13 @@
+auditor,rows_N_gt_0,rows_with_selected_count,count_integer_as_reported,count_non_integer_derived,pass,pass_lenient_only,fail,rate_not_reported,fail_among_integer_counts,pass_among_integer_counts
+ALL,3167,3144,552,2592,3118,5,16,5,13,529
+"Ambrose Consulting, LLC",115,115,115,0,102,3,5,5,5,102
+BABL AI,115,115,2,113,115,0,0,0,0,2
+"BLDS, LLC",178,178,94,84,170,2,6,0,6,86
+Conductor AI,129,129,66,63,128,0,1,0,1,65
+DCI Consulting Group,2243,2243,139,2104,2240,0,3,0,0,139
+Holistic AI,230,207,25,182,207,0,0,0,0,25
+Idiro Analytics,14,14,14,0,14,0,0,0,0,14
+Resolution Economics,23,23,23,0,23,0,0,0,0,23
+Unknown,72,72,40,32,72,0,0,0,0,40
+Varun Ganesan,34,34,20,14,33,0,1,0,1,19
+Warden AI,14,14,14,0,14,0,0,0,0,14

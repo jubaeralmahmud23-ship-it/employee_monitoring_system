@@ -1,0 +1,21 @@
+step,count
+rows in audits_full.csv,4507
+audits (audit_id),116
+audit reports (audit_report_id),44
+"rows after excluding HackerRank (negative outcome, as Gerchick et al.)",4406
+"result tables (audit x rate definition x characteristic), all",527
+"tables after HackerRank exclusion, primary rate definition",332
+tables dropped as duplicates (identical counts),50
+"  of which share auditor, tool and known data window (plan key)",35
+tables kept after de-duplication,282
+tables the literal plan key would drop instead,87
+known-group rows in kept tables,2128
+  with N reported,2104
+  with N > 0,1803
+  with N > 0 and selected count reported,1780
+  passing the consistency filter (strict) or rate not reported,1765
+  failing the consistency filter (strict),15
+"usable ratios (>= 2% groups, non-comparator), all scopes",1157
+"usable ratios, employer-posted (E1, primary)",854
+"usable ratios, vendor-posted",303
+"sub-2% group ratios (employer-posted), excluded from primary",208

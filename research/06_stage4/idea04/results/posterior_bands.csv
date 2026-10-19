@@ -1,0 +1,13 @@
+set,posterior_P_ratio_below_0.8,n_ratios,share
+E1_employer_posted_PRIMARY,P<0.05,472,0.552693
+E1_employer_posted_PRIMARY,0.05-0.5,184,0.215457
+E1_employer_posted_PRIMARY,0.5-0.95,124,0.145199
+E1_employer_posted_PRIMARY,>0.95,74,0.0866511
+V_vendor_posted,P<0.05,268,0.884488
+V_vendor_posted,0.05-0.5,22,0.0726073
+V_vendor_posted,0.5-0.95,9,0.029703
+V_vendor_posted,>0.95,4,0.0132013
+ALL_dedup,P<0.05,740,0.639585
+ALL_dedup,0.05-0.5,206,0.178047
+ALL_dedup,0.5-0.95,133,0.114952
+ALL_dedup,>0.95,78,0.0674157

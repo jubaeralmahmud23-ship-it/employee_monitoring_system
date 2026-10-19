@@ -1,0 +1,3 @@
+set,ratios,ratios_with_gerchick_worst_case_bounds,worst_case_width_gt_katz_width,worst_case_bounds_contain_0.8,katz_contains_0.8_same_rows,ratios_with_gerchick_proportional_bounds,proportional_width_gt_katz_width,median_worst_case_width,median_proportional_width,median_katz_width_same_rows
+E1_employer_posted_PRIMARY,854,760,598,538,328,731,302,0.600923,0.0969061,0.139656
+ALL_dedup,1157,934,730,648,345,905,419,0.615181,0.0969061,0.122185
