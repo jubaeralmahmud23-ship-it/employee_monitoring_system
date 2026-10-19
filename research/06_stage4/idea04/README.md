@@ -1,6 +1,6 @@
 # Stage 4 pilot, idea 4: sampling uncertainty of NYC Local Law 144 impact ratios
 
-**Status: EXPLORATORY PILOT, run 2026-10-19 in the cloud container (4 vCPU, 15 GB RAM, Python 3.11).** Not preregistered, not peer reviewed. All numbers below come from files produced in this run (paths given) or from documents read in this run (paths or URLs given). Part 2 (simulation) and Part 3 (reporting designs, manipulation range) of the idea were **not run**. The literature stop condition of section 4.3 is handled by another agent and is not assessed here.
+**Status: EXPLORATORY PILOT, run 2026-10-19 in the cloud container (4 vCPU, 15 GB RAM, Python 3.11).** Not preregistered, not peer reviewed. All numbers below come from files produced in this run (paths given) or from documents read in this run (paths or URLs given). Part 2 (simulation) and Part 3 (reporting designs, manipulation range) of the idea were **not run**. The literature stop condition of section 4.3 is handled by another agent and is not assessed here (it was assessed afterwards in `novelty_deep_check.md` §6: not triggered).
 
 Plan followed: `research/02_candidate_ideas.md`, Idea 4 card (section 2) and section 4.3; context from `research/03_challenge/04-published-but-uninformative-sampling-uncertainty__feasibility.md` and `__novelty.md` (all read in this run).
 
@@ -295,7 +295,7 @@ The 2% exclusion removes little: the largest sub-2% share of known applicants in
 
 ## 6. Reproducibility
 
-- **Command:** `bash research/06_stage4/idea04/code/run.sh`. It stages the OSF files if absent, runs the code scan, the pilot and the validation, and rewrites everything in `results/`.
+- **Command:** `bash research/06_stage4/idea04/code/run.sh`. It stages the OSF files if absent, runs the code scan, the pilot and the validation, and rewrites every pilot file in `results/`. The three `novelty_*` files there come from the novelty scripts (`novelty_deep_check.md` §8), not from `run.sh`, although the `run.sh` header says it reproduces every file in `results/`.
 - **Software:** Python 3.11.15, numpy 2.4.6, pandas 3.0.6, scipy 1.17.1 (venv `$SCRATCH/venv`); pdftotext 24.02.0 (poppler); Linux 6.18.44 x86_64 (`results/run_metadata.json`). No package was installed for this pilot. The pilot uses only the standard library, numpy, scipy, pandas and the `pdftotext` binary.
 - **Seeds:** bootstrap 20261015 (`np.random.default_rng(20261015)`, ratios processed in sorted order); Jeffreys posterior `default_rng([20261015, 1])`; OSF sample `random_state=20261015`; validation data 20261016.
 - **Determinism:** a second independent run of the pilot into a scratch directory reproduced all 25 CSV outputs byte for byte.

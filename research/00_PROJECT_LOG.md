@@ -217,7 +217,7 @@ Commits: a background autosave loop (`autosave.sh` in the scratchpad, every 180 
   The deep novelty check:
   - read 18 documents, 9 at full-text depth;
   - screened the FAccT 2026, AIES 2026 and FAccT 2025 tables of contents (807 papers);
-  - ran Semantic Scholar forward chasing of four seeds.
+  - ran Semantic Scholar forward chasing of eight seeds (the Lam et al. leg was not done).
 
   Parts 2 and 3 were not run.
 - **Synthesis:** `research/06_stage4/README.md`. It covers the stopping-rule tables, the recommendations, the author decisions, the Stage 6 plan for the recommended primary and the integrity items.
@@ -286,6 +286,8 @@ All pilots are exploratory and nothing is confirmatory. Stopping rules were appl
   - The autosave loop pushed intermediate file versions.
 
   See `research/06_stage4/README.md` section 6.
+
+  An integrity critic pass later on 2026-10-19 made small wording and consistency edits to the Stage 4 files. It changed no result file and no code. Its edits and checks are listed in `research/06_stage4/README.md` section 8.
 
 ### Decision
 

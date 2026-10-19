@@ -11,6 +11,8 @@ Three qualifications matter more than the headline:
 
 Sources: `results/stopping_rule.csv`, `results/*_tau_summary.json`, `results/*_bootstrap_stopping.json`, `results/*_placebo_summary.json` and `results/*_variance_decomposition.csv`.
 
+**Note added in the critic pass (2026-10-19).** The literature clause and the 4TU terms were assessed after this pilot, in `novelty_deep_check.md` §6 and §1. The literature clause is not triggered, so neither clause of the rule is triggered. The 4TU terms (Art. 3, 4b, 7) have now been read. Statements below that call these "not assessed" or "not read" describe this pilot run only. The synthesis is `../README.md` §2.2.
+
 ---
 
 ## 1. What was run
@@ -108,7 +110,7 @@ The plan names the factor levels but not their operationalisation. Every definit
 
 ### 5.1 Stopping rule (section 4.2), criterion by criterion (`results/stopping_rule.csv`, `stopping_rule.json`)
 
-Rule as written: stop the confirmatory framing if, after the named exclusions, the median Kendall tau across defensible configurations exceeds 0.9 on both BPI 2017 and BPI 2019 **and** bottom-quintile reclassification under case-mix adjustment is below 10% on both. Also stop if the proceedings sweep finds a rank-stability study of resource measures on public logs.
+Rule as written in section 4.2: *"stop the confirmatory framing (and reduce the idea to a reassurance note or merge it into another paper) if, after excluding labelled or detected system accounts and resources below the pre-registered minimum-event threshold, the median Kendall tau across defensible configurations exceeds 0.9 on both BPI 2017 and BPI 2019 and bottom-quintile reclassification under case-mix adjustment is below 10% on both; also stop if the proceedings sweep finds a rank-stability study of resource measures on public logs"*. The thresholds were not changed. No preregistration exists, so the minimum-event threshold is N_min = 100 (deviation 3), and the exclusions are those of deviation 6.
 
 | Criterion | Log | Computed value | 95% case-bootstrap interval (percentile) | Threshold | Condition met? |
 |---|---|---|---|---|---|
@@ -247,7 +249,7 @@ In 6 of the 92 statistics in that file, the point estimate lies outside its perc
 - **Generic metric definitions.** Rework (any repeated activity) and the median-based deadline are generic choices. Alternative domain-specific definitions could change within-metric agreement.
 - **Narrow null.** The placebo preserves volume and role mix. It is one null among several possible.
 - **Simple case-mix models.** The models are linear and fitted once. The bootstrap does not propagate their uncertainty.
-- **No release of derived per-resource rankings.** Per-pseudonym rankings and scores have not been released. They stay in the untracked `data/idea05/derived/` directory until the 4TU General Terms of Use (article 12721292, `General_terms_of_use.pdf`) have been read and a data-handling rule is written. Results contain only configuration-level aggregates. The only pseudonym named in `results/` is the system account User_1, which the idea card already named. BPI 2019 is CC BY 4.0, but the same rule is applied for consistency.
+- **No release of derived per-resource rankings.** Per-pseudonym rankings and scores have not been released. They stay in the untracked `data/idea05/derived/` directory until the 4TU General Terms of Use (article 12721292, `General_terms_of_use.pdf`) have been read and a data-handling rule is written. Results contain only configuration-level aggregates. The only BPI 2017 pseudonym named in `results/` is the system account User_1, which the idea card already named. Three of BPI 2019's publisher-labelled batch accounts are named in an exclusion label in `bpic2019_sensitivity.csv`, with no score attached. BPI 2019 is CC BY 4.0, but the same rule is applied for consistency.
 - **Novelty not reassessed.** No literature search was run in this pilot. Novelty claims stay as in `03_challenge/05-...__novelty.md` (verdict "partially-covered").
 
 ## 8. Reproducibility
@@ -265,7 +267,7 @@ In 6 of the 92 statistics in that file, the point estimate lies outside its perc
   | Placebo, 20 shuffles (4 processes) | 98.1 s | 166.1 s |
 
   Steps 02 and 03 took about 10 s each. The full pipeline takes roughly 21 min, and the run.sh check at B = 20 took 3 min 13 s. The feasibility file's local-PC estimate for the BPI 2017 pilot was 20 to 40 minutes.
-- **Results size.** 49 files, 1.6 MB.
+- **Results size.** 50 files outside `results/novelty/`, 1.6 MB (recounted in the critic pass; the pilot first recorded 49).
 
 ## 9. Exact next steps
 

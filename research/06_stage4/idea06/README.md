@@ -50,6 +50,8 @@ Sources for the table: `results/pilot/stopping_rule.json` and `results/pilot/sto
 
 The decision to stop, demote to a CAIS methods essay, or change the frame belongs to the author.
 
+**Note added in the critic pass (2026-10-19).** Criterion 1 was assessed after this pilot, in `novelty_deep_check.md` §6, and is not triggered within the searches run there. The AIS eLibrary keyword search returned HTTP 403 and was replaced by a browse-page crawl plus Crossref. The rule's state is therefore: triggered by criterion 2, criterion 1 not triggered, criterion 3 undetermined (synthesis: `../README.md` §2.1). The table above records the state at the end of this pilot run.
+
 ## 2. Sampling frame (frozen 2026-10-19)
 
 Script: `code/build_frame.py`. It uses the standard library, a polite User-Agent, and no e-mail address (none was provided). It ran from 2026-10-19T05:21:22Z for 183.2 s (`results/frame/frame_summary.json`).

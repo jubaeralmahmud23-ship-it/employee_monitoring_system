@@ -128,4 +128,4 @@ Repository state: branch `claude/peaceful-cori-ny59q5`, HEAD `d5507c7` at 06:59:
    - protocol work P1-P5: data-handling rule, further logs, new detector, reliability and rank intervals, Gu-Koenker comparator, workload covariate, per-replicate refits, an extra null;
    - an OSF preregistration that treats BPI 2017 and 2019 as pilot logs;
    - the full run on about 16 further logs.
-6. **Integrity debt.** The open items are listed in `06_stage4/README.md` section 6. They include the nine human-check citation items of 2026-10-05, the idea-2 and idea-3 reference verifications, the snippet-only items, and the missing `06_stage4/` row in `research/README.md`.
+6. **Integrity debt.** The open items are listed in `06_stage4/README.md` section 6. They include the nine human-check citation items of 2026-10-05, the idea-2 and idea-3 reference verifications and the snippet-only items. The `06_stage4/` row in `research/README.md` was added in the critic pass (`06_stage4/README.md` section 8).

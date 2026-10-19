@@ -62,7 +62,7 @@ Sources:
 - **Deep novelty check** (05:32-06:00 UTC). It covered:
   - 12 documents (10 at full-text depth, read in the sections cited);
   - Semantic Scholar forward chasing of Bean et al. (145 citing works), Miller (172), Bowyer et al. (27) and Groß (7);
-  - a crawl of 4,564 AIS proceedings titles (ICIS 2023-2025, ECIS 2023-2026, AMCIS 2024-2026, PACIS 2024-2025), with 45 flagged titles and 7 abstracts read;
+  - a crawl of 4,564 AIS proceedings titles (ICIS 2023-2025, ECIS 2023-2026, AMCIS 2024-2026, PACIS 2024-2025), with 44 flagged titles and 7 abstracts read;
   - a Crossref enumeration of 8,490 records from 17 IS journals and HICSS;
   - 20 WebSearch and 16 arXiv API searches; 82 queries and legs in total (`novelty_deep_check.md` §8).
 
@@ -76,6 +76,8 @@ Sources:
 | 2. Both 2a and 2b | both | Both hold under the primary readings | **Holds** |
 | 3. No second coder within four weeks **and** no AIS eLibrary access | both | No second coder is secured (author decision); the four weeks have not elapsed; no eLibrary access (search 403, PDFs behind Cloudflare and a subscription) | **Undetermined** |
 | **Rule (any of 1 to 3)** | any | Criterion 2 holds | **Triggered** |
+
+The rule is applied "after the pilot and the eLibrary search". The eLibrary keyword search itself returned HTTP 403, so that step was met only by a substitute: a browse-page crawl of 4,564 titles plus Crossref (`idea06/novelty_deep_check.md` §3a). Criterion 2 does not depend on that search.
 
 **Other pilot findings** (exploratory, small n; `idea06/README.md` §4-5).
 - **The Springer half drives 2a.** 9 of the 10 drawn Springer papers fail inclusion, so 0 of 10 permit RQ2. The ACL papers give 3, 5 and 7 of 10 under the three readings. Among the 10 included papers the strict share is 3 of 10. This is supplementary only, because the rule's denominator is all pilot papers.
@@ -168,11 +170,9 @@ Sources:
   - Crossref backward chasing of Martin and Beerepoot (99 references);
   - 27 WebSearch and 8 arXiv queries.
 
-**Stopping rule** (`02_candidate_ideas.md` §4.2). Stop the confirmatory framing if, after the named exclusions:
-- the median Kendall tau across defensible configurations exceeds 0.9 on both BPI 2017 and BPI 2019; **and**
-- bottom-quintile reclassification under case-mix adjustment is below 10% on both.
+**Stopping rule** (`02_candidate_ideas.md` §4.2): *"stop the confirmatory framing (and reduce the idea to a reassurance note or merge it into another paper) if, after excluding labelled or detected system accounts and resources below the pre-registered minimum-event threshold, the median Kendall tau across defensible configurations exceeds 0.9 on both BPI 2017 and BPI 2019 and bottom-quintile reclassification under case-mix adjustment is below 10% on both; also stop if the proceedings sweep finds a rank-stability study of resource measures on public logs"*.
 
-Also stop if the proceedings sweep finds a rank-stability study of resource measures on public logs.
+No preregistration exists yet, so the "pre-registered minimum-event threshold" was read as N_min = 100, fixed in code before any tau was computed. The excluded system accounts are User_1 (BPI 2017) and the 20 labelled batch accounts (BPI 2019), because the detector failed (`idea05/README.md` §6, deviations 3 and 6).
 
 | Criterion | Threshold | Value (95% case-bootstrap percentile interval) | Outcome |
 |---|---|---|---|
@@ -291,7 +291,7 @@ Sources:
 - **Deep novelty check.** It covered:
   - 18 documents (9 at full-text depth);
   - the FAccT 2026 (325 papers), AIES 2026 (265) and FAccT 2025 (217) tables of contents;
-  - Semantic Scholar forward chasing of Gerchick et al. (16 citing works), Wright et al. (50), Roth et al. (58) and Collins and Morris (44);
+  - Semantic Scholar forward chasing of Gerchick et al. (16 citing works), Wright et al. (50), Roth et al. (58) and Collins and Morris (44), plus D-hacking (16), Ferrara et al. (2), Morris and Lobsenz (0) and Switzer et al. (0); the Lam et al. leg was not done (`idea04/results/novelty_chase_log.csv`);
   - 26 WebSearch, 8 arXiv and 9 Crossref queries.
 
 **Stopping rule** (`02_candidate_ideas.md` §4.3):
@@ -584,8 +584,8 @@ Disk: about 30 GB free in the container. BPI 2019 alone is 728.6 MB raw.
   - the Kwon 2014 and May 2012 theses;
   - Ko et al. 2025, Chen et al. 2026, Balloccu et al. 2024 and Briggs et al. 2025, known only through arXiv 2605.04135;
   - Roth et al. 2006's design, known from a third-party outline.
-- **N7. Pilot READMEs not updated after the novelty checks.** `idea05/README.md` still lists the 4TU terms and the literature clause as open, and `idea06/README.md` still lists criterion 1 as undetermined. The novelty checks, written later, closed these points. This synthesis reconciles them; the pilot READMEs were not edited.
-- **N8. Index file.** `research/README.md` has no row for `06_stage4/`. It was not edited, because this task allows edits only to this file, `00_PROJECT_LOG.md` and `RESUME.md`.
+- **N7. Pilot READMEs not updated after the novelty checks.** `idea05/README.md` still lists the 4TU terms and the literature clause as open, and `idea06/README.md` still lists criterion 1 as undetermined. The novelty checks, written later, closed these points. This synthesis reconciles them. *Critic pass:* a dated note pointing to the novelty checks was added near the top of `idea05/README.md` and after section 1 of `idea06/README.md`; the original pilot text was kept (section 8).
+- **N8. Index file.** `research/README.md` had no row for `06_stage4/`. This synthesis did not edit it, because its task allowed edits only to this file, `00_PROJECT_LOG.md` and `RESUME.md`. *Critic pass:* the row was added (section 8).
 
 ---
 
@@ -630,7 +630,7 @@ Disk: about 30 GB free in the container. BPI 2019 alone is 728.6 MB raw.
   - 89.8 + 34.8 + 148.5 + 98.1 = 371.2 s
   - 128.0 + 43.8 + 513.6 + 166.1 = 851.5 s
   - 16 x 371.2 s = 1.65 h; 16 x 851.5 s = 3.78 h
-  - refit upper bound: 500 x 34.8 / 4 = 4,350 s and 500 x 43.8 / 4 = 5,475 s per log, giving 78.7 and 105.4 min per log and 21.0 to 28.1 h for 16 logs.
+  - refit upper bound: 500 x 34.8 / 4 = 4,350 s and 500 x 43.8 / 4 = 5,475 s per log; added to the pilot-settings times above, this gives 78.7 and 105.4 min per log in total and 21.0 to 28.1 h for 16 logs.
 
   It also checks the idea-6 per-paper means: 23.8 s and 48.8 s, 726 s in total.
 
