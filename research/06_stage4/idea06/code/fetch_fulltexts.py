@@ -18,24 +18,31 @@ import re
 import subprocess
 import sys
 import time
-import urllib.request
 
-UA = "idea06-pilot/1.0 (academic research pilot; python-urllib)"
+UA = "idea06-pilot/1.0 (academic research pilot; curl)"
 
 
 def get(url, tries=3, delay=2.0):
-    last = None
+    """GET via curl (link.springer.com serves a JavaScript 'Client Challenge' page to
+    python-urllib but the article or PDF to curl; observed 2026-10-19)."""
+    last = b""
     for i in range(tries):
         time.sleep(delay)
+        p = subprocess.run(["curl", "-sS", "-L", "--max-time", "120", "-A", UA,
+                            "-w", "\n%{http_code}|%{content_type}|%{url_effective}", url],
+                           capture_output=True)
+        body, _, meta = p.stdout.rpartition(b"\n")
         try:
-            req = urllib.request.Request(url, headers={"User-Agent": UA})
-            with urllib.request.urlopen(req, timeout=120) as r:
-                return r.status, r.headers.get("Content-Type", ""), r.geturl(), r.read()
-        except Exception as e:
-            last = e
-            print(f"  retry {i+1} {url}: {e!r}", file=sys.stderr)
-            time.sleep(10 * (i + 1))
-    return -1, "", url, repr(last).encode()
+            code, ct, final = meta.decode("utf-8", "replace").split("|", 2)
+            code = int(code)
+        except ValueError:
+            code, ct, final = -1, "", url
+        if code == 200 and b"<title>Client Challenge</title>" not in body[:3000]:
+            return code, ct, final, body
+        last = body[:200] or p.stderr
+        print(f"  retry {i+1} {url}: http {code}", file=sys.stderr)
+        time.sleep(10 * (i + 1))
+    return -1, "", url, last
 
 
 def main():
