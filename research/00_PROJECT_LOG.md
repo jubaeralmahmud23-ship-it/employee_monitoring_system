@@ -170,3 +170,145 @@ Consequence: the "no GPU" assumption behind the 2026-10-03 feasibility checks fo
 The author answers the decision items in `02_candidate_ideas.md` section 5 (CS versus IS framing; preference among ideas 6, 5 and 4; willingness to recruit a second coder and to obtain AIS eLibrary access; APC tolerance for FAccT or JRC; multi-day local compute; a Python 3.12 or WSL2 environment for GPU work). Then Stage 4 deep checks follow the per-idea plans in section 4 of the synthesis (named full texts to read first, backward and forward citation chasing once Semantic Scholar answers, the first pilot with its stopping rule), after which Stage 6 (protocol and preregistration) begins for the selected primary.
 
 ---
+
+## Stage 4 deep checks and pilots (2026-10-19)
+
+**Environment.** This session ran in the cloud container, not the author's Windows PC:
+- 4 vCPU, 15 GB RAM, about 30 GB free disk, no GPU;
+- Python 3.11.15 venv in the session scratchpad: pm4py 2.7.23.8, pandas 3.0.6, numpy 2.4.6, scipy 1.17.1, scikit-learn 1.9.1, statsmodels 0.15.0;
+- no paid APIs and no API keys.
+
+OpenAlex refused every list query all day because the anonymous daily budget for the shared IP was exhausted. Semantic Scholar returned HTTP 429 on keyword search and some legs. dblp showed a bot wall. The AIS eLibrary search returned 403 and its PDFs sit behind Cloudflare and a subscription. Publisher sites still refuse.
+
+Commits: a background autosave loop (`autosave.sh` in the scratchpad, every 180 s) committed and pushed `research/` throughout. No agent ran `git commit` itself.
+
+### What was completed
+
+- **Idea 6.** The sampling frame was frozen and an exploratory pilot run (`research/06_stage4/idea06/`):
+  - frame: 3,543 articles from 11 IS journals, a Springer-OA stratum of 65, and 777 ACL industry-track papers;
+  - inclusion screening of the 65 Springer-OA papers;
+  - a seeded 20-paper pilot, coded by a machine coder (Claude) against `codebook_v0.md`;
+  - a validated survival calculator run on 10 claims.
+
+  The deep novelty check:
+  - read 12 documents, 10 at full-text depth;
+  - crawled 4,564 AIS proceedings titles;
+  - enumerated 8,490 Crossref records from 17 IS journals and HICSS;
+  - ran Semantic Scholar forward chasing of four seeds.
+- **Idea 5.** An exploratory pilot on BPI 2017 and BPI 2019 (`research/06_stage4/idea05/`):
+  - the full 405-cell factorial (117 distinct score vectors);
+  - 500 case-bootstrap replicates and 20 placebo shuffles;
+  - system-account sensitivity;
+  - an automated-account detector calibrated on BPI 2019's labels.
+
+  The deep novelty check:
+  - read 14 documents, 10 at full-text depth, including the 4TU General Terms of Use;
+  - enumerated 1,360 ICPM, BPM, CAiSE and Process Science papers from 2022-2026 via Crossref (dblp was blocked);
+  - screened 38 BPI Challenge reports and read 86 ICIS future-of-work titles;
+  - ran Semantic Scholar forward chasing of five seeds and Crossref backward chasing of one.
+- **Idea 4.** An exploratory Part 1 pilot on the ACLU `audits_full.csv` (`research/06_stage4/idea04/`):
+  - de-duplication, consistency filter and comparator recomputation;
+  - four interval methods on 1,157 usable ratios;
+  - UGESP-style classification;
+  - excluded-population shares;
+  - a 20-row OSF cross-check;
+  - post hoc data-scope coding from report text.
+
+  The deep novelty check:
+  - read 18 documents, 9 at full-text depth;
+  - screened the FAccT 2026, AIES 2026 and FAccT 2025 tables of contents (807 papers);
+  - ran Semantic Scholar forward chasing of four seeds.
+
+  Parts 2 and 3 were not run.
+- **Synthesis:** `research/06_stage4/README.md`. It covers the stopping-rule tables, the recommendations, the author decisions, the Stage 6 plan for the recommended primary and the integrity items.
+
+### What evidence was found
+
+All pilots are exploratory and nothing is confirmatory. Stopping rules were applied exactly as written in `02_candidate_ideas.md` section 4.
+
+- **Idea 6. Rule triggered.**
+  - Criterion 2 holds under the pre-specified primary readings:
+    - 3 of 20 pilot papers (15%) permit RQ2, against a threshold below 30%;
+    - the Springer-OA stratum has 14 empirical papers after screening, against a threshold below 25.
+  - The literature criterion is not triggered: no IS-venue audit of statistical or judge-validation practice in LLM papers was found.
+  - Criterion 3 (second coder and AIS access) is undetermined.
+  - The outcome depends on the reading: under the pre-specified secondary reading, 2a is 35%.
+  - 9 of the 10 drawn Springer papers failed inclusion.
+  - Novelty is still partially-covered, but narrower than before:
+    - Pathade et al. (arXiv 2609.25173) code uncertainty, repeated runs, decoding and judge-human agreement together;
+    - Singh (arXiv 2608.15046) audits the evidential sufficiency of 17 LLM claims;
+    - the DKFZ "Claims Reloaded" estimator overlaps the planned calculator;
+    - Yang et al.'s judge-validation comparator is 37.4% among judge papers, not "under 8%".
+- **Idea 5. Rule not triggered.**
+  - The median Kendall tau across configurations is 0.033 on BPI 2017 [0.017, 0.050] and 0.041 on BPI 2019 [0.032, 0.047], against a stop threshold above 0.9.
+  - Bottom-quintile reclassification under case-mix adjustment is 17.9% and 27.3%, against a stop threshold below 10%. Under the all-workers reading it is 7.1% and 9.4%.
+  - The proceedings sweep found no rank-stability study of resource measures on public logs.
+  - The all-pairs median is at placebo level. Within-metric agreement (0.488 and 0.503) exceeds all 20 placebo values.
+  - The metric factor carries 54% and 57% of rank-percentile variance.
+  - Attribution alone gives near-independent rankings: tau 0.021 on BPI 2017.
+  - The pre-specified detector failed: per-account precision 0.087.
+  - Novelty is still partially-covered, with a design precedent in physician cost profiling: Thomas and Ward 2006; Mehrotra et al. 2010; Timbie et al. 2013; Kaye et al. 2019. Rhea et al. 2022 offer a stability-audit framework for HR tools.
+- **Idea 4. Rule not triggered.**
+  - The ACLU code computes only deterministic missing-data bounds.
+  - 59.8% of the 854 employer-posted ratios have a Katz interval excluding 0.8, against a stop threshold above about 80%.
+  - No I-O or FAccT paper simulates the LL 144 levers on the published corpus.
+  - 662 of the 854 employer-posted ratios come from multi-employer pooled tables, where binomial intervals are not valid.
+  - In employer-own-data audits, informativeness is bimodal by group size: 4.7% of ratios exclude 0.8 below 100 applicants, and 91.7% do at 1,000-4,999.
+  - 82% of selected counts are reconstructed from rounded rates.
+  - Novelty is still partially-covered:
+    - Bommasani et al. (FAccT 2026) show on real data that pooling masks position-level adverse impact;
+    - the reporting designs are long-standing I-O practice (TAC 2010);
+    - a vendor blog published a point-estimate reanalysis of the same file on 2026-10-16.
+
+### What remains uncertain
+
+- **Idea 6.**
+  - The pilot was machine-coded with no human verification, so no kappa exists.
+  - The rule outcome depends on the reading of "permit RQ2" and on drawing from unscreened term hits.
+  - AIS full texts and the AMCIS 2025 full text are unread.
+- **Idea 5.**
+  - Which estimand should headline the paper.
+  - Whether the results hold on other logs. BPI 2017 and 2019 are now pilot data.
+  - A working automated-account detector.
+  - Literature residual risk: 85% of the sweep was screened at title level only.
+  - The AI Act timing (snippet only).
+- **Idea 4.**
+  - The licence of `audits_full.csv`.
+  - Whether any confirmatory population other than employer-own data can carry intervals.
+  - Parts 2 and 3 are unrun.
+  - The JetBlue and Citizens reports are unread.
+- **All ideas.**
+  - OpenAlex forward legs are not done for any seed; several Semantic Scholar legs are not done.
+  - Publisher full texts (APA, Wiley, Taylor & Francis, SSRN) are unread.
+  - Several items are known from snippets only.
+- **Integrity.**
+  - The repository owner's personal e-mail address was sent to Crossref, OpenAlex and Semantic Scholar by two idea-6 novelty scripts. It is recorded in two committed logs, which reverses the 2026-10-05 placeholder fix.
+  - The autosave loop pushed intermediate file versions.
+
+  See `research/06_stage4/README.md` section 6.
+
+### Decision
+
+These are recommendations, pending the author's confirmation; no primary project is selected without the author.
+
+- **Idea 5: revise**, then proceed to Stage 6 as the recommended primary. Its rule was not triggered on either clause, it needs no participants or fees, and the pilot found structure beyond "metrics are unstable".
+- **Idea 4: revise.** It is the recommended backup or parallel secondary paper, after the ACLU licence answer.
+- **Idea 6: pivot.** Its rule was triggered; under the rule this means stop the JAIS-targeted audit, or demote it to a CAIS methods essay. It is not recommended as primary or backup.
+
+### Next action
+
+1. The author answers the decisions in `research/06_stage4/README.md` section 4:
+   - confirm the primary and backup and decide idea 6's disposition;
+   - discipline and tier, APC and preregistration;
+   - send the ACLU licence email;
+   - the idea-5 estimand and data-handling rule;
+   - the e-mail scrub and history decision;
+   - API keys.
+2. Stage 6 for idea 5 follows section 5 of that file:
+   - protocol work P1-P5;
+   - the OSF preregistration;
+   - the full run on about 16 further logs.
+
+   Compute extrapolated from the pilot timings is about 1.7-3.8 h at pilot settings, or up to about 21-28 h with per-replicate refits, on 4 vCPU.
+
+---
