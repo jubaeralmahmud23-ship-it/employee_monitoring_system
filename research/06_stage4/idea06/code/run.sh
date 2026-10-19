@@ -63,4 +63,8 @@ fi
   --survival "$PILOT/claim_survival.csv" --frame-summary "$FRAME/frame_summary.json" \
   --out-dir "$PILOT" > /dev/null
 
+
+# Reproducibility metadata (versions, seeds, timings, sha256 of inputs and outputs).
+"$PY" -I "$HERE/write_run_metadata.py" --idea-dir "$HERE/.." --data-dir "$DATA" --out "$HERE/../results/run_metadata.json"
+
 echo "wall-clock seconds: $(( $(date +%s) - START ))"

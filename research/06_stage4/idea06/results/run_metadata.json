@@ -1,0 +1,216 @@
+{
+ "run_date_utc": "2026-10-19",
+ "sampling_date_frozen": "2026-10-19",
+ "machine": {
+  "platform": "Linux-6.18.44-fc-v139-x86_64-with-glibc2.39",
+  "cpus": 4,
+  "note": "cloud container, 4 vCPU, 15 GB RAM, no GPU"
+ },
+ "software": {
+  "python": "3.11.15",
+  "numpy": "2.4.6",
+  "scipy": "1.17.1",
+  "statsmodels": "0.15.0",
+  "pdftotext": "pdftotext version 24.02.0",
+  "curl": "curl 8.5.0 (x86_64-pc-linux-gnu) libcurl/8.5.0 OpenSSL/3.0.13 zlib/1.3 brotli/1.1.0 zstd/1.5.5 libidn2/2.3.7 libpsl/0.21.2 (+libidn2/2.3.7) libssh/0.10.6/openssl/zlib nghttp2/1.59.0 librtmp/2.3 OpenLDAP/2.6.10"
+ },
+ "seeds": {
+  "pilot_draw": 20261015,
+  "beta_binomial_mc": 20261015,
+  "beta_draws": 20000,
+  "validation_numpy_rng": 7
+ },
+ "wall_clock_seconds": {
+  "build_frame_py": 183.2,
+  "coding_per_paper": {
+   "S01": 32,
+   "S02": 10,
+   "S03": 32,
+   "S04": 23,
+   "S05": 8,
+   "S06": 45,
+   "S07": 14,
+   "S08": 9,
+   "S09": 52,
+   "S10": 13,
+   "A01": 36,
+   "A02": 62,
+   "A03": 62,
+   "A04": 52,
+   "A05": 43,
+   "A06": 42,
+   "A07": 44,
+   "A08": 56,
+   "A09": 48,
+   "A10": 43
+  },
+  "coding_total": 726,
+  "run_sh_offline": "about 3 (measured with time ./run.sh)"
+ },
+ "downloads": {
+  "pilot_pdfs": {
+   "S01": {
+    "sha256": "aa022d7bf4c6566c62a08f0086362cd6d7749166cf882778f7e2ea62f504d84b",
+    "bytes": 864625,
+    "url": "https://link.springer.com/content/pdf/10.1007/s12525-023-00680-1.pdf"
+   },
+   "S02": {
+    "sha256": "7c59dd40cc4ac279a88782c951c271207f37e2cce55c378e825dbd435c2236b1",
+    "bytes": 1874365,
+    "url": "https://link.springer.com/content/pdf/10.1007/s10796-026-10804-5.pdf"
+   },
+   "S03": {
+    "sha256": "cd4628bbfe870d0474cadaf5891bcaf9019000d5c6de414b2bcad13f360d5fc2",
+    "bytes": 2469753,
+    "url": "https://link.springer.com/content/pdf/10.1007/s12525-024-00746-8.pdf"
+   },
+   "S04": {
+    "sha256": "cd303e034ccb60efb4668042c2887aaab589047bc37a8db9d8f33a8db5ee836a",
+    "bytes": 1539577,
+    "url": "https://link.springer.com/content/pdf/10.1007/s12525-025-00812-9.pdf"
+   },
+   "S05": {
+    "sha256": "d3ba1cb46ab5be40db10b99afc46379874da2c9152609d12f01f349a6cf6034a",
+    "bytes": 3957191,
+    "url": "https://link.springer.com/content/pdf/10.1007/s10796-023-10375-9.pdf"
+   },
+   "S06": {
+    "sha256": "b6d6d38ccda5d118f7834d4cafdca934bdbd8320f00d517746a0d58229ef37be",
+    "bytes": 2130852,
+    "url": "https://link.springer.com/content/pdf/10.1007/s12599-025-00974-y.pdf"
+   },
+   "S07": {
+    "sha256": "acdeed2957bd8418a918980072e1160e8bd95795d72c83ed2728e7ae3368f643",
+    "bytes": 1243699,
+    "url": "https://link.springer.com/content/pdf/10.1007/s12599-026-00998-y.pdf"
+   },
+   "S08": {
+    "sha256": "ba1078779ac334e8699b805d9203bb8f4a68e528a942902777e7ead1e756c401",
+    "bytes": 1788985,
+    "url": "https://link.springer.com/content/pdf/10.1007/s10796-025-10581-7.pdf"
+   },
+   "S09": {
+    "sha256": "b6c1e408d6c510aeee0aea69d24a148033f62fcfc4aa6b1dde91b5b1c98e07d8",
+    "bytes": 1243718,
+    "url": "https://link.springer.com/content/pdf/10.1007/s10796-024-10503-z.pdf"
+   },
+   "S10": {
+    "sha256": "9e097718d624499f943d9380bd90bf5c91edce1469785c2102a7a9701b117373",
+    "bytes": 1660247,
+    "url": "https://link.springer.com/content/pdf/10.1007/s12525-026-00915-x.pdf"
+   },
+   "A01": {
+    "sha256": "1aa9bcdca1e990740cbefc30b2bb1f97b9cd786d7d2475cd66bbffcf9f7408c3",
+    "bytes": 701227,
+    "url": "https://aclanthology.org/2024.naacl-industry.1.pdf"
+   },
+   "A02": {
+    "sha256": "50ea2f5ce68c5a7e11fff432b7cdb780b95e007eb6ff771fb34bceb2937f2e29",
+    "bytes": 2169946,
+    "url": "https://aclanthology.org/2025.emnlp-industry.94.pdf"
+   },
+   "A03": {
+    "sha256": "c75918fa91ab88e028875ef66fcbed89b5b1d14274923a323851082174e6583a",
+    "bytes": 560111,
+    "url": "https://aclanthology.org/2025.emnlp-industry.173.pdf"
+   },
+   "A04": {
+    "sha256": "5e46401d286a4fef75855aa05669f9634d4afece2f1de86ffc8f20d2a42e9599",
+    "bytes": 3796702,
+    "url": "https://aclanthology.org/2025.emnlp-industry.149.pdf"
+   },
+   "A05": {
+    "sha256": "190f7944d1944d656e58260cb99122af689a84b8d553477982556e187f89cce3",
+    "bytes": 259909,
+    "url": "https://aclanthology.org/2025.naacl-industry.49.pdf"
+   },
+   "A06": {
+    "sha256": "a17c086e0fa39805e65180be06f90bd6e6d674a61c45f413aef01bc58626749e",
+    "bytes": 2841153,
+    "url": "https://aclanthology.org/2026.acl-industry.14.pdf"
+   },
+   "A07": {
+    "sha256": "9d14583d1f606c0d2a9a512bd19b7a6234ae99de9e57a4822651ba76591b7b2c",
+    "bytes": 2584469,
+    "url": "https://aclanthology.org/2026.acl-industry.34.pdf"
+   },
+   "A08": {
+    "sha256": "3dd050409ea52ce752c85c8784886aaf4f2ac1911ac6aa501f9363697d83e00f",
+    "bytes": 1205032,
+    "url": "https://aclanthology.org/2026.acl-industry.12.pdf"
+   },
+   "A09": {
+    "sha256": "73d8faf8dcafbebfc5639904ef9d3aedfda880886f421a9e6bf0596e49df8546",
+    "bytes": 3024710,
+    "url": "https://aclanthology.org/2025.emnlp-industry.146.pdf"
+   },
+   "A10": {
+    "sha256": "ba509cdc743983f324d72b1c7756bce78e82f96819741576f4140094bfc548c2",
+    "bytes": 7054682,
+    "url": "https://aclanthology.org/2024.naacl-industry.7.pdf"
+   }
+  },
+  "frame_raw_manifest": "results/frame/raw_manifest.csv",
+  "frame_raw_files": 96,
+  "springer_landing_manifest": "results/frame/springer_oa_landing_manifest.csv",
+  "data_dir_outside_repo": "/tmp/claude-0/-home-user-employee-monitoring-system/c64eab22-9c10-592c-b92e-5ac629c5be82/scratchpad/data/idea06"
+ },
+ "repository_files_sha256": {
+  "code/build_frame.py": "7268b6d83e752949653c471f6087ee994d4d2937bb1b6a69641d6532bb959a37",
+  "code/draw_pilot.py": "9307fb35c2d31083d730a3952b8d1dfd46358a6a90d0fe9ea8f158acbb0094d7",
+  "code/fetch_fulltexts.py": "8829619f5a9a937d4dd83486df9a94b4701809d82885be2de7d8a5f4f2915ce0",
+  "code/kwic.py": "4b4f3fefc03d202e6f8558d63f6b0d439a819eab5d66d293422143b06e55d07d",
+  "code/uncertainty_calc.py": "732be4d671ce4334a07e1f774d38478b2661d7e69646c9db89f32c2a5136d015",
+  "code/validate_calc.py": "82ac8c020f17e82019e8b778eb97c544ba7592a823794ea5cbd7043e31a7b3db",
+  "code/analyze_pilot.py": "1952940f5ccfe498e2690b7655f6f76cf8a9cdc85e0aa282c836e7790a14d504",
+  "code/write_run_metadata.py": "e79372b787c15bcb3eb4a308c6c2ea2ee7126988fd0f16bdf2985c1497d7be88",
+  "code/run.sh": "3b97e0bd214d06e9898d780479c3195d10435dda24ebab9158438b87250c8ab4",
+  "codebook_v0.md": "03f1cad7fea630cbf62173121bf857997d17d68b2a486ce42f3620555b6ada6a",
+  "code/coding/coding_times.log": "d99997d1236dd286facaa3f6deafbfdeb869e8fba4129228193b49fc00edb95e",
+  "code/coding/papers/A01.json": "f6cd27b4b0e3b67cd564fe0c0c28832aff4819ecb15158b141e2000d993a64ff",
+  "code/coding/papers/A02.json": "a30a0e41237e8e589601970344d7b74a8b95b3c6af7637cef7ba3ac5e43e4d9b",
+  "code/coding/papers/A03.json": "3380f55f82c7c51fcc7d62c5cda1834dbd6adb36089df8c6cf598d03a2da1b8c",
+  "code/coding/papers/A04.json": "a788490ff3317359b7abcb27490f019fbdf9241a3cd4be7fb4e5e87d0c7f3246",
+  "code/coding/papers/A05.json": "562148cf10060e0abf8a8262a8c4087af76b0de0f68df209e2671339128b5de8",
+  "code/coding/papers/A06.json": "c3bf337079fc8875fdc605a525610d3175c4b93ef52d0360e553fd4ae66501bb",
+  "code/coding/papers/A07.json": "273c16c77c0ecea3687cc273625c09bc93b41b9e5be4ee8a54d3b21473bbc799",
+  "code/coding/papers/A08.json": "667b698ac251250158b8e50486c7909a76dfab66fc93a49a960274e86a8a375b",
+  "code/coding/papers/A09.json": "cf9d0191021c0b2d58ed31f4bdb322e8b596039008309516dfdbfab00c2bcb80",
+  "code/coding/papers/A10.json": "e97be00d3804611e03612448462101ef092384b0be29441c2b4009736b786315",
+  "code/coding/papers/S01.json": "15e42d3c7ffe98a72a2d08d770fe6213f1006475ab1c134b884be812f714e971",
+  "code/coding/papers/S02.json": "2be4dbc63b3f4f9572744cf70d9b78567fc57158329b8dd0e1303d824da74949",
+  "code/coding/papers/S03.json": "1ac9a6e3c164da643468d22aaf261264999c01014abb786e08dc060f5b2e35be",
+  "code/coding/papers/S04.json": "46ccc8a491a46cf292a2425364a3941d801cbd1b3867570ea983cdc063ab8d74",
+  "code/coding/papers/S05.json": "5ec4be0a1fc44049ff53cc874baebdc10d301277e3ad84077df117d3303023be",
+  "code/coding/papers/S06.json": "fc8125b50a21a04540e56d44e432cbd726b5611e831a2c04c0143dd0dc7e1b43",
+  "code/coding/papers/S07.json": "1ef483c0ac236a955184a1754cb1641823ff6f328bd89169b62829a1ac43be94",
+  "code/coding/papers/S08.json": "d95085bf48083da19c5faf38287d53ea31e34a246dc298cee306633ea5c7d59b",
+  "code/coding/papers/S09.json": "2c20a50048a85fd3be5150ef0161dd77f01e0097526934997648b9bb13b3a9ae",
+  "code/coding/papers/S10.json": "c7cb56d6370578931f601d470f9bd9b2426a8005e29f43f2582d85e3c9d0e095",
+  "code/coding/pilot_claims.csv": "ef884c930a4d5311a99126ed3a12466ef14fccdf95eb3745ea3638526c95420a",
+  "code/coding/springer_oa_screening.csv": "0360e47b98d0a447997c72ff7e77b1d8b67a32063323710126ef7867575c062b",
+  "results/frame/acl_industry_papers.csv": "b9a6eeb5d9478ae3f35d5cd4c211f575acb29e992a3d6122ef4d2c3caec79b66",
+  "results/frame/acl_volume_probes_not_in_frame.csv": "62ada008117bb390a83af7cc9e4aedfdcb42e01a3f74a3a4e172db1e7062ebfa",
+  "results/frame/frame_counts_acl_industry.csv": "a96f18a2b5ab0b8767e20b92779c5e60fd78bdea1c9164f4f748624889a85303",
+  "results/frame/frame_counts_is_journals.csv": "0cf49bbe07dc8a2bcd96ace88cb22a6cfaa910f69e38d8c21c1d7b4f2ba5602c",
+  "results/frame/frame_decomposition_unbounded_vs_frozen.csv": "5eff7649d0b36aa76f196a2fdd436b859da7665cc6e48f94ac8938d68d800e13",
+  "results/frame/frame_summary.json": "2341d5f4840888b013e75c1ae88a6918fcc7ae4d6afdb40f6acaed961fd1e70c",
+  "results/frame/is_journal_articles.csv": "9b16742faba03d6b12e0470aea5a5cc0995e8f63563129825c7bc1fcc48be5b2",
+  "results/frame/raw_manifest.csv": "3cd3c2789b56b4432ba060f908b94724bf2598278cef58cf04ebc5bf332ba485",
+  "results/frame/springer_oa_landing_manifest.csv": "fc21c208d41e5896dbf78f7148ae26fba95edbaca2cc8941913ffa67f107bdd6",
+  "results/frame/springer_oa_term_hits.csv": "8fe9d9517752a878f3b40f80bbfb52ab1cb5b5cdea812ae70f9e7be4004b7af3",
+  "results/frame/springer_term_hits.csv": "0e9e4198a8463ebf39ad577444d2fb4021e879979f85a234f3fedd47ca7f0d6a",
+  "results/pilot/calc_validation.csv": "4f6d26f144ca1dbcbf6e3f90d704a71a718a23a29e8c3cc3854041cb923d0cc7",
+  "results/pilot/claim_survival.csv": "9ccab1198ccb128f8ce78034a7148634c3397f74b9863c75674f7a0d50981557",
+  "results/pilot/fulltext_manifest.csv": "8720ef5c5f4f2c014030ee749227f9ff0207f34d8b59ccd5bb635c707fbd6308",
+  "results/pilot/item_prevalence.csv": "156ec3dbe0521e0ffc85afcb9e8d51abcc96da32b499ebe0a5dd0ebfb9d9d9d0",
+  "results/pilot/pilot_coding.csv": "e38ff5dc3bc6cc5d82924b0da653f08ec65be3782e204299510d79f97f7a13f0",
+  "results/pilot/pilot_coding.md": "9827c10a15b1da69db24ae9a857b9a229760b829b04f14ca28044c1fcf93e9df",
+  "results/pilot/pilot_sample.csv": "ba96536813b14761889dc4a8db74477cb64dd70eefdd71145bf41e04e91be25f",
+  "results/pilot/pilot_timing.csv": "fd687a7f68da3f3b31b0eab6ee87aa4961a847b346e6543a8e4ba268f5803998",
+  "results/pilot/screening_summary.csv": "8767f1e89a8740fb7409349e94c0451546b84d6e076e36b2897a3087d52bbbe5",
+  "results/pilot/stopping_rule.json": "60d561a5ad4ce859e3fbea701b4a700a2414da618620c6b4ce00351952af7a00",
+  "results/pilot/stopping_rule.md": "aa18a01b92831c8ea0f24be284fbd8e443728d04a52181b031aea5e02ac9ec63",
+  "results/pilot/survival_summary.md": "f7c58e334f5c51210dd8c88a8f5100ecda8f2e2852d14236a3fe6708fd0c276a"
+ }
+}
