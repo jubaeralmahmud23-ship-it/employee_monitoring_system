@@ -43,7 +43,7 @@ Sources for the table: `results/pilot/stopping_rule.json` and `results/pilot/sto
   - Under the pre-specified secondary reading, 2a fails (35%), so criterion 2 does not hold.
   - Criterion 2b holds under every inclusion reading: 13, 14 or 21 papers, all below 25.
 - **2a is driven by the Springer half of the sample.**
-  - The plan draws the IS pilot papers from the *unscreened* term-hit stratum. 8 of the 10 drawn Springer papers fail inclusion: editorials, surveys, qualitative studies, one GNN case study and one human-subject experiment.
+  - The plan draws the IS pilot papers from the *unscreened* term-hit stratum. 9 of the 10 drawn Springer papers do not pass inclusion. Seven are excluded: two conceptual articles, a survey, a bibliometric study, two qualitative studies and a GNN case study. Two are borderline: a synthetic tabular-data study and a human-subject experiment.
   - Hence 0 of 10 Springer papers permit RQ2, against 3, 5 and 7 of 10 ACL industry papers under the three readings.
   - Among the 10 pilot papers that pass inclusion, the strict share is 3 of 10 = 30%. This is supplementary only; the rule's denominator is "pilot papers".
 - **The pilot is exploratory and machine-coded.** A human second coder could move individual codes. 2a sits close to the threshold: 15-35% across readings against 30%.
@@ -137,7 +137,7 @@ The single machine-assisted coder screened each paper against the idea record's 
 - The helper `code/kwic.py` prints keyword-in-context lines with PDF page indices (pdftotext form-feed count). The coder decides every code; the helper decides nothing.
 
 **Timing.** Source: `results/pilot/pilot_timing.csv` and `code/coding/coding_times.log`.
-- Machine wall-clock per paper ranged from 8 to 62 s, 726 s in total. Mean per paper: 22 s for the 10 Springer papers (8 failed inclusion quickly) and 49 s for the 10 ACL papers.
+- Machine wall-clock per paper ranged from 8 to 62 s, 726 s in total. Mean per paper: 24 s for the 10 Springer papers (9 did not pass inclusion) and 49 s for the 10 ACL papers.
 - These are machine timings of targeted reading, not estimates of human labour. The feasibility file's 30-45 min per paper for a trained human coder is not tested by this pilot.
 - Page-reference corrections made during verification, after the timed windows, are not timed (A01, A05, S01).
 
@@ -153,7 +153,7 @@ Why RQ2 failed for the included papers:
 - **n not stated** (A05).
 - **Metric not a proportion:** F1 (A05), compute ratio and calibration errors (A06), mean expert rating (A07), composite packet score (A08), relative gains pooled over datasets (S09).
 - **n only derivable from the benchmark's conventional size** (A02, A09: AIME, 30 problems, not stated in the paper).
-- **Headline-claim rule picks a table cell.** For A02, A03 and A09 the first comparison in the results is a table rather than a sentence, so the rule picks a cell. Pilot rule: the first row pair in the first column, or the cell the text names. Alternative cells were also run (section 5).
+- **Headline-claim rule picks a table cell.** For A02, A03 and A09 the headline claim had to be mapped to one of several table cells. The cell was chosen during coding: the first row pair in the first column, or the cell the text names. This is a post hoc rule, not in `codebook_v0.md`. Alternative cells were also run (section 5).
 
 **Item prevalence among the 10 included pilot papers** (exploratory, n = 10; Wilson 95% CIs in `results/pilot/item_prevalence.csv`):
 
@@ -225,13 +225,13 @@ These are five claims, so the numbers are a demonstration of the pipeline and no
 1. **ACL frame volumes.** The task names "the ACL 2026 industry track plus EMNLP 2023 and NAACL 2024 industry tracks". The plan treats these as additions to the four volumes named in the idea card. All seven volumes (777 papers) were enumerated and the ACL pilot draw is from all seven. Drawing only from the three named volumes would give a different sample.
 2. **Upper publication-date bound.** `until-pub-date:2026-10-19` is a definition the 2026-10-05 run did not have. It excludes 69 Elsevier records with future issue dates (section 2). Both counts are reported. Whether in-press Elsevier articles belong in the frame is an author decision; it does not affect the Springer or ACL strata.
 3. **Tag stripping** before term matching. It changes ISJ only, from 6 to 9; the raw count is kept.
-4. **Codebook.** The 11 listed entries were reconciled to 14 fields (`codebook_v0.md` §0a). The [PILOT] rules were added before coding: what counts as "LLM-based", the headline-claim tie-break, the Hugging Face identifier rule for open-weight versions, and the strict and loose RQ2 readings.
+4. **Codebook.** The 11 listed entries were reconciled to 14 fields (`codebook_v0.md` §0a). The [PILOT] rules in the codebook were written before coding: what counts as "LLM-based", what counts as a quantitative comparison, the Hugging Face identifier rule for open-weight versions, and the strict and loose RQ2 readings. The choice of table cell when a headline claim maps to several cells (first row pair in the first column, or the cell the text names) was made during coding and is not in `codebook_v0.md`. It is a post hoc rule and a v1 item.
 5. **"Permit RQ2" readings.** Strict (primary) and loose (secondary) were fixed in the codebook before coding. The intermediate reading (n from a benchmark's standard size) was added after coding and is labelled post hoc.
 6. **Third uncertainty model.** The task names run-to-run variance (Atil et al.); the idea card's third model is the Beta-Binomial. Both were implemented, as M3 and M4. The "15% band" was read as 15 percentage points, with a worst-case primary and a variance sensitivity.
 7. **Inclusion screening** was done at abstract level, with full-text keyword checks for 4 unclear cases. Full-text screening of all 65 papers was not done.
 8. **The pilot was drawn from unscreened term hits,** as the task specifies. Inclusion was coded per paper (section 1 explains the effect on 2a).
 9. **Alternative claim cells and assumed n.** Five alternative claim cells were run beyond the five rule-based claims. For A08, n is assumed under two variants because the paper does not state which variant Table 2 uses.
-10. **Download tool.** Springer downloads used curl instead of python-urllib (section 4). This agent did not check Semantic Scholar or OpenAlex: no frame reconciliation with OpenAlex, which the plan lists as optional.
+10. **Download tool and reconciliation.** Springer downloads used curl instead of python-urllib (section 4). The plan's reconciliation of the Springer frame with Springer's own search or OpenAlex "when rate limits allow" was not done in this run: neither OpenAlex nor Semantic Scholar was queried.
 11. **Additional ACL volumes probed** (ACL 2023, COLING 2025, EACL 2026 industry) were reported but not added.
 
 ## 7. Limitations
@@ -241,7 +241,7 @@ These are five claims, so the numbers are a demonstration of the pipeline and no
   - No inter-coder agreement exists.
   - Reading was targeted (section scan plus keyword-in-context plus the evaluation sections), not complete. Items coded N ("not reported") may be false negatives where text was missed: appendices, footnotes, linked repositories (which were not opened).
 - **Small numbers.** 20 pilot papers, 10 included, 5 headline claims. The prevalence CIs are wide (e.g. any uncertainty 1 of 10, Wilson 95% 0.02-0.40).
-- **Headline-claim ambiguity is real.** In 3 of 9 included ACL papers the rule lands on a table cell, and the choice of cell changes survival (A03). n was missing or only conventionally derivable in 4 of 10 included papers.
+- **Headline-claim ambiguity is real.** In 3 of the 9 included ACL papers (A02, A03, A09) the headline claim had to be mapped to one of several table cells, and the choice of cell changes survival (A03). n for the headline claim was not fully extractable from the paper (H3 not Y) in 5 of the 10 included papers.
 - **Screening and frame.** Screening was by one coder at abstract level. Crossref abstracts are absent for Elsevier and Taylor & Francis, so those counts are title-only. The Crossref snapshot will drift with late deposits; the frozen CSVs are the reference.
 - **Timings are not human labour.** They do not test the 150-220 person-hour estimate.
 - **The survival models need assumptions the papers do not supply.** These include the item-level correlation (paired bound), the ICC and cluster sizes, the meaning of Atil et al.'s 15%, and that table values are single runs. The paired upper bound assumes non-negative error correlation.

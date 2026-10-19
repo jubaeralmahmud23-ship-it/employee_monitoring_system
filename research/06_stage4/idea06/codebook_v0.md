@@ -130,3 +130,9 @@ These are recommended in the records but are not part of the feasibility file's 
 - judge protocol fields: scale, abstention handling, pooling (novelty file, after Rao and Callison-Burch);
 - alignment of item definitions with "Awes, Laws, and Flaws" (arXiv 2408.15409) and the 2605.21404 scoring schema (feasibility file, section 2);
 - a "paired variance identifiable" flag (feasibility file, section 2).
+
+## 6. Post hoc notes (added after the pilot coding, 2026-10-19; not part of v0 as applied)
+
+- **Table-cell choice.** When the headline claim maps to several table cells, the coder took the first row pair in the first column, or the cell the text names (A02, A03, A09). This choice was made during coding, and other cells were run as alternatives.
+- **Intermediate RQ2 reading.** The reading in which n may come from a benchmark's standard size (e.g. AIME = 30 problems) was defined after coding. It is reported as post hoc in `results/pilot/stopping_rule.md`.
+- **Candidates for v1.** Systems-efficiency papers (latency or throughput claims, no task dataset), and evaluated systems that are themselves LLM judges or guardrails (item 7 does not capture their validation).
