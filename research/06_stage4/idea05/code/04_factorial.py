@@ -154,7 +154,9 @@ def main():
         fin = np.isfinite(x)
         ra, _ = L.reclass_rate(S[base_cfg, A], x)
         sp = pd.Series(S[base_cfg, A]).corr(pd.Series(x), method="spearman")
+        bset, bsize = L.bottom_set(x)
         rows.append({**r.to_dict(), "n_ranked": int(fin.sum()), "n_undefined": int((~fin).sum()),
+                     "bottom_quintile_k": int(np.floor(0.2 * fin.sum() + 0.5)), "bottom_set_size_inclusive_ties": int(bsize),
                      "oriented_score_mean": float(np.nanmean(x)), "oriented_score_sd": float(np.nanstd(x)),
                      "oriented_score_median": float(np.nanmedian(x)),
                      "oriented_score_p25": float(np.nanpercentile(x, 25)), "oriented_score_p75": float(np.nanpercentile(x, 75)),
@@ -265,6 +267,9 @@ def main():
     rcc["tsum"] = L.summarize_tau(rcc["T"], distinct)
     rcc["pairs"], rcc["rsum"] = L.summarize_reclass(S[:, A_cc], cmpairs)
     srow("complete-case set (defined in all 117 configurations)", rcc)
+    rti = {"A": A, "T": T, "tsum": res["tsum"]}
+    rti["pairs"], rti["rsum"] = L.summarize_reclass(S[:, A], cmpairs, ties="index")
+    srow("tie rule for quintiles: exactly k, ties broken by index (instead of inclusive)", rti)
     for nm in [1, 20, 500]:
         A2 = L.analysis_set(P, S, nm)
         r2 = {"A": A2, "T": L.tau_b_matrix(S[:, A2])}

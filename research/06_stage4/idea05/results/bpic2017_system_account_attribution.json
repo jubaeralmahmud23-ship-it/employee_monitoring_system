@@ -37,7 +37,7 @@
   "CCA|first|month|-|none": {
    "n": 140,
    "tau_same_config_system_excluded_vs_included": 0.6838273648147518,
-   "reclass_bottom": 0.10714285714285714
+   "reclass_bottom": 0.07142857142857142
   },
   "CCA|majority|month|-|none": {
    "n": 140,

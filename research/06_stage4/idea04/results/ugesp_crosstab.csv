@@ -3,6 +3,10 @@ E1_employer_posted_PRIMARY,True,True,168,0.196721,163
 E1_employer_posted_PRIMARY,True,False,30,0.0351288,0
 E1_employer_posted_PRIMARY,False,True,396,0.4637,394
 E1_employer_posted_PRIMARY,False,False,260,0.30445,0
+E5_employer_own_data_POSTHOC,True,True,11,0.0639535,6
+E5_employer_own_data_POSTHOC,True,False,25,0.145349,0
+E5_employer_own_data_POSTHOC,False,True,93,0.540698,92
+E5_employer_own_data_POSTHOC,False,False,43,0.25,0
 V_vendor_posted,True,True,5,0.0165017,5
 V_vendor_posted,True,False,9,0.029703,0
 V_vendor_posted,False,True,206,0.679868,205

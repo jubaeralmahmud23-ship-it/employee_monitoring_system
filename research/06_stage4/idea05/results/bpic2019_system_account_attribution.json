@@ -1,0 +1,61 @@
+{
+ "system_accounts": "20 labelled accounts",
+ "share_of_events": 0.09788630706018316,
+ "share_of_completed_cases_attributed": {
+  "first": 0.08301247877423686,
+  "last": 0.003470165462228014,
+  "majority": 0.0812996090510603
+ },
+ "system_accounts_ranked_when_included": 15,
+ "quintile_of_system_accounts_when_included_(1=bottom,5=top)": {
+  "CCA|last|month|-|none": {
+   "n": 15,
+   "share_in_top_quintile": 0.13333333333333333
+  },
+  "EPH|-|month|60|none": {
+   "n": 15,
+   "share_in_top_quintile": 0.4
+  },
+  "APT|-|month|-|none": {
+   "n": 14,
+   "share_in_top_quintile": 0.2857142857142857
+  }
+ },
+ "contrast_primary_vs_included": {
+  "median_tau_distinct": [
+   0.040608786523424215,
+   0.04649725377328585
+  ],
+  "median_reclass_bottom_distinct": [
+   0.2727272727272727,
+   0.26051051051051055
+  ]
+ },
+ "human_ranking_agreement_system_excluded_vs_included": {
+  "CCA|last|month|-|none": {
+   "n": 307,
+   "tau_same_config_system_excluded_vs_included": 0.9388152677519866,
+   "reclass_bottom": 0.0
+  },
+  "CCA|first|month|-|none": {
+   "n": 307,
+   "tau_same_config_system_excluded_vs_included": 0.8655142615411501,
+   "reclass_bottom": 0.0
+  },
+  "CCA|majority|month|-|none": {
+   "n": 307,
+   "tau_same_config_system_excluded_vs_included": 0.9016861980187851,
+   "reclass_bottom": 0.13114754098360656
+  },
+  "RWK|first|month|-|none": {
+   "n": 170,
+   "tau_same_config_system_excluded_vs_included": 0.9172206039262936,
+   "reclass_bottom": 0.029411764705882353
+  },
+  "DLA|first|month|-|none": {
+   "n": 170,
+   "tau_same_config_system_excluded_vs_included": 0.9184903100009003,
+   "reclass_bottom": 0.058823529411764705
+  }
+ }
+}

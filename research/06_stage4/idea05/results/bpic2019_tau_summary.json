@@ -28,10 +28,10 @@
  "median_tau_cross_metric_distinct": 0.0004718362662964374,
  "reclassification": {
   "n_distinct_casemix_pairs": 78,
-  "median_reclass_bottom_distinct": 0.3090909090909091,
-  "mean_reclass_bottom_distinct": 0.2837616102410184,
+  "median_reclass_bottom_distinct": 0.2727272727272727,
+  "mean_reclass_bottom_distinct": 0.27947792436561447,
   "median_reclass_bottom_405": 0.3114754098360656,
-  "median_status_change_all_distinct": 0.12274368231046931,
+  "median_status_change_all_distinct": 0.09446254071661238,
   "median_status_change_all_405": 0.1237785016286645,
   "max_reclass_bottom_distinct": 0.8214285714285714,
   "min_reclass_bottom_distinct": 0.0

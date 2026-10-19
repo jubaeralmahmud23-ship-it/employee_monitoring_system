@@ -745,7 +745,7 @@ def main():
         "E4_employer_posted_excl_multi_employer_POSTHOC": base & strict & big & dedup & emp & (Ru["data_scope"] != "multi_employer"),
         "E5_employer_own_data_POSTHOC": base & strict & big & dedup & Ru["data_scope"].isin(
             ["employer_own", "employer_own_unverified"]),
-        "E5s_employer_own_data_stated_only_POSTHOC": base & strict & big & dedup & Ru["data_scope"].isin(["employer_own"]),
+        "E5b_employer_own_excl_unverified_POSTHOC": base & strict & big & dedup & Ru["data_scope"].isin(["employer_own"]),
         "M_multi_employer_pooled_POSTHOC": base & strict & big & dedup & (Ru["data_scope"] == "multi_employer"),
     }
     variants = pd.concat([summarise(Ru[m], [], label=k) for k, m in sets.items()], ignore_index=True)

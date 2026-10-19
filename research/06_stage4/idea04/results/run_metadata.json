@@ -1,5 +1,5 @@
 {
-  "run_utc": "2026-10-19T04:53:57Z",
+  "run_utc": "2026-10-19T05:04:10Z",
   "python": "3.11.15",
   "platform": "Linux-6.18.44-fc-v139-x86_64-with-glibc2.39",
   "numpy": "2.4.6",
@@ -51,15 +51,15 @@
   },
   "ratios_union_computed": 2661,
   "timings_seconds": {
-    "load_profile": 0.366,
-    "tables_dedup_consistency": 2.326,
-    "ratios_statistics": 25.612,
-    "tabulations": 0.382,
-    "funnel_dedup_consistency_comparator": 2.058,
-    "excluded_population": 1.222,
-    "extras": 0.032,
-    "osf_crosscheck": 0.706,
-    "stopping_rule_meta": 0.049
+    "load_profile": 0.265,
+    "tables_dedup_consistency": 2.638,
+    "ratios_statistics": 26.262,
+    "tabulations": 0.758,
+    "funnel_dedup_consistency_comparator": 1.939,
+    "excluded_population": 1.128,
+    "extras": 0.038,
+    "osf_crosscheck": 0.639,
+    "stopping_rule_meta": 0.058
   },
   "stopping_rule": {
     "rule_text": "stop Part 1 if the ACLU code already computes sampling intervals or if, after de-duplication, more than about 80% of employer-level ratios have 95% intervals excluding 0.8",
@@ -79,7 +79,7 @@
       "jeffreys": 0.5889929742388759
     },
     "criterion_2_range_over_all_variants_and_methods": [
-      0.4284369114877589,
+      0.4169184290030212,
       0.8943894389438944
     ],
     "criterion_2_variants_exceeding_threshold": [
@@ -111,7 +111,58 @@
         "S6_employer_counts_reported_as_integers",
         "jeffreys"
       ]
-    ]
+    ],
+    "criterion_2_employer_level_sets_katz": {
+      "E1_employer_posted_PRIMARY": [
+        854,
+        0.5983606557377049
+      ],
+      "E2_employer_posted_historical": [
+        821,
+        0.5907429963459196
+      ],
+      "E3_employer_posted_historical_not_shared": [
+        710,
+        0.5915492957746479
+      ],
+      "S1_employer_no_dedup": [
+        1034,
+        0.6228239845261122
+      ],
+      "S2_employer_literal_plan_key_dedup": [
+        675,
+        0.6014814814814815
+      ],
+      "S3_employer_lenient_consistency": [
+        856,
+        0.5992990654205608
+      ],
+      "S4_employer_incl_sub2pct_groups": [
+        1062,
+        0.5894538606403014
+      ],
+      "S5_employer_all_rate_definitions": [
+        1426,
+        0.7033660589060309
+      ],
+      "S6_employer_counts_reported_as_integers": [
+        108,
+        0.8333333333333334
+      ],
+      "E4_employer_posted_excl_multi_employer_POSTHOC": [
+        192,
+        0.5989583333333334
+      ],
+      "E5_employer_own_data_POSTHOC": [
+        172,
+        0.5523255813953488
+      ],
+      "E5b_employer_own_excl_unverified_POSTHOC": [
+        159,
+        0.559748427672956
+      ]
+    },
+    "note": "E1 was fixed as primary before any result was computed. E4/E5/E5s/M are POST HOC sets added after the audit reports were found to state multi-employer pooled data for most employer-posted DCI/HireVue, NBCUniversal, BNP Paribas and Sheppard Mullin audits; they are reported, not substituted."
   },
-  "total_seconds": 32.753
+  "total_seconds": 33.725
 }

@@ -1,8 +1,8 @@
 company,n_sampled,n_agree_exact,n_agree_within_0.01,n_both_NA,n_NA_in_one_only,n_N_checked_in_pdf,n_N_found_in_pdf
-ALL,20,20,20,4,0,20,19
+ALL,20,20,20,4,0,15,15
 BNP Paribas,2,2,2,0,0,2,2
 Bloomberg,2,2,2,0,0,2,2
-Cigna,1,1,1,0,0,1,0
+Cigna,1,1,1,0,0,0,0
 Morgan Stanley,1,1,1,0,0,1,1
 NBCUniversal,2,2,2,0,0,2,2
-Pfizer,12,12,12,4,0,12,12
+Pfizer,12,12,12,4,0,8,8

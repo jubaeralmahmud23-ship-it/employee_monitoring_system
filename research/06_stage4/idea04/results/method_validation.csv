@@ -1,0 +1,36 @@
+check,setting,value,expected
+katz_vs_scipy_relative_risk,542/678 vs 3162/3543,0,< 1e-9
+cp_bonf_lower_vs_scipy_binomtest,542/678 vs 3162/3543,5.66214e-15,< 1e-9
+katz_vs_scipy_relative_risk,12/130 vs 7/95,8.88178e-16,< 1e-9
+cp_bonf_lower_vs_scipy_binomtest,12/130 vs 7/95,7.12763e-14,< 1e-9
+katz_vs_scipy_relative_risk,3/23 vs 37/980,1.77636e-15,< 1e-9
+cp_bonf_lower_vs_scipy_binomtest,3/23 vs 37/980,5.79536e-14,< 1e-9
+katz_vs_scipy_relative_risk,25000/60000 vs 31000/61000,1.11022e-16,< 1e-9
+cp_bonf_lower_vs_scipy_binomtest,25000/60000 vs 31000/61000,1.87184e-13,< 1e-9
+katz_vs_scipy_relative_risk,5/40 vs 30/50,1.38778e-17,< 1e-9
+cp_bonf_lower_vs_scipy_binomtest,5/40 vs 30/50,9.02056e-16,< 1e-9
+coverage_true_ratio_0.8_katz,Ng=10 Nc=50 p_c=0.3 reps=1000,0.952,about 0.95 (CP-Bonferroni >= 0.95)
+coverage_true_ratio_0.8_cp_bonf,Ng=10 Nc=50 p_c=0.3 reps=1000,1,about 0.95 (CP-Bonferroni >= 0.95)
+coverage_true_ratio_0.8_boot,Ng=10 Nc=50 p_c=0.3 reps=1000,0.914,about 0.95 (CP-Bonferroni >= 0.95)
+coverage_true_ratio_0.8_jeffreys,Ng=10 Nc=50 p_c=0.3 reps=1000,0.937,about 0.95 (CP-Bonferroni >= 0.95)
+share_point_ratio_ge_0.8_when_true_ratio_is_0.8,Ng=10 Nc=50 p_c=0.3,0.486,descriptive
+coverage_true_ratio_0.8_katz,Ng=30 Nc=150 p_c=0.5 reps=1000,0.955,about 0.95 (CP-Bonferroni >= 0.95)
+coverage_true_ratio_0.8_cp_bonf,Ng=30 Nc=150 p_c=0.5 reps=1000,0.999,about 0.95 (CP-Bonferroni >= 0.95)
+coverage_true_ratio_0.8_boot,Ng=30 Nc=150 p_c=0.5 reps=1000,0.945,about 0.95 (CP-Bonferroni >= 0.95)
+coverage_true_ratio_0.8_jeffreys,Ng=30 Nc=150 p_c=0.5 reps=1000,0.948,about 0.95 (CP-Bonferroni >= 0.95)
+share_point_ratio_ge_0.8_when_true_ratio_is_0.8,Ng=30 Nc=150 p_c=0.5,0.481,descriptive
+coverage_true_ratio_0.8_katz,Ng=100 Nc=500 p_c=0.3 reps=1000,0.945,about 0.95 (CP-Bonferroni >= 0.95)
+coverage_true_ratio_0.8_cp_bonf,Ng=100 Nc=500 p_c=0.3 reps=1000,0.996,about 0.95 (CP-Bonferroni >= 0.95)
+coverage_true_ratio_0.8_boot,Ng=100 Nc=500 p_c=0.3 reps=1000,0.932,about 0.95 (CP-Bonferroni >= 0.95)
+coverage_true_ratio_0.8_jeffreys,Ng=100 Nc=500 p_c=0.3 reps=1000,0.939,about 0.95 (CP-Bonferroni >= 0.95)
+share_point_ratio_ge_0.8_when_true_ratio_is_0.8,Ng=100 Nc=500 p_c=0.3,0.473,descriptive
+coverage_true_ratio_0.8_katz,Ng=500 Nc=2500 p_c=0.5 reps=1000,0.949,about 0.95 (CP-Bonferroni >= 0.95)
+coverage_true_ratio_0.8_cp_bonf,Ng=500 Nc=2500 p_c=0.5 reps=1000,0.997,about 0.95 (CP-Bonferroni >= 0.95)
+coverage_true_ratio_0.8_boot,Ng=500 Nc=2500 p_c=0.5 reps=1000,0.946,about 0.95 (CP-Bonferroni >= 0.95)
+coverage_true_ratio_0.8_jeffreys,Ng=500 Nc=2500 p_c=0.5 reps=1000,0.949,about 0.95 (CP-Bonferroni >= 0.95)
+share_point_ratio_ge_0.8_when_true_ratio_is_0.8,Ng=500 Nc=2500 p_c=0.5,0.516,descriptive
+coverage_true_ratio_0.8_katz,Ng=5000 Nc=25000 p_c=0.3 reps=1000,0.956,about 0.95 (CP-Bonferroni >= 0.95)
+coverage_true_ratio_0.8_cp_bonf,Ng=5000 Nc=25000 p_c=0.3 reps=1000,0.998,about 0.95 (CP-Bonferroni >= 0.95)
+coverage_true_ratio_0.8_boot,Ng=5000 Nc=25000 p_c=0.3 reps=1000,0.957,about 0.95 (CP-Bonferroni >= 0.95)
+coverage_true_ratio_0.8_jeffreys,Ng=5000 Nc=25000 p_c=0.3 reps=1000,0.957,about 0.95 (CP-Bonferroni >= 0.95)
+share_point_ratio_ge_0.8_when_true_ratio_is_0.8,Ng=5000 Nc=25000 p_c=0.3,0.512,descriptive

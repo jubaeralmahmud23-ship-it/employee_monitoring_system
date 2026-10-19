@@ -537,25 +537,39 @@ def spearman_matrix(S):
     return df.corr(method="spearman").to_numpy()
 
 
-def bottom_set(x, frac=0.2):
+TIES = "inclusive"   # primary tie rule for quintile membership (see README, deviations)
+
+
+def bottom_set(x, frac=0.2, ties=None):
+    """Bottom-quintile set of a score vector (NaN = undefined, ignored).
+
+    k = round(frac * n_defined).  ties="inclusive" (primary): every unit whose score is at or
+    below the k-th smallest score (tied units are kept together, so the set can exceed k);
+    ties="index": exactly k units, ties broken by position (sensitivity)."""
+    ties = ties or TIES
     idx = np.flatnonzero(np.isfinite(x))
     k = int(math.floor(frac * len(idx) + 0.5))
+    if k == 0:
+        return set(), 0
     o = idx[np.lexsort((idx, x[idx]))]
-    return set(o[:k].tolist()), k
+    if ties == "index":
+        return set(o[:k].tolist()), k
+    q = x[o[k - 1]]
+    sel = idx[x[idx] <= q]
+    return set(sel.tolist()), len(sel)
 
 
-def reclass_rate(xa, xb, frac=0.2):
-    """Share of the bottom quintile under a that is not in the bottom quintile under b
-    (computed on units defined under both)."""
+def reclass_rate(xa, xb, frac=0.2, ties=None):
+    """(share of the bottom quintile under a that is not in the bottom quintile under b,
+        share of all units whose bottom-quintile status differs), on units defined under both."""
     m = np.isfinite(xa) & np.isfinite(xb)
     xa2 = np.where(m, xa, np.nan)
     xb2 = np.where(m, xb, np.nan)
-    A, k = bottom_set(xa2, frac)
-    B, _ = bottom_set(xb2, frac)
-    if k == 0:
+    A, ka = bottom_set(xa2, frac, ties)
+    B, _ = bottom_set(xb2, frac, ties)
+    if ka == 0:
         return np.nan, np.nan
-    moved = len(A - B)
-    return moved / k, 2 * moved / int(m.sum())   # (share of bottom quintile, share of all workers changing status)
+    return len(A - B) / ka, len(A ^ B) / int(m.sum())
 
 
 def weighted_median(values, weights):
@@ -593,10 +607,10 @@ def summarize_tau(T, distinct):
     }
 
 
-def summarize_reclass(scores_sub, pairs):
+def summarize_reclass(scores_sub, pairs, ties=None):
     r1, r2 = [], []
     for _, p in pairs.iterrows():
-        a, b = reclass_rate(scores_sub[p["cfg_a"]], scores_sub[p["cfg_b"]])
+        a, b = reclass_rate(scores_sub[p["cfg_a"]], scores_sub[p["cfg_b"]], ties=ties)
         r1.append(a)
         r2.append(b)
     pairs = pairs.copy()

@@ -29,7 +29,7 @@
  "reclassification": {
   "n_distinct_casemix_pairs": 78,
   "median_reclass_bottom_distinct": 0.17857142857142858,
-  "mean_reclass_bottom_distinct": 0.2734710941232681,
+  "mean_reclass_bottom_distinct": 0.2742647449169189,
   "median_reclass_bottom_405": 0.18187830687830686,
   "median_status_change_all_distinct": 0.07142857142857142,
   "median_status_change_all_405": 0.07247899159663865,

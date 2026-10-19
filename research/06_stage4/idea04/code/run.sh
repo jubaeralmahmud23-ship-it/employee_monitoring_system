@@ -7,6 +7,7 @@
 #   $DATA/osf/impact.csv, $DATA/osf/employer_docs.zip   OSF osf.io/upfdk extraction of 2026-10-03
 # Row-level derived files are written to $DATA/derived_private/ (never to the repository).
 set -euo pipefail
+export PYTHONDONTWRITEBYTECODE=1
 
 SCRATCH="${SCRATCH:-/tmp/claude-0/-home-user-employee-monitoring-system/c64eab22-9c10-592c-b92e-5ac629c5be82/scratchpad}"
 PY="${PY:-$SCRATCH/venv/bin/python}"
@@ -43,5 +44,8 @@ START=$(date +%s)
   --out-dir "$OUT" \
   --private-dir "$PRIV" \
   --scope-coding "$HERE/data_scope_coding.csv"
+
+# Validation of the interval code (agreement with scipy; coverage at a true ratio of 0.8).
+"$PY" -I "$HERE/validate_methods.py" --pilot "$HERE/ll144_pilot.py" --out "$OUT/method_validation.csv" > /dev/null
 
 echo "wall-clock seconds: $(( $(date +%s) - START ))"

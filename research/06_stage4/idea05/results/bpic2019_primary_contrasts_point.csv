@@ -1,10 +1,10 @@
 contrast,family,config_a,config_b,n_pairwise,tau,spearman,reclass_bottom,status_change_all
-metric: CCA vs EPH,metric,CCA|last|month|-|none,EPH|-|month|60|none,307,0.09970444999891032,0.13569936114595732,0.8032786885245902,0.31921824104234525
-metric: CCA vs APT,metric,CCA|last|month|-|none,APT|-|month|-|none,282,-0.22742401842677068,-0.3139172039857765,0.8928571428571429,0.3546099290780142
+metric: CCA vs EPH,metric,CCA|last|month|-|none,EPH|-|month|60|none,307,0.09970444999891032,0.13569936114595732,0.8411214953271028,0.4364820846905538
+metric: CCA vs APT,metric,CCA|last|month|-|none,APT|-|month|-|none,282,-0.22742401842677068,-0.3139172039857765,0.8170731707317073,0.3829787234042553
 metric: CCA vs RWK,metric,CCA|last|month|-|none,RWK|last|month|-|none,200,-0.26492058733038454,-0.33117065344699237,0.7,0.28
 metric: CCA vs DLA,metric,CCA|last|month|-|none,DLA|last|month|-|none,200,-0.11928274847640068,-0.14830526853470136,0.575,0.23
-attribution: last vs first,attribution,CCA|last|month|-|none,CCA|first|month|-|none,307,0.18461063005169479,0.22149706382381318,0.7540983606557377,0.2996742671009772
-attribution: last vs majority,attribution,CCA|last|month|-|none,CCA|majority|month|-|none,307,0.29537389913675566,0.3991492149484439,0.639344262295082,0.254071661237785
+attribution: last vs first,attribution,CCA|last|month|-|none,CCA|first|month|-|none,307,0.18461063005169479,0.22149706382381318,0.6261682242990654,0.42671009771986973
+attribution: last vs majority,attribution,CCA|last|month|-|none,CCA|majority|month|-|none,307,0.29537389913675566,0.3991492149484439,0.719626168224299,0.3517915309446254
 window: month vs week,window,CCA|last|month|-|none,CCA|last|week|-|none,307,0.9660249728054173,0.9973455637993225,0.0,0.0
 window: month vs quarter,window,CCA|last|month|-|none,CCA|last|quarter|-|none,307,0.9789276306174592,0.9985809790057538,0.0,0.0
 idle gap (EPH): 60 vs 15 min,idle_gap,EPH|-|month|60|none,EPH|-|month|15|none,307,0.8313853228587852,0.9603509156105439,0.16393442622950818,0.06514657980456026

@@ -21,8 +21,8 @@ CCA|first|week|-|none,CCA|first|week|-|activity,27,28,CCA,activity,3,0.0,0.0
 CCA|first|week|-|none,CCA|first|week|-|regression,27,29,CCA,regression,3,0.0,0.0
 CCA|first|month|-|none,CCA|first|month|-|activity,30,31,CCA,activity,3,0.0,0.0
 CCA|first|month|-|none,CCA|first|month|-|regression,30,32,CCA,regression,3,0.0,0.0
-CCA|first|quarter|-|none,CCA|first|quarter|-|activity,33,34,CCA,activity,3,0.03571428571428571,0.014285714285714285
-CCA|first|quarter|-|none,CCA|first|quarter|-|regression,33,35,CCA,regression,3,0.03571428571428571,0.014285714285714285
+CCA|first|quarter|-|none,CCA|first|quarter|-|activity,33,34,CCA,activity,3,0.06666666666666667,0.014285714285714285
+CCA|first|quarter|-|none,CCA|first|quarter|-|regression,33,35,CCA,regression,3,0.06666666666666667,0.014285714285714285
 CCA|last|week|-|none,CCA|last|week|-|activity,36,37,CCA,activity,3,0.10714285714285714,0.04285714285714286
 CCA|last|week|-|none,CCA|last|week|-|regression,36,38,CCA,regression,3,0.10714285714285714,0.04285714285714286
 CCA|last|month|-|none,CCA|last|month|-|activity,39,40,CCA,activity,3,0.03571428571428571,0.014285714285714285
