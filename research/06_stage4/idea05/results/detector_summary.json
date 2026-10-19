@@ -1,0 +1,82 @@
+{
+ "features_and_rules": "Step 03: automated-account detector, calibrated on BPI 2019's publisher-labelled batch users,\nthen applied to BPI 2017.\n\nUsage:\n    python -I 03_detector.py <bpic2017.parquet> <bpic2019.parquet> <results_dir> <derived_dir>\n\nPre-specified features (written before the labels were examined):\n  f_offhours        share of events with local clock time in [20:00, 06:00) or on Sat/Sun,\n                    ignoring events stamped exactly 00:00:00 local (date-only artefacts)\n  f_multicase_burst share of events in a (resource, clock-minute) bucket touching >= 5 distinct cases\n  z_volume          robust z of log10(event count) across accounts (median, 1.4826*MAD)\nPre-specified rules:\n  R1 f_offhours >= 0.25 ; R2 f_multicase_burst >= 0.5 ; R3 z_volume >= 3.5 ; R_any = R1 or R2 or R3\nComparator: logistic regression on the three features plus log10 count, class-balanced,\nstratified 5-fold CV repeated 20 times (seed 20261015).\n\nResults (aggregate) go to results/; the per-account flag list goes to derived_dir only.\nAfter the calibration showed low per-account precision for R_any, the BPI 2017 primary exclusion\nwas set to User_1 only (recorded as a deviation in README.md); R_any and LR flag sets are sensitivities.\n",
+ "bpic2019_accounts": 627,
+ "bpic2019_batch_accounts": 20,
+ "bpic2017_application": {
+  "R1": {
+   "n_flagged": 25,
+   "events_of_flagged": 267807,
+   "share_of_events": 0.222751684941864,
+   "User_1_flagged": true,
+   "other_accounts_flagged": 24
+  },
+  "R2": {
+   "n_flagged": 0,
+   "events_of_flagged": 0,
+   "share_of_events": 0.0,
+   "User_1_flagged": false,
+   "other_accounts_flagged": 0
+  },
+  "R3": {
+   "n_flagged": 0,
+   "events_of_flagged": 0,
+   "share_of_events": 0.0,
+   "User_1_flagged": false,
+   "other_accounts_flagged": 0
+  },
+  "R_any": {
+   "n_flagged": 25,
+   "events_of_flagged": 267807,
+   "share_of_events": 0.222751684941864,
+   "User_1_flagged": true,
+   "other_accounts_flagged": 24
+  },
+  "LR": {
+   "n_flagged": 19,
+   "events_of_flagged": 243620,
+   "share_of_events": 0.2026338575374688,
+   "User_1_flagged": true,
+   "other_accounts_flagged": 18
+  }
+ },
+ "bpic2017_User_1_features": {
+  "n_events": 148404.0,
+  "f_offhours": 0.4211999595291896,
+  "f_multicase_burst": 0.21761542815557533,
+  "z_volume": 2.711401281492537
+ },
+ "bpic2017_other_accounts_feature_summary": {
+  "f_offhours": {
+   "count": 148.0,
+   "mean": 0.12493985171164367,
+   "std": 0.15136989262913308,
+   "min": 0.0,
+   "25%": 0.007033372598939828,
+   "50%": 0.07817323437734756,
+   "75%": 0.18773719246829046,
+   "max": 1.0
+  },
+  "f_multicase_burst": {
+   "count": 148.0,
+   "mean": 0.0019212482983483558,
+   "std": 0.012721922718279089,
+   "min": 0.0,
+   "25%": 0.0,
+   "50%": 0.0,
+   "75%": 0.0,
+   "max": 0.14156813939016802
+  },
+  "z_volume": {
+   "count": 148.0,
+   "mean": -0.5225675153324704,
+   "std": 1.5337514091982487,
+   "min": -6.784801169231688,
+   "25%": -1.0836714209574272,
+   "50%": -0.030907319477789505,
+   "75%": 0.5292351802232143,
+   "max": 1.2475182036187238
+  }
+ },
+ "primary_exclusion_rule_bpic2017": "User_1 only. Deviation: R_any was pre-specified as the BPI 2017 exclusion rule, but its per-account precision on BPI 2019's labelled split was low, so the plan's named system account (User_1) is the primary exclusion and the R_any set is a sensitivity.",
+ "primary_exclusion_rule_bpic2019": "publisher label (batch_*)"
+}

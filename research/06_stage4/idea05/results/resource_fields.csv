@@ -1,0 +1,5 @@
+log,kind,accounts,events,accounts_ge_100_events,median_events_per_account,max_events_per_account
+bpic2017,User_<n> pseudonym (no publisher label),149.0,1202267.0,141.0,6037.0,148404.0
+bpic2019,batch user (publisher label: automated),20.0,156187.0,15.0,2818.5,38100.0
+bpic2019,no user recorded (NONE/empty),1.0,398770.0,1.0,398770.0,398770.0
+bpic2019,normal user (publisher label: human),607.0,1040639.0,307.0,103.0,166353.0

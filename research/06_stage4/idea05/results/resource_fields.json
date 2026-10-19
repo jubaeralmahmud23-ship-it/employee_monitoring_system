@@ -1,0 +1,74 @@
+{
+ "bpic2017": {
+  "events_in_parquet": 1202267,
+  "events_after_period_filter": 1202267,
+  "period_filter": {
+   "events_read": 1202267,
+   "events_outside_period_dropped": 0,
+   "period_local": [
+    "2016-01-01",
+    "2017-02-02"
+   ]
+  },
+  "cases": 31509,
+  "distinct_resource_values_raw": 149,
+  "distinct_resource_values_after_filter": 149,
+  "resource_attribute_columns": [
+   "org:resource"
+  ],
+  "lifecycle_values": {
+   "complete": 475306,
+   "suspend": 215402,
+   "schedule": 149104,
+   "start": 128227,
+   "resume": 127160,
+   "ate_abort": 85224,
+   "withdraw": 21844
+  },
+  "timestamp_min_utc": "2016-01-01 09:51:15.304000+00:00",
+  "timestamp_max_utc": "2017-02-01 14:11:03.499000+00:00",
+  "share_timestamps_with_nonzero_seconds": 0.9839603016634408,
+  "top_account_share_of_events": 0.12343680729821246,
+  "top_account_is": "User_<n> pseudonym (no publisher label)",
+  "User_1_events": 148404,
+  "User_1_share_of_events": 0.12343680729821246,
+  "User_1_top_activities": {
+   "W_Handle leads": 37453,
+   "A_Create Application": 20423,
+   "A_Submitted": 20423,
+   "W_Complete application": 17120,
+   "A_Concept": 16997,
+   "W_Call after offers": 15822,
+   "O_Cancelled": 9982,
+   "A_Cancelled": 7953
+  }
+ },
+ "bpic2019": {
+  "events_in_parquet": 1595923,
+  "events_after_period_filter": 1595596,
+  "period_filter": {
+   "events_read": 1595923,
+   "events_outside_period_dropped": 327,
+   "period_local": [
+    "2018-01-01",
+    "2019-02-01"
+   ]
+  },
+  "cases": 251734,
+  "distinct_resource_values_raw": 628,
+  "distinct_resource_values_after_filter": 628,
+  "resource_attribute_columns": [
+   "User",
+   "org:resource"
+  ],
+  "lifecycle_values": {
+   "(no lifecycle attribute)": 1595923
+  },
+  "timestamp_min_utc": "1948-01-26 22:59:00+00:00",
+  "timestamp_max_utc": "2020-04-09 21:59:00+00:00",
+  "share_timestamps_with_nonzero_seconds": 0.0,
+  "top_account_share_of_events": 0.24991915246716587,
+  "top_account_is": "no user recorded (NONE/empty)",
+  "User_column_equals_org_resource_share": 1.0
+ }
+}
