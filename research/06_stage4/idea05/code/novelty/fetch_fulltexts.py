@@ -23,7 +23,7 @@ import sys
 import time
 import urllib.parse
 
-UA_POLITE = "idea05-novelty-check/1.0 (mailto:jubaeralmahmud23@gmail.com)"
+UA_POLITE = "idea05-novelty-check/1.0 (academic use; contact via repository owner)"
 UA_BROWSER = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36"
 
 # key, url, kind (pdf|html), user agent, DOI of the work
@@ -130,7 +130,7 @@ def main():
     crow = []
     dois = [t[4] for t in TARGETS] + CROSSREF_ONLY
     for doi in dois:
-        url = "https://api.crossref.org/works/" + urllib.parse.quote(doi) + "?mailto=jubaeralmahmud23@gmail.com"
+        url = "https://api.crossref.org/works/" + urllib.parse.quote(doi)
         dest = os.path.join(root, "crossref_" + doi.replace("/", "_") + ".json")
         code, ct, final, err = curl(url, UA_POLITE, dest)
         time.sleep(1.5)

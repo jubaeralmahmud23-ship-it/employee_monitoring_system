@@ -30,8 +30,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
-MAILTO = "jubaeralmahmud23@gmail.com"
-UA = "idea05-novelty-check/1.0 (mailto:%s)" % MAILTO
+UA = "idea05-novelty-check/1.0 (academic use; contact via repository owner)"
 PACE = 3.5
 BACKOFF = [30, 45, 60]
 
@@ -46,6 +45,11 @@ SEEDS = [
 ]
 
 _last = [0.0]
+# OpenAlex answered list queries on 2026-10-19 with HTTP 429 "Insufficient budget ... free
+# daily budget shared by everyone on your network's IP address ... resets at midnight UTC".
+# Once that message is seen, retrying within the run cannot succeed, so later OpenAlex list
+# legs are recorded as 'not done' without further calls.
+OA_BUDGET = {"exhausted": False, "retry_after": ""}
 
 
 def get(url):
@@ -64,6 +68,15 @@ def get(url):
             status = e.code
             if e.code == 404:
                 return 404, None, i + 1
+            if e.code == 429 and "openalex" in url:
+                try:
+                    txt = e.read().decode("utf-8", "replace")
+                except Exception:
+                    txt = ""
+                if "Insufficient budget" in txt:
+                    OA_BUDGET["exhausted"] = True
+                    OA_BUDGET["retry_after"] = e.headers.get("retry-after", "")
+                    return "429-budget-exhausted", None, i + 1
         except Exception as e:
             status = "ERR:" + type(e).__name__
         if i < 2:
@@ -85,6 +98,7 @@ class Run:
     def __init__(self, raw, res):
         self.raw, self.res = raw, res
         self.log, self.summary, self.works = [], [], []
+        self.s2_note = {}
         self.abs_f = open(os.path.join(raw, "abstracts.jsonl"), "w", encoding="utf-8")
 
     def save(self, name, body):
@@ -101,7 +115,7 @@ class Run:
     # ---------------- OpenAlex ----------------
     def oa_lookup(self, key, doi):
         url = ("https://api.openalex.org/works/doi:" + urllib.parse.quote(doi)
-               + "?select=id,display_name,publication_year,referenced_works,cited_by_count&mailto=" + MAILTO)
+               + "?select=id,display_name,publication_year,referenced_works,cited_by_count")
         st, body, n = get(url)
         self.log.append([key, "lookup", "OpenAlex", url, st, n])
         if body is None:
@@ -112,9 +126,13 @@ class Run:
     def oa_list(self, key, direction, filt):
         got, cursor, page = 0, "*", 0
         sel = "id,doi,display_name,publication_year,primary_location,abstract_inverted_index"
+        if OA_BUDGET["exhausted"]:
+            self.log.append([key, direction, "OpenAlex", "(skipped: daily budget exhausted earlier in run)",
+                             "429-budget-exhausted", 0])
+            return None
         while cursor and page < 20:
             url = ("https://api.openalex.org/works?filter=" + filt + "&select=" + sel
-                   + "&per-page=200&cursor=" + urllib.parse.quote(cursor) + "&mailto=" + MAILTO)
+                   + "&per-page=200&cursor=" + urllib.parse.quote(cursor))
             st, body, n = get(url)
             self.log.append([key, direction, "OpenAlex", url[:220], st, n])
             if body is None:
@@ -157,6 +175,10 @@ class Run:
                 return None if got == 0 else got
             self.save(f"s2_{key}_{ep}_{offset}.json", body)
             d = json.loads(body)
+            if d.get("data") is None:
+                # Semantic Scholar elides the list when the publisher restricts it
+                self.s2_note[(key, direction)] = "list elided by publisher (data: null)"
+                return None if got == 0 else got
             for row in d.get("data", []):
                 p = row.get(field) or {}
                 ext = p.get("externalIds") or {}
@@ -173,7 +195,7 @@ class Run:
 
     # ---------------- Crossref reference list ----------------
     def crossref_refs(self, key, doi):
-        url = "https://api.crossref.org/works/" + urllib.parse.quote(doi) + "?mailto=" + MAILTO
+        url = "https://api.crossref.org/works/" + urllib.parse.quote(doi)
         st, body, n = get(url)
         self.log.append([key, "backward", "Crossref", url, st, n])
         if body is None:
@@ -196,14 +218,23 @@ class Run:
                     refs = w.get("referenced_works") or []
                     g = self.oa_refs(key, refs) if refs else 0
                     self.summary.append([key, doi, leg, "OpenAlex",
-                                         ("done (%d referenced_works)" % len(refs)) if g is not None else "not done", g if g is not None else ""])
+                                         ("done (%d referenced_works)" % len(refs)) if g is not None
+                                         else ("not done (HTTP 429 daily budget exhausted; %d referenced_works ids known from the free lookup)"
+                                               % len(refs) if OA_BUDGET["exhausted"] else "not done"),
+                                         g if g is not None else ""])
                 else:
                     short = w["id"].rsplit("/", 1)[-1]
                     g = self.oa_list(key, "forward", "cites:" + short)
                     self.summary.append([key, doi, leg, "OpenAlex",
-                                         ("done (cited_by_count=%s)" % w.get("cited_by_count")) if g is not None else "not done", g if g is not None else ""])
+                                         ("done (cited_by_count=%s)" % w.get("cited_by_count")) if g is not None
+                                         else ("not done (HTTP 429 daily budget exhausted; retry-after %s s; cited_by_count=%s)"
+                                               % (OA_BUDGET["retry_after"], w.get("cited_by_count")) if OA_BUDGET["exhausted"] else "not done"),
+                                         g if g is not None else ""])
                 g = self.s2(key, doi, leg)
-                self.summary.append([key, doi, leg, "SemanticScholar", "done" if g is not None else "not done", g if g is not None else ""])
+                note = self.s2_note.get((key, leg), "")
+                self.summary.append([key, doi, leg, "SemanticScholar",
+                                     "done" if g is not None else ("not done (%s)" % note if note else "not done"),
+                                     g if g is not None else ""])
                 if leg == "backward":
                     g = self.crossref_refs(key, doi)
                     self.summary.append([key, doi, leg, "Crossref", "done" if g is not None else "not done", g if g is not None else ""])
