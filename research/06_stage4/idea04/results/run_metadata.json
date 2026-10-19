@@ -1,5 +1,5 @@
 {
-  "run_utc": "2026-10-19T05:07:22Z",
+  "run_utc": "2026-10-19T05:08:27Z",
   "python": "3.11.15",
   "platform": "Linux-6.18.44-fc-v139-x86_64-with-glibc2.39",
   "numpy": "2.4.6",
@@ -51,15 +51,15 @@
   },
   "ratios_union_computed": 2661,
   "timings_seconds": {
-    "load_profile": 0.316,
-    "tables_dedup_consistency": 2.529,
-    "ratios_statistics": 25.384,
-    "tabulations": 0.72,
-    "funnel_dedup_consistency_comparator": 2.655,
-    "excluded_population": 1.244,
-    "extras": 0.048,
-    "osf_crosscheck": 0.576,
-    "stopping_rule_meta": 0.058
+    "load_profile": 0.22,
+    "tables_dedup_consistency": 2.52,
+    "ratios_statistics": 23.554,
+    "tabulations": 0.662,
+    "funnel_dedup_consistency_comparator": 2.621,
+    "excluded_population": 1.025,
+    "extras": 0.04,
+    "osf_crosscheck": 0.746,
+    "stopping_rule_meta": 0.061
   },
   "stopping_rule": {
     "rule_text": "stop Part 1 if the ACLU code already computes sampling intervals or if, after de-duplication, more than about 80% of employer-level ratios have 95% intervals excluding 0.8",
@@ -168,5 +168,5 @@
     },
     "note": "E1 was fixed as primary before any result was computed. E4/E5/E5s/M are POST HOC sets added after the audit reports were found to state multi-employer pooled data for most employer-posted DCI/HireVue, NBCUniversal, BNP Paribas and Sheppard Mullin audits; they are reported, not substituted."
   },
-  "total_seconds": 33.529
+  "total_seconds": 31.448
 }
