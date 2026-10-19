@@ -1,0 +1,29 @@
+{
+ "pilot_id": "A10",
+ "key": "2024.naacl-industry.7",
+ "I0": {"value": "Y", "reason": "T5-initialised multimodal encoder-decoder transformer (MQMA) evaluated on OCR-VQA, TextVQA, ST-VQA and DocVQA against an in-house single-question baseline (SQSA, DocFormerv2-style) and published systems", "loc": "§5 p.6-7; Tables 2-5"},
+ "encoder_only": false,
+ "items": {
+  "1_n_items": {"value": "Y", "unit": "items (questions) clustered within images (OCR-VQA test: 20.8K images / 100.4K questions)", "loc": "Table 7 p.11 (App. B)"},
+  "2a_runs": {"value": "N", "loc": "Tables 2-5 single values; keyword scan"},
+  "2b_seeds": {"value": "N", "loc": "keyword scan"},
+  "3_decoding": {"value": "N", "loc": "App. C p.11-12: answer decoding (greedy/beam) not stated; keyword scan 'beam|greedy|temperature': none"},
+  "4_model_version": {"value": "P", "loc": "App. C p.11: initialised from T5 pre-trained weights (small/base/large), DocFormerv2 pre-training; comparator 'GPT4' in Table 4 p.7 without version"},
+  "5_prompts": {"value": "P", "loc": "§3.2 Prompt-Based Decoder p.4: question/answer prompt format described; full input templates not listed"},
+  "6_uncertainty": {"value": "N", "loc": "Tables 2-6 point values; keyword scan"},
+  "7_llm_judge": {"value": "N", "loc": "VQA accuracy and ANLS against ground truth (§5.1 p.6)"},
+  "8_judge_human_validation": {"value": "NA", "loc": ""},
+  "9a_agreement_metric": {"value": "NA", "loc": ""},
+  "9b_chance_corrected": {"value": "NA", "loc": ""},
+  "10_contamination": {"value": "N", "loc": "§5.2 p.6 and App. F discuss question-to-answer leakage inside multi-question inputs, not training-data overlap; pre-training on 64M IDL documents (p.6) is not checked against DocVQA, whose documents also come from the UCSF Industry Documents Library"},
+  "11a_code": {"value": "N", "loc": "keyword scan: no repository link"},
+  "11b_data": {"value": "Y", "loc": "public benchmarks (§5.1 p.6)"}
+ },
+ "headline": {
+  "H1": {"sentence": "on OCR-VQA (+2.5%) ... absolute improvements over the previous state-of-the-art approaches (Table 2: MQMA-large 74.0% vs SQSA-large 71.5% test accuracy)", "loc": "abstract p.1; §5.2 p.6; Table 2 p.6", "metric": "test accuracy (%)", "A": "MQMA-large", "A_value": "74.0", "B": "SQSA-large (previous SOTA, Appalaraju et al. 2024)", "B_value": "71.5", "n": "100400", "n_unit": "items (questions; 100.4K over 20.8K test images)", "n_loc": "Table 7 p.11", "structure": "paired (same items) and clustered: questions within images", "cluster_m": "4.83", "runs": "1", "run_sd": ""},
+  "H2": "MQMA achieves state-of-the-art results on four text-VQA datasets (abstract)",
+  "H3_n_extractable": "Y",
+  "H4_acc_extractable": "Y"
+ },
+ "notes": "Cluster size m = 100.4K / 20.8K = 4.83 questions per image (Table 7); the paper answers 5 questions per image at a time. Encoder-decoder (T5) rather than a decoder-only LLM: included under the pilot's reading of 'LLM-based'."
+}

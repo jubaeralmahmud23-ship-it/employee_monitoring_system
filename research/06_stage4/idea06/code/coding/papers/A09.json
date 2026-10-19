@@ -1,0 +1,29 @@
+{
+ "pilot_id": "A09",
+ "key": "2025.emnlp-industry.146",
+ "I0": {"value": "Y", "reason": "Inference-time method (CaR) for large reasoning models (DeepSeek-R1-Distill-Qwen 1.5B/7B/14B, QwQ-32B) evaluated on MATH-500, AMC-2023, GPQA-Diamond and AIME 2023-2025 against plain CoT", "loc": "§4 p.5-6; Table 1 p.5"},
+ "encoder_only": false,
+ "items": {
+  "1_n_items": {"value": "P", "unit": "items (problems)", "loc": "§4.1 p.5 and App. B.2 p.11: benchmarks named, sizes not stated; MATH-500 is a 'filtered subset' of unstated size"},
+  "2a_runs": {"value": "N", "loc": "Table 1 single values; keyword scan"},
+  "2b_seeds": {"value": "N", "loc": "keyword scan"},
+  "3_decoding": {"value": "Y", "loc": "App. B.4 p.11: 'greedy decoding with a maximum generation length of 16,384 tokens ... temperature is set to 0.6' (internally inconsistent: greedy vs temperature 0.6); resampling at 0.7, K = 3"},
+  "4_model_version": {"value": "Y", "loc": "§4.1 p.5: DeepSeek-R1-Distill-Qwen-1.5B/7B/14B, QwQ-32B"},
+  "5_prompts": {"value": "N", "loc": "'consistent CoT-style prompts' (App. B.1 p.11) and 'zero-shot chain-of-thought prompting setup' (p.5); prompt text not given"},
+  "6_uncertainty": {"value": "N", "loc": "Tables 1-4 point values; keyword scan"},
+  "7_llm_judge": {"value": "N", "loc": "exact-match accuracy (App. B.3 p.11)"},
+  "8_judge_human_validation": {"value": "NA", "loc": ""},
+  "9a_agreement_metric": {"value": "NA", "loc": ""},
+  "9b_chance_corrected": {"value": "NA", "loc": ""},
+  "10_contamination": {"value": "N", "loc": "not discussed (keyword scan), although AIME 2023/2024 predate the evaluated models"},
+  "11a_code": {"value": "N", "loc": "keyword scan: no repository link"},
+  "11b_data": {"value": "P", "loc": "public benchmarks; the filtered MATH-500 subset is not specified or released"}
+ },
+ "headline": {
+  "H1": {"sentence": "CaR improves answer accuracy by up to +13.3% (abstract); 'On challenging datasets like GPQA-Diamond and AIME-2025, CaR improves performance by up to +13.3' (§4.2)", "loc": "abstract p.1; §4.2 p.5; Table 1 p.5 (Distill-Qwen-14B, AIME-2025)", "metric": "exact-match accuracy (%)", "A": "CaR (Distill-Qwen-14B)", "A_value": "53.3", "B": "CoT-Raw (Distill-Qwen-14B)", "B_value": "40.0", "n": "30", "n_unit": "items (AIME 2025 I+II problems; not stated in the paper; values are k/30: 16/30 and 12/30)", "n_loc": "not in paper", "structure": "paired (same items)", "cluster_m": "", "runs": "1", "run_sd": ""},
+  "H2": "CaR improves accuracy while reducing reasoning length by 40-50% (abstract; §4.2 p.5)",
+  "H3_n_extractable": "P",
+  "H4_acc_extractable": "Y"
+ },
+ "notes": "'Up to +13.3' in the abstract matches two cells (14B AIME-2025; QwQ-32B AIME-2024); Table 1 also contains +15.0 (7B AMC-2023), so the abstract's maximum refers to the 'challenging datasets' named in §4.2. Some values are not consistent with the standard benchmark sizes (QwQ-32B AIME-2023 69.7 is not k/30; GPQA 5.7 is not k/198), which suggests averaging or different n; not resolvable from the paper."
+}

@@ -1,0 +1,30 @@
+{
+ "pilot_id": "A08",
+ "key": "2026.acl-industry.12",
+ "I0": {"value": "Y", "reason": "New document-packet-splitting benchmark (five variants) on which multimodal LLMs (Claude Sonnet/Haiku 4.5, DeepSeek V3.1, Gemma 3 27B, Qwen 3 VL 235B) are evaluated", "loc": "§7-8 p.5-6; Table 2 p.6"},
+ "encoder_only": false,
+ "items": {
+  "1_n_items": {"value": "P", "unit": "packets (pages clustered within packets)", "loc": "Table 8 p.15: test packets per variant (Small: 500 each; Large: 96-500) with pages per packet; Table 2 does not say whether Small or Large variants were evaluated"},
+  "2a_runs": {"value": "N", "loc": "Table 2 single values; keyword scan"},
+  "2b_seeds": {"value": "N", "loc": "keyword scan (randomised page orders: seed not stated)"},
+  "3_decoding": {"value": "Y", "loc": "§7 p.5: temperature 0.0, top-p 0.1, top-k 5, max 4,096 tokens; Table 10 p.17"},
+  "4_model_version": {"value": "P", "loc": "§7 p.5, Table 2 p.6: Gemma 3 27B, Qwen 3 VL 235B, DeepSeek V3.1 (specific); Claude Sonnet 4.5 and Claude Haiku 4.5 without snapshot or access date"},
+  "5_prompts": {"value": "Y", "loc": "App. D Tables 11-14 p.17-18: system and task prompts"},
+  "6_uncertainty": {"value": "N", "loc": "Tables 2, 4-6 point values; keyword scan"},
+  "7_llm_judge": {"value": "N", "loc": "§7 p.5: clustering/ordering and exact-match metrics against ground truth"},
+  "8_judge_human_validation": {"value": "NA", "loc": ""},
+  "9a_agreement_metric": {"value": "NA", "loc": ""},
+  "9b_chance_corrected": {"value": "NA", "loc": ""},
+  "10_contamination": {"value": "P", "loc": "new packets assembled from public document corpora (UCSF Industry Documents, App. p.14-15); 'leakage' refers to train/test splitting only (p.4, p.14); pretraining exposure not discussed"},
+  "11a_code": {"value": "Y", "loc": "§9 p.6: release of 'all datasets, evaluation code, and experimental configurations'; GitHub link p.19"},
+  "11b_data": {"value": "Y", "loc": "p.1 footnote: datasets released (Hugging Face)"}
+ },
+ "headline": {
+  "H1": {"sentence": "Qwen 3 consistently achieves the highest Packet scores (0.9238 - 0.9492) ... Claude Sonnet, Claude Haiku, and DeepSeek form a competitive second tier (Packet >0.90)", "loc": "§8 p.5 with Table 2 p.6 (the abstract has no numeric comparison)", "metric": "Packet score (composite of V-measure, Rand index and Kendall tau)", "A": "Qwen 3 VL 235B (DocSplit-Mono-Seq)", "A_value": "0.9395", "B": "Claude Sonnet 4.5 (DocSplit-Mono-Seq)", "B_value": "0.9251", "n": "", "n_unit": "packets; 500 (Small) or 102 (Large) test packets for Mono-Seq, variant not stated", "n_loc": "Table 8 p.15", "structure": "paired (same packets); pages clustered within packets", "cluster_m": "13.31 (Small) or 54.89 (Large) pages per packet", "runs": "1", "run_sd": ""},
+  "H1_alt_cell": {"sentence": "Table 2, DocSplit-Mono-Seq: Page-level accuracy Qwen 3 VL 235B 0.8418 vs Claude Sonnet 4.5 0.8239", "metric": "page-level classification accuracy", "A_value": "84.18", "B_value": "82.39", "n": "6655 pages if Small (500 packets x 13.31); 5599 if Large (102 x 54.89)", "n_loc": "Table 8 p.15 (variant assumed)", "structure": "clustered: pages within packets", "cluster_m_small": "13.31", "cluster_m_large": "54.89"},
+  "H2": "Document boundary detection is the primary bottleneck (clustering scores 0.56-0.90) (§8-9 p.5-6)",
+  "H3_n_extractable": "P",
+  "H4_acc_extractable": "P"
+ },
+ "notes": "The only pilot paper whose design reports a cluster structure (pages within packets, pages per packet in Table 8); used for the clustered model under both Small and Large assumptions."
+}
