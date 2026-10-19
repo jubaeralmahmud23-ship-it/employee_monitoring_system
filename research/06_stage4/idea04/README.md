@@ -103,10 +103,10 @@ All code is in `code/`, run by `code/run.sh` with the venv interpreter in isolat
    - *Sample:* 20 rows (pandas `sample`, seed 20261015).
    - *Comparison:* reported impact ratios at the common precision (the OSF CSV has no counts), plus a search for the ACLU N in the `pdftotext -layout` text of the employer PDF in the OSF zip. A row is "not checkable" when N is 0 or the PDF text layer has fewer than 1,000 characters.
 10. **Validation** (`code/validate_methods.py`, `results/method_validation.csv`):
-    - Katz bounds equal `scipy.stats.contingency.relative_risk(...).confidence_interval` (max abs difference 0 to 2e-15 on five count pairs).
+    - Katz bounds equal `scipy.stats.contingency.relative_risk(...).confidence_interval` (max abs difference 1.8e-15 on five count pairs).
     - Clopper-Pearson-Bonferroni lower bounds equal ratios of `scipy.stats.binomtest(...).proportion_ci(method='exact')` bounds (max 1.9e-13).
     - Monte Carlo coverage at a true ratio of exactly 0.8 (5 settings, N_g from 10 to 5,000, 1,000 replicates each, data seed 20261016): Katz 0.945-0.956, Clopper-Pearson-Bonferroni 0.996-1.000, bootstrap 0.914-0.957 (under-covers at N_g = 10), Jeffreys 0.937-0.957.
-    - One ratio was also checked by hand against the pipeline output (agreement to 6 decimals).
+    - In the same simulation, the point ratio was 0.8 or above in 47.3-51.6% of replicates although the true ratio was 0.8 (descriptive; a preview of Part 2).
 
 ## 5. Results
 
@@ -221,7 +221,7 @@ Jeffreys posterior P(ratio < 0.8) (`results/posterior_bands.csv`):
 **Counts are mostly derived** (`results/consistency_summary.csv`; known groups with N > 0, all rate definitions, HackerRank excluded):
 - Of 3,144 rows with a selected count, only **552 (17.6%) hold integer counts**.
 - 2,592 hold non-integer counts, of which 2,588 equal N x reported rate to within 1e-6, i.e. they were derived from a rounded rate.
-- The consistency filter is therefore informative only for the integer rows. 13 of those fail, plus 3 derived rows; 5 pass only under the lenient tolerance.
+- The consistency filter is therefore informative only for the integer rows. 16 rows fail (13 with integer counts, 3 derived) and 5 pass only under the lenient tolerance.
 - By auditor, DCI has 139 integer and 2,104 derived counts; BABL AI has 2 and 113.
 
 **Reporting precision** (`results/extra_rounding_vs_sampling.csv`, an addition to the plan): for ratios with derived counts, the interval implied by rounding the published rates is narrower than the Katz interval in most cases.
@@ -299,13 +299,13 @@ The 2% exclusion removes little: the largest sub-2% share of known applicants in
 - **Software:** Python 3.11.15, numpy 2.4.6, pandas 3.0.6, scipy 1.17.1 (venv `$SCRATCH/venv`); pdftotext 24.02.0 (poppler); Linux 6.18.44 x86_64 (`results/run_metadata.json`). No package was installed for this pilot. The pilot uses only the standard library, numpy, scipy, pandas and the `pdftotext` binary.
 - **Seeds:** bootstrap 20261015 (`np.random.default_rng(20261015)`, ratios processed in sorted order); Jeffreys posterior `default_rng([20261015, 1])`; OSF sample `random_state=20261015`; validation data 20261016.
 - **Determinism:** a second independent run of the pilot into a scratch directory reproduced all 25 CSV outputs byte for byte.
-- **Timings:** pilot 33.5 s in total, of which 25.4 s is the interval computation for 2,661 ratios (union over all variants). `run.sh` wall-clock 55 s including validation (about 21 s). Run at 2026-10-19 05:07 UTC.
-- **Code checksums (sha256):**
+- **Timings (final run, 2026-10-19 05:08:27 UTC):** pilot 31.4 s in total, of which 23.6 s is the interval computation for 2,661 ratios (union over all variants) (`results/run_metadata.json`). `run.sh` wall-clock 55 s including the code scan and the validation script (last line of `$SCRATCH/idea04_run.log`).
+- **Code checksums (sha256) as used for the final run:**
   - `ll144_pilot.py`: `2fc5e8ae73d5d785cc013d9f538df54edb8c1094c4cb40eb2bdfb780e064e5d3`
-  - `check_aclu_code.py`: `f945fb8c...e064e5d3`
-  - `validate_methods.py`: `ae8a9861...18c1363`
-  - `data_scope_coding.csv`: `cd439e79...0fd2207`
-  - `run.sh`: `b8d3c539...18c1363` (as of the final run; recompute with `sha256sum code/*`)
+  - `check_aclu_code.py`: `f945fb8c3fb4195cb245ae262c6d625fa25f39d4ae552f6827647bcf0aa42298`
+  - `validate_methods.py`: `ae8a98610c618c782de555061e49e41c8603c1875f1a30589cd16ea3e18c1363`
+  - `data_scope_coding.csv`: `cd439e79364b2296464b3ea4fe890e7753b8e2508eee2f2c2181fb3de0fd2207`
+  - `run.sh`: `b8d3c539c1a1ae4ab6ee9a31041241e381527167b90c6f67a7a5cedd3fb4715e`
 - **Input checksums:** section 2.
 
 ## 7. Deviations from the written plan
@@ -313,7 +313,7 @@ The 2% exclusion removes little: the largest sub-2% share of known applicants in
 1. **De-duplication operationalised.** The plan's key (auditor, tool, data window) was applied at table level and confirmed by identical counts.
    - The key alone cannot be applied to tables with unknown windows (only 4,004 of 4,507 rows have dates).
    - It merges same-window tables whose counts differ: 87 tables would be dropped by the literal key versus 49 by the confirmed rule.
-   - It misses identical tables recorded with different windows: 14 of the 49 duplicates.
+   - It misses 14 of the 49 identical-count duplicates, which do not share the key (`results/dedup_summary.csv`): 10 DCI/HireVue tables recorded with different windows, 3 ZoomInfo tables under a different auditor label, and 1 Alidoro/Landed table with unknown windows.
    - The literal key is reported as sensitivity S2 (60.1%, Katz).
 2. **"Employer-level" operationalised as employer-posted (E1) before any result was computed.** After the first run, reading the reports showed most employer-posted DCI/HireVue, NBCUniversal, BNP Paribas and Sheppard Mullin audits use multi-employer data.
    - Post-hoc sets E4, E5, E5b and M were added and are labelled POSTHOC in every output.
