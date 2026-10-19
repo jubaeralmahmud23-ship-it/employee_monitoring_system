@@ -46,6 +46,8 @@ KEYWORDS = re.compile(
 
 UA = {"User-Agent": "stage4-novelty-check/1.0 (research script; no contact)"}
 _last_call = {}
+_exhausted = {}  # service -> True once a 429 says the daily budget is used up
+REUSE_DIR = None
 
 
 def paced_get(service, url, params=None):
@@ -61,6 +63,8 @@ def paced_get(service, url, params=None):
     except requests.RequestException as exc:  # network failure counts as an attempt
         return f"error:{type(exc).__name__}", None
     if r.status_code != 200:
+        if r.status_code == 429 and "Insufficient budget" in r.text:
+            _exhausted[service] = True
         return str(r.status_code), None
     try:
         return "200", r.json()
@@ -69,7 +73,20 @@ def paced_get(service, url, params=None):
 
 
 def leg(service, fetch, raw_dir, name):
-    """Run one leg with at most 3 attempts; back off 30-60 s on 429."""
+    """Run one leg with at most 3 attempts; back off 30-60 s on 429.
+
+    Reuses a raw JSON saved by an earlier run (REUSE_DIR) instead of calling the API again.
+    Stops early when the service has reported that its daily budget is exhausted."""
+    if REUSE_DIR:
+        cached = os.path.join(REUSE_DIR, f"{name}.json")
+        if os.path.exists(cached):
+            with open(cached, encoding="utf-8") as fh:
+                payload = json.load(fh)
+            with open(os.path.join(raw_dir, f"{name}.json"), "w", encoding="utf-8") as fh:
+                json.dump(payload, fh)
+            return "200 (reused from earlier run)", 0, payload
+    if _exhausted.get(service):
+        return "429 daily budget exhausted (not retried)", 0, None
     attempts = 0
     status = "not run"
     payload = None
@@ -77,6 +94,9 @@ def leg(service, fetch, raw_dir, name):
         attempts += 1
         status, payload = fetch()
         if status == "200":
+            break
+        if _exhausted.get(service):
+            status = "429 daily budget exhausted"
             break
         if status == "429":
             time.sleep(random.uniform(30, 60))
@@ -125,22 +145,21 @@ def openalex_forward(doi, raw_dir, name):
 
 
 def openalex_backward(seed, raw_dir, name):
+    # Single-entity look-ups (the list endpoint was refused on 2026-10-19 with a daily-budget 429).
     refs = seed.get("referenced_works", []) if seed else []
     works = []
     tot = 0
-    for i in range(0, len(refs), 50):
-        chunk = "|".join(r.rsplit("/", 1)[-1] for r in refs[i:i + 50])
-        st, att, js = leg("openalex", lambda c=chunk: paced_get(
-            "openalex", "https://api.openalex.org/works",
-            {"filter": f"openalex:{c}", "per-page": "50", "select": "id,doi,display_name,publication_year"}),
-            raw_dir, f"{name}_refs_{i}")
+    for r in refs:
+        wid = r.rsplit("/", 1)[-1]
+        st, att, js = leg("openalex", lambda w=wid: paced_get(
+            "openalex", f"https://api.openalex.org/works/{w}", {"select": "id,doi,display_name,publication_year"}),
+            raw_dir, f"{name}_ref_{wid}")
         tot += att
         if js is None:
-            return f"partial ({st})", tot, works
-        for w in js.get("results", []):
-            works.append({"title": w.get("display_name"), "year": w.get("publication_year"),
-                          "doi": w.get("doi"), "venue": None, "id": w.get("id")})
-    return ("done" if refs else "done (0 referenced_works deposited)"), tot, works
+            return f"partial ({st}; {len(works)} of {len(refs)} resolved)", tot, works
+        works.append({"title": js.get("display_name"), "year": js.get("publication_year"),
+                      "doi": js.get("doi"), "venue": None, "id": js.get("id")})
+    return ("done" if refs else "done (0 referenced_works in OpenAlex record)"), tot, works
 
 
 def s2_leg(pid, direction, raw_dir, name):
@@ -152,7 +171,9 @@ def s2_leg(pid, direction, raw_dir, name):
     if js is None:
         return f"not done ({st} x{att})", att, []
     works = []
-    for item in js.get("data", []):
+    if js.get("data") is None:
+        return "done (S2 returned data=null: list withheld for this paper)", att, []
+    for item in js.get("data") or []:
         p = item.get(key) or {}
         ext = p.get("externalIds") or {}
         works.append({"title": p.get("title"), "year": p.get("year"), "doi": ext.get("DOI"),
@@ -181,7 +202,10 @@ def main():
     ap.add_argument("--log", required=True)
     ap.add_argument("--hits", required=True)
     ap.add_argument("--only", default="", help="comma-separated seed keys to run (default all)")
+    ap.add_argument("--reuse-dir", default="", help="raw-JSON directory of an earlier run to reuse")
     args = ap.parse_args()
+    global REUSE_DIR
+    REUSE_DIR = args.reuse_dir or None
     os.makedirs(args.raw_dir, exist_ok=True)
     random.seed(20261019)
     only = set(filter(None, args.only.split(",")))

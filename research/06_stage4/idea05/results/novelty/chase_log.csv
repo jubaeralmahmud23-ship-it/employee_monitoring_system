@@ -1,0 +1,21 @@
+seed,direction,tool,url,http_status,attempts
+pika2017,lookup,OpenAlex,"https://api.openalex.org/works/doi:10.1145/3041218?select=id,display_name,publication_year,referenced_works,cited_by_count",200,1
+pika2017,forward,OpenAlex,"https://api.openalex.org/works?filter=cites:W2601883314&select=id,doi,display_name,publication_year,primary_location,abstract_inverted_index&per-page=200&cursor=%2A",429-budget-exhausted,1
+pika2017,forward,SemanticScholar,"https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3041218/citations?fields=title,abstract,year,venue,externalIds&limit=500&offset=0",200,1
+martin_beerepoot2024,lookup,OpenAlex,"https://api.openalex.org/works/doi:10.1007/s12599-024-00894-3?select=id,display_name,publication_year,referenced_works,cited_by_count",200,1
+martin_beerepoot2024,backward,OpenAlex,(skipped: daily budget exhausted earlier in run),429-budget-exhausted,0
+martin_beerepoot2024,backward,SemanticScholar,"https://api.semanticscholar.org/graph/v1/paper/DOI:10.1007/s12599-024-00894-3/references?fields=title,abstract,year,venue,externalIds&limit=500&offset=0",200,2
+martin_beerepoot2024,backward,Crossref,https://api.crossref.org/works/10.1007/s12599-024-00894-3,200,1
+saisana2005,lookup,OpenAlex,"https://api.openalex.org/works/doi:10.1111/j.1467-985x.2005.00350.x?select=id,display_name,publication_year,referenced_works,cited_by_count",200,1
+saisana2005,forward,OpenAlex,(skipped: daily budget exhausted earlier in run),429-budget-exhausted,0
+saisana2005,forward,SemanticScholar,"https://api.semanticscholar.org/graph/v1/paper/DOI:10.1111/j.1467-985x.2005.00350.x/citations?fields=title,abstract,year,venue,externalIds&limit=500&offset=0",200,1
+saisana2005,forward,SemanticScholar,"https://api.semanticscholar.org/graph/v1/paper/DOI:10.1111/j.1467-985x.2005.00350.x/citations?fields=title,abstract,year,venue,externalIds&limit=500&offset=500",200,2
+adams2010,lookup,OpenAlex,"https://api.openalex.org/works/doi:10.1056/nejmsa0906323?select=id,display_name,publication_year,referenced_works,cited_by_count",200,1
+adams2010,forward,OpenAlex,(skipped: daily budget exhausted earlier in run),429-budget-exhausted,0
+adams2010,forward,SemanticScholar,"https://api.semanticscholar.org/graph/v1/paper/DOI:10.1056/nejmsa0906323/citations?fields=title,abstract,year,venue,externalIds&limit=500&offset=0",200,1
+nakatumba2010,lookup,OpenAlex,"https://api.openalex.org/works/doi:10.1007/978-3-642-12186-9_8?select=id,display_name,publication_year,referenced_works,cited_by_count",200,1
+nakatumba2010,forward,OpenAlex,(skipped: daily budget exhausted earlier in run),429-budget-exhausted,0
+nakatumba2010,forward,SemanticScholar,"https://api.semanticscholar.org/graph/v1/paper/DOI:10.1007/978-3-642-12186-9_8/citations?fields=title,abstract,year,venue,externalIds&limit=500&offset=0",200,1
+pika2014_extra,lookup,OpenAlex,"https://api.openalex.org/works/doi:10.1007/978-3-319-07881-6_38?select=id,display_name,publication_year,referenced_works,cited_by_count",200,1
+pika2014_extra,forward,OpenAlex,(skipped: daily budget exhausted earlier in run),429-budget-exhausted,0
+pika2014_extra,forward,SemanticScholar,"https://api.semanticscholar.org/graph/v1/paper/DOI:10.1007/978-3-319-07881-6_38/citations?fields=title,abstract,year,venue,externalIds&limit=500&offset=0",200,1

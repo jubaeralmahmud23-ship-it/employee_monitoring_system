@@ -1,0 +1,14 @@
+seed,doi,direction,tool,status,n_works
+pika2017,10.1145/3041218,forward,OpenAlex,not done (HTTP 429 daily budget exhausted; retry-after 63964 s; cited_by_count=66),
+pika2017,10.1145/3041218,forward,SemanticScholar,done,62
+martin_beerepoot2024,10.1007/s12599-024-00894-3,backward,OpenAlex,not done (HTTP 429 daily budget exhausted; 79 referenced_works ids known from the free lookup),
+martin_beerepoot2024,10.1007/s12599-024-00894-3,backward,SemanticScholar,not done (list elided by publisher (data: null)),
+martin_beerepoot2024,10.1007/s12599-024-00894-3,backward,Crossref,done,99
+saisana2005,10.1111/j.1467-985x.2005.00350.x,forward,OpenAlex,not done (HTTP 429 daily budget exhausted; retry-after 63964 s; cited_by_count=957),
+saisana2005,10.1111/j.1467-985x.2005.00350.x,forward,SemanticScholar,done,911
+adams2010,10.1056/nejmsa0906323,forward,OpenAlex,not done (HTTP 429 daily budget exhausted; retry-after 63964 s; cited_by_count=165),
+adams2010,10.1056/nejmsa0906323,forward,SemanticScholar,done,162
+nakatumba2010,10.1007/978-3-642-12186-9_8,forward,OpenAlex,not done (HTTP 429 daily budget exhausted; retry-after 63964 s; cited_by_count=110),
+nakatumba2010,10.1007/978-3-642-12186-9_8,forward,SemanticScholar,done,121
+pika2014_extra,10.1007/978-3-319-07881-6_38,forward,OpenAlex,not done (HTTP 429 daily budget exhausted; retry-after 63964 s; cited_by_count=38),
+pika2014_extra,10.1007/978-3-319-07881-6_38,forward,SemanticScholar,done,37
