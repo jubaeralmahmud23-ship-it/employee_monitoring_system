@@ -1,0 +1,12 @@
+journal,frozen,unbounded,only_in_unbounded,only_in_frozen,only_in_unbounded_term_hits,only_in_unbounded_pub_dates
+BISE,233,233,0,0,0,
+ISF,450,450,0,0,0,
+EM,317,317,0,0,0,
+I&M,468,509,41,0,5,2026-11 2026-12 2027-01
+DSS,553,581,28,0,1,2026-11 2026-12
+MISQ,279,279,0,0,0,
+ISR,558,558,0,0,0,
+JMIS,173,173,0,0,0,
+JAIS,106,106,0,0,0,
+EJIS,155,155,0,0,0,
+ISJ,251,251,0,0,0,

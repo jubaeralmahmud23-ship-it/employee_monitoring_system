@@ -1,0 +1,8 @@
+volume,role,http,papers_parsed_excl_front_matter,front_matter_entries,bib_inproceedings,track_overview_papers,with_abstract_on_page
+2023.emnlp-industry,optional 2023-2024 anchor (plan 4.1),200,77,1,77,0,77
+2024.naacl-industry,optional 2023-2024 anchor (plan 4.1),200,43,1,43,0,43
+2024.emnlp-industry,named volume (idea card),200,121,1,121,0,119
+2025.naacl-industry,named volume (idea card),200,80,1,80,0,79
+2025.acl-industry,named volume (idea card),200,109,1,109,1,109
+2025.emnlp-industry,named volume (idea card),200,193,1,193,0,193
+2026.acl-industry,frame addition (plan 4.1),200,154,1,154,1,153

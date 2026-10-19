@@ -1,0 +1,82 @@
+{
+ "sampling_date_frozen": "2026-10-19",
+ "crossref_filter": "issn:<ISSN>,from-pub-date:2023-01-01,until-pub-date:2026-10-19,type:journal-article",
+ "term_regex": "language model|\\bLLMs?\\b|generative AI|generative artificial intelligence|ChatGPT|GPT-?[34]",
+ "term_fields": "title + Crossref abstract, markup tags stripped (raw unstripped count also kept)",
+ "cc_rule": "any Crossref license URL containing 'creativecommons'",
+ "run_started_utc": "2026-10-19T05:21:22+00:00",
+ "wall_clock_seconds": 183.2,
+ "user_agent": "idea06-sampling-frame/1.0 (academic research pilot; python-urllib; no contact address supplied)",
+ "python": "3.11.15",
+ "is_journals": {
+  "journals": 11,
+  "articles_total": 3543,
+  "articles_total_2026-10-05": 3583,
+  "title_abstract_hits_total": 188
+ },
+ "springer_stratum": {
+  "journals": [
+   "BISE",
+   "EM",
+   "ISF"
+  ],
+  "articles": 1000,
+  "term_hits": 84,
+  "term_hits_2026-10-05": 83,
+  "term_hits_raw_unstripped": 84,
+  "cc_licensed_term_hits": 65,
+  "cc_licensed_term_hits_2026-10-05": 65,
+  "term_hits_by_journal": {
+   "BISE": 24,
+   "ISF": 42,
+   "EM": 18
+  },
+  "cc_term_hits_by_journal": {
+   "BISE": 23,
+   "ISF": 26,
+   "EM": 16
+  }
+ },
+ "acl_industry": {
+  "volumes": [
+   "2023.emnlp-industry",
+   "2024.naacl-industry",
+   "2024.emnlp-industry",
+   "2025.naacl-industry",
+   "2025.acl-industry",
+   "2025.emnlp-industry",
+   "2026.acl-industry"
+  ],
+  "papers_total": 777,
+  "papers_by_volume": {
+   "2023.emnlp-industry": 77,
+   "2024.naacl-industry": 43,
+   "2024.emnlp-industry": 121,
+   "2025.naacl-industry": 80,
+   "2025.acl-industry": 109,
+   "2025.emnlp-industry": 193,
+   "2026.acl-industry": 154
+  },
+  "bib_inproceedings_by_volume": {
+   "2023.emnlp-industry": 77,
+   "2024.naacl-industry": 43,
+   "2024.emnlp-industry": 121,
+   "2025.naacl-industry": 80,
+   "2025.acl-industry": 109,
+   "2025.emnlp-industry": 193,
+   "2026.acl-industry": 154
+  },
+  "acl2026_2026-10-05": 154,
+  "probed_not_in_frame": {
+   "2026.naacl-industry": 404,
+   "2026.emnlp-industry": 404,
+   "2023.acl-industry": 200,
+   "2024.acl-industry": 404,
+   "2025.coling-industry": 200,
+   "2026.eacl-industry": 200
+  }
+ },
+ "decomposition_available": true,
+ "raw_dir": "/tmp/claude-0/-home-user-employee-monitoring-system/c64eab22-9c10-592c-b92e-5ac629c5be82/scratchpad/data/idea06/frame_raw_20261019",
+ "raw_files": 96
+}

@@ -40,6 +40,21 @@
  "completed_cases": 31411,
  "cases": 31509,
  "processing_time_mode": "start-complete work segments",
+ "processing_time_units": 227858,
+ "processing_time_segments": 252895,
+ "processing_time_segments_dropped_resource_change": 1475,
+ "share_completed_cases_with_rework": 0.5145649613192831,
+ "share_completed_cases_on_time": 0.5178122313839101,
+ "attributed_completed_cases_by_rule": {
+  "first": 31411,
+  "last": 31411,
+  "majority": 31411
+ },
+ "slots_per_window": {
+  "week": 58,
+  "month": 14,
+  "quarter": 5
+ },
  "casemix_covariates": [
   "case:LoanGoal=Home improvement",
   "case:LoanGoal=Existing loan takeover",

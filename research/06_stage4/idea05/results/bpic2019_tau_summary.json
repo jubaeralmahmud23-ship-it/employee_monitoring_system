@@ -40,6 +40,21 @@
  "completed_cases": 202584,
  "cases": 251734,
  "processing_time_mode": "inter-event time within case (single-timestamp log)",
+ "processing_time_units": 1343862,
+ "processing_time_segments": 1343862,
+ "processing_time_segments_dropped_resource_change": 0,
+ "share_completed_cases_with_rework": 0.08050487698929827,
+ "share_completed_cases_on_time": 0.5005676657584015,
+ "attributed_completed_cases_by_rule": {
+  "first": 202584,
+  "last": 202584,
+  "majority": 202584
+ },
+ "slots_per_window": {
+  "week": 55,
+  "month": 13,
+  "quarter": 5
+ },
  "casemix_covariates": [
   "case:Item Category=3-way match, invoice after GR",
   "case:Item Category=Consignment",
