@@ -1,0 +1,26 @@
+source,id,title,families,url
+FAccT 2026,85,How Hyper-Datafication Impacts the Sustainability Costs in Frontier AI,hiring;audit_rules,
+FAccT 2026,102,Judging the Judges: Evaluating Pretrial Release Decisions with A Simple Nonparametric Approach,ll144,
+FAccT 2026,515,A Neuro-Symbolic Framework for Legal Accountability in Public-Sector AI,hiring;audit_rules,
+FAccT 2026,535,Options Without Agency: Diversity as a Requirement for Fair Actionable Recourse,hiring;audit_rules,
+FAccT 2026,583,FairHireBench: A Cross-Generational Intersectional Bias Benchmark for Large Language Models in Automated Hiring,hiring;audit_rules,
+FAccT 2026,781,Does Algorithmic Uncertainty Sway Human Experts? Evidence from a Field Experiment in Selective College Admissions,hiring;uncertainty;audit_rules,
+FAccT 2026,838,Conformal Prediction and the Many-Worlds of Fairness,hiring;uncertainty;audit_rules,
+FAccT 2026,921,Scrutinizing Index-Based Risk Assessments: A Case Study in NYC Decisionmaking for Heat Emergency Management,ll144;audit_rules,
+FAccT 2026,970,"Counterfactuals for Bias Audits should be Plausible, Diverse, and Faithful",ll144;audit_rules,
+FAccT 2026,1120,Auditing African Content Moderators' Working Conditions by Using the European General Data Protection Regulation (GDPR),hiring;audit_rules,
+FAccT 2025,,Auditing the Audits: Lessons for Algorithmic Accountability from Local Law 144's Bias Audits,ll144;hiring;fourfifths;audit_rules,
+FAccT 2025,,Algorithmic Collective Action with Two Collectives,hiring;audit_rules,
+FAccT 2025,,"“Cold, Calculated, and Condescending”: How AI Identifies and Explains Ableism Compared to Disabled People",hiring;audit_rules,
+FAccT 2025,,Location matching on shaky grounds: Re-evaluating algorithms for refugee allocation,fourfifths,
+FAccT 2025,,Auditing for Bias in Ad Delivery Using Inferred Demographic Attributes,hiring;audit_rules,
+FAccT 2025,,Characterizing Bias: Benchmarking Large Language Models in Simplified versus Traditional Chinese,hiring;audit_rules,
+FAccT 2025,,Privacy of Groups in Dense Street Imagery,ll144,
+FAccT 2025,,Fair Fares for Vehicle Sharing Systems,ll144,
+AIES 2026 (titles+abstracts),743,Test-Time Collective Action: Proxy-Based Perturbations for Correcting Algorithmic Harms,fourfifths;audit_rules,https://ojs.aaai.org/index.php/AIES/article/view/43152
+AIES 2026 (titles+abstracts),744,The Unfalsifiable Delusion: Mass Surveillance Infrastructure and Disparate Impact on Americans with Paranoia-Spectrum Conditions,fourfifths,https://ojs.aaai.org/index.php/AIES/article/view/43208
+AIES 2026 (titles+abstracts),745,Linguistic Triggers of Gender and Racial Bias in Open-Weight LLMs Applied to Recruitment,hiring;fourfifths;audit_rules,https://ojs.aaai.org/index.php/AIES/article/view/43247
+AIES 2026 (titles+abstracts),745,ABLEIST: Intersectional Disability Bias in LLM-Generated Hiring Scenarios,hiring;audit_rules,https://ojs.aaai.org/index.php/AIES/article/view/43291
+AIES 2026 (titles+abstracts),746,Auditing LLM Portrayals of Neurodivergent People: Quantifying the Asymmetry Between Deficit Framing and Neurodiversity Affirmation,hiring;audit_rules,https://ojs.aaai.org/index.php/AIES/article/view/43328
+AIES 2026 (titles+abstracts),746,"Applications of Risk Science to AI Fairness Evaluation: Principles, Challenges, and Best Practices",hiring;uncertainty,https://ojs.aaai.org/index.php/AIES/article/view/43345
+AIES 2026 (titles+abstracts),746,Who Will Become the Next Senior? How Generative AI Erodes the Development Pathway in Software Engineering,hiring;audit_rules,https://ojs.aaai.org/index.php/AIES/article/view/43353

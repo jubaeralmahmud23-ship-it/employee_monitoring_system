@@ -1,0 +1,133 @@
+seed,direction,tool,title,year,doi,venue
+gerchick2025,forward,SemanticScholar,Applied and Filtered: An End-to-End Algorithmic Fairness Audit of A Public Employment Agency,2026,,
+gerchick2025,forward,SemanticScholar,Fairness Auditing: Lower Bounds on Company Manipulation,2026,,
+gerchick2025,forward,SemanticScholar,Algorithm Auditing Policies Rest on Flawed Assumptions About Public Sector Systems,2026,10.1145/3805689.3812280,"Conference on Fairness, Accountability and Transparency"
+gerchick2025,forward,SemanticScholar,How Supply Chain Dependencies Complicate Bias Measurement and Accountability Attribution in AI Hiring Applications,2026,10.48550/arXiv.2604.22679,arXiv.org
+gerchick2025,forward,SemanticScholar,Compliant But Unsatisfactory: The Gap Between Auditing Standards and Practices for Probabilistic Genotyping Software,2026,10.1145/3772318.3791552,International Conference on Human Factors in Computing Systems
+gerchick2025,forward,SemanticScholar,Intersectional Fairness via Mixed-Integer Optimization,2026,10.48550/arXiv.2601.19595,arXiv.org
+gerchick2025,forward,SemanticScholar,"Empowering Affected Individuals to Shape AI Fairness Assessments: Processes, Criteria, and Tools",2026,10.48550/arXiv.2602.06984,arXiv.org
+wright2024,forward,SemanticScholar,Applied and Filtered: An End-to-End Algorithmic Fairness Audit of A Public Employment Agency,2026,,
+wright2024,forward,SemanticScholar,Open Veins of Algorithmic Auditing: Why AI Assessment Lags Behind Its Deployment in the Global South,2026,10.48550/arXiv.2607.21317,arXiv.org
+wright2024,forward,SemanticScholar,Algorithm Auditing Policies Rest on Flawed Assumptions About Public Sector Systems,2026,10.1145/3805689.3812280,"Conference on Fairness, Accountability and Transparency"
+wright2024,forward,SemanticScholar,Caught in the Loop: How Algorithmic Management Disempowers Frontline Supervisors,2026,10.1145/3805689.3812344,"Conference on Fairness, Accountability and Transparency"
+wright2024,forward,SemanticScholar,Algorithmic Monocultures in Hiring,2026,10.1145/3805689.3812400,"Conference on Fairness, Accountability and Transparency"
+wright2024,forward,SemanticScholar,"Formal Methods Meet LLMs: Auditing, Monitoring, and Intervention for Compliance of Advanced AI Systems",2026,10.1145/3805689.3812339,"Conference on Fairness, Accountability and Transparency"
+wright2024,forward,SemanticScholar,Auditing African Content Moderators' Working Conditions by Using the European General Data Protection Regulation (GDPR),2026,10.1145/3805689.3812228,"Conference on Fairness, Accountability and Transparency"
+wright2024,forward,SemanticScholar,How Supply Chain Dependencies Complicate Bias Measurement and Accountability Attribution in AI Hiring Applications,2026,10.48550/arXiv.2604.22679,arXiv.org
+wright2024,forward,SemanticScholar,Compliant But Unsatisfactory: The Gap Between Auditing Standards and Practices for Probabilistic Genotyping Software,2026,10.1145/3772318.3791552,International Conference on Human Factors in Computing Systems
+wright2024,forward,SemanticScholar,AI Self-preferencing in Algorithmic Hiring: Empirical Evidence and Insights,2025,10.1145/3757887.3767676,"Conference on Equity and Access in Algorithms, Mechanisms, and Optimization"
+wright2024,forward,SemanticScholar,The Fair Game: Auditing & Debiasing AI Algorithms Over Time,2025,10.1017/cfl.2025.8,Law and Governance
+wright2024,forward,SemanticScholar,Exposing the Illusion of Fairness: Auditing Vulnerabilities to Distributional Manipulation Attacks,2025,10.48550/arXiv.2507.20708,arXiv.org
+wright2024,forward,SemanticScholar,Auditing the Audits: Lessons for Algorithmic Accountability from Local Law 144's Bias Audits,2025,10.1145/3715275.3732004,"Conference on Fairness, Accountability and Transparency"
+wright2024,forward,SemanticScholar,A Framework for Auditing Chatbots for Dialect-Based Quality-of-Service Harms,2025,10.1145/3715275.3732137,"Conference on Fairness, Accountability and Transparency"
+wright2024,forward,SemanticScholar,Fairness is in the Details : Face Dataset Auditing,2025,10.1007/978-3-032-06129-4_18,ECML/PKDD
+wright2024,forward,SemanticScholar,"Artificial intelligence bias auditing – current approaches, challenges and lessons from practice",2025,10.1108/raf-01-2025-0006,Review of Accounting and Finance
+wright2024,forward,SemanticScholar,"Navigating Automated Hiring: Perceptions, Strategy Use, and Outcomes Among Young Job Seekers",2025,10.1145/3711038,Proc. ACM Hum. Comput. Interact.
+wright2024,forward,SemanticScholar,Bias audit laws: how effective are they at preventing bias in automated employment decision tools?,2024,10.1080/13600869.2024.2403053,"International Review of Law, Computers &amp; Technology"
+wright2024,forward,SemanticScholar,The Silicon Ceiling: Auditing GPT’s Race and Gender Biases in Hiring,2024,10.1145/3689904.3694699,"Conference on Equity and Access in Algorithms, Mechanisms, and Optimization"
+wright2024,forward,SemanticScholar,Towards AI Accountability Infrastructure: Gaps and Opportunities in AI Audit Tooling,2024,10.1145/3706598.3713301,International Conference on Human Factors in Computing Systems
+wright2024,forward,SemanticScholar,A Framework for Assurance Audits of Algorithmic Systems,2024,10.1145/3630106.3658957,"Conference on Fairness, Accountability and Transparency"
+wright2024,forward,SemanticScholar,"AI and Automated Decision-making Systems in Employment: A Look at State General Statutes Addressing of Bias Audits, Transparency, and Legal Accountability in the US",2026,10.51505/ijebmr.2026.10710,"International journal of economics, business and management research"
+morris_lobsenz2000,backward,Crossref,What if there were no significance tests,1997,,
+morris_lobsenz2000,backward,Crossref,Statistical power analysis for the behavioral sciences,1988,,
+morris_lobsenz2000,backward,Crossref,Griggs v. Duke Power Co. 401 U.S. 424(1971).,,,
+morris_lobsenz2000,backward,Crossref,Is proof of statistical significance relevant,1986,,Washington Law Review
+morris_lobsenz2000,backward,Crossref,Current trends in the use (and misuse) or statistics in employment discrimination litigation,1978,,
+morris_lobsenz2000,backward,Crossref,What if there were no significance tests,1997,,
+morris_lobsenz2000,backward,Crossref,Uniform guidelines on employee selection procedures,1978,,Federal Register
+morris_lobsenz2000,backward,Crossref,Disparate results in adverse impact tests. The four‐fifths rule versus chi square,1995,,"Proceedings of the Association of Management Conference, Human Resource Management Group"
+roth_bobko_switzer2006,forward,SemanticScholar,A Qualitative Analysis of Personnel Selection and Legal Experts’ Perspectives on Adverse Impact Measures,2025,10.1007/s10869-025-10044-5,Journal of business and psychology
+roth_bobko_switzer2006,forward,SemanticScholar,Sourcing algorithms: Rethinking fairness in hiring in the era of algorithmic recruitment,2024,10.1111/ijsa.12499,International Journal of Selection and Assessment
+roth_bobko_switzer2006,forward,SemanticScholar,Reducing adverse impact in high-stakes testing,2021,10.1016/J.INTELL.2021.101561,Intelligence
+roth_bobko_switzer2006,forward,SemanticScholar,Bias in Context: Small Biases in Hiring Evaluations Have Big Consequences,2021,10.1177/0149206320982654,Journal of Management
+roth_bobko_switzer2006,forward,SemanticScholar,Bayesian Modeling of Intersectional Fairness: The Variance of Bias,2018,10.1137/1.9781611976236.48,SDM
+roth_bobko_switzer2006,forward,SemanticScholar,An Intersectional Definition of Fairness,2018,10.1109/ICDE48307.2020.00203,IEEE International Conference on Data Engineering
+roth_bobko_switzer2006,forward,SemanticScholar,Power and errors in adverse impact indices,2016,10.1080/08959285.2016.1154060,
+roth_bobko_switzer2006,forward,SemanticScholar,Exploring the Use of Credit Scores in Selection Processes: Beware of Adverse Impact,2015,10.1007/S10869-014-9366-5,
+roth_bobko_switzer2006,forward,SemanticScholar,New Statistical Tests for Detecting Disparate Impact Arising From Two-Stage Selection Processes,2014,10.1080/00031305.2014.917054,
+roth_bobko_switzer2006,forward,SemanticScholar,Exploring the Use of Credit Scores in Selection Processes: Beware of Adverse Impact,2014,10.1007/s10869-014-9366-5,Journal of business and psychology
+roth_bobko_switzer2006,forward,SemanticScholar,Detecting Adverse Impact,2013,10.1177/0091026013495762,
+roth_bobko_switzer2006,forward,SemanticScholar,"Considering vocational interests in adverse impact: a meta-analysis of race, cognitive ability, and vocational interests",2013,,
+roth_bobko_switzer2006,forward,SemanticScholar,Properties of statistical tests appropriate for the analysis of data in disparate impact cases,2013,10.1093/LPR/MGS032,
+roth_bobko_switzer2006,forward,SemanticScholar,"A comparison of adverse impact levels based on top‐down, multisource, and assessment center data: Promoting diversity and reducing legal challenges",2012,10.1002/HRM.21472,
+roth_bobko_switzer2006,forward,SemanticScholar,Encouraging Debate on the Uniform Guidelines and the Disparate Impact Theory of Discrimination,2011,10.1111/j.1754-9434.2011.01394.x,Industrial and Organizational Psychology
+roth_bobko_switzer2006,forward,SemanticScholar,About Babies and Bathwater: Retaining Core Principles of the Uniform Guidelines,2011,10.1111/j.1754-9434.2011.01391.x,Industrial and Organizational Psychology
+roth_bobko_switzer2006,forward,SemanticScholar,Towards a More Complete Understanding of Adverse Impact: Examining Issues of Minority Availability,2010,,
+roth_bobko_switzer2006,forward,SemanticScholar,"Recruitment efforts to reduce adverse impact: targeted recruiting for personality, cognitive ability, and diversity.",2009,10.1037/a0013472,Journal of Applied Psychology
+roth_bobko_switzer2006,forward,SemanticScholar,Multistage selection strategies: simulating the effects on adverse impact and expected performance for various predictor combinations.,2009,10.1037/a0013775,Journal of Applied Psychology
+roth_bobko_switzer2006,forward,SemanticScholar,On the Consequences of Frequent Applicants in Adverse Impact Analyses: A Demonstration Study,2008,10.1111/J.1468-2389.2008.00439.X,
+roth_bobko_switzer2006,forward,SemanticScholar,Commentary on Pareto-Optimality as a Rationale for Adverse Impact Reduction: What Would Organizations Do?,2008,10.1111/J.1468-2389.2008.00424.X,
+roth_bobko_switzer2006,forward,SemanticScholar,Using the 4/5ths Rule as an Outcome in Regression Analyses: A Demonstrative Simulation,2008,10.1007/S10869-008-9077-X,
+roth_bobko_switzer2006,forward,SemanticScholar,Testing for adverse impact when sample size is small.,2008,10.1037/0021-9010.93.2.463,Journal of Applied Psychology
+roth_bobko_switzer2006,forward,SemanticScholar,Bayesian Modeling of Intersectional Fairness: The Variance of Bias (Supplementary Material)∗,2020,,
+roth_bobko_switzer2006,forward,SemanticScholar,Measuring Adverse Impact in Employee Selection Decisions,2015,10.1007/978-3-319-11143-8_1,
+roth_bobko_switzer2006,forward,SemanticScholar,Running head : Uniform Guidelines are a Detriment The Uniform Guidelines are a Detriment to the Field of Personnel Selection,2011,,
+roth_bobko_switzer2006,forward,SemanticScholar,A Consideration of Practical Significance in Adverse Impact Analysis,2010,,
+roth_bobko_switzer2006,forward,SemanticScholar,Decision aids for addressing the validity-adverse impact tradeoff: Implications for Organizational Staffing and High,2009,,
+roth_bobko_switzer2006,backward,Crossref,Challenging the myths of fair employment practices.,1998,,
+roth_bobko_switzer2006,backward,Crossref,Another analysis of the EEOC four-fifths rule.,1979,10.1287/mnsc.25.8.770,Management Science
+roth_bobko_switzer2006,backward,Crossref,"The four-fifths rule for assessing adverse impact: An arithmetic, intuitive, and logical analysis of the rule and implications for future research.",2004,10.1016/S0742-7301(04)23004-3,
+roth_bobko_switzer2006,backward,Crossref,Uniform guidelines on employee selection procedures.,1978,,Federal Register
+roth_bobko_switzer2006,backward,Crossref,An analysis of the EEOC four-fifths rule.,1979,10.1287/mnsc.25.8.762,Management Science
+roth_bobko_switzer2006,backward,Crossref,Morris. Sample size required for adverse impact analysis. 1 13 2001,,,
+roth_bobko_switzer2006,backward,Crossref,Morris. Significance tests and confidence intervals for the adverse impact ratio. 53 89 2000,,10.1111/j.1744-6570.2000.tb00195.x,
+roth_bobko_switzer2006,backward,Crossref,Olian. Cognitive ability tests in employment: Ethical perspectives of employers and society. 9 185 1987,,,
+roth_bobko_switzer2006,backward,Crossref,Reilly. Validity and fairness of some alternative employee selection procedures. 35 1 1982,,10.1111/j.1744-6570.1982.tb02184.x,
+roth_bobko_switzer2006,backward,Crossref,Roth. Ethnic group differences in cognitive ability in employment and education settings: A meta-analysis. 54 297 2001,,10.1111/j.1744-6570.2001.tb00094.x,
+roth_bobko_switzer2006,backward,Crossref,Sackett. The effects of forming multi-predictor composites on group differences and adverse impact. 50 707 1997,,10.1111/j.1744-6570.1997.tb00711.x,
+roth_bobko_switzer2006,backward,Crossref,Sackett. Multi-stage selection strategies: A Monte Carlo investigation of effects on performance and minority hiring. 49 549 1996,,10.1111/j.1744-6570.1996.tb01584.x,
+roth_bobko_switzer2006,backward,Crossref,Sample size in validity studies of personnel selection.,1998,10.1111/j.2044-8325.1998.tb00669.x,Journal of Occupational and Organizational Psychology
+roth_bobko_switzer2006,backward,Crossref,Wing. Statistical hazards in the determination of adverse impact with small samples. 35 153 1982,,10.1111/j.1744-6570.1982.tb02191.x,
+collins_morris2008,forward,SemanticScholar,A Qualitative Analysis of Personnel Selection and Legal Experts’ Perspectives on Adverse Impact Measures,2025,10.1007/s10869-025-10044-5,Journal of business and psychology
+collins_morris2008,forward,SemanticScholar,Statistical Approaches for Assessing Disparate Impact in Fair Housing Cases,2023,10.1080/2330443X.2023.2263038,Statistics and Public Policy
+collins_morris2008,forward,SemanticScholar,"Basic incomes and the dynamics of wealth accumulation, individual development, and employment opportunities",2021,10.1017/iop.2021.107,Industrial and Organizational Psychology
+collins_morris2008,forward,SemanticScholar,Reducing adverse impact in high-stakes testing,2021,10.1016/J.INTELL.2021.101561,Intelligence
+collins_morris2008,forward,SemanticScholar,Bayesian Modeling of Intersectional Fairness: The Variance of Bias,2018,10.1137/1.9781611976236.48,SDM
+collins_morris2008,forward,SemanticScholar,Statistical issues arising in the Kerner v. Denver: a class action disparate impact case,2017,10.1093/LPR/MGW011,
+collins_morris2008,forward,SemanticScholar,Power and errors in adverse impact indices,2016,10.1080/08959285.2016.1154060,
+collins_morris2008,forward,SemanticScholar,Making hiring decisions:a grounded theory approach to a practise-based study of filtering in selection,2015,,
+collins_morris2008,forward,SemanticScholar,New Statistical Tests for Detecting Disparate Impact Arising From Two-Stage Selection Processes,2014,10.1080/00031305.2014.917054,
+collins_morris2008,forward,SemanticScholar,Detecting Adverse Impact,2013,10.1177/0091026013495762,
+collins_morris2008,forward,SemanticScholar,Properties of statistical tests appropriate for the analysis of data in disparate impact cases,2013,10.1093/LPR/MGS032,
+collins_morris2008,forward,SemanticScholar,"A comparison of adverse impact levels based on top‐down, multisource, and assessment center data: Promoting diversity and reducing legal challenges",2012,10.1002/HRM.21472,
+collins_morris2008,forward,SemanticScholar,About Babies and Bathwater: Retaining Core Principles of the Uniform Guidelines,2011,10.1111/j.1754-9434.2011.01391.x,Industrial and Organizational Psychology
+collins_morris2008,forward,SemanticScholar,The diversity-validity dilemma: In search of minimum adverse impact and maximum utility.,2009,10.4102/SAJIP.V35I1.765,
+collins_morris2008,forward,SemanticScholar,Multistage selection strategies: simulating the effects on adverse impact and expected performance for various predictor combinations.,2009,10.1037/a0013775,Journal of Applied Psychology
+collins_morris2008,forward,SemanticScholar,On the Consequences of Frequent Applicants in Adverse Impact Analyses: A Demonstration Study,2008,10.1111/J.1468-2389.2008.00439.X,
+collins_morris2008,forward,SemanticScholar,Bayesian Modeling of Intersectional Fairness: The Variance of Bias (Supplementary Material)∗,2020,,
+collins_morris2008,forward,SemanticScholar,Measuring Adverse Impact in Employee Selection Decisions,2015,10.1007/978-3-319-11143-8_1,
+collins_morris2008,forward,SemanticScholar,An analysis of the properties of a potential replacement of the four-fifths rule,2015,,
+collins_morris2008,forward,SemanticScholar,Gender differences in personality scores: Implications for differential hiring rates,2011,10.1016/J.PAID.2010.09.010,
+collins_morris2008,forward,SemanticScholar,Statistical Significance Standards for Basic Adverse Impact Analysis,2010,,
+collins_morris2008,forward,SemanticScholar,Important Developments in the EEO Analysis Field : Practical Significance and Fisher Exact Tests,2009,,
+switzer_roth_rosopa2016,backward,Crossref,Adverse impact: Implications for organizational staffing and high stakes selection,2010,,
+switzer_roth_rosopa2016,backward,Crossref,Adverse impact and test validation: A practitioner’s guide to valid and defensible employment testing,2005,,
+switzer_roth_rosopa2016,backward,Crossref,Adverse impact: Implications for organizational staffing and high stakes selection,2010,,
+switzer_roth_rosopa2016,backward,Crossref,Adverse impact: Implications for organizational staffing and high stakes selection,2010,,
+ferrara2025,backward,SemanticScholar,The Intersectionality Problem for Algorithmic Fairness,2024,10.48550/arXiv.2411.02569,AFME
+ferrara2025,backward,SemanticScholar,Uncertainty as a Fairness Measure,2023,10.1613/jair.1.16041,Journal of Artificial Intelligence Research
+ferrara2025,backward,SemanticScholar,"A Survey on Intersectional Fairness in Machine Learning: Notions, Mitigation, and Challenges",2023,10.24963/ijcai.2023/742,International Joint Conference on Artificial Intelligence
+ferrara2025,backward,SemanticScholar,Statistical Inference for Fairness Auditing,2023,10.48550/arXiv.2305.03712,Journal of machine learning research
+ferrara2025,backward,SemanticScholar,Bounding and Approximating Intersectional Fairness through Marginal Fairness,2022,10.48550/arXiv.2206.05828,Neural Information Processing Systems
+ferrara2025,backward,SemanticScholar,Characterizing Intersectional Group Fairness with Worst-Case Comparisons,2021,,AIDBEI
+ferrara2025,backward,SemanticScholar,"Uncertainty as a Form of Transparency: Measuring, Communicating, and Using Uncertainty",2020,10.1145/3461702.3462571,"AAAI/ACM Conference on AI, Ethics, and Society"
+ferrara2025,backward,SemanticScholar,FairLens: Auditing Black-box Clinical Decision Support Systems,2020,10.1016/j.ipm.2021.102657,Information Processing & Management
+ferrara2025,backward,SemanticScholar,Is Your Classifier Actually Biased? Measuring Fairness under Uncertainty with Bernstein Bounds,2020,10.18653/v1/2020.acl-main.262,Annual Meeting of the Association for Computational Linguistics
+ferrara2025,backward,SemanticScholar,Auditing and Achieving Intersectional Fairness in Classification Problems,2019,,arXiv.org
+ferrara2025,backward,SemanticScholar,Bayesian Modeling of Intersectional Fairness: The Variance of Bias,2018,10.1137/1.9781611976236.48,SDM
+ferrara2025,backward,SemanticScholar,An Intersectional Definition of Fairness,2018,10.1109/ICDE48307.2020.00203,IEEE International Conference on Data Engineering
+ferrara2025,backward,SemanticScholar,Confidence Intervals for Testing Disparate Impact in Fair Learning,2018,,arXiv.org
+ferrara2025,backward,SemanticScholar,Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification,2018,,FAT
+ferrara2025,backward,SemanticScholar,Preventing Fairness Gerrymandering: Auditing and Learning for Subgroup Fairness,2017,,International Conference on Machine Learning
+ferrara2025,backward,SemanticScholar,Fairness Beyond Disparate Treatment & Disparate Impact: Learning Classification without Disparate Mistreatment,2016,10.1145/3038912.3052660,The Web Conference
+ferrara2025,backward,SemanticScholar,Fair Prediction with Disparate Impact: A Study of Bias in Recidivism Prediction Instruments,2016,10.1089/big.2016.0047,Big Data
+ferrara2025,backward,SemanticScholar,Certifying and Removing Disparate Impact,2014,10.1145/2783258.2783311,Knowledge Discovery and Data Mining
+ferrara2025,backward,SemanticScholar,"Mapping the margins: intersectionality, identity politics, and violence against women of color",1991,10.2307/1229039,
+ferrara2025,backward,SemanticScholar,An Analysis of the EEOCC “Four-Fifths” Rule,1979,10.1287/MNSC.25.8.762,
+ferrara2025,backward,SemanticScholar,Uncertainty Matters: Stable Conclusions under Unstable Assessment of Fairness Results,2024,,International Conference on Artificial Intelligence and Statistics
+ferrara2025,backward,SemanticScholar,Causal Intersectionality and Fair Ranking,2021,10.4230/LIPIcs.FORC.2021.7,Symposium on Foundations of Responsible Computing
+ferrara2025,backward,SemanticScholar,"Significance, Errors, Power, and Sample Size: The Blocking and Tackling of Statistics",2018,10.1213/ANE.0000000000002741,Anesthesia and Analgesia
+ferrara2025,backward,SemanticScholar,Limitations of the “Four-Fifths Rule” and Statistical Parity Tests for Measuring Fairness ∗,,,
+ferrara2025,forward,SemanticScholar,Annotation-Budget Fairness Reliability: How Much Data Does a Trustworthy Fairness Audit of Hate-Speech Classifiers Require?,2026,10.3390/info17090903,Information
+ferrara2025,forward,SemanticScholar,"Operationalizing Fairness in Text-to-Image Models: A Survey of Bias, Fairness Audits and Mitigation Strategies",2026,10.48550/arXiv.2604.16516,arXiv.org
+black_dhacking2024,forward,SemanticScholar,Auditing the Audits: Lessons for Algorithmic Accountability from Local Law 144's Bias Audits,2025,10.1145/3715275.3732004,"Conference on Fairness, Accountability and Transparency"

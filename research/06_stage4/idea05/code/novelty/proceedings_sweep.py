@@ -99,6 +99,7 @@ R_ROBUST = re.compile(r"(stabil|sensitiv|reliab|robust|ranking|\brank|misclassif
 
 _last = [0.0]
 LOG = []
+OA_BUDGET = {"exhausted": False}  # OpenAlex free daily budget for this IP (see chase_citations.py)
 
 
 def http(url, data=None):
@@ -119,6 +120,15 @@ def http(url, data=None):
             LOG.append([url[:200], e.code, i + 1])
             if e.code == 404:
                 return None
+            if e.code == 429 and "openalex" in url:
+                try:
+                    txt = e.read().decode("utf-8", "replace")
+                except Exception:
+                    txt = ""
+                if "Insufficient budget" in txt:
+                    OA_BUDGET["exhausted"] = True
+                    LOG.append([url[:200], "429-budget-exhausted (retry-after %s s)" % e.headers.get("retry-after", ""), i + 1])
+                    return None
         except Exception as e:
             LOG.append([url[:200], "ERR:" + type(e).__name__, i + 1])
         if i < 2:
@@ -215,6 +225,9 @@ def main():
                     papers[d]["abstract_source"] = "semanticscholar"
         missing = [d for d, p in papers.items() if not p["abstract"]]
         for i in range(0, len(missing), 50):
+            if OA_BUDGET["exhausted"]:
+                LOG.append(["openalex abstract enrichment stopped: daily budget exhausted", "skipped", 0])
+                break
             chunk = missing[i:i + 50]
             url = ("https://api.openalex.org/works?filter=doi:" + "|".join(urllib.parse.quote(d, safe="/") for d in chunk)
                    + "&select=doi,abstract_inverted_index&per-page=50")
